@@ -291,3 +291,23 @@ body.bhakti-editorial {
 @media (max-width: 720px) {
   .bhakti-hymn-chooser .bhakti-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Mobile homepage: show all six illustrated links in a single column,
+   with the full square artwork visible instead of a cropped narrow strip. */
+@media (max-width: 720px) {
+  .bhakti-home .bhakti-topics {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .bhakti-home .bhakti-topics img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #f5e7d2;
+  }
+  .bhakti-home .bhakti-topics span {
+    padding: 15px 12px 17px;
+    font-size: clamp(23px, 5.6vw, 30px);
+  }
+}
