@@ -26,7 +26,7 @@ DOORS = {
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
             'scriptures': '/scriptures/', 'temples': '/temples-of-india/'}
 DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she'),
-           'hanuman': ('Hanumān', 'he')}
+           'hanuman': ('Hanumān', 'he'), 'subramanya': ('Subramanya', 'he')}
 
 
 def plural(n, word):
@@ -36,7 +36,8 @@ def plural(n, word):
 GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
 HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
-HUBS.update(f'/hymns/{deity}/' for deity in DEITIES)
+CUSTOM_DEITY_LANDING_PAGES = {'subramanya'}
+HUBS.update(f'/hymns/{deity}/' for deity in DEITIES if deity not in CUSTOM_DEITY_LANDING_PAGES)
 HUBS.update({
     '/srividya/foundations/',
     '/srividya/lalitopakhyana/',
@@ -171,10 +172,14 @@ def build(entries, pages):
     write_hub('/temples-of-india/', ''.join(shelf(g, '', tiles(by('temples', group=gk)), gk) for gk, g in GROUPS.items()))
 
     for d in DEITIES:
+        if d in CUSTOM_DEITY_LANDING_PAGES:
+            continue
         write_hub(f'/hymns/{d}/', shelf('Hymns and mantras', '', tiles(by('hymns', d))))
 
     # deity pages
     for d, (name, pron) in DEITIES.items():
+        if d in CUSTOM_DEITY_LANDING_PAGES:
+            continue
         body = (shelf(f'Who {pron} is', 'Forms, stories and symbols.', tiles(by('gods', d)), 'who')
                 + shelf('Hymns and mantras', 'What to chant, verse by verse.', tiles(by('hymns', d)), 'hymns')
                 + shelf('Scriptures and stories', 'Texts read in parts.', tiles(by('scriptures', d)), 'scriptures')
