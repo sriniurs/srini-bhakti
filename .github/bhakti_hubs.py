@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build the Bhakti hubs from catalog.json and add a trail to every Bhakti article.
 
-The section has four doors (Gods, Hymns, Scriptures, Temples) and three deity
-views (Śiva, Viṣṇu, Devi). Every article or series under / needs one entry
+The section has Gods, Hymns, Scriptures, Temples and Festivals categories.
+Every article or series under / needs one entry
 in catalog.json; this script then places its card on the right hubs.
 
   python3 .github/bhakti_hubs.py           rebuild hubs and trails
@@ -22,9 +22,10 @@ DOORS = {
     'hymns': ('Hymns and Mantras', 'What to chant'),
     'scriptures': ('Scriptures and Stories', 'What to read'),
     'temples': ('Temples and Tīrthas', 'Where to go'),
+    'festivals': ('Festivals', 'Festival guides'),
 }
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
-            'scriptures': '/scriptures/', 'temples': '/temples-of-india/'}
+            'scriptures': '/scriptures/', 'temples': '/temples-of-india/', 'festivals': '/festivals/'}
 DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she'),
            'hanuman': ('Hanumān', 'he'), 'subramanya': ('Subramanya', 'he')}
 
