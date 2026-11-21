@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tvaritā · The Tithi Nityās · Śrīvidyā · srini.presents</title>
+<meta name="description" content="Tvaritā, “the swift one”, the eighth of the fifteen Tithi Nityās of Śrīvidyā: her lunar day Aṣṭamī, her form from the meditation verse, her deed in the night battle of the Lalitopākhyāna, her place on the Śrīcakra, the texts that describe her, and what she means.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="canonical" href="https://bhakti.srinipresents.com/srividya/deities/nityas/tvarita/">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="bolt-portrait" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">THE TITHI NITYĀS · 8 OF 15</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7vw,56px);line-height:1.18">TVARITĀ</h1>
+  <div class="series">ŚRĪVIDYĀ · A REFERENCE GUIDE</div>
+  <div class="tag">“The swift one”</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Tvaritā, the eighth Nityā, under the moon of Aṣṭamī"><rect width="380" height="268" fill="#140a2a" rx="8"/><circle cx="0" cy="6" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="53" cy="43" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="106" cy="80" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="159" cy="117" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="212" cy="154" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="265" cy="41" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="318" cy="78" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="371" cy="115" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="44" cy="152" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="97" cy="39" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="150" cy="76" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="203" cy="113" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="256" cy="150" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="309" cy="37" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="362" cy="74" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="35" cy="111" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="88" cy="148" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="141" cy="35" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="194" cy="72" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="247" cy="109" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="300" cy="146" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="353" cy="33" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="26" cy="70" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="79" cy="107" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="132" cy="144" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="185" cy="31" r="1.6" fill="#fff8e7" opacity=".8"/><circle cx="238" cy="68" r="2.2" fill="#fff8e7" opacity=".8"/><circle cx="291" cy="105" r="1.0" fill="#fff8e7" opacity=".8"/><circle cx="318" cy="54" r="30" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M318 24 A30 30 0 0 1 318 84 A2.0 30 0 0 0 318 24Z" fill="#fff3b0"/><text x="318" y="104" text-anchor="middle" font-family="Bangers" font-size="12" fill="#ffd60a">AṢṬAMĪ</text><rect y="226" width="380" height="42" fill="#3a0a2a"/><g transform="translate(30 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(94 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(158 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(222 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(286 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(350 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(170 148) scale(1.45)" stroke="#111" stroke-width="2"></g><g transform="translate(170 148) scale(1.45)" stroke="#111" stroke-width="2"><path d="M-24 60 q-6 -60 24 -70 q30 10 24 70z" fill="#3a8a3a"/><path d="M-24 60 q24 -14 48 0" fill="none" stroke="#e0a800" stroke-width="3"/><path d="M-20 -2 l-22 -20 M20 -2 l22 -20" stroke="#2b2b3a" stroke-width="6"/><path d="M-18 10 l-28 2 M18 10 l28 2" stroke="#2b2b3a" stroke-width="6"/><path transform="translate(-50 -26)" d="M0 0 q-10 -10 0 -18 q10 8 0 18" fill="none" stroke="#e0a800" stroke-width="3"/><path transform="translate(48 -24)" d="M0 0 v-20 l6 6" fill="none" stroke="#bbb" stroke-width="3"/><path d="M50 4 v-12 m4 12 v-14 m4 14 v-12" stroke="#2b2b3a" stroke-width="3"/><path d="M-52 8 v12 m-4 -12 v14 m-4 -14 v12" stroke="#2b2b3a" stroke-width="3"/><g transform="translate(0 -56)"><g transform="rotate(-30)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(-10)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(10)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(30)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g></g><path transform="translate(-18 40) rotate(-20)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-6 46) rotate(0)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(8 44) rotate(10)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(18 38) rotate(25)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-12 30) rotate(-10)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(12 30) rotate(15)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-26 6)" d="M0 0 q6 -6 0 -12 q-6 -6 0 -12" fill="none" stroke="#2a8a2a" stroke-width="2.5"/><path transform="translate(26 6)" d="M0 0 q6 -6 0 -12 q-6 -6 0 -12" fill="none" stroke="#2a8a2a" stroke-width="2.5"/><circle cx="-12" cy="-2.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-9" cy="-3.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-6" cy="-5.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-3" cy="-6.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="0" cy="-8.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="3" cy="-6.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="6" cy="-5.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="9" cy="-3.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="12" cy="-2.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cy="-26" r="14" fill="#2b2b3a"/><path d="M-14 -32 q14 -14 28 0" fill="#111"/><path d="M-12 -40 h24 l-3 -14 l-5 6 l-4 -10 l-4 10 l-5 -6z" fill="#e0a800"/><circle cx="-5" cy="-26" r="2" fill="#fff"/><circle cx="5" cy="-26" r="2" fill="#fff"/><circle cy="-33" r="1.8" fill="#c0392b"/><path d="M-4 -19 q4 3 8 0" fill="none" stroke="#c0392b"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p>The eighth Nityā looks like no other. Tvaritā, “the swift one”, is dark and youthful, dressed in fresh leaves, with eight serpents for jewels, a crystal crown crested with peacock feathers, and necklaces of red guñjā berries. Among jewelled queens she comes as a goddess of the forest.</p><p>She rules Aṣṭamī, the half-moon, the very middle of the fortnight. Her name promises speed: she is said to grant results quickly. In the night battle she does not use arrows at all, but tears her enemy apart with her arms.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Śrī Tvaritāyai namaḥ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Prof, which Nityā answers fastest?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Her name says it, Zappy: Tvaritā, the swift. She doesn’t even stop to dress like a queen.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/srividya/">Śrīvidyā · the Tithi Nityās in seventeen guides</a>. Previous: <a href="/srividya/deities/nityas/shivaduti/">Śivadūtī, Nityā 7</a>. Next: <a href="/srividya/deities/nityas/kulasundari/">Kulasundarī, Nityā 9</a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#name">The Name</a></li><li><span class="num">3</span><a href="#form">Her Form</a></li><li><span class="num">4</span><a href="#tithi">Her Lunar Day</a></li><li><span class="num">5</span><a href="#battle">In The Night Battle</a></li><li><span class="num">6</span><a href="#circle">Among Her Sisters</a></li><li><span class="num">7</span><a href="#texts">In The Texts</a></li><li><span class="num">8</span><a href="#forest">The Forest Goddess</a></li><li><span class="num">9</span><a href="#meaning">What She Means</a></li><li><span class="num">10</span><a href="#glossary">Glossary</a></li><li><span class="num">11</span><a href="#end">On One Page</a></li><li><span class="num">12</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">Tvaritā on one page</div>
+<svg class="pg-fig" width="360" height="170" viewBox="0 0 360 170" role="img" aria-label="Tvaritā on the wheel of fifteen lunar days"><rect width="360" height="170" fill="#f4f0fd"/><circle cx="90" cy="86" r="58" fill="none" stroke="#c9a26b" stroke-width="1.5" stroke-dasharray="3 4"/><circle cx="90.0" cy="28.0" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M90.0 20.46 A7.54 7.54 0 0 1 90.0 35.54 A6.5 7.54 0 0 1 90.0 20.46Z" fill="#fff3b0"/><circle cx="113.6" cy="33.0" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M113.6 25.46 A7.54 7.54 0 0 1 113.6 40.54 A5.5 7.54 0 0 1 113.6 25.46Z" fill="#fff3b0"/><circle cx="133.1" cy="47.2" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M133.1 39.660000000000004 A7.54 7.54 0 0 1 133.1 54.74 A4.5 7.54 0 0 1 133.1 39.660000000000004Z" fill="#fff3b0"/><circle cx="145.2" cy="68.1" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M145.2 60.559999999999995 A7.54 7.54 0 0 1 145.2 75.64 A3.5 7.54 0 0 1 145.2 60.559999999999995Z" fill="#fff3b0"/><circle cx="147.7" cy="92.1" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M147.7 84.55999999999999 A7.54 7.54 0 0 1 147.7 99.64 A2.5 7.54 0 0 1 147.7 84.55999999999999Z" fill="#fff3b0"/><circle cx="140.2" cy="115.0" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M140.2 107.46 A7.54 7.54 0 0 1 140.2 122.54 A1.5 7.54 0 0 1 140.2 107.46Z" fill="#fff3b0"/><circle cx="124.1" cy="132.9" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M124.1 125.36 A7.54 7.54 0 0 1 124.1 140.44 A0.5 7.54 0 0 1 124.1 125.36Z" fill="#fff3b0"/><circle cx="102.1" cy="142.7" r="14.6" fill="#ffd60a" opacity=".85"/><circle cx="102.1" cy="142.7" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M102.1 135.16 A7.54 7.54 0 0 1 102.1 150.23999999999998 A0.5 7.54 0 0 0 102.1 135.16Z" fill="#fff3b0"/><circle cx="77.9" cy="142.7" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M77.9 135.16 A7.54 7.54 0 0 1 77.9 150.23999999999998 A1.5 7.54 0 0 0 77.9 135.16Z" fill="#fff3b0"/><circle cx="55.9" cy="132.9" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M55.9 125.36 A7.54 7.54 0 0 1 55.9 140.44 A2.5 7.54 0 0 0 55.9 125.36Z" fill="#fff3b0"/><circle cx="39.8" cy="115.0" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M39.8 107.46 A7.54 7.54 0 0 1 39.8 122.54 A3.5 7.54 0 0 0 39.8 107.46Z" fill="#fff3b0"/><circle cx="32.3" cy="92.1" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M32.3 84.55999999999999 A7.54 7.54 0 0 1 32.3 99.64 A4.5 7.54 0 0 0 32.3 84.55999999999999Z" fill="#fff3b0"/><circle cx="34.8" cy="68.1" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M34.8 60.559999999999995 A7.54 7.54 0 0 1 34.8 75.64 A5.5 7.54 0 0 0 34.8 60.559999999999995Z" fill="#fff3b0"/><circle cx="46.9" cy="47.2" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M46.9 39.660000000000004 A7.54 7.54 0 0 1 46.9 54.74 A6.5 7.54 0 0 0 46.9 39.660000000000004Z" fill="#fff3b0"/><circle cx="66.4" cy="33.0" r="7.54" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><circle cx="66.4" cy="33.0" r="7.54" fill="#fff3b0" stroke="#111" stroke-width="1.2"/><circle cx="90" cy="86" r="18.56" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><circle cx="90" cy="86" r="18.56" fill="#ffd60a" stroke="#111" stroke-width="1.2"/><text x="90" y="90" text-anchor="middle" font-family="Bangers" font-size="12" fill="#7a1d12">16</text><text x="190" y="40" text-anchor="start" font-family="Bangers" font-size="13" fill="#111">NITYĀ 8 OF 15</text><text x="190" y="62" text-anchor="start" font-family="Bangers" font-size="12" fill="#111">Tvaritā</text><text x="190" y="84" text-anchor="start" font-family="Bangers" font-size="12" fill="#111">“the swift one”</text><text x="190" y="106" text-anchor="start" font-family="Bangers" font-size="12" fill="#111">Aṣṭamī: the eighth day</text><text x="190" y="128" text-anchor="start" font-family="Bangers" font-size="12" fill="#111">of the lunar fortnight</text></svg><table class="ct fact"><tr><td>Name</td><td>Tvaritā: “the swift one”</td></tr><tr><td>Place</td><td>Eighth of the fifteen Tithi Nityās</td></tr><tr><td>Lunar day</td><td>Aṣṭamī, the eighth day of the fortnight</td></tr><tr><td>Colour</td><td>Dark, in the first flush of youth</td></tr><tr><td>Arms</td><td>Four hands</td></tr><tr><td>Holds</td><td>Noose, goad; fearlessness and boon gestures</td></tr><tr><td>In the war</td><td>Puṇḍraketu, torn apart “with mighty arms”</td></tr><tr><td>Neighbours</td><td>Śivadūtī before her, Kulasundarī after her</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Leaves, snakes and peacock feathers? She looks like a forest queen.</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That’s exactly the impression. Among fifteen jewelled court ladies, Tvaritā walks in from the forest.</p></div></div>
+</section>
+<section class="page" id="name"><h2 class="page-title">THE NAME</h2><div class="sub">“The swift one”</div>
+<table class="ct fact"><tr><td>Tvarā</td><td>Haste, speed</td></tr><tr><td>Tvaritā</td><td>“The swift one”, “she who hurries”</td></tr><tr><td>Why swift</td><td>She is said to grant results quickly</td></tr><tr><td>Other name</td><td>Also called Totalā</td></tr><tr><td>In the story</td><td>She tears apart her enemy “with mighty arms”: speed and strength together</td></tr><tr><td>Short form</td><td>The Lalitopākhyāna also calls her Tvaritā</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A goddess named ‘Quick’?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Devotees like that. When you’re in trouble, you want the one who comes fast.</p></div></div>
+<div class="panel reading"><p>Tvaritā comes from tvarā, haste. In devotional usage the name is a promise: this Nityā is said to bring her devotee’s wish to fruit without delay. The Tantric sources also call her Totalā, a name whose meaning is less clear; we give it without guessing.</p><p>Speed is a quality devotees prize in the Goddess. Many hymns end by asking her to come quickly, and several goddesses carry names meaning “quick” or “at once”. Tvaritā is the Nityā of that hope.</p><p>Every Nityā’s name can also be read as a name of Lalitā herself, and several of them appear in her hymns as her own titles. The tradition does not see this as confusion: each Nityā is one ray of the queen, so the ray and the source may share a name.</p></div></section>
+<section class="page" id="form"><h2 class="page-title">HER FORM</h2><div class="sub">From the meditation verse</div>
+<svg class="pg-fig" width="360" height="220" viewBox="0 0 360 220" role="img" aria-label="Tvaritā as described in her meditation verse"><rect width="360" height="220" fill="#1a1030"/><rect width="360" height="220" fill="#1a1030"/><circle cx="0" cy="8" r="1.3" fill="#fff8e7"/><circle cx="41" cy="37" r="1.3" fill="#fff8e7"/><circle cx="82" cy="66" r="1.3" fill="#fff8e7"/><circle cx="123" cy="15" r="1.3" fill="#fff8e7"/><circle cx="164" cy="44" r="1.3" fill="#fff8e7"/><circle cx="205" cy="73" r="1.3" fill="#fff8e7"/><circle cx="246" cy="22" r="1.3" fill="#fff8e7"/><circle cx="287" cy="51" r="1.3" fill="#fff8e7"/><circle cx="328" cy="80" r="1.3" fill="#fff8e7"/><circle cx="9" cy="29" r="1.3" fill="#fff8e7"/><circle cx="50" cy="58" r="1.3" fill="#fff8e7"/><circle cx="91" cy="87" r="1.3" fill="#fff8e7"/><circle cx="132" cy="36" r="1.3" fill="#fff8e7"/><circle cx="173" cy="65" r="1.3" fill="#fff8e7"/><circle cx="214" cy="14" r="1.3" fill="#fff8e7"/><circle cx="255" cy="43" r="1.3" fill="#fff8e7"/><g transform="translate(180 118) scale(1.2)" stroke="#111" stroke-width="2"></g><g transform="translate(180 118) scale(1.2)" stroke="#111" stroke-width="2"><path d="M-24 60 q-6 -60 24 -70 q30 10 24 70z" fill="#3a8a3a"/><path d="M-24 60 q24 -14 48 0" fill="none" stroke="#e0a800" stroke-width="3"/><path d="M-20 -2 l-22 -20 M20 -2 l22 -20" stroke="#2b2b3a" stroke-width="6"/><path d="M-18 10 l-28 2 M18 10 l28 2" stroke="#2b2b3a" stroke-width="6"/><path transform="translate(-50 -26)" d="M0 0 q-10 -10 0 -18 q10 8 0 18" fill="none" stroke="#e0a800" stroke-width="3"/><path transform="translate(48 -24)" d="M0 0 v-20 l6 6" fill="none" stroke="#bbb" stroke-width="3"/><path d="M50 4 v-12 m4 12 v-14 m4 14 v-12" stroke="#2b2b3a" stroke-width="3"/><path d="M-52 8 v12 m-4 -12 v14 m-4 -14 v12" stroke="#2b2b3a" stroke-width="3"/><g transform="translate(0 -56)"><g transform="rotate(-30)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(-10)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(10)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g><g transform="rotate(30)"><path d="M0 0 q-4 -14 0 -24 q4 10 0 24z" fill="#1d8a6a" stroke="#111" stroke-width=".8"/><circle cy="-18" r="3" fill="#1d3f8a"/></g></g><path transform="translate(-18 40) rotate(-20)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-6 46) rotate(0)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(8 44) rotate(10)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(18 38) rotate(25)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-12 30) rotate(-10)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(12 30) rotate(15)" d="M0 0 q6 -8 0 -16 q-6 8 0 16z" fill="#3aa04a" stroke="#111" stroke-width=".8"/><path transform="translate(-26 6)" d="M0 0 q6 -6 0 -12 q-6 -6 0 -12" fill="none" stroke="#2a8a2a" stroke-width="2.5"/><path transform="translate(26 6)" d="M0 0 q6 -6 0 -12 q-6 -6 0 -12" fill="none" stroke="#2a8a2a" stroke-width="2.5"/><circle cx="-12" cy="-2.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-9" cy="-3.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-6" cy="-5.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="-3" cy="-6.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="0" cy="-8.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="3" cy="-6.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="6" cy="-5.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="9" cy="-3.5" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cx="12" cy="-2.0" r="1.6" fill="#e0302a" stroke="#111" stroke-width=".4"/><circle cy="-26" r="14" fill="#2b2b3a"/><path d="M-14 -32 q14 -14 28 0" fill="#111"/><path d="M-12 -40 h24 l-3 -14 l-5 6 l-4 -10 l-4 10 l-5 -6z" fill="#e0a800"/><circle cx="-5" cy="-26" r="2" fill="#fff"/><circle cx="5" cy="-26" r="2" fill="#fff"/><circle cy="-33" r="1.8" fill="#c0392b"/><path d="M-4 -19 q4 3 8 0" fill="none" stroke="#c0392b"/></g></svg><table class="ct fact"><tr><td>Colour</td><td>Dark, in the first flush of youth</td></tr><tr><td>Arms and eyes</td><td>Four hands; three eyes</td></tr><tr><td>Holds</td><td>A noose and a goad; the gestures of fearlessness and of giving</td></tr><tr><td>Seat or setting</td><td>Not specified in the summary we used</td></tr><tr><td>Also</td><td>Dressed in fresh leaves; eight serpents as ornaments; a crystal crown with a crest of peacock feathers; peacock-feather bangles; necklaces of red guñjā berries; red sandal and kuṅkuma. Attendants: a dark servant with a mace, and Jaya and Vijaya with golden canes</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why the forest look?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Our reading: the Goddess isn’t only for palaces. She appears as the forest people too, the hill tribes, the hunters. The texts just describe; that’s an interpretation.</p></div></div>
+<div class="panel reading"><p>The details of her meditation verse are unusually earthy. Instead of silk, leaves; instead of gold, serpents; instead of a jewelled crest, peacock feathers; instead of pearls, red guñjā berries. Red sandal paste and kuṅkuma complete the picture. Her attendants are equally vivid: a dark servant carrying a mace, and two doorkeepers, Jaya and Vijaya, with golden canes.</p><p>Guñjā seeds are bright red with a black spot and were once used as a jeweller’s weight. They are also poisonous if crushed and eaten, which may suit a goddess who wears serpents. Strung as necklaces, they are a forest-dweller’s ornament.</p><p>Meditation verses (dhyānas) are meant to be pictured in detail, item by item, and the colours, hands and seats differ slightly between texts. We give the form as summarised from the Tantrarāja tradition, and note where another text differs.</p></div></section>
+<section class="page" id="tithi"><h2 class="page-title">HER LUNAR DAY</h2><div class="sub">Aṣṭamī: day 8 of 15</div>
+<svg class="pg-fig" width="360" height="120" viewBox="0 0 360 120" role="img" aria-label="The moon on Aṣṭamī"><rect width="360" height="120" fill="#1a1030"/><circle cx="30.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M30.0 41 A9 9 0 0 1 30.0 59 A7.8 9 0 0 1 30.0 41Z" fill="#fff3b0"/><circle cx="52.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M52.5 41 A9 9 0 0 1 52.5 59 A6.6 9 0 0 1 52.5 41Z" fill="#fff3b0"/><circle cx="75.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M75.0 41 A9 9 0 0 1 75.0 59 A5.4 9 0 0 1 75.0 41Z" fill="#fff3b0"/><circle cx="97.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M97.5 41 A9 9 0 0 1 97.5 59 A4.2 9 0 0 1 97.5 41Z" fill="#fff3b0"/><circle cx="120.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M120.0 41 A9 9 0 0 1 120.0 59 A3.0 9 0 0 1 120.0 41Z" fill="#fff3b0"/><circle cx="142.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M142.5 41 A9 9 0 0 1 142.5 59 A1.8 9 0 0 1 142.5 41Z" fill="#fff3b0"/><circle cx="165.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M165.0 41 A9 9 0 0 1 165.0 59 A0.6 9 0 0 1 165.0 41Z" fill="#fff3b0"/><circle cx="187.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M187.5 41 A9 9 0 0 1 187.5 59 A0.6 9 0 0 0 187.5 41Z" fill="#fff3b0"/><circle cx="210.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M210.0 41 A9 9 0 0 1 210.0 59 A1.8 9 0 0 0 210.0 41Z" fill="#fff3b0"/><circle cx="232.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M232.5 41 A9 9 0 0 1 232.5 59 A3.0 9 0 0 0 232.5 41Z" fill="#fff3b0"/><circle cx="255.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M255.0 41 A9 9 0 0 1 255.0 59 A4.2 9 0 0 0 255.0 41Z" fill="#fff3b0"/><circle cx="277.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M277.5 41 A9 9 0 0 1 277.5 59 A5.4 9 0 0 0 277.5 41Z" fill="#fff3b0"/><circle cx="300.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M300.0 41 A9 9 0 0 1 300.0 59 A6.6 9 0 0 0 300.0 41Z" fill="#fff3b0"/><circle cx="322.5" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><path d="M322.5 41 A9 9 0 0 1 322.5 59 A7.8 9 0 0 0 322.5 41Z" fill="#fff3b0"/><circle cx="345.0" cy="50" r="9" fill="#1a1a3a" stroke="#111" stroke-width="1.2"/><circle cx="345.0" cy="50" r="9" fill="#fff3b0" stroke="#111" stroke-width="1.2"/><circle cx="187.5" cy="50" r="13" fill="none" stroke="#ffd60a" stroke-width="3"/><text x="180" y="100" text-anchor="middle" font-family="Bangers" font-size="13" fill="#fff">Day 8: Aṣṭamī</text></svg><table class="ct fact"><tr><td>Tithi</td><td>Aṣṭamī, the eighth lunar day</td></tr><tr><td>The moon</td><td>One more digit (kalā) of the moon each day; on the fifteenth it is full</td></tr><tr><td>Before her</td><td>Śivadūtī on Saptamī</td></tr><tr><td>After her</td><td>Kulasundarī on Navamī</td></tr><tr><td>A vowel</td><td>Each Nityā is linked with one of the sixteen Sanskrit vowels; she has the eighth</td></tr><tr><td>Breath</td><td>The tradition gives each Nityā 1,440 of the 21,600 breaths of a day and night</td></tr><tr><td>Two fortnights</td><td>She returns in both halves of the month; the order used in the dark half varies by lineage</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Day eight: half-moon!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Aṣṭamī, the half-way day. A big day for the Goddess: Durgāṣṭamī, Kṛṣṇa’s birth on an Aṣṭamī. And Tvaritā’s.</p></div></div>
+<div class="panel reading"><p>Aṣṭamī, the eighth day, is the half-moon and one of the most sacred days for the Goddess. Durgāṣṭamī falls in Navarātri; Kṛṣṇa’s birth, Janmāṣṭamī, falls on the eighth day of the dark fortnight. For Śrīvidyā, every Aṣṭamī is Tvaritā’s.</p><p>Indian calendars still run on tithis. A tithi is the time the moon takes to gain twelve degrees on the sun, so it can be longer or shorter than a solar day and may begin at any hour. That is why festival dates move from year to year, and why a tithi named in a calendar may start in the afternoon.</p></div></section>
+<section class="page" id="battle"><h2 class="page-title">IN THE NIGHT BATTLE</h2><div class="sub">Lalitopākhyāna, chapter 25</div>
+<table class="ct fact"><tr><td>The attack</td><td>Bhaṇḍa’s brother Viṣaṅga creeps round to strike Lalitā’s army from the rear after dark</td></tr><tr><td>The Nityās</td><td>All fifteen ask Lalitā’s leave, dismount, and fight under Kāmeśvarī</td></tr><tr><td>Danger</td><td>An arrow shatters Lalitā’s royal fan; her guard goddesses are shaken</td></tr><tr><td>Light</td><td>Vahnivāsinī and Jvālāmālinī light up the dark field</td></tr><tr><td>Her enemy</td><td>Puṇḍraketu, torn apart “with mighty arms”</td></tr><tr><td>Her style</td><td>Not arrows but “mighty arms”: she fights hand to hand</td></tr><tr><td>The end</td><td>After three watches of the night, Viṣaṅga flees; Lalitā heals the Nityās with one glance</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Bare hands against a demon general?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The text says ‘with mighty arms’. The swift goddess doesn’t wait to string a bow.</p></div></div>
+<div class="panel reading"><p>Her victim Puṇḍraketu is the eighth general in the Purāṇa’s list, matching her place. The Purāṇa singles out her method: she tears him apart “with mighty arms”. It is one of the few kills in the scene that is not made with arrows.</p><p>The detail fits her name. The swift Nityā closes the distance and fights at arm’s length, while her sisters shoot from where they stand.</p><p>The night battle is the only place in the Lalitopākhyāna where all fifteen Nityās fight together as a company. Earlier in the war they ride with Lalitā on the great chariot Cakrarāja; here they dismount, and the story gives each of them her own enemy, so the battle reads like a roll-call of the lunar days.</p></div></section>
+<section class="page" id="circle"><h2 class="page-title">AMONG HER SISTERS</h2><div class="sub">Her place on the Śrīcakra</div>
+<svg class="pg-fig" width="360" height="225" viewBox="0 0 360 225" role="img" aria-label="Tvaritā’s place on the central triangle"><rect width="360" height="225" fill="#fdf0f4"/><path d="M80.0 22.0 L280.0 22.0 L180.0 195.0Z" fill="#fff8e7" stroke="#c0392b" stroke-width="3"/><circle cx="190.0" cy="177.7" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="190.0" y="181.2" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">1</text><circle cx="210.0" cy="143.1" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="210.0" y="146.6" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">2</text><circle cx="230.0" cy="108.5" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="230.0" y="112.0" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">3</text><circle cx="250.0" cy="73.9" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="250.0" y="77.4" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">4</text><circle cx="270.0" cy="39.3" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="270.0" y="42.8" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">5</text><circle cx="260.0" cy="22.0" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="260.0" y="25.5" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">6</text><circle cx="220.0" cy="22.0" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="220.0" y="25.5" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">7</text><circle cx="180.0" cy="22.0" r="9" fill="#ffd60a" stroke="#111" stroke-width="1.2"/><text x="180.0" y="25.5" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">8</text><circle cx="140.0" cy="22.0" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="140.0" y="25.5" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">9</text><circle cx="100.0" cy="22.0" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="100.0" y="25.5" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">10</text><circle cx="90.0" cy="39.3" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="90.0" y="42.8" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">11</text><circle cx="110.0" cy="73.9" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="110.0" y="77.4" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">12</text><circle cx="130.0" cy="108.5" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="130.0" y="112.0" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">13</text><circle cx="150.0" cy="143.1" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="150.0" y="146.6" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">14</text><circle cx="170.0" cy="177.7" r="6" fill="#f2a6c0" stroke="#111" stroke-width="1.2"/><text x="170.0" y="181.2" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">15</text><circle cx="180" cy="79.7" r="7" fill="#c0392b" stroke="#111"/><text x="180" y="218" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">Nityā 8 highlighted; the red dot is the bindu</text></svg><table class="ct fact"><tr><td>On the yantra</td><td>The fifteen Nityās are placed on the innermost triangle, five to a side, starting beside the apex and running anticlockwise</td></tr><tr><td>Her side</td><td>In the usual arrangement she falls on the upper (base) side</td></tr><tr><td>At the centre</td><td>Mahānityā, Lalitā herself, the sixteenth, at the bindu</td></tr><tr><td>Before her</td><td>Nityā 7, Śivadūtī</td></tr><tr><td>After her</td><td>Nityā 9, Kulasundarī</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Middle of the top side.</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Eighth of fifteen, the very centre of the cycle, on the half-moon.</p></div></div>
+<div class="panel reading"><p>On the triangle she stands in the middle of the top side, which runs from Mahāvajreśvarī to Nityā, and in the middle of the fifteen. The half-moon’s Nityā is the cycle’s balance point.</p><p>In Śrīvidyā thought time and space are mapped onto one another. The same fifteen goddesses who are the days of the fortnight are also placed on the innermost triangle of the Śrīcakra, so that the month itself is pictured as surrounding the Goddess at the centre.</p></div></section>
+<section class="page" id="texts"><h2 class="page-title">IN THE TEXTS</h2><div class="sub">Where she is described</div>
+<table class="ct fact"><tr><td>Tantrarāja</td><td>Gives her meditation verse with its forest imagery</td></tr><tr><td>Totalā</td><td>Another name used for her in the Tantric sources</td></tr><tr><td>Brahmāṇḍa Purāṇa</td><td>Tears apart Puṇḍraketu in the night battle (ch. 25)</td></tr><tr><td>Wider worship</td><td>Tvaritā is also worshipped in Tantric traditions beyond Śrīvidyā; we have not verified details and do not list them</td></tr><tr><td>Attendants</td><td>Jaya and Vijaya, “Victory” and “Triumph”, carry golden canes before her</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> She has fans outside Śrīvidyā?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> So it’s said. We’ll stick to what we could check: her form, her day and her battle.</p></div></div>
+<div class="panel reading"><p>Tvaritā is one of the Nityās who is said to have a following outside Śrīvidyā, with texts and rites of her own. Modern sources mention this but often without details we could check, so we leave it at that.</p><p>The two attendants Jaya and Vijaya share their names with Viṣṇu’s doorkeepers in Vaikuṇṭha. Doorkeeper pairs with these names appear in many temples, of Viṣṇu, of Śiva and of the Goddess, and the names simply mean victory and triumph.</p><p>A note on sources: the forms in this series come from modern summaries of the meditation verses, not from our own reading of the Sanskrit manuscripts, and the verses themselves differ between texts. Where two descriptions disagree we say so in the sources page at the end of each guide.</p></div></section>
+<section class="page" id="forest"><h2 class="page-title">THE FOREST GODDESS</h2><div class="sub">Leaves, serpents and peacock feathers</div>
+<table class="ct fact"><tr><td>Leaves</td><td>She wears fresh leaves instead of silk</td></tr><tr><td>Serpents</td><td>Eight snakes as ornaments, worn like jewels</td></tr><tr><td>Peacock feathers</td><td>In her crown and on her wrists</td></tr><tr><td>Guñjā</td><td>Red-and-black jungle berries, strung as necklaces</td></tr><tr><td>The look</td><td>That of a youthful forest or hill woman, a Śabarī or kirātī</td></tr><tr><td>A parallel</td><td>Śiva too takes a hunter’s (kirāta) form in the Mahābhārata; our comparison, not her text’s</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why would a queen’s companion dress like a hunter?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because the Goddess is everyone’s. The forest is hers as much as the city. That’s one reading; another sees protective power in serpents and wild things.</p></div></div>
+<div class="panel reading"><p>India has always had goddesses of the forest and the hills, worshipped by hunters, herders and tribes, and the great traditions have repeatedly drawn them in. Tvaritā’s image reads like one such goddess welcomed into Lalitā’s court, still wearing her leaves. That is our reading of the image; the texts do not tell her history.</p><p>There is a well-known parallel in the Mahābhārata. Śiva comes to test Arjuna disguised as a kirāta, a hunter, and Pārvatī comes with him dressed as a hunter’s wife. The great gods, in this picture, are as much at home in the forest as anywhere.</p><p>The serpents she wears are worth a thought. Śiva wears snakes too. A snake worn as an ornament is danger mastered: what could kill is turned into decoration. For a devotee afraid of something, the image says the Goddess wears that very danger lightly.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT SHE MEANS</h2><div class="sub">Reading her form and name</div>
+<table class="ct fact"><tr><td>Speed</td><td>Grace that does not delay</td></tr><tr><td>Forest</td><td>The Goddess of the wild as well as the city</td></tr><tr><td>Serpents</td><td>Danger worn as an ornament: mastered, not feared</td></tr><tr><td>Half-moon</td><td>Balance: half light, half dark</td></tr><tr><td>Two gestures</td><td>“Don’t be afraid” and “take this”: protection and gift</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> If I had to sum her up?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Help that comes running, dressed in whatever it had on.</p></div></div>
+<div class="panel reading"><p>Commentators who read the Nityās as stages place the half-moon at the point of balance. Half the journey is done and half remains; light and dark are equal. The swift Nityā stands here because, at the midpoint, help is most needed and should not be slow.</p><p>Her two gestures are simple and complete: fear removed, gift given. A goddess dressed in leaves who offers both is perhaps the most approachable of all fifteen.</p><p>Readings like these are offered as ways in, not as doctrine. Śrīvidyā commentators interpret the Nityās at several levels at once: as goddesses to be honoured, as days of the month, as powers within the body and as stages of awareness. A reader can take whichever level helps.</p></div></section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Nityā</td><td>“Eternal one”: one of the sixteen goddesses of the lunar days</td></tr><tr><td>Tithi</td><td>A lunar day: one-thirtieth of the moon’s cycle</td></tr><tr><td>Pakṣa</td><td>A fortnight: śukla (bright, waxing) or kṛṣṇa (dark, waning)</td></tr><tr><td>Kalā</td><td>A digit of the moon; the moon has sixteen</td></tr><tr><td>Dhyāna</td><td>A meditation verse describing a deity’s form</td></tr><tr><td>Tantrarāja</td><td>“King of Tantras”, the main text on the Nityās</td></tr><tr><td>Akṣauhiṇī</td><td>A full army division in Purāṇic reckoning</td></tr><tr><td>Yāma</td><td>A watch of the night, about three hours</td></tr><tr><td>Tvarā</td><td>Haste, speed</td></tr><tr><td>Guñjā</td><td>A red-and-black seed, Abrus precatorius</td></tr><tr><td>Kirāta</td><td>A hunter or hill-dweller; Śiva’s hunter form</td></tr><tr><td>Aṣṭamī</td><td>The eighth lunar day; the half-moon</td></tr></table>
+</section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>1.</b> Tvaritā, “the swift one”, also called Totalā, is the eighth Tithi Nityā.</div><div><b>2.</b> She rules Aṣṭamī, the half-moon day.</div><div><b>3.</b> Dark and youthful, she wears leaves, serpents and peacock feathers, holds noose and goad, and protects and gives.</div><div><b>4.</b> In the night battle she tears Puṇḍraketu apart with her arms.</div><div><b>5.</b> She stands at the very middle of the cycle of fifteen.</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line for her?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The swift forest goddess at the half-moon, who comes quickly when called.</p></div></div><div class="key">Next: <a href="/srividya/deities/nityas/kulasundari/">Kulasundarī, Nityā 9</a></div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> Brahmāṇḍa Purāṇa, Lalitopākhyāna chs. 25–26 (G. V. Tagare’s translation, Motilal Banarsidass; the night battle and the fire rampart); the Tantrarāja Tantra (ed. Lakṣmaṇa Śāstrī, with Sir John Woodroffe’s introduction) and the Vāmakeśvara Tantra (Nityāṣoḍaśikārṇava), as summarised in modern studies; the Dakṣiṇāmūrti Saṃhitā as quoted in those studies; Gopinath Kaviraj’s introduction to the Yoginīhṛdaya (1963); the Lalitā Sahasranāma with Bhāskararāya’s <i>Saubhāgyabhāskara</i>; Mike Magee’s summaries of the Nityā meditation verses (shivashakti.com), used for iconography only.</p><p><b>Sources differ / unverified:</b> Descriptions of each Nityā’s form differ between the Tantrarāja and the Dakṣiṇāmūrti Saṃhitā, and between modern summaries. The tradition says the arms of all fifteen total 108, but the counts in individual meditation verses as summarised do not add up exactly. Whether Kāmeśvarī belongs to the first day of the bright fortnight or of the dark one, and whether the order reverses in the other fortnight, varies by lineage and writer. Which corner of the central triangle the row of Nityās starts from also varies. Names of the demon generals follow Tagare, with his variant readings. </p><p><b>What we leave out:</b> This series explains names, stories, philosophy, the Śrīcakra’s geometry, deities, temples and music. It does not reproduce, assemble or decode any initiatory mantra (Bālā, Pañcadaśī, Ṣoḍaśī or others), nor any nyāsa, dīkṣā or pūjā procedure: those are received from a teacher.</p><p>Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/gods/">Gods and Goddesses</a><span class="sep">›</span><a href="/devi/">Devi</a><span class="also">More for Devi: <a href="/devi/#hymns">hymns</a> · <a href="/devi/#scriptures">scriptures</a> · <a href="/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

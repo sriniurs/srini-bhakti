@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Āvaraṇa 2: Sarvāśāparipūraka · Śrīcakra · Śrīvidyā · srini.presents</title>
+<meta name="description" content="Āvaraṇa 2 of the Śrīcakra, Sarvāśāparipūraka, “fulfiller of all hopes”: the sixteen-petalled lotus; its presiding goddess Tripureśī; the Gupta (“hidden”) yoginīs; its 16 deities; their meanings; its place among the nine; Dīkṣitar’s kṛti; links with Śrīpura and the war; and its inner reading.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="canonical" href="https://bhakti.srinipresents.com/srividya/srichakra/sarvashaparipuraka/">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="bolt-portrait" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">ŚRĪCAKRA · ĀVARAṆA 2 OF 9</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7vw,44px);line-height:1.18">SARVĀŚĀPARIPŪRAKA</h1>
+  <div class="series">ŚRĪVIDYĀ · A REFERENCE GUIDE</div>
+  <div class="tag">“Fulfiller of all hopes”</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="The Śrīcakra with āvaraṇa 2, Sarvāśāparipūraka, highlighted"><rect width="380" height="268" fill="#2a0a10" rx="8"/><circle cx="40" cy="20" r="1.6" fill="#fff"/><circle cx="120" cy="40" r="1.6" fill="#fff"/><circle cx="500" cy="30" r="1.6" fill="#fff"/><circle cx="460" cy="60" r="1.6" fill="#fff"/><circle cx="300" cy="14" r="1.6" fill="#fff"/><circle cx="220" cy="30" r="1.6" fill="#fff"/><circle cx="380" cy="22" r="1.6" fill="#fff"/><circle cx="80" cy="60" r="1.6" fill="#fff"/><g transform="translate(190 128)" stroke="#111" stroke-width="1.4"><path d="M-113.28 -113.28 H-24.96 V-124.8 H24.96 V-113.28 H113.28 V-24.96 H124.8 V24.96 H113.28 V113.28 H24.96 V124.8 H-24.96 V113.28 H-113.28 V24.96 H-124.8 V-24.96 H-113.28Z" fill="#fff3b0"/><path d="M-108.48 -108.48 H-24.96 V-120.0 H24.96 V-108.48 H108.48 V-24.96 H120.0 V24.96 H108.48 V108.48 H24.96 V120.0 H-24.96 V108.48 H-108.48 V24.96 H-120.0 V-24.96 H-108.48Z" fill="none"/><path d="M-103.68 -103.68 H-24.96 V-115.2 H24.96 V-103.68 H103.68 V-24.96 H115.2 V24.96 H103.68 V103.68 H24.96 V115.2 H-24.96 V103.68 H-103.68 V24.96 H-115.2 V-24.96 H-103.68Z" fill="none"/><circle r="97.9" fill="none"/><circle r="101.8" fill="none"/><circle r="105.6" fill="none"/><circle r="96" fill="#f9c9da"/><path d="M-15.0 -75.3 Q-3.0 -94.1 0.0 -96.0 Q3.0 -94.1 15.0 -75.3" fill="#f2a6c0"/><path d="M15.0 -75.3 Q33.2 -88.1 36.7 -88.7 Q38.8 -85.8 42.7 -63.9" fill="#f2a6c0"/><path d="M42.7 -63.9 Q64.4 -68.6 67.9 -67.9 Q68.6 -64.4 63.9 -42.7" fill="#f2a6c0"/><path d="M63.9 -42.7 Q85.8 -38.8 88.7 -36.7 Q88.1 -33.2 75.3 -15.0" fill="#f2a6c0"/><path d="M75.3 -15.0 Q94.1 -3.0 96.0 0.0 Q94.1 3.0 75.3 15.0" fill="#f2a6c0"/><path d="M75.3 15.0 Q88.1 33.2 88.7 36.7 Q85.8 38.8 63.9 42.7" fill="#f2a6c0"/><path d="M63.9 42.7 Q68.6 64.4 67.9 67.9 Q64.4 68.6 42.7 63.9" fill="#f2a6c0"/><path d="M42.7 63.9 Q38.8 85.8 36.7 88.7 Q33.2 88.1 15.0 75.3" fill="#f2a6c0"/><path d="M15.0 75.3 Q3.0 94.1 0.0 96.0 Q-3.0 94.1 -15.0 75.3" fill="#f2a6c0"/><path d="M-15.0 75.3 Q-33.2 88.1 -36.7 88.7 Q-38.8 85.8 -42.7 63.9" fill="#f2a6c0"/><path d="M-42.7 63.9 Q-64.4 68.6 -67.9 67.9 Q-68.6 64.4 -63.9 42.7" fill="#f2a6c0"/><path d="M-63.9 42.7 Q-85.8 38.8 -88.7 36.7 Q-88.1 33.2 -75.3 15.0" fill="#f2a6c0"/><path d="M-75.3 15.0 Q-94.1 3.0 -96.0 0.0 Q-94.1 -3.0 -75.3 -15.0" fill="#f2a6c0"/><path d="M-75.3 -15.0 Q-88.1 -33.2 -88.7 -36.7 Q-85.8 -38.8 -63.9 -42.7" fill="#f2a6c0"/><path d="M-63.9 -42.7 Q-68.6 -64.4 -67.9 -67.9 Q-64.4 -68.6 -42.7 -63.9" fill="#f2a6c0"/><path d="M-42.7 -63.9 Q-38.8 -85.8 -36.7 -88.7 Q-33.2 -88.1 -15.0 -75.3" fill="#f2a6c0"/><path d="M-22.8 -55.0 Q-4.6 -75.3 0.0 -76.8 Q4.6 -75.3 22.8 -55.0" fill="#e0115f"/><path d="M22.8 -55.0 Q50.0 -56.4 54.3 -54.3 Q56.4 -50.0 55.0 -22.8" fill="#e0115f"/><path d="M55.0 -22.8 Q75.3 -4.6 76.8 0.0 Q75.3 4.6 55.0 22.8" fill="#e0115f"/><path d="M55.0 22.8 Q56.4 50.0 54.3 54.3 Q50.0 56.4 22.8 55.0" fill="#e0115f"/><path d="M22.8 55.0 Q4.6 75.3 0.0 76.8 Q-4.6 75.3 -22.8 55.0" fill="#e0115f"/><path d="M-22.8 55.0 Q-50.0 56.4 -54.3 54.3 Q-56.4 50.0 -55.0 22.8" fill="#e0115f"/><path d="M-55.0 22.8 Q-75.3 4.6 -76.8 0.0 Q-75.3 -4.6 -55.0 -22.8" fill="#e0115f"/><path d="M-55.0 -22.8 Q-56.4 -50.0 -54.3 -54.3 Q-50.0 -56.4 -22.8 -55.0" fill="#e0115f"/><circle r="59.5" fill="#fff8e7"/><path d="M-18.0 -54.7 L18.0 -54.7 L0 54.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-45.2 -35.7 L45.2 -35.7 L0 44.9Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-36.3 -24.2 L36.3 -24.2 L0 35.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-25.5 -14.4 L25.5 -14.4 L0 27.6Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-13.3 -4.6 L13.3 -4.6 L0 17.3Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-27.4 50.7 L27.4 50.7 L0 -56.4Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-43.3 38.0 L43.3 38.0 L0 -40.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-33.5 25.3 L33.5 25.3 L0 -30.0Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-17.5 11.5 L17.5 11.5 L0 -17.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><circle r="3.4" fill="#c0392b"/></g><circle cx="190" cy="128" r="86.4" fill="none" stroke="#ffd60a" stroke-width="19.2" opacity=".55"/></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p>Inside the square and its three circles opens a lotus of <b>sixteen petals</b>. This is the second enclosure, <b>Sarvāśāparipūraka</b>, “the fulfiller of all hopes”.</p><p>On each petal stands a goddess whose name ends in <b>ākarṣiṇī</b>, “she who attracts”: of desire, intellect, the senses, memory, the self and the body. This guide names all sixteen and shows how they gather the whole person toward the Goddess.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Śrī Tripureśyai namaḥ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Sixteen goddesses who attract things?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Sixteen magnets, all pointing at the centre.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/srividya/">Śrīvidyā · the Śrīcakra in eleven guides</a>. Previous: Āvaraṇa 1: Trailokyamohana. Next: <a href="/srividya/srichakra/sarvasankshobhana/">Āvaraṇa 3: Sarvasaṅkṣobhaṇa</a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#name">The Name</a></li><li><span class="num">3</span><a href="#shape">The Shape</a></li><li><span class="num">4</span><a href="#tripura">Who Presides</a></li><li><span class="num">5</span><a href="#deities1">The Goddesses</a></li><li><span class="num">6</span><a href="#deities2">The Goddesses (Continued)</a></li><li><span class="num">7</span><a href="#meaning">What The Goddesses Mean</a></li><li><span class="num">8</span><a href="#place">Its Place On The Road</a></li><li><span class="num">9</span><a href="#krti">In Dīkṣitar’s Song</a></li><li><span class="num">10</span><a href="#story">In The Story</a></li><li><span class="num">11</span><a href="#inner">The Inner Reading</a></li><li><span class="num">12</span><a href="#glossary">Glossary</a></li><li><span class="num">13</span><a href="#end">On One Page</a></li><li><span class="num">14</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">Āvaraṇa 2 on one page</div>
+<svg class="pg-fig" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="Āvaraṇa 2 highlighted on the Śrīcakra"><rect width="360" height="200" fill="#fdf0f4"/><g transform="translate(110 100)" stroke="#111" stroke-width="1.4"><path d="M-84.96 -84.96 H-18.72 V-93.6 H18.72 V-84.96 H84.96 V-18.72 H93.6 V18.72 H84.96 V84.96 H18.72 V93.6 H-18.72 V84.96 H-84.96 V18.72 H-93.6 V-18.72 H-84.96Z" fill="#fff3b0"/><path d="M-81.36 -81.36 H-18.72 V-90.0 H18.72 V-81.36 H81.36 V-18.72 H90.0 V18.72 H81.36 V81.36 H18.72 V90.0 H-18.72 V81.36 H-81.36 V18.72 H-90.0 V-18.72 H-81.36Z" fill="none"/><path d="M-77.75999999999999 -77.75999999999999 H-18.72 V-86.39999999999999 H18.72 V-77.75999999999999 H77.75999999999999 V-18.72 H86.39999999999999 V18.72 H77.75999999999999 V77.75999999999999 H18.72 V86.39999999999999 H-18.72 V77.75999999999999 H-77.75999999999999 V18.72 H-86.39999999999999 V-18.72 H-77.75999999999999Z" fill="none"/><circle r="73.4" fill="none"/><circle r="76.3" fill="none"/><circle r="79.2" fill="none"/><circle r="72" fill="#f9c9da"/><path d="M-11.2 -56.5 Q-2.2 -70.6 0.0 -72.0 Q2.2 -70.6 11.2 -56.5" fill="#f2a6c0"/><path d="M11.2 -56.5 Q24.9 -66.0 27.6 -66.5 Q29.1 -64.3 32.0 -47.9" fill="#f2a6c0"/><path d="M32.0 -47.9 Q48.3 -51.5 50.9 -50.9 Q51.5 -48.3 47.9 -32.0" fill="#f2a6c0"/><path d="M47.9 -32.0 Q64.3 -29.1 66.5 -27.6 Q66.0 -24.9 56.5 -11.2" fill="#f2a6c0"/><path d="M56.5 -11.2 Q70.6 -2.2 72.0 0.0 Q70.6 2.2 56.5 11.2" fill="#f2a6c0"/><path d="M56.5 11.2 Q66.0 24.9 66.5 27.6 Q64.3 29.1 47.9 32.0" fill="#f2a6c0"/><path d="M47.9 32.0 Q51.5 48.3 50.9 50.9 Q48.3 51.5 32.0 47.9" fill="#f2a6c0"/><path d="M32.0 47.9 Q29.1 64.3 27.6 66.5 Q24.9 66.0 11.2 56.5" fill="#f2a6c0"/><path d="M11.2 56.5 Q2.2 70.6 0.0 72.0 Q-2.2 70.6 -11.2 56.5" fill="#f2a6c0"/><path d="M-11.2 56.5 Q-24.9 66.0 -27.6 66.5 Q-29.1 64.3 -32.0 47.9" fill="#f2a6c0"/><path d="M-32.0 47.9 Q-48.3 51.5 -50.9 50.9 Q-51.5 48.3 -47.9 32.0" fill="#f2a6c0"/><path d="M-47.9 32.0 Q-64.3 29.1 -66.5 27.6 Q-66.0 24.9 -56.5 11.2" fill="#f2a6c0"/><path d="M-56.5 11.2 Q-70.6 2.2 -72.0 0.0 Q-70.6 -2.2 -56.5 -11.2" fill="#f2a6c0"/><path d="M-56.5 -11.2 Q-66.0 -24.9 -66.5 -27.6 Q-64.3 -29.1 -47.9 -32.0" fill="#f2a6c0"/><path d="M-47.9 -32.0 Q-51.5 -48.3 -50.9 -50.9 Q-48.3 -51.5 -32.0 -47.9" fill="#f2a6c0"/><path d="M-32.0 -47.9 Q-29.1 -64.3 -27.6 -66.5 Q-24.9 -66.0 -11.2 -56.5" fill="#f2a6c0"/><path d="M-17.1 -41.2 Q-3.4 -56.4 0.0 -57.6 Q3.4 -56.4 17.1 -41.2" fill="#e0115f"/><path d="M17.1 -41.2 Q37.5 -42.3 40.7 -40.7 Q42.3 -37.5 41.2 -17.1" fill="#e0115f"/><path d="M41.2 -17.1 Q56.4 -3.4 57.6 0.0 Q56.4 3.4 41.2 17.1" fill="#e0115f"/><path d="M41.2 17.1 Q42.3 37.5 40.7 40.7 Q37.5 42.3 17.1 41.2" fill="#e0115f"/><path d="M17.1 41.2 Q3.4 56.4 0.0 57.6 Q-3.4 56.4 -17.1 41.2" fill="#e0115f"/><path d="M-17.1 41.2 Q-37.5 42.3 -40.7 40.7 Q-42.3 37.5 -41.2 17.1" fill="#e0115f"/><path d="M-41.2 17.1 Q-56.4 3.4 -57.6 0.0 Q-56.4 -3.4 -41.2 -17.1" fill="#e0115f"/><path d="M-41.2 -17.1 Q-42.3 -37.5 -40.7 -40.7 Q-37.5 -42.3 -17.1 -41.2" fill="#e0115f"/><circle r="44.6" fill="#fff8e7"/><path d="M-13.5 -41.0 L13.5 -41.0 L0 41.0Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-33.9 -26.8 L33.9 -26.8 L0 33.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-27.2 -18.1 L27.2 -18.1 L0 26.8Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-19.1 -10.8 L19.1 -10.8 L0 20.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-10.0 -3.5 L10.0 -3.5 L0 13.0Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-20.5 38.0 L20.5 38.0 L0 -42.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-32.5 28.5 L32.5 28.5 L0 -30.2Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-25.1 19.0 L25.1 19.0 L0 -22.5Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-13.1 8.6 L13.1 8.6 L0 -13.0Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><circle r="2.5" fill="#c0392b"/></g><circle cx="110" cy="100" r="64.8" fill="none" stroke="#ffd60a" stroke-width="14.4" opacity=".55"/><text x="220" y="40" text-anchor="start" font-family="Bangers" font-size="11" fill="#111">ĀVARAṆA 2 OF 9</text><text x="220" y="62" text-anchor="start" font-family="Bangers" font-size="11" fill="#111">Sarvāśāparipūraka</text><text x="220" y="84" text-anchor="start" font-family="Bangers" font-size="11" fill="#111">“fulfiller of all hopes”</text><text x="220" y="106" text-anchor="start" font-family="Bangers" font-size="11" fill="#111">the sixteen-petalled lotus</text><text x="220" y="128" text-anchor="start" font-family="Bangers" font-size="11" fill="#111"></text></svg><table class="ct fact"><tr><td>Name</td><td>Sarvāśāparipūraka: “fulfiller of all hopes”</td></tr><tr><td>Shape</td><td>The sixteen-petalled lotus</td></tr><tr><td>Deities</td><td>16 deities</td></tr><tr><td>Presiding goddess</td><td>Tripureśī</td></tr><tr><td>Yoginīs</td><td>Gupta (“hidden”) yoginīs</td></tr><tr><td>Mudrā-goddess · siddhi</td><td>Sarvavidrāviṇī · Laghimā (lightness)</td></tr><tr><td>Group</td><td>The cakras of creation (enclosures 1–3)</td></tr><tr><td>Song</td><td>Dīkṣitar’s “Kamalāmbāṃ bhaja re”, rāga Kalyāṇī</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A lotus inside the square?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Sixteen petals, sixteen goddesses, each pulling something toward the Goddess.</p></div></div>
+<div class="panel reading"><p>The second āvaraṇa is the sixteen-petalled lotus that opens just inside the Śrīcakra’s three circles. It is called Sarvāśāparipūraka, “fulfiller of all hopes”, and its presiding goddess is Tripureśī, with the gupta or hidden yoginīs.</p><p>Each of its sixteen petals holds a goddess of attraction, an ākarṣiṇī. Together they draw the faculties of the person, the inner sense of self, the five senses, mind, memory, even the body, toward the Goddess.</p><p>Its mudrā-goddess is Sarvavidrāviṇī, “she who melts all”, and its siddhi is Laghimā, lightness. It belongs with the first and third enclosures to the cakras of creation.</p><p>Dīkṣitar’s song for this enclosure is “Kamalāmbāṃ bhaja re”, one of the best-known of the cycle.</p></div></section>
+<section class="page" id="name"><h2 class="page-title">THE NAME</h2><div class="sub">“fulfiller of all hopes”</div>
+<table class="ct fact"><tr><td>Sarva</td><td>All</td></tr><tr><td>Āśā</td><td>Hope, longing; also a direction, a quarter of space</td></tr><tr><td>Paripūraka</td><td>Fulfilling completely</td></tr><tr><td>Together</td><td>The fulfiller of all hopes</td></tr><tr><td>Double sense</td><td>It fills every longing, and every direction of space</td></tr><tr><td>Mood</td><td>Generous: the Goddess answering desire</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Āśā means hope AND direction?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Both. So the name means she fills every hope, and she fills every direction. Nowhere and no wish left empty.</p></div></div>
+<div class="panel reading"><p>Āśā is a lovely double word. It means hope or longing, and it also means a direction, a quarter of the sky. The name can be read as “she who fills every hope” or “she who fills every direction”, and commentators enjoy both.</p><p>Paripūraka is intensive: not just filling, but filling completely, to the brim. The enclosure is the Goddess’s answer to longing, and it leaves nothing half-filled.</p><p>After the first enclosure’s enchantment, this one is generous. The world that dazzled at the gate becomes, inside the wall, a place where every hope is answered.</p><p>Many devotees who pray to the Goddess for help with a specific longing are, in this picture, approaching her through the second enclosure.</p></div></section>
+<section class="page" id="shape"><h2 class="page-title">THE SHAPE</h2><div class="sub">Where it sits on the Śrīcakra</div>
+<table class="ct fact"><tr><td>Form</td><td>A lotus of sixteen petals</td></tr><tr><td>Position</td><td>Inside the three circles, inside the square</td></tr><tr><td>Circles</td><td>Three rings separate it from the bhūpura</td></tr><tr><td>Sixteen</td><td>The number of the moon’s digits and of the Sanskrit vowels</td></tr><tr><td>Each petal</td><td>Holds one goddess</td></tr><tr><td>Colour</td><td>Often drawn pink or red</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why sixteen petals?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Sixteen is the moon's number in this tradition: fifteen phases plus the one that never changes. And the sixteen vowels, the breath of every word.</p></div></div>
+<div class="panel reading"><p>The sixteen-petalled lotus sits within three concentric circles, which separate it from the square of the first enclosure. In most drawings the petals are coloured pink or red and point outward.</p><p>Sixteen is a significant number in Śrīvidyā. The moon has sixteen digits, kalās, fifteen that wax and wane and a sixteenth that never changes. The Sanskrit alphabet has sixteen vowels. Ṣoḍaśī, “the sixteen”, is a name of the Goddess.</p><p>The lotus form marks a change from the first enclosure. The square was solid, earthly, walled. The lotus is soft and opening: the Goddess’s palace begins to blossom as the seeker moves inward.</p><p>The three circles between the square and the lotus are not usually counted as a separate enclosure, though some lineages honour deities on them. They mark a threshold: once over them, the seeker has left the earth-city and entered the Goddess’s garden.</p></div></section>
+<section class="page" id="tripura"><h2 class="page-title">WHO PRESIDES</h2><div class="sub">Tripureśī and the Gupta yoginīs</div>
+<table class="ct fact"><tr><td>Cakreśvarī</td><td>Tripureśī, presiding goddess of this enclosure</td></tr><tr><td>Yoginī class</td><td>Gupta (“hidden”) yoginīs</td></tr><tr><td>Mudrā-goddess</td><td>Sarvavidrāviṇī, one of the ten mudrā-goddesses, presides here</td></tr><tr><td>Siddhi</td><td>Laghimā (lightness), one of the ten attainments, presides here</td></tr><tr><td>Pattern</td><td>The yoginī names grow more hidden from the outer gate to the centre</td></tr><tr><td>In the hymn</td><td>All are named in the Devī Khaḍgamālā</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why ‘hidden’ yoginīs here?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> We've stepped inside the outer wall. What was manifest at the gate becomes a little hidden here: the powers inside experience, not out in the world.</p></div></div>
+<div class="panel reading"><p>The presiding goddess of the second enclosure is Tripureśī, “ruler of the three cities”. Where Tripurā at the gate was the plain name, Tripureśī adds lordship: the Goddess as ruler.</p><p>Its yoginīs are gupta, “hidden”. After the manifest yoginīs of the gate, the powers here are inward ones: the faculties of experience rather than the forces of the world.</p><p>The mudrā-goddess Sarvavidrāviṇī, “she who melts all”, suits a layer where the faculties dissolve their scattered attachments and flow toward one centre.</p><p>Some writers link each cakreśvarī to a stage of the Goddess’s self-revelation. Tripureśī, the ruler, is the Goddess as the one who governs every faculty of experience, which is exactly what this enclosure gathers.</p></div></section>
+<section class="page" id="deities1"><h2 class="page-title">THE GODDESSES</h2><div class="sub">Sixteen goddesses of attraction (1–8)</div>
+<table class="ct fact"><tr><td>Kāmākarṣiṇī</td><td>Attractor of desire</td></tr><tr><td>Buddhyākarṣiṇī</td><td>Attractor of intellect</td></tr><tr><td>Ahaṅkārākarṣiṇī</td><td>Attractor of the sense of “I”</td></tr><tr><td>Śabdākarṣiṇī</td><td>Attractor of sound</td></tr><tr><td>Sparśākarṣiṇī</td><td>Attractor of touch</td></tr><tr><td>Rūpākarṣiṇī</td><td>Attractor of form</td></tr><tr><td>Rasākarṣiṇī</td><td>Attractor of taste</td></tr><tr><td>Gandhākarṣiṇī</td><td>Attractor of smell</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Each one ‘attracts’ something?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Ākarṣiṇī means ‘she who draws’. Each goddess draws one part of us toward the Goddess: desire, intellect, ego, each of the senses.</p></div></div>
+<div class="panel reading"><p>The first eight goddesses draw the deepest inner faculties and the senses: desire, intellect, the sense of “I”, and the five sense objects, sound, touch, form, taste and smell.</p><p>Ākarṣiṇī comes from the root kṛṣ, to draw or pull, the same root as in Kṛṣṇa’s name in some etymologies. Each goddess pulls one faculty away from its scattered objects and toward the Goddess.</p><p>The order begins with desire, kāma, because desire moves everything else. Once desire is drawn toward the Goddess, the intellect and the ego follow, and then the senses.</p></div></section>
+<section class="page" id="deities2"><h2 class="page-title">THE GODDESSES (CONTINUED)</h2><div class="sub">Sixteen goddesses of attraction (9–16)</div>
+<table class="ct fact"><tr><td>Cittākarṣiṇī</td><td>Attractor of mind</td></tr><tr><td>Dhairyākarṣiṇī</td><td>Attractor of courage</td></tr><tr><td>Smṛtyākarṣiṇī</td><td>Attractor of memory</td></tr><tr><td>Nāmākarṣiṇī</td><td>Attractor of name</td></tr><tr><td>Bījākarṣiṇī</td><td>Attractor of the seed</td></tr><tr><td>Ātmākarṣiṇī</td><td>Attractor of the self</td></tr><tr><td>Amṛtākarṣiṇī</td><td>Attractor of nectar</td></tr><tr><td>Śarīrākarṣiṇī</td><td>Attractor of the body</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Even the body gets drawn in?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Everything. Mind, courage, memory, name, the self, the body. By the sixteenth petal there's nothing of you left outside.</p></div></div>
+<div class="panel reading"><p>The second eight draw the subtler and more personal faculties: mind, courage, memory, name, the seed, the self, nectar and the body.</p><p>Nāma, name, is striking: even one’s name and identity are drawn in. Bīja, seed, suggests the deepest potential. Amṛta, nectar, the immortal essence. And the last is śarīra, the body itself: nothing is left behind.</p><p>All sixteen are named in the Devī Khaḍgamālā hymn, where devotees recite them in a single breath as the second enclosure.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT THE GODDESSES MEAN</h2><div class="sub">Reading the names</div>
+<table class="ct fact"><tr><td>Inner faculties</td><td>Desire, intellect and ego: drawn first</td></tr><tr><td>Five senses</td><td>Sound, touch, form, taste, smell</td></tr><tr><td>Mind and memory</td><td>Thought, courage, memory</td></tr><tr><td>Deeper</td><td>Name, seed, self, nectar, body</td></tr><tr><td>Together</td><td>The whole person, petal by petal, turned toward the Goddess</td></tr><tr><td>Moon</td><td>The sixteen digits, from new moon to full</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So this layer collects all of me?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's the idea. The first enclosure showed you the world. This one gathers you, every faculty, and points it inward.</p></div></div>
+<div class="panel reading"><p>Read together, the sixteen ākarṣiṇīs describe a whole human being: inner faculties, five senses, mind and memory, identity and the body. The enclosure gathers all of it.</p><p>This fits Śrīvidyā’s way. It does not ask the seeker to shut down the senses or deny desire. It turns them, one by one, toward the Goddess. The senses are not enemies but powers to be drawn home.</p><p>The link with the moon’s sixteen digits adds a sense of growth. As the moon fills night by night, the person fills with the Goddess, faculty by faculty, until full.</p><p>Some writers also link the sixteen to the sixteen vowels of the alphabet, the breath that carries every word. The seeker’s whole voice is gathered here.</p></div></section>
+<section class="page" id="place"><h2 class="page-title">ITS PLACE ON THE ROAD</h2><div class="sub">Enclosure 2 of nine</div>
+<table class="ct fact"><tr><td>Group</td><td>The cakras of creation (enclosures 1–3)</td></tr><tr><td>Before it</td><td>Āvaraṇa 1: Trailokyamohana</td></tr><tr><td>After it</td><td>Āvaraṇa 3: Sarvasaṅkṣobhaṇa</td></tr><tr><td>Direction</td><td>Worship moves inward, from enclosure 1 to the bindu</td></tr><tr><td>Creation</td><td>In the order of creation, this layer unfolds from the one inside it</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is this still the outer part?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Still among the cakras of creation, but inside the walls. You've passed the gate and entered the first garden.</p></div></div>
+<div class="panel reading"><p>The second enclosure is the middle of the three cakras of creation. In creation’s order, the One has unfolded through the inner layers and is about to take solid form in the square. In worship’s order, the seeker has just passed the gate and steps into the first ring inside.</p><p>Coming after the first enclosure’s enchantment, the second’s work is gathering. Before going deeper, the scattered self must be collected.</p><p>In temple terms, this is the first inner court: still busy, but already within the walls.</p><p>The next enclosure, the eight-petalled lotus, takes the gathered faculties and stirs them toward the Goddess with the power of love.</p></div></section>
+<section class="page" id="krti"><h2 class="page-title">IN DĪKṢITAR’S SONG</h2><div class="sub">“Kamalāmbāṃ bhaja re”</div>
+<table class="ct fact"><tr><td>Song</td><td>“Kamalāmbāṃ bhaja re”, one of the Kamalāmbā Navāvaraṇa kṛtis</td></tr><tr><td>Rāga</td><td>Kalyāṇī, as commonly sung</td></tr><tr><td>Case</td><td>Addresses Kamalāmbā in the accusative case</td></tr><tr><td>Composer</td><td>Muttusvāmi Dīkṣitar (1775–1835)</td></tr><tr><td>Content</td><td>Names this enclosure, its Tripurā, its yoginīs and its goddesses</td></tr><tr><td>Our approach</td><td>Described, not reproduced</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What does ‘accusative’ mean here?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The object form: ‘Worship Kamalāmbā!’ The second song tells you to do something to her: bhaja, worship.</p></div></div>
+<div class="panel reading"><p>Dīkṣitar’s second song is “Kamalāmbāṃ bhaja re”, commonly sung in the rāga Kalyāṇī. It addresses the Goddess in the accusative case: “worship Kamalāmbā”. It names the enclosure, its presiding Tripureśī and its hidden yoginīs, and refers to the sixteen petals.</p><p>It is one of the most frequently performed songs of the whole cycle, and many concert-goers know it without knowing its place in the Śrīcakra.</p><p>Kalyāṇī, an auspicious and expansive rāga, suits a layer named for the fulfilment of all hopes.</p><p>The full song will be treated verse by verse in the Navāvaraṇa guide once its text is supplied.</p></div></section>
+<section class="page" id="story"><h2 class="page-title">IN THE STORY</h2><div class="sub">Śrīpura, the chariots and the war</div>
+<table class="ct fact"><tr><td>Śrīpura</td><td>Gardens between walls; this lotus is the first garden inside the gate</td></tr><tr><td>Nityās</td><td>The moon goddesses of the war share the sixteen-fold pattern</td></tr><tr><td>Attraction</td><td>Lalitā rules by drawing, not forcing: her noose is attraction</td></tr><tr><td>Kāma</td><td>The goddesses of attraction recall the love-god’s power, held by the Goddess</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is this the noose in action?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> A good way to see it. Her noose catches desire; these sixteen goddesses draw every faculty in.</p></div></div>
+<div class="panel reading"><p>Śrīpura has gardens between its walls: groves of wish-fulfilling and heavenly trees. The second enclosure, just inside the outer square, is the Śrīcakra’s first garden: a lotus of sixteen petals.</p><p>The fifteen Nityās who fight the night battle in the Lalitopākhyāna, with Lalitā as the sixteenth, share this enclosure’s sixteen-fold pattern, the moon’s digits. The goddesses of the war and the goddesses of the yantra mirror each other.</p><p>The theme of attraction recalls Lalitā’s noose, which the Sahasranāma calls attachment held in her hand. Here that power gathers the seeker in.</p><p>Readers who know the Kāmeśvara guide will recall that kāma, desire, in Śrīvidyā’s philosophy is first of all the divine will to create. The first goddess of this enclosure, Kāmākarṣiṇī, draws that power home: the will that sent the world outward is turned back toward its source.</p></div></section>
+<section class="page" id="inner"><h2 class="page-title">THE INNER READING</h2><div class="sub">The enclosure within</div>
+<table class="ct fact"><tr><td>The person</td><td>The sixteen petals as the sixteen parts of a human being, in some readings</td></tr><tr><td>Practice</td><td>Gathering the scattered faculties</td></tr><tr><td>Senses</td><td>Not shut off but turned toward the Divine</td></tr><tr><td>Moon</td><td>The mind waxes toward fullness, digit by digit</td></tr><tr><td>Bhāvanopaniṣad</td><td>Gives its own reading of this lotus (guide to come)</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So meditation here means gathering myself?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Exactly. You can't go inward while half of you is wandering. The sixteen attractions call everything home.</p></div></div>
+<div class="panel reading"><p>In the inner reading, the sixteen petals are the sixteen parts of the person, gathered for the journey. The practice suggested is collection: bringing the scattered faculties back from their many objects.</p><p>This is not repression. The senses are not shut; they are turned. Sound, touch, form, taste and smell become ways of attending to the Goddess.</p><p>The Bhāvanopaniṣad gives a detailed bodily reading of each enclosure, which its own guide will set out when the text is in hand.</p><p>For a devotee with no technical practice, the enclosure suggests a simple discipline: before prayer, gather yourself. Notice where your attention has wandered and call it home.</p></div></section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Āśā</td><td>Hope; direction</td></tr><tr><td>Paripūraka</td><td>Completely fulfilling</td></tr><tr><td>Ākarṣiṇī</td><td>She who draws, attracts</td></tr><tr><td>Ahaṅkāra</td><td>The sense of “I”</td></tr><tr><td>Citta</td><td>Mind-stuff</td></tr><tr><td>Smṛti</td><td>Memory</td></tr><tr><td>Amṛta</td><td>Nectar of immortality</td></tr><tr><td>Kalā</td><td>A digit of the moon</td></tr><tr><td>Gupta</td><td>Hidden</td></tr></table>
+<div class="panel reading"><p>Pronunciation, roughly: Sarvāśāparipūraka “sar-vaa-shaa-pa-ri-poo-ra-ka”; ākarṣiṇī “aa-kar-shi-nee”; Tripureśī “tri-pu-ray-shee”.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>Name.</b> Sarvāśāparipūraka: fulfiller of all hopes</div><div><b>Shape.</b> The sixteen-petalled lotus</div><div><b>Goddesses.</b> Sixteen attractors, from desire to the body</div><div><b>Presiding.</b> Tripureśī, with the hidden yoginīs</div><div><b>Meaning.</b> The whole person gathered toward the Goddess</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's in the next ring?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#bolt-portrait"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Eight petals, and eight goddesses of the bodiless god of love.</p></div></div><div class="key">Next: <a href="/srividya/srichakra/sarvasankshobhana/">Āvaraṇa 3: Sarvasaṅkṣobhaṇa</a></div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> Vāmakeśvara Tantra (Nityāṣoḍaśikārṇava and Yoginīhṛdaya) and the Tantrarāja as described in modern studies; the Devī Khaḍgamālā hymn (names of the Śrīcakra’s deities); Muttusvāmi Dīkṣitar’s Kamalāmbā Navāvaraṇa kṛtis (described); Bhāskararāya, <i>Setubandha</i> and <i>Saubhāgyabhāskara</i>; Madhu Khanna, <i>Yantra</i> (1979) and studies of the Śrīcakra; D. R. Brooks (1990, 1992).</p><p><b>Sources differ / unverified:</b> Some lineages give the sixteen in a slightly different order. The links with the vowels and the moon’s digits are common readings, not the only ones. Rāga as commonly sung.</p><p><b>What we leave out:</b> This series explains names, stories, philosophy, the Śrīcakra’s geometry, deities, temples and music. It does not reproduce, assemble or decode any initiatory mantra (Bālā, Pañcadaśī, Ṣoḍaśī or others), nor any nyāsa, dīkṣā or pūjā procedure: those are received from a teacher.</p><p>Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/gods/">Gods and Goddesses</a><span class="sep">›</span><a href="/devi/">Devi</a><span class="also">More for Devi: <a href="/devi/#hymns">hymns</a> · <a href="/devi/#scriptures">scriptures</a> · <a href="/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
