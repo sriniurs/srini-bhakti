@@ -26,7 +26,6 @@ DOORS = {
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
             'scriptures': '/scriptures/', 'temples': '/temples-of-india/'}
 DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she')}
-UNIT = {'gods': 'guide', 'hymns': 'hymn', 'scriptures': 'text', 'temples': 'temple guide'}
 
 
 def plural(n, word):
@@ -97,26 +96,6 @@ def write_hub(url, body):
         f.write_text(new, encoding='utf-8')
 
 
-def card(href, bg, art, label, title, text, read='Open ↗'):
-    return (f'<li><a href="{href}"><div class="tile-art" style="background:{bg}"><svg class="ill" viewBox="0 0 100 100" '
-            f'aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{art}</g>'
-            f'</svg></div><div class="tile-copy"><strong class="label">{label}</strong><h2>{title}</h2><p>{text}</p>'
-            f'<span class="read">{read}</span></div></a></li>')
-
-
-ART = {
-    'gods': ('#3a1414', '<circle cx="50" cy="40" r="16" fill="#f2c79b"/><path d="M32 26 h36 l-5 -16 l-8 8 l-5 -12 l-5 12 l-8 -8z" fill="#ffd60a"/><path d="M26 94 q-4 -40 24 -46 q28 6 24 46z" fill="#c0392b"/>'),
-    'hymns': ('#fff1d6', '<path d="M20 84 h60 l-10 10 h-40z" fill="#c9a26b"/><path d="M50 80 q-18 -22 0 -50 q18 28 0 50z" fill="#ff8c1a"/><path d="M50 74 q-8 -12 0 -26 q8 14 0 26z" fill="#ffd60a"/><path d="M18 30 q4 -8 8 0 M74 24 q4 -8 8 0" fill="none"/>'),
-    'scriptures': ('#f3e3c3', '<path d="M12 40 h76 v40 h-76z" fill="#e8c27a"/><path d="M12 48 h76 M12 56 h76 M12 64 h76 M12 72 h76" stroke-width="1.5"/><path d="M30 34 v52 M70 34 v52" stroke="#7a4a1a" stroke-width="4"/>'),
-    'temples': ('#f3e3c3', '<path d="M10 92 h80 v-8 h-80z" fill="#c9a26b"/><path d="M22 84 v-26 h56 v26z" fill="#e8c27a"/><path d="M30 58 L50 10 L70 58Z" fill="#d9782f"/><path d="M44 84 v-14 a6 6 0 0 1 12 0 v14z" fill="#2b1a0e"/><path d="M50 10 v-6"/><path d="M50 4 l10 3 l-10 3z" fill="#ff8c1a"/>'),
-}
-DEITY_ART = {
-    'devi': ('#ffe3ec', '<path d="M50 88 C26 76 20 50 30 36 C40 48 46 64 50 88Z M50 88 C74 76 80 50 70 36 C60 48 54 64 50 88Z" fill="#f08aa6"/><path d="M50 88 C38 66 40 40 50 22 C60 40 62 66 50 88Z" fill="#ffc2dc"/>'),
-    'shiva': ('#0b2a4a', '<path d="M50 94 V30" stroke="#d9a21b" stroke-width="7"/><path d="M36 44 Q36 26 50 30 Q64 26 64 44" fill="none" stroke="#d9a21b" stroke-width="7"/><path d="M32 46 L36 18 L40 46Z M46 32 L50 4 L54 32Z M60 46 L64 18 L68 46Z" fill="#ffd23f" stroke-width="2"/><path d="M38 58 L62 58 L52 68 L62 78 L38 78 L48 68Z" fill="#e63946" stroke-width="2"/>'),
-    'vishnu': ('#dcecff', '<path d="M50 14 C70 14 84 34 80 56 C76 76 58 88 42 82 C28 76 26 58 38 50 C48 44 58 50 56 60" fill="#fff8e7"/><path d="M50 14 C40 22 34 34 36 46" fill="none"/>'),
-}
-
-
 def page_url(file):
     relative = file.parent.relative_to(ROOT)
     return "/" if relative == Path(".") else f"/{relative.as_posix()}/"
@@ -170,24 +149,7 @@ def build(entries, pages):
                                                 and (deity is None or deity in e['deities'])
                                                 and (group is None or e.get('group') == group)]
     tiles = lambda es: [e['tile'] for e in es]
-    n_art = lambda es: sum(len(pages[e['path']]) for e in es)
-
-    # Bhakti home: four doors, then the deity views
-    doors = []
-    for k, (t, sub) in DOORS.items():
-        es = by(k)
-        bg, art = ART[k]
-        doors.append(card(DOOR_URL[k], bg, art, f'{plural(len(es), UNIT[k])} · {n_art(es)} articles', t, sub + '.'))
-    deities = []
-    for d, (name, _) in DEITIES.items():
-        es = [e for e in entries if d in e['deities']]
-        bg, art = DEITY_ART[d]
-        parts = [plural(len(by(k, d)), UNIT[k]) for k in DOORS if by(k, d)]
-        deities.append(card(f'/{d}/', bg, art, ' · '.join(parts), name,
-                            f'Everything for {name} in one place, from all four doors.'))
-    write_hub('/', shelf('Four doors', 'Pick what you are looking for.', doors)
-              + shelf('Or start with a deity', 'Each deity page gathers all four doors.', deities)
-              + article_index(entries, pages))
+    write_hub('/', article_index(entries, pages))
 
     # door pages
     for k in ('gods', 'hymns', 'scriptures'):
