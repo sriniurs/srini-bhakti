@@ -27,7 +27,30 @@
 <meta name="twitter:title" content="Bhakti Article Index">
 <meta name="twitter:description" content="Browse all Bhakti articles on Hindu gods and goddesses, hymns and mantras, scriptures and stories, and temples and tīrthas.">
 <meta name="twitter:image" content="https://bhakti.srinipresents.com/assets/editorial/home.jpg">
-<link rel="stylesheet" href="/assets/editorial/bhakti.css">
+<link rel="stylesheet" href="/assets/editorial/bhakti.css?v=mobile-stack-20261122">
+<style>
+/* Mobile-only override kept in the homepage so older cached CSS cannot override it. */
+@media screen and (max-width: 720px) {
+  body.bhakti-home .bhakti-topics {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px;
+  }
+  body.bhakti-home .bhakti-topics li { min-width: 0; width: 100%; }
+  body.bhakti-home .bhakti-topics img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #f5e7d2;
+  }
+  body.bhakti-home .bhakti-topics span {
+    padding: 15px 12px 17px;
+    font-size: clamp(23px, 5.6vw, 30px);
+  }
+}
+</style>
 </head><body class="bhakti-editorial bhakti-home">
 <nav class="bhakti-nav" aria-label="Bhakti navigation">
   <div class="bhakti-nav-inner">
