@@ -248,29 +248,6 @@ body.bhakti-editorial {
   margin: 0 0 14px;
   font: 700 clamp(25px, 3.5vw, 36px)/1.1 var(--heading);
 }
-.bhakti-collection ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.bhakti-collection a {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  height: 100%;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  background: var(--paper);
-  color: var(--ink);
-  text-decoration: none;
-}
-.bhakti-collection strong { font: 700 23px/1.15 var(--heading); }
-.bhakti-collection a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
-
 .bhakti-topic-page .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
@@ -294,10 +271,14 @@ body.bhakti-editorial {
 }
 .bhakti-topic-page .tile-art svg { width: 116px; height: 116px; }
 .bhakti-topic-page .tile-copy { padding: 16px; }
-.bhakti-topic-page .tile-copy h2 { margin: 4px 0; font-size: 23px; }
+.bhakti-topic-page .tile-copy h2,
+.bhakti-topic-page .tile-copy h3 {
+  margin: 4px 0;
+  font: 700 23px/1.15 var(--heading);
+}
 .bhakti-topic-page .tile-copy p { margin: 0 0 8px; }
 .bhakti-topic-page .tile-copy .label, .bhakti-topic-page .tile-copy .read { color: var(--red); }
-.bhakti-topic-page .tiles a:hover h2 { text-decoration: underline; }
+.bhakti-topic-page .tiles a:hover :is(h2, h3) { text-decoration: underline; }
 
 .bhakti-hymn-chooser { margin-block: clamp(24px, 4vw, 52px); }
 .bhakti-hymn-chooser h2 {
