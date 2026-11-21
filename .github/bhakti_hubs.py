@@ -33,7 +33,7 @@ def plural(n, word):
 
 
 GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
-HUBS = {'/', '/gods/', '/hymns/', '/scriptures/',
+HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/'}
 
 HUB_S, HUB_E = '<!-- hub:auto -->', '<!-- /hub:auto -->'

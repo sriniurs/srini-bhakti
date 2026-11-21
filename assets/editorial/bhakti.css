@@ -168,7 +168,7 @@ body.bhakti-editorial {
 }
 .bhakti-topics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(10px, 2vw, 20px);
   margin: 0;
   padding: 0;
@@ -189,7 +189,7 @@ body.bhakti-editorial {
 .bhakti-topics img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 .bhakti-topics span {
@@ -238,3 +238,35 @@ body.bhakti-editorial {
   .bhakti-home h1 { font-size: clamp(68px, 16vw, 112px); }
   .bhakti-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+.bhakti-topic-page *, .bhakti-topic-page *::before, .bhakti-topic-page *::after { box-sizing: border-box; }
+.bhakti-topic-page main { padding-block: clamp(16px, 4vw, 40px); }
+.bhakti-topic-page h1 { margin: 0; }
+.bhakti-topic-page .hero img { display: block; }
+.bhakti-collection { margin-top: 38px; }
+.bhakti-collection h2 {
+  margin: 0 0 14px;
+  font: 700 clamp(25px, 3.5vw, 36px)/1.1 var(--heading);
+}
+.bhakti-collection ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bhakti-collection a {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+}
+.bhakti-collection strong { font: 700 23px/1.15 var(--heading); }
+.bhakti-collection a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
