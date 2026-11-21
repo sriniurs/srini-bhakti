@@ -37,6 +37,14 @@ GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
 HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
 HUBS.update(f'/hymns/{deity}/' for deity in DEITIES)
+HUBS.update({
+    '/srividya/foundations/',
+    '/srividya/lalitopakhyana/',
+    '/srividya/deities/',
+    '/srividya/srichakra/',
+    '/srividya/deities/nityas/guides/',
+    '/srividya/related-reading/',
+})
 
 HUB_S, HUB_E = '<!-- hub:auto -->', '<!-- /hub:auto -->'
 TR_S, TR_E = '<!-- bhaktitrail:auto -->', '<!-- /bhaktitrail:auto -->'
