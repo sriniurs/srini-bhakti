@@ -298,3 +298,15 @@ body.bhakti-editorial {
 .bhakti-topic-page .tile-copy p { margin: 0 0 8px; }
 .bhakti-topic-page .tile-copy .label, .bhakti-topic-page .tile-copy .read { color: var(--red); }
 .bhakti-topic-page .tiles a:hover h2 { text-decoration: underline; }
+
+.bhakti-hymn-chooser { margin-block: clamp(24px, 4vw, 52px); }
+.bhakti-hymn-chooser h2 {
+  margin: 0 0 18px;
+  font: 700 clamp(27px, 4vw, 46px)/1.1 var(--heading);
+}
+.bhakti-hymn-chooser .bhakti-topics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.bhakti-breadcrumb { margin-bottom: 16px; }
+.bhakti-breadcrumb a { color: var(--red); text-underline-offset: 3px; }
+@media (max-width: 720px) {
+  .bhakti-hymn-chooser .bhakti-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

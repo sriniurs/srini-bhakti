@@ -36,6 +36,7 @@ def plural(n, word):
 GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
 HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
+HUBS.update(f'/hymns/{deity}/' for deity in DEITIES)
 
 HUB_S, HUB_E = '<!-- hub:auto -->', '<!-- /hub:auto -->'
 TR_S, TR_E = '<!-- bhaktitrail:auto -->', '<!-- /bhaktitrail:auto -->'
@@ -153,13 +154,16 @@ def build(entries, pages):
     write_hub('/', article_index(entries, pages))
 
     # door pages
-    for k in ('gods', 'hymns', 'scriptures'):
+    for k in ('gods', 'scriptures'):
         body = ''
         for d, (name, _) in DEITIES.items():
             es = [e for e in by(k) if e['deities'][0] == d]
             body += shelf(name, '', tiles(es), d)
         write_hub(DOOR_URL[k], body)
     write_hub('/temples-of-india/', ''.join(shelf(g, '', tiles(by('temples', group=gk)), gk) for gk, g in GROUPS.items()))
+
+    for d in DEITIES:
+        write_hub(f'/hymns/{d}/', shelf('Hymns and mantras', '', tiles(by('hymns', d))))
 
     # deity pages
     for d, (name, pron) in DEITIES.items():
