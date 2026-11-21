@@ -1,6 +1,8 @@
 .page.cover.bhakti-article-cover {
   --cover-accent: #0b2a4a;
   --cover-art: #c6d9eb;
+  --cover-heading-bg: var(--cover-accent);
+  --cover-heading-ink: var(--cover-paper);
   --cover-paper: #fff9ec;
   padding: 0;
   color: var(--cover-accent);
@@ -11,8 +13,8 @@
 }
 .bhakti-article-cover .cover-heading {
   padding: clamp(20px, 4vw, 36px) clamp(16px, 4vw, 38px);
-  color: var(--cover-paper);
-  background: var(--cover-accent);
+  color: var(--cover-heading-ink);
+  background: var(--cover-heading-bg);
 }
 .bhakti-article-cover .cover-heading .byline,
 .bhakti-article-cover .cover-chapter {
@@ -38,6 +40,8 @@
   color: inherit;
   font: 700 clamp(39px, 8vw, 76px)/1.02 Georgia, "Times New Roman", serif;
   letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
   -webkit-text-stroke: 0;
   text-shadow: none;
 }
@@ -82,13 +86,14 @@
   height: 48px;
   border: 1px solid var(--cover-accent);
 }
-.bhakti-article-cover .cover-note {
+.bhakti-article-cover .cover-note,
+.bhakti-article-cover .cover-extra .bubble {
   max-width: 580px;
   margin: 0 auto;
   padding: 10px 14px;
-  border: 1px solid #b5c8da;
+  border: 1px solid color-mix(in srgb, var(--cover-accent) 24%, white);
   border-radius: 6px;
-  background: #f1f6fb;
+  background: color-mix(in srgb, var(--cover-art) 30%, white);
   font: 400 14px/1.45 system-ui, sans-serif;
   text-align: left;
 }
@@ -96,4 +101,34 @@
   .page.cover.bhakti-article-cover { break-inside: avoid; }
   .bhakti-article-cover .cover-heading { padding: 14px; }
   .bhakti-article-cover .cover-art svg { width: 280px; }
+}
+
+.page.cover.bhakti-article-cover[data-cover-theme="light-blue"] {
+  --cover-accent: #123e67;
+  --cover-paper: #edf6fd;
+  --cover-art: #c4dcf1;
+  --cover-heading-bg: #bbdaf1;
+  --cover-heading-ink: var(--cover-accent);
+}
+.page.cover.bhakti-article-cover[data-cover-theme="maroon"] {
+  --cover-accent: #711b36;
+  --cover-art: #ebcbd4;
+}
+.bhakti-article-cover .cover-art svg.fig {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.bhakti-article-cover .cover-extra .bubble {
+  box-shadow: none;
+  color: var(--cover-accent);
+}
+.bhakti-article-cover .cover-extra .bubble + .bubble { margin-top: 8px; }
+@media print {
+  .bhakti-article-cover {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .bhakti-article-cover .cover-extra .bubble { padding: 7px 10px; }
 }
