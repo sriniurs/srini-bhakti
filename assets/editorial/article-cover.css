@@ -1,0 +1,99 @@
+.page.cover.bhakti-article-cover {
+  --cover-accent: #0b2a4a;
+  --cover-art: #c6d9eb;
+  --cover-paper: #fff9ec;
+  padding: 0;
+  color: var(--cover-accent);
+  background: var(--cover-paper);
+  border: 1px solid var(--cover-accent);
+  box-shadow: none;
+  border-radius: 8px;
+}
+.bhakti-article-cover .cover-heading {
+  padding: clamp(20px, 4vw, 36px) clamp(16px, 4vw, 38px);
+  color: var(--cover-paper);
+  background: var(--cover-accent);
+}
+.bhakti-article-cover .cover-heading .byline,
+.bhakti-article-cover .cover-chapter {
+  margin: 0;
+  font: 700 .8rem/1.4 system-ui, sans-serif;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.bhakti-article-cover .cover-heading .byline {
+  margin-bottom: 12px;
+  color: inherit;
+  text-shadow: none;
+}
+.bhakti-article-cover .cover-chapter {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: var(--cover-accent);
+  background: var(--cover-paper);
+}
+.page.cover.bhakti-article-cover h1 {
+  margin: 12px 0 8px;
+  color: inherit;
+  font: 700 clamp(39px, 8vw, 76px)/1.02 Georgia, "Times New Roman", serif;
+  letter-spacing: -.035em;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+.bhakti-article-cover .cover-subtitle {
+  margin: 0 auto;
+  max-width: 38ch;
+  font: 400 clamp(17px, 2.7vw, 23px)/1.3 Georgia, "Times New Roman", serif;
+}
+.bhakti-article-cover .cover-body {
+  padding: clamp(12px, 3vw, 24px);
+}
+.bhakti-article-cover .cover-art {
+  display: grid;
+  place-items: center;
+  width: min(100%, 580px);
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 7px;
+  background: var(--cover-art);
+}
+.bhakti-article-cover .cover-art svg {
+  display: block;
+  width: min(100%, 380px);
+  height: auto;
+}
+.bhakti-article-cover .cover-invocation {
+  margin: 10px 0;
+  font: italic 16px/1.3 Georgia, "Times New Roman", serif;
+}
+.bhakti-article-cover .cast {
+  flex-wrap: wrap;
+  gap: 12px clamp(16px, 6vw, 42px);
+  margin: 10px 0 14px;
+}
+.bhakti-article-cover .cast figure {
+  color: inherit;
+  font: 700 14px/1.35 system-ui, sans-serif;
+  text-shadow: none;
+}
+.bhakti-article-cover .cast svg {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--cover-accent);
+}
+.bhakti-article-cover .cover-note {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  border: 1px solid #b5c8da;
+  border-radius: 6px;
+  background: #f1f6fb;
+  font: 400 14px/1.45 system-ui, sans-serif;
+  text-align: left;
+}
+@media print {
+  .page.cover.bhakti-article-cover { break-inside: avoid; }
+  .bhakti-article-cover .cover-heading { padding: 14px; }
+  .bhakti-article-cover .cover-art svg { width: 280px; }
+}
