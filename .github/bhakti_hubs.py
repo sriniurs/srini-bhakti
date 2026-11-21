@@ -25,7 +25,8 @@ DOORS = {
 }
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
             'scriptures': '/scriptures/', 'temples': '/temples-of-india/'}
-DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she')}
+DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she'),
+           'hanuman': ('Hanumān', 'he')}
 
 
 def plural(n, word):
@@ -34,7 +35,7 @@ def plural(n, word):
 
 GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
 HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
-        '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/'}
+        '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
 
 HUB_S, HUB_E = '<!-- hub:auto -->', '<!-- /hub:auto -->'
 TR_S, TR_E = '<!-- bhaktitrail:auto -->', '<!-- /bhaktitrail:auto -->'
