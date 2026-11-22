@@ -38,6 +38,11 @@ GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/', '/ganesha/'}
 CUSTOM_DEITY_LANDING_PAGES = {'subramanya', 'ganesha'}
+GANESHA_TOPIC_HUBS = {
+    f'/ganesha/{topic}/'
+    for topic in ('foundations', 'stories', 'forms', 'hymns', 'festivals', 'temples')
+}
+HUBS.update(GANESHA_TOPIC_HUBS)
 HUBS.update(f'/hymns/{deity}/' for deity in DEITIES if deity not in CUSTOM_DEITY_LANDING_PAGES)
 HUBS.update({
     '/srividya/foundations/',
@@ -146,8 +151,18 @@ def catalogue_pages(entries, strict):
             for part in re.split(r'(\d+)', article[0])
         ])
         overview = (ROOT / prefix.strip('/') / 'index.html').read_text(encoding='utf-8')
-        linked_paths = dict.fromkeys(re.findall(r'href="(/[^"?#]+/)"', overview))
-        order = {url: i for i, url in enumerate(linked_paths)}
+        linked_paths = re.findall(r'href="(/[^"?#]+/)"', overview)
+        if prefix == '/ganesha/':
+            linked_paths = [
+                article_url
+                for topic in linked_paths if topic in GANESHA_TOPIC_HUBS
+                for article_url in re.findall(
+                    r'href="(/[^"?#]+/)"',
+                    (ROOT / topic.strip('/') / 'index.html').read_text(encoding='utf-8'),
+                )
+                if article_url.startswith(topic)
+            ]
+        order = {url: i for i, url in enumerate(dict.fromkeys(linked_paths))}
         articles.sort(key=lambda article: -1 if article[0] == prefix else order.get(article[0], len(order)))
     return pages
 

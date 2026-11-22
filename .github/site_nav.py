@@ -30,8 +30,10 @@ def apply(root, main=False):
         clean = BLOCK.sub('', original)
         parts = relative.parts[:-1]
         parent = '/' + '/'.join(parts[:-1]) + '/' if len(parts) > 1 else '/'
-        if parts and parts[0] == 'ganesha':
-            parent = f'/ganesha/#{parts[1]}' if len(parts) > 1 else '/gods/#ganesha'
+        if parts == ('ganesha',):
+            parent = '/gods/#ganesha'
+        elif len(parts) == 2 and parts[0] == 'ganesha':
+            parent = f'/ganesha/#{parts[1]}'
         if len(parts) == 2 and parts[0] == 'health' and re.match(r'^\d{2}-', parts[1]):
             parent = '/health/general/'
         if main and len(parts) == 1 and parts[0] not in {'about','archive','bhakti','gods','health','ortho','search'}:

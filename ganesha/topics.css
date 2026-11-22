@@ -1,0 +1,22 @@
+.bhakti-editorial .ganesha-topics.tiles {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 335px), 1fr));
+  margin-block: 24px 32px;
+}
+.bhakti-editorial .ganesha-topics a {
+  display: grid;
+  grid-template-columns: clamp(74px, 24%, 112px) minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+}
+.bhakti-editorial .ganesha-topics .tile-art {
+  border: 0;
+  border-radius: 6px;
+}
+.bhakti-editorial .ganesha-topics .tile-copy { padding: 0; }
+.bhakti-editorial .ganesha-topics .tile-copy h2 { margin: 0 0 5px; }
+.bhakti-editorial .ganesha-topics .tile-copy p { margin: 0; }
+.bhakti-editorial .ganesha-reading.tiles { margin-top: 18px; }
+.bhakti-editorial .ganesha-reading a { padding: 12px 16px; font-weight: 700; }
+.bhakti-editorial .ganesha-reading a:hover { text-decoration: underline; }
+.bhakti-editorial .ganesha-reading .collection-size { display: none; }
