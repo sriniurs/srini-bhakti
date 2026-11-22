@@ -35,7 +35,7 @@ def plural(n, word):
 
 
 GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
-HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
+HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
 CUSTOM_DEITY_LANDING_PAGES = {'subramanya'}
 HUBS.update(f'/hymns/{deity}/' for deity in DEITIES if deity not in CUSTOM_DEITY_LANDING_PAGES)
@@ -53,6 +53,11 @@ TR_S, TR_E = '<!-- bhaktitrail:auto -->', '<!-- /bhaktitrail:auto -->'
 SHELF_CSS = ('<style>.shelf{max-width:1180px;margin:34px auto 6px;padding:0 18px;'
              'font:800 clamp(20px,3vw,28px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;color:#151515}'
              '.shelf small{display:block;font:500 15px/1.4 system-ui,sans-serif;color:#555;margin-top:4px}</style>')
+DEITY_NAV_CSS = ('<style>h3.shelf{font-size:clamp(18px,2.4vw,23px);margin-top:18px}'
+             '.bhakti-section-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}'
+             '.bhakti-section-links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;'
+             'border:1px solid var(--line);border-radius:8px;background:var(--paper);font-weight:700;'
+             'text-decoration:none}.bhakti-section-links a:hover{text-decoration:underline}</style>')
 TRAIL_CSS = ('<style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;'
              'border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;'
              'font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}'
@@ -88,12 +93,12 @@ def is_redirect(f):
     return bool(re.search(r'(?i)<meta[^>]+http-equiv=["\']?refresh', f.read_text(encoding='utf-8', errors='ignore')[:3000]))
 
 
-def shelf(title, sub, tiles, anchor=''):
+def shelf(title, sub, tiles, anchor='', level=2):
     if not tiles:
         return ''
     a = f' id="{anchor}"' if anchor else ''
     s = f'<small>{sub}</small>' if sub else ''
-    return f'<h2 class="shelf"{a}>{title}{s}</h2>\n  <ol class="tiles">\n    ' + ''.join(tiles) + '\n  </ol>\n'
+    return f'<h{level} class="shelf"{a}>{title}{s}</h{level}>\n  <ol class="tiles">\n    ' + ''.join(tiles) + '\n  </ol>\n'
 
 
 def write_hub(url, body):
@@ -135,27 +140,64 @@ def catalogue_pages(entries, strict):
         pages[prefix].append((url, title))
     if missing and strict:
         sys.exit('Uncatalogued Bhakti pages:\n  ' + '\n  '.join(sorted(missing)))
-    for articles in pages.values():
+    for prefix, articles in pages.items():
         articles.sort(key=lambda article: [
             int(part) if part.isdigit() else part
             for part in re.split(r'(\d+)', article[0])
         ])
+        overview = (ROOT / prefix.strip('/') / 'index.html').read_text(encoding='utf-8')
+        linked_paths = dict.fromkeys(re.findall(r'href="(/[^"?#]+/)"', overview))
+        order = {url: i for i, url in enumerate(linked_paths)}
+        articles.sort(key=lambda article: -1 if article[0] == prefix else order.get(article[0], len(order)))
     return pages
 
 
 def article_index(entries, pages):
     sections = []
-    for door, (title, _) in DOORS.items():
-        articles = [article for e in entries if e['door'] == door for article in pages[e['path']]]
-        if not articles:
-            continue
-        links = '\n'.join(f'      <li><a href="{escape(url)}">{escape(name)}</a></li>'
-                          for url, name in articles)
-        sections.append(f'  <details><summary>{title} · {plural(len(articles), "article")}</summary>\n'
-                        f'    <ul>\n{links}\n    </ul>\n  </details>')
+    categories = [(door, label) for door, (label, _) in DOORS.items()]
+    categories.insert(3, ('srividya', 'Śrī Vidyā'))
+    for door, label in categories:
+        works = []
+        count = 0
+        for entry in entries:
+            route = entry['path']
+            category = 'srividya' if route.startswith('/srividya/') else entry['door']
+            articles = pages[route]
+            if category != door or not articles:
+                continue
+            count += len(articles)
+            links = '\n'.join(f'<li><a href="{escape(url)}">{escape(title)}</a></li>'
+                            for url, title in articles)
+            if len(articles) == 1:
+                works.append(links)
+                continue
+            tile_title = re.search(r'<h[23][^>]*>(.*?)</h[23]>', entry['tile'], re.S)
+            name = tile_title[1] if tile_title else escape(articles[0][1])
+            works.append(f'<li><details><summary>{name} · {plural(len(articles), "page")}</summary>'
+                         f'<ul>{links}</ul></details></li>')
+        if works:
+            sections.append(f'  <details><summary>{label} · {plural(count, "article")}</summary>'
+                            '<ul>\n' + '\n'.join(works) + '\n</ul></details>')
     return ('<section class="article-index" aria-labelledby="all-articles">\n'
             '  <h2 class="shelf" id="all-articles">All Bhakti articles</h2>\n'
             + '\n'.join(sections) + '\n</section>\n')
+
+
+def hymn_shelves(entries, on_deity_page=False):
+    if not entries:
+        return ''
+    groups = {}
+    for entry in entries:
+        groups.setdefault(entry.get('shelf', 'Hymns and mantras'), []).append(entry['tile'])
+    if len(groups) == 1:
+        title, tiles = next(iter(groups.items()))
+        return shelf('Hymns and mantras' if on_deity_page else title,
+                     'What to chant, verse by verse.' if on_deity_page else '',
+                     tiles, 'hymns' if on_deity_page else '')
+    heading = ('<h2 class="shelf" id="hymns">Hymns and mantras</h2>\n'
+               if on_deity_page else '')
+    return heading + ''.join(shelf(escape(title), '', cards, level=3 if on_deity_page else 2)
+                             for title, cards in groups.items())
 
 
 def build(entries, pages):
@@ -178,16 +220,22 @@ def build(entries, pages):
     for d in DEITIES:
         if d in CUSTOM_DEITY_LANDING_PAGES:
             continue
-        write_hub(f'/hymns/{d}/', shelf('Hymns and mantras', '', tiles(by('hymns', d))))
+        write_hub(f'/hymns/{d}/', hymn_shelves(by('hymns', d)))
 
     # deity pages
     for d, (name, pron) in DEITIES.items():
         if d in CUSTOM_DEITY_LANDING_PAGES:
             continue
         body = (shelf(f'Who {pron} is', 'Forms, stories and symbols.', tiles(by('gods', d)), 'who')
-                + shelf('Hymns and mantras', 'What to chant, verse by verse.', tiles(by('hymns', d)), 'hymns')
+                + hymn_shelves(by('hymns', d), on_deity_page=True)
                 + shelf('Scriptures and stories', 'Texts read in parts.', tiles(by('scriptures', d)), 'scriptures')
                 + shelf('Temples', 'Where to go.', tiles(by('temples', d)), 'temples'))
+        topics = [('who', 'Overview'), ('hymns', 'Hymns and mantras'),
+                  ('scriptures', 'Scriptures and stories'), ('temples', 'Temples')]
+        links = ''.join(f'<a href="#{key}">{label}</a>' for key, label in topics if f'id="{key}"' in body)
+        if links:
+            body = (DEITY_NAV_CSS + '<nav class="bhakti-section-links" aria-label="On this page">'
+                    + links + '</nav>\n' + body)
         write_hub(f'/{d}/', body)
 
 
