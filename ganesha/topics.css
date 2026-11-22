@@ -17,6 +17,5 @@
 .bhakti-editorial .ganesha-topics .tile-copy h2 { margin: 0 0 5px; }
 .bhakti-editorial .ganesha-topics .tile-copy p { margin: 0; }
 .bhakti-editorial .ganesha-reading.tiles { margin-top: 18px; }
-.bhakti-editorial .ganesha-reading a { padding: 12px 16px; font-weight: 700; }
-.bhakti-editorial .ganesha-reading a:hover { text-decoration: underline; }
+.bhakti-editorial .ganesha-reading .tile-art { background: #7a1d12; }
 .bhakti-editorial .ganesha-reading .collection-size { display: none; }
