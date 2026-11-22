@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tripurā Rahasya, Part 4 · Teachers and texts · Śrīvidyā · srini.presents</title>
+<meta name="description" content="Tripurā Rahasya Part 4 (Chapters XVII–XXII): hearing, reflecting and abiding, māyā, vāsanās, three kinds of knower, the Vidyā Gītā, grace and karma, and Ramaṇa Maharṣi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="canonical" href="https://bhakti.srinipresents.com/srividya/teachers/tripura-rahasya/part-4/">
+<meta property="og:title" content="Tripurā Rahasya, Part 4">
+<meta property="og:url" content="https://bhakti.srinipresents.com/srividya/teachers/tripura-rahasya/part-4/">
+<meta property="og:image" content="https://bhakti.srinipresents.com/assets/editorial/srividya.jpg">
+<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
+</head>
+<body>
+<!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
+<div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
+<a class="sr-reader-back" href="/srividya/teachers/tripura-rahasya/"><span aria-hidden="true">&larr;</span> Back</a>
+<a href="/"><span aria-hidden="true">&#8962;</span> Home</a>
+<a href="/search/"><span aria-hidden="true"><span class="sr-search-icon"></span></span> Search</a>
+</nav></div>
+<script defer src="/assets/reader-navigation.js"></script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
+  <header class="cover-heading">
+    <p class="byline">Srini presents</p>
+    <p class="cover-chapter">ŚRĪVIDYĀ · TEACHERS AND TEXTS</p>
+    <h1 style="font-size:clamp(24px,7vw,52px);line-height:1.18">TRIPURĀ RAHASYA · 4</h1>
+    <p class="cover-subtitle">The Goddess speaks</p>
+  </header>
+  <div class="cover-body">
+    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="The Goddess speaking to the sages in Brahmā’s hall: the Vidyā Gītā"><rect width="380" height="268" fill="#4a0c22" rx="8"/><circle cx="40" cy="20" r="1.6" fill="#fff"/><circle cx="120" cy="40" r="1.6" fill="#fff"/><circle cx="500" cy="30" r="1.6" fill="#fff"/><circle cx="460" cy="60" r="1.6" fill="#fff"/><circle cx="300" cy="14" r="1.6" fill="#fff"/><circle cx="220" cy="30" r="1.6" fill="#fff"/><circle cx="380" cy="22" r="1.6" fill="#fff"/><circle cx="80" cy="60" r="1.6" fill="#fff"/><g opacity=".25" transform="translate(190 120)" stroke="#111" stroke-width="1.4"><circle r="96" fill="#f9c9da"/><path d="M-15.0 -75.3 Q-3.0 -94.1 0.0 -96.0 Q3.0 -94.1 15.0 -75.3" fill="#f2a6c0"/><path d="M15.0 -75.3 Q33.2 -88.1 36.7 -88.7 Q38.8 -85.8 42.7 -63.9" fill="#f2a6c0"/><path d="M42.7 -63.9 Q64.4 -68.6 67.9 -67.9 Q68.6 -64.4 63.9 -42.7" fill="#f2a6c0"/><path d="M63.9 -42.7 Q85.8 -38.8 88.7 -36.7 Q88.1 -33.2 75.3 -15.0" fill="#f2a6c0"/><path d="M75.3 -15.0 Q94.1 -3.0 96.0 0.0 Q94.1 3.0 75.3 15.0" fill="#f2a6c0"/><path d="M75.3 15.0 Q88.1 33.2 88.7 36.7 Q85.8 38.8 63.9 42.7" fill="#f2a6c0"/><path d="M63.9 42.7 Q68.6 64.4 67.9 67.9 Q64.4 68.6 42.7 63.9" fill="#f2a6c0"/><path d="M42.7 63.9 Q38.8 85.8 36.7 88.7 Q33.2 88.1 15.0 75.3" fill="#f2a6c0"/><path d="M15.0 75.3 Q3.0 94.1 0.0 96.0 Q-3.0 94.1 -15.0 75.3" fill="#f2a6c0"/><path d="M-15.0 75.3 Q-33.2 88.1 -36.7 88.7 Q-38.8 85.8 -42.7 63.9" fill="#f2a6c0"/><path d="M-42.7 63.9 Q-64.4 68.6 -67.9 67.9 Q-68.6 64.4 -63.9 42.7" fill="#f2a6c0"/><path d="M-63.9 42.7 Q-85.8 38.8 -88.7 36.7 Q-88.1 33.2 -75.3 15.0" fill="#f2a6c0"/><path d="M-75.3 15.0 Q-94.1 3.0 -96.0 0.0 Q-94.1 -3.0 -75.3 -15.0" fill="#f2a6c0"/><path d="M-75.3 -15.0 Q-88.1 -33.2 -88.7 -36.7 Q-85.8 -38.8 -63.9 -42.7" fill="#f2a6c0"/><path d="M-63.9 -42.7 Q-68.6 -64.4 -67.9 -67.9 Q-64.4 -68.6 -42.7 -63.9" fill="#f2a6c0"/><path d="M-42.7 -63.9 Q-38.8 -85.8 -36.7 -88.7 Q-33.2 -88.1 -15.0 -75.3" fill="#f2a6c0"/><path d="M-22.8 -55.0 Q-4.6 -75.3 0.0 -76.8 Q4.6 -75.3 22.8 -55.0" fill="#e0115f"/><path d="M22.8 -55.0 Q50.0 -56.4 54.3 -54.3 Q56.4 -50.0 55.0 -22.8" fill="#e0115f"/><path d="M55.0 -22.8 Q75.3 -4.6 76.8 0.0 Q75.3 4.6 55.0 22.8" fill="#e0115f"/><path d="M55.0 22.8 Q56.4 50.0 54.3 54.3 Q50.0 56.4 22.8 55.0" fill="#e0115f"/><path d="M22.8 55.0 Q4.6 75.3 0.0 76.8 Q-4.6 75.3 -22.8 55.0" fill="#e0115f"/><path d="M-22.8 55.0 Q-50.0 56.4 -54.3 54.3 Q-56.4 50.0 -55.0 22.8" fill="#e0115f"/><path d="M-55.0 22.8 Q-75.3 4.6 -76.8 0.0 Q-75.3 -4.6 -55.0 -22.8" fill="#e0115f"/><path d="M-55.0 -22.8 Q-56.4 -50.0 -54.3 -54.3 Q-50.0 -56.4 -22.8 -55.0" fill="#e0115f"/><circle r="59.5" fill="#fff8e7"/><path d="M-18.0 -54.7 L18.0 -54.7 L0 54.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-45.2 -35.7 L45.2 -35.7 L0 44.9Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-36.3 -24.2 L36.3 -24.2 L0 35.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-25.5 -14.4 L25.5 -14.4 L0 27.6Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-13.3 -4.6 L13.3 -4.6 L0 17.3Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-27.4 50.7 L27.4 50.7 L0 -56.4Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-43.3 38.0 L43.3 38.0 L0 -40.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-33.5 25.3 L33.5 25.3 L0 -30.0Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-17.5 11.5 L17.5 11.5 L0 -17.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><circle r="3.4" fill="#c0392b"/></g><rect y="226" width="380" height="42" fill="#7a1d12"/><g transform="translate(30 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(94 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(158 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(222 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(286 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(350 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(190 130) scale(1.0)" stroke="#111" stroke-width="2"><path d="M-24 50 q-6 -56 24 -64 q30 8 24 64z" fill="#d1144a"/><path d="M-24 50 q24 -14 48 0" fill="none" stroke="#e0a800" stroke-width="3"/><path d="M-20 -2 l-22 -20 M20 -2 l22 -20 M-18 10 l-26 4 M18 10 l26 4" stroke="#f2c79b" stroke-width="6"/><path d="M-48 -28 q-10 -10 0 -18 q10 8 0 18" fill="none" stroke="#e0a800" stroke-width="3"/><path d="M48 -24 v-20 l6 6" fill="none" stroke="#bbb" stroke-width="3"/><path d="M-50 16 q-6 -16 0 -30" fill="none" stroke="#2a9d6f" stroke-width="4"/><path d="M46 18 l8 -10" stroke="#7a4a1a"/><circle cx="54" cy="8" r="3" fill="#f08aa6"/><path d="M46 18 l10 -13" stroke="#7a4a1a"/><circle cx="56" cy="5" r="3" fill="#f08aa6"/><path d="M46 18 l12 -16" stroke="#7a4a1a"/><circle cx="58" cy="2" r="3" fill="#f08aa6"/><circle cy="-24" r="14" fill="#f2c79b"/><path d="M-14 -30 q14 -14 28 0" fill="#111"/><path d="M-12 -38 h24 l-3 -14 l-5 6 l-4 -10 l-4 10 l-5 -6z" fill="#e0a800"/><circle cx="-5" cy="-24" r="2" fill="#111"/><circle cx="5" cy="-24" r="2" fill="#111"/><circle cy="-31" r="2" fill="#c0392b"/><path d="M-4 -17 q4 3 8 0" fill="none" stroke="#c0392b"/><path d="M8 -48 q6 -6 12 0" fill="none" stroke="#fff8e7" stroke-width="3"/></g><g transform="translate(70 170) scale(0.9)" stroke="#111" stroke-width="2"><path d="M-26 60 q-4 -62 26 -72 q30 10 26 72z" fill="#fff8e7"/><circle cy="-24" r="14" fill="#c98b5a"/><path d="M-12 -32 q12 -22 24 0 q2 -14 -12 -18 q-14 4 -12 18z" fill="#ddd"/><path d="M-9 -16 q9 22 18 0" fill="#ddd"/><circle cx="-5" cy="-25" r="1.6" fill="#111"/><circle cx="5" cy="-25" r="1.6" fill="#111"/><path d="M-9 -36 h18" stroke="#fff" stroke-width="2"/></g><g transform="translate(310 170) scale(0.9)" stroke="#111" stroke-width="2"><path d="M-26 60 q-4 -62 26 -72 q30 10 26 72z" fill="#fff8e7"/><circle cy="-24" r="14" fill="#c98b5a"/><path d="M-12 -32 q12 -22 24 0 q2 -14 -12 -18 q-14 4 -12 18z" fill="#ddd"/><path d="M-9 -16 q9 22 18 0" fill="#ddd"/><circle cx="-5" cy="-25" r="1.6" fill="#111"/><circle cx="5" cy="-25" r="1.6" fill="#111"/><path d="M-9 -36 h18" stroke="#fff" stroke-width="2"/></g><path d="M0 230 h380 v40 H0z" fill="#f9c9da"/></svg></figure>
+    <p class="cover-invocation">ŚRĪVIDYĀ · A REFERENCE GUIDE</p>
+    <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p>The last part of the <b>Tripurā Rahasya</b>: why glimpses fade and how they become steady, māyā and old habits, and the summit of the book, the <b>Vidyā Gītā</b>, where the Goddess teaches the sages herself.</p><p>Chapters XVII–XXII end with grace, karma and Paraśurāma freed. A last page tells how <b>Ramaṇa Maharṣi</b> brought the book to the world.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Śrī Tripurāyai namaḥ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Who has the last word?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The Goddess herself, Zappy, in the Vidyā Gītā.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/srividya/">Śrīvidyā · Teachers and texts<small class="collection-size"> · 124 articles</small></a>. Previous: <a href="/srividya/teachers/tripura-rahasya/part-3/">Tripurā Rahasya 3</a>. Next: <a href="/srividya/">Śrīvidyā series index<small class="collection-size"> · 124 articles</small></a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#glimpses">Glimpses That Fade</a></li><li><span class="num">3</span><a href="#cintamani">The Wishing Jewel</a></li><li><span class="num">4</span><a href="#maya">Māyā</a></li><li><span class="num">5</span><a href="#vasana">Old Tendencies</a></li><li><span class="num">6</span><a href="#knowers">Three Kinds Of Knower</a></li><li><span class="num">7</span><a href="#vidyagita">The Vidyā Gītā</a></li><li><span class="num">8</span><a href="#grace">Grace</a></li><li><span class="num">9</span><a href="#karma">Karma And The Close</a></li><li><span class="num">10</span><a href="#ramana">Ramaṇa And The Book</a></li><li><span class="num">11</span><a href="#meaning">What The Book Teaches</a></li><li><span class="num">12</span><a href="#glossary">Glossary</a></li><li><span class="num">13</span><a href="#end">On One Page</a></li><li><span class="num">14</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">Part 4: practice, the Goddess’s song and the end</div>
+<table class="ct fact"><tr><td>Chapters</td><td>XVII–XXII of the Jñāna Khaṇḍa</td></tr><tr><td>Ch. XVII</td><td>Fleeting glimpses; hearing, reflecting, abiding</td></tr><tr><td>Ch. XVIII</td><td>Māyā: the magician and the rope</td></tr><tr><td>Ch. XIX</td><td>Old tendencies; three kinds of knower</td></tr><tr><td>Ch. XX</td><td>The Vidyā Gītā: the Goddess teaches the sages</td></tr><tr><td>Ch. XXI–XXII</td><td>Grace, a riddling ghoul, karma, and the close</td></tr><tr><td>After</td><td>Ramaṇa Maharṣi’s love of the book</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Does Paraśurāma ever get it?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He does, Zappy, and the Goddess herself has the last great word.</p></div></div>
+<div class="panel reading"><p>Part 4 covers the last six chapters. Having taught through stories, Dattātreya turns to the practical: why glimpses of the Self fade, how they become steady, and what holds us back.</p><p>At the summit comes the Vidyā Gītā, in which the Goddess herself teaches a gathering of sages. The book ends with grace, karma, and a summary.</p><p>We close with a page on Ramaṇa Maharṣi, whose love of the book brought it to readers all over the world.</p></div></section>
+<section class="page" id="glimpses"><h2 class="page-title">GLIMPSES THAT FADE</h2><div class="sub">Chapter XVII</div>
+<svg class="pg-fig" width="360" height="96" viewBox="0 0 360 96" role="img" aria-label="Hearing, reflecting, abiding (Ch. XVII)"><rect width="360" height="96" fill="#fff8e7"/><rect x="12.0" y="30" width="104.0" height="44" rx="6" fill="#f9c9da" stroke="#111"/><text x="64.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Śravaṇa</text><text x="64.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">hearing</text><rect x="124.0" y="30" width="104.0" height="44" rx="6" fill="#fff3b0" stroke="#111"/><text x="176.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Manana</text><text x="176.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">reflecting</text><rect x="236.0" y="30" width="104.0" height="44" rx="6" fill="#fdf0f4" stroke="#111"/><text x="288.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Nididhyāsana</text><text x="288.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">abiding</text></svg><table class="ct fact"><tr><td>Problem</td><td>Moments of clarity come and go</td></tr><tr><td>Cause</td><td>Old habits of mind still pull</td></tr><tr><td>Three steps</td><td>Hearing, reflecting, abiding</td></tr><tr><td>Hearing</td><td>The teaching from a guru or text</td></tr><tr><td>Reflecting</td><td>Removing doubts by thinking it through</td></tr><tr><td>Abiding</td><td>Resting in what has been understood, until it is steady</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> I keep getting it and losing it.</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Everyone does at first. Abiding is what makes it stay.</p></div></div>
+<div class="panel reading"><p>Paraśurāma, like Hemacūḍa, finds that moments of clarity come and go. Dattātreya explains that old habits of mind keep pulling attention outward.</p><p>The remedy is the classical three steps: śravaṇa, hearing the teaching; manana, reflecting on it until doubts are gone; and nididhyāsana, resting in what has been understood.</p><p>Abiding is what turns glimpses into a steady state.</p></div></section>
+<section class="page" id="cintamani"><h2 class="page-title">THE WISHING JEWEL</h2><div class="sub">Chapter XVII</div>
+<table class="ct fact"><tr><td>Story</td><td>A man who finds a wish-fulfilling jewel, Cintāmaṇi</td></tr><tr><td>Mistake</td><td>He doubts it, and trades it for something showy</td></tr><tr><td>Meaning</td><td>We hold the Self and swap it for passing things</td></tr><tr><td>Doubt</td><td>Is the thief</td></tr><tr><td>Remedy</td><td>Reflection removes doubt</td></tr><tr><td>Lesson</td><td>Value what you already have</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Who would throw away a wishing jewel?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> All of us, every day, says Dattātreya.</p></div></div>
+<div class="panel reading"><p>Dattātreya tells of a man who finds the wish-fulfilling jewel, Cintāmaṇi, but doubts its worth and trades it for something showy.</p><p>We do the same, he says: we already hold the Self, and we trade it for passing things because we doubt its value.</p><p>Doubt is the thief here, and reflection, manana, is the guard.</p></div></section>
+<section class="page" id="maya"><h2 class="page-title">MĀYĀ</h2><div class="sub">Chapter XVIII</div>
+<table class="ct fact"><tr><td>Question</td><td>If awareness is one, why do we see many?</td></tr><tr><td>Magician</td><td>A conjuror shows things that are not there</td></tr><tr><td>Rope and snake</td><td>In dim light a rope is taken for a snake</td></tr><tr><td>Māyā</td><td>The power by which the one seems many</td></tr><tr><td>Not separate</td><td>Māyā is the Goddess’s own power</td></tr><tr><td>Ending</td><td>Seeing the rope ends fear of the snake</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is māyā bad?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> It’s her play. The trouble is only in being fooled by it.</p></div></div>
+<div class="panel reading"><p>If awareness is one, why do we see many things? Dattātreya answers with māyā, the power by which the one seems many.</p><p>He uses familiar images: the magician who shows things that are not there, and the rope taken for a snake in dim light. When the rope is seen, the fear ends by itself.</p><p>In Śrīvidyā, māyā is not an enemy; it is the Goddess’s own power, her play. The trouble lies only in being fooled.</p></div></section>
+<section class="page" id="vasana"><h2 class="page-title">OLD TENDENCIES</h2><div class="sub">Chapter XIX</div>
+<table class="ct fact"><tr><td>Vāsanās</td><td>Habits of mind left by past experience</td></tr><tr><td>Three kinds</td><td>From faults, from actions, from desires</td></tr><tr><td>Obstacle</td><td>They pull attention back outward</td></tr><tr><td>Remedy</td><td>Steady abiding wears them away</td></tr><tr><td>Jaḍabharata</td><td>The sage who lived like a simpleton</td></tr><tr><td>Cyavana</td><td>Another example from the stories</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why didn’t Jaḍabharata act wise?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He didn’t need to. Freedom doesn’t always look impressive from outside.</p></div></div>
+<div class="panel reading"><p>Vāsanās are habits of mind left by past experience. The book describes three kinds: those from faults, those from past actions, and those from desires.</p><p>They are what pulls attention outward even after the Self has been glimpsed. Steady abiding wears them away.</p><p>Stories of Jaḍabharata, the sage who lived like a simpleton, and of the sage Cyavana are used as examples.</p></div></section>
+<section class="page" id="knowers"><h2 class="page-title">THREE KINDS OF KNOWER</h2><div class="sub">Chapter XIX</div>
+<svg class="pg-fig" width="360" height="96" viewBox="0 0 360 96" role="img" aria-label="Three kinds of knower (Ch. XIX)"><rect width="360" height="96" fill="#fff8e7"/><rect x="12.0" y="30" width="104.0" height="44" rx="6" fill="#f9c9da" stroke="#111"/><text x="64.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Highest</text><text x="64.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">free even in action</text><rect x="124.0" y="30" width="104.0" height="44" rx="6" fill="#fff3b0" stroke="#111"/><text x="176.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Middle</text><text x="176.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">free, but steadier at rest</text><rect x="236.0" y="30" width="104.0" height="44" rx="6" fill="#fdf0f4" stroke="#111"/><text x="288.0" y="50" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Lowest</text><text x="288.0" y="64" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">free, still prone to slip</text></svg><table class="ct fact"><tr><td>Highest</td><td>Free even in the busiest action</td></tr><tr><td>Middle</td><td>Free, steadier when at rest</td></tr><tr><td>Lowest</td><td>Free, but still liable to be pulled by habit</td></tr><tr><td>All three</td><td>Have truly recognised the Self</td></tr><tr><td>Difference</td><td>In how far old tendencies have worn away</td></tr><tr><td>Hemacūḍa</td><td>Grew from one kind to another</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Even the enlightened have grades?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In steadiness, yes. The Self is the same; the settling takes time.</p></div></div>
+<div class="panel reading"><p>The book describes three kinds of jñānī, knower of the Self. The highest remains free in the busiest action; the middle is free but steadier at rest; the lowest is free but still liable to be pulled by habit.</p><p>All three have truly recognised the Self. The difference lies in how far old tendencies have worn away.</p><p>This is a realistic picture: recognition may be sudden, but settling takes time.</p></div></section>
+<section class="page" id="vidyagita"><h2 class="page-title">THE VIDYĀ GĪTĀ</h2><div class="sub">Chapter XX</div>
+<table class="ct fact"><tr><td>Scene</td><td>Sages gather in Brahmā’s hall, unable to agree</td></tr><tr><td>Appearance</td><td>The Goddess appears as light</td></tr><tr><td>She speaks</td><td>As awareness itself, beyond all forms</td></tr><tr><td>Dual and non-dual</td><td>Worship of her as other is a step toward knowing her as one’s Self</td></tr><tr><td>Obstacles</td><td>Lack of faith, desire and dullness</td></tr><tr><td>Teaching</td><td>A raft to cross, not a thing to cling to</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The Goddess herself teaches?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Yes. In a book about her, she finally speaks in her own voice.</p></div></div>
+<div class="panel reading"><p>Chapter XX, the Vidyā Gītā, is the summit of the book. Sages gather in Brahmā’s hall and cannot agree about the highest truth. The Goddess appears as a great light and speaks.</p><p>She teaches that she is awareness itself, beyond all forms. Worship of her as other than oneself is a valid step that leads to knowing her as one’s own Self.</p><p>She names the obstacles, lack of faith, desire and dullness, and says that all teaching is a raft for crossing, not a thing to cling to.</p></div></section>
+<section class="page" id="grace"><h2 class="page-title">GRACE</h2><div class="sub">Chapter XXI</div>
+<table class="ct fact"><tr><td>Chief cause</td><td>Grace, more than effort</td></tr><tr><td>Two princes</td><td>Rukmāṅgada and Hemāṅgada</td></tr><tr><td>A ghoul</td><td>Vasumān seizes one and poses riddles</td></tr><tr><td>The wise brother</td><td>Answers the riddles and frees him</td></tr><tr><td>Lesson</td><td>Wisdom, given by grace, frees others too</td></tr><tr><td>Effort</td><td>Still needed; grace shows itself as sincere longing</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> If grace does it, why try?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because the longing to try is grace showing up. Don’t waste it.</p></div></div>
+<div class="panel reading"><p>Chapter XXI insists that grace is the chief cause of freedom. Effort matters, but the very longing that drives effort is grace showing itself.</p><p>A story illustrates this: two princes, Rukmāṅgada and Hemāṅgada. One is seized by a ghoul, Vasumān, who poses riddles; the other, who is wise, answers them and frees his brother.</p><p>Wisdom given by grace frees not only its owner but others too.</p></div></section>
+<section class="page" id="karma"><h2 class="page-title">KARMA AND THE CLOSE</h2><div class="sub">Chapter XXII</div>
+<svg class="pg-fig" width="360" height="90" viewBox="0 0 360 90" role="img" aria-label="Three kinds of karma (Ch. XXII)"><rect width="360" height="90" fill="#fff8e7"/><rect x="12" y="14" width="150" height="18" rx="4" fill="#fdf0f4" stroke="#111"/><rect x="198" y="14" width="150" height="18" rx="4" fill="#fff3b0" stroke="#111"/><text x="87" y="27" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Sañcita</text><text x="180" y="27" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">→</text><text x="273" y="27" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">The stored stock of past actions</text><rect x="12" y="36" width="150" height="18" rx="4" fill="#fdf0f4" stroke="#111"/><rect x="198" y="36" width="150" height="18" rx="4" fill="#fff3b0" stroke="#111"/><text x="87" y="49" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Āgāmi</text><text x="180" y="49" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">→</text><text x="273" y="49" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">New actions now being done</text><rect x="12" y="58" width="150" height="18" rx="4" fill="#fdf0f4" stroke="#111"/><rect x="198" y="58" width="150" height="18" rx="4" fill="#fff3b0" stroke="#111"/><text x="87" y="71" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Prārabdha</text><text x="180" y="71" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">→</text><text x="273" y="71" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">What has begun to bear fruit</text></svg><table class="ct fact"><tr><td>Stored karma</td><td>Burned by knowledge</td></tr><tr><td>New karma</td><td>Does not bind the free</td></tr><tr><td>Begun karma</td><td>Runs out like an arrow already shot</td></tr><tr><td>Summary</td><td>Dattātreya restates the whole teaching</td></tr><tr><td>Haritāyana</td><td>Tells Nārada that reading the book brings wisdom</td></tr><tr><td>Paraśurāma</td><td>Freed, and later the teacher of this line</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why can’t knowledge stop the arrow?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> It’s already flying. But it no longer matters to the one who knows.</p></div></div>
+<div class="panel reading"><p>Chapter XXII explains karma in three kinds. Stored karma is burned by knowledge; new actions no longer bind the free; and karma that has already begun to bear fruit runs its course, like an arrow already shot.</p><p>Dattātreya then sums up the whole teaching. Paraśurāma, freed, becomes a teacher of the line our Dattātreya and Paraśurāma guide describes.</p><p>In the outer frame, Haritāyana tells Nārada that whoever reads the book with care will become wise.</p></div></section>
+<section class="page" id="ramana"><h2 class="page-title">RAMAṆA AND THE BOOK</h2><div class="sub">A modern reader</div>
+<table class="ct fact"><tr><td>Ramaṇa Maharṣi</td><td>Valued it highly and often quoted it</td></tr><tr><td>Translation</td><td>Made by his disciple Munagala Venkataramaiah, 1938</td></tr><tr><td>Foreword</td><td>Later editions carry one by A. W. Chadwick</td></tr><tr><td>Why</td><td>Its inquiry is close to his “Who am I?”</td></tr><tr><td>Readers</td><td>Brought it to a worldwide audience</td></tr><tr><td>Today</td><td>Still in print from his ashram</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why would Ramaṇa love a Śrīvidyā book?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because its Goddess is the Self he taught. Names differ; the pointing is the same.</p></div></div>
+<div class="panel reading"><p>Ramaṇa Maharṣi of Tiruvaṇṇāmalai valued the Tripurā Rahasya highly and often quoted it. His disciple Munagala Venkataramaiah, later Swami Ramananda Saraswathi, translated the Jñāna Khaṇḍa into English, and Sri Ramanasramam published it in 1938.</p><p>Later editions carry a foreword by A. W. Chadwick, an English disciple of Ramaṇa. The translation brought the book to readers all over the world.</p><p>Ramaṇa’s teaching of self-inquiry is close to the book’s vicāra, which is why a Śrīvidyā text found a home in a modern Advaita ashram.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT THE BOOK TEACHES</h2><div class="sub">The whole Tripurā Rahasya</div>
+<table class="ct fact"><tr><td>Start</td><td>Practice ripens into a question</td></tr><tr><td>Way</td><td>Inquiry, with trust enough to look</td></tr><tr><td>Truth</td><td>Awareness is the one constant; the Goddess is that</td></tr><tr><td>Freedom</td><td>With open eyes, in daily life</td></tr><tr><td>Settling</td><td>Hearing, reflecting, abiding wear habits away</td></tr><tr><td>Grace</td><td>Behind it all</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What’s the one thing to remember from all four parts?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The Goddess you worship is the awareness you are. Hemalekhā knew; now you do too.</p></div></div>
+<div class="panel reading"><p>Across its twenty-two chapters, the Tripurā Rahasya makes one movement: from worship to inquiry, from inquiry to recognition, from recognition to freedom in daily life.</p><p>Its Goddess is not only a figure on a throne; she is the awareness in which everything appears, the one constant through waking, dream and sleep.</p><p>And it gives that teaching through stories, many of them with women as the wisest voices.</p></div></section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this part</div>
+<table class="ct fact"><tr><td>Śravaṇa</td><td>Hearing</td></tr><tr><td>Manana</td><td>Reflection</td></tr><tr><td>Nididhyāsana</td><td>Abiding, contemplation</td></tr><tr><td>Cintāmaṇi</td><td>Wish-fulfilling jewel</td></tr><tr><td>Vāsanā</td><td>Latent tendency</td></tr><tr><td>Prārabdha</td><td>Karma already bearing fruit</td></tr><tr><td>Sañcita</td><td>Stored karma</td></tr><tr><td>Āgāmi</td><td>Coming karma</td></tr><tr><td>Anugraha</td><td>Grace</td></tr><tr><td>Vidyā Gītā</td><td>The Song of Knowledge</td></tr></table>
+<div class="panel reading"><p>Anugraha, grace, is one of the five acts of the Goddess in Śrīvidyā thought, alongside creation, preservation, dissolution and concealment. The Lalitā Sahasranāma names her as the one who performs all five.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>1.</b> Ch. XVII: glimpses fade; hearing, reflecting and abiding make them steady.</div><div><b>2.</b> Ch. XVIII: māyā, the magician’s show and the rope taken for a snake.</div><div><b>3.</b> Ch. XIX: old tendencies, and three kinds of knower.</div><div><b>4.</b> Ch. XX: the Vidyā Gītā, the Goddess teaching the sages.</div><div><b>5.</b> Ch. XXI–XXII: grace, karma and the close; Paraśurāma freed.</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Where do I go now?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Back to the series index, or to the Lalitā Sahasranāma: ‘citi’ is the whole book in one name.</p></div></div><div class="key">Next: <a href="/srividya/">Śrīvidyā series index<small class="collection-size"> · 124 articles</small></a></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> The Tripurā Rahasya, Jñāna Khaṇḍa, tr. Swami Sri Ramananda Saraswathi (Munagala S. Venkataramaiah), Sri Ramanasramam, 1938; later editions with a foreword by A. W. Chadwick; Wikipedia, “Tripura Rahasya”; Sri Ramanasramam on Ramaṇa Maharṣi and the text.</p><p><b>Sources differ / unverified:</b> Chapter numbers follow the Ramanasramam translation. Summaries and renderings are our own plain-English retellings, not quotations. The text is traditionally ascribed to Haritāyana; modern scholars date it to the medieval period. Only the Jñāna Khaṇḍa is covered in this series. The Vidyā Gītā here is a chapter of the Tripurā Rahasya; it should not be confused with other works of similar name.</p><p><b>What we leave out:</b> This series explains names, stories, philosophy, the Śrīcakra’s geometry, deities, temples and music. It does not reproduce, assemble or decode any initiatory mantra (Bālā, Pañcadaśī, Ṣoḍaśī or others), nor any nyāsa, dīkṣā or pūjā procedure: those are received from a teacher.</p><p>Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/scriptures/">Scriptures and Stories</a><span class="sep">›</span><a href="/devi/">Devi</a><span class="also">More for Devi: <a href="/devi/#who">who she is</a> · <a href="/devi/#hymns">hymns</a> · <a href="/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<!-- reader-feedback:start -->
+<div class="bhakti-reader-feedback" style="box-sizing:border-box;max-width:820px;margin:26px auto 32px;padding:22px 24px;border:1px solid #dec8aa;border-radius:12px;background:#fff8ed;color:#321f2a;font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif">
+  <strong style="display:block;font:700 25px/1.25 Georgia,serif;margin-bottom:8px">Share your thoughts</strong>
+  <p style="margin:0 0 13px">If an article touched your heart, or you have a suggestion, reflection or correction, I would love to hear from you.</p>
+  <a href="mailto:srini.presents@gmail.com?subject=Bhakti%20reader%20feedback" style="display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:10px 14px;border-radius:6px;background:#973f2c;color:white;text-decoration:none;font-weight:700">Write to me · srini.presents@gmail.com</a>
+</div>
+<!-- reader-feedback:end -->
+</body>
+</html>

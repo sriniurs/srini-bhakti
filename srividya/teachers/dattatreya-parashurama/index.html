@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dattātreya and Paraśurāma · Teachers and texts · Śrīvidyā · srini.presents</title>
+<meta name="description" content="Dattātreya the avadhūta and Paraśurāma the axe-bearer: their stories, the Paraśurāma Kalpasūtra and its commentaries, and the Tripurā Rahasya, their dialogue on the Self.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="canonical" href="https://bhakti.srinipresents.com/srividya/teachers/dattatreya-parashurama/">
+<meta property="og:title" content="Dattātreya and Paraśurāma">
+<meta property="og:url" content="https://bhakti.srinipresents.com/srividya/teachers/dattatreya-parashurama/">
+<meta property="og:image" content="https://bhakti.srinipresents.com/assets/editorial/srividya.jpg">
+<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
+</head>
+<body>
+<!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
+<div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
+<a class="sr-reader-back" href="/srividya/teachers/"><span aria-hidden="true">&larr;</span> Back</a>
+<a href="/"><span aria-hidden="true">&#8962;</span> Home</a>
+<a href="/search/"><span aria-hidden="true"><span class="sr-search-icon"></span></span> Search</a>
+</nav></div>
+<script defer src="/assets/reader-navigation.js"></script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
+  <header class="cover-heading">
+    <p class="byline">Srini presents</p>
+    <p class="cover-chapter">ŚRĪVIDYĀ · TEACHERS AND TEXTS</p>
+    <h1 style="font-size:clamp(24px,7vw,48px);line-height:1.18">DATTĀTREYA AND PARAŚURĀMA</h1>
+    <p class="cover-subtitle">The avadhūta and the axe-bearer</p>
+  </header>
+  <div class="cover-body">
+    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Dattātreya with his dogs and cow, and Paraśurāma with his axe"><rect width="380" height="268" fill="#4a0c22" rx="8"/><circle cx="40" cy="20" r="1.6" fill="#fff"/><circle cx="120" cy="40" r="1.6" fill="#fff"/><circle cx="500" cy="30" r="1.6" fill="#fff"/><circle cx="460" cy="60" r="1.6" fill="#fff"/><circle cx="300" cy="14" r="1.6" fill="#fff"/><circle cx="220" cy="30" r="1.6" fill="#fff"/><circle cx="380" cy="22" r="1.6" fill="#fff"/><circle cx="80" cy="60" r="1.6" fill="#fff"/><g opacity=".25" transform="translate(190 120)" stroke="#111" stroke-width="1.4"><circle r="96" fill="#f9c9da"/><path d="M-15.0 -75.3 Q-3.0 -94.1 0.0 -96.0 Q3.0 -94.1 15.0 -75.3" fill="#f2a6c0"/><path d="M15.0 -75.3 Q33.2 -88.1 36.7 -88.7 Q38.8 -85.8 42.7 -63.9" fill="#f2a6c0"/><path d="M42.7 -63.9 Q64.4 -68.6 67.9 -67.9 Q68.6 -64.4 63.9 -42.7" fill="#f2a6c0"/><path d="M63.9 -42.7 Q85.8 -38.8 88.7 -36.7 Q88.1 -33.2 75.3 -15.0" fill="#f2a6c0"/><path d="M75.3 -15.0 Q94.1 -3.0 96.0 0.0 Q94.1 3.0 75.3 15.0" fill="#f2a6c0"/><path d="M75.3 15.0 Q88.1 33.2 88.7 36.7 Q85.8 38.8 63.9 42.7" fill="#f2a6c0"/><path d="M63.9 42.7 Q68.6 64.4 67.9 67.9 Q64.4 68.6 42.7 63.9" fill="#f2a6c0"/><path d="M42.7 63.9 Q38.8 85.8 36.7 88.7 Q33.2 88.1 15.0 75.3" fill="#f2a6c0"/><path d="M15.0 75.3 Q3.0 94.1 0.0 96.0 Q-3.0 94.1 -15.0 75.3" fill="#f2a6c0"/><path d="M-15.0 75.3 Q-33.2 88.1 -36.7 88.7 Q-38.8 85.8 -42.7 63.9" fill="#f2a6c0"/><path d="M-42.7 63.9 Q-64.4 68.6 -67.9 67.9 Q-68.6 64.4 -63.9 42.7" fill="#f2a6c0"/><path d="M-63.9 42.7 Q-85.8 38.8 -88.7 36.7 Q-88.1 33.2 -75.3 15.0" fill="#f2a6c0"/><path d="M-75.3 15.0 Q-94.1 3.0 -96.0 0.0 Q-94.1 -3.0 -75.3 -15.0" fill="#f2a6c0"/><path d="M-75.3 -15.0 Q-88.1 -33.2 -88.7 -36.7 Q-85.8 -38.8 -63.9 -42.7" fill="#f2a6c0"/><path d="M-63.9 -42.7 Q-68.6 -64.4 -67.9 -67.9 Q-64.4 -68.6 -42.7 -63.9" fill="#f2a6c0"/><path d="M-42.7 -63.9 Q-38.8 -85.8 -36.7 -88.7 Q-33.2 -88.1 -15.0 -75.3" fill="#f2a6c0"/><path d="M-22.8 -55.0 Q-4.6 -75.3 0.0 -76.8 Q4.6 -75.3 22.8 -55.0" fill="#e0115f"/><path d="M22.8 -55.0 Q50.0 -56.4 54.3 -54.3 Q56.4 -50.0 55.0 -22.8" fill="#e0115f"/><path d="M55.0 -22.8 Q75.3 -4.6 76.8 0.0 Q75.3 4.6 55.0 22.8" fill="#e0115f"/><path d="M55.0 22.8 Q56.4 50.0 54.3 54.3 Q50.0 56.4 22.8 55.0" fill="#e0115f"/><path d="M22.8 55.0 Q4.6 75.3 0.0 76.8 Q-4.6 75.3 -22.8 55.0" fill="#e0115f"/><path d="M-22.8 55.0 Q-50.0 56.4 -54.3 54.3 Q-56.4 50.0 -55.0 22.8" fill="#e0115f"/><path d="M-55.0 22.8 Q-75.3 4.6 -76.8 0.0 Q-75.3 -4.6 -55.0 -22.8" fill="#e0115f"/><path d="M-55.0 -22.8 Q-56.4 -50.0 -54.3 -54.3 Q-50.0 -56.4 -22.8 -55.0" fill="#e0115f"/><circle r="59.5" fill="#fff8e7"/><path d="M-18.0 -54.7 L18.0 -54.7 L0 54.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-45.2 -35.7 L45.2 -35.7 L0 44.9Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-36.3 -24.2 L36.3 -24.2 L0 35.7Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-25.5 -14.4 L25.5 -14.4 L0 27.6Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-13.3 -4.6 L13.3 -4.6 L0 17.3Z" fill="none" stroke="#c0392b" stroke-width="1.6"/><path d="M-27.4 50.7 L27.4 50.7 L0 -56.4Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-43.3 38.0 L43.3 38.0 L0 -40.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-33.5 25.3 L33.5 25.3 L0 -30.0Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><path d="M-17.5 11.5 L17.5 11.5 L0 -17.3Z" fill="none" stroke="#1d4f9a" stroke-width="1.6"/><circle r="3.4" fill="#c0392b"/></g><rect y="226" width="380" height="42" fill="#7a1d12"/><g transform="translate(30 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(94 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(158 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(222 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(286 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(350 244) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(130 150) scale(1.3)" stroke="#111" stroke-width="2"><path d="M-26 60 q-4 -62 26 -72 q30 10 26 72z" fill="#ff8c1a"/><circle cy="-24" r="14" fill="#c98b5a"/><path d="M-12 -32 q12 -22 24 0 q2 -14 -12 -18 q-14 4 -12 18z" fill="#3a2a1a"/><path d="M-9 -16 q9 22 18 0" fill="#3a2a1a"/><circle cx="-5" cy="-25" r="1.6" fill="#111"/><circle cx="5" cy="-25" r="1.6" fill="#111"/><path d="M-9 -36 h18" stroke="#fff" stroke-width="2"/><path d="M-30 -60 q30 -30 60 0" fill="none" stroke="#ffd60a" stroke-width="3"/></g><g transform="translate(70 214) scale(1.0)" stroke="#111" stroke-width="1.4"><ellipse cx="0" cy="0" rx="14" ry="7" fill="#c9a26b"/><circle cx="14" cy="-6" r="6" fill="#c9a26b"/><path d="M-12 4 v8 M10 4 v8 M-14 -2 l-6 -6" stroke-width="2"/></g><g transform="translate(110 218) scale(0.9)" stroke="#111" stroke-width="1.4"><ellipse cx="0" cy="0" rx="14" ry="7" fill="#7a4a1a"/><circle cx="14" cy="-6" r="6" fill="#7a4a1a"/><path d="M-12 4 v8 M10 4 v8 M-14 -2 l-6 -6" stroke-width="2"/></g><g transform="translate(178 214) scale(0.9)" stroke="#111" stroke-width="1.4"><ellipse cx="0" cy="0" rx="18" ry="9" fill="#fff8e7"/><circle cx="-18" cy="-6" r="7" fill="#fff8e7"/><path d="M-22 -12 l-4 -6 M-14 -12 l4 -6" /><path d="M-12 6 v10 M12 6 v10" stroke-width="2"/></g><g transform="translate(268 154) scale(1.2)" stroke="#111" stroke-width="2"><path d="M-26 60 q-4 -62 26 -72 q30 10 26 72z" fill="#fff3b0"/><circle cy="-24" r="14" fill="#a8693a"/><path d="M-12 -32 q12 -22 24 0 q2 -14 -12 -18 q-14 4 -12 18z" fill="#3a2a1a"/><path d="M-9 -16 q9 22 18 0" fill="#3a2a1a"/><circle cx="-5" cy="-25" r="1.6" fill="#111"/><circle cx="5" cy="-25" r="1.6" fill="#111"/><path d="M-9 -36 h18" stroke="#fff" stroke-width="2"/><g transform="translate(32 0) scale(1)" stroke="#111" stroke-width="1.6"><path d="M0 40 V-30" stroke="#7a4a1a" stroke-width="4"/><path d="M0 -30 q18 -6 20 10 q-12 2 -20 6z" fill="#ccc"/></g></g></svg></figure>
+    <p class="cover-invocation">ŚRĪVIDYĀ · A REFERENCE GUIDE</p>
+    <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p>Two names stand behind two of Śrīvidyā’s key texts. <b>Dattātreya</b>, the avadhūta, the three gods in one, is said to have taught <b>Paraśurāma</b>, the warrior with the axe, the worship of Tripurā. The ritual manual called the Paraśurāma Kalpasūtra bears the student’s name.</p><p>Their dialogue on the Self, the <b>Tripurā Rahasya</b>, is one of the great works of Indian philosophy. This guide meets teacher and student and sets the scene for the four Tripurā Rahasya guides that follow.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Śrī Dattātreyāya namaḥ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> How did a warrior become a seeker?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> By losing, Zappy, and then asking the right teacher.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/srividya/">Śrīvidyā · Teachers and texts<small class="collection-size"> · 124 articles</small></a>. Previous: <a href="/srividya/teachers/agastya-lopamudra/">Agastya and Lopāmudrā</a>. Next: <a href="/srividya/teachers/bhaskararaya/">Bhāskararāya</a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#datta">Who Is Dattātreya</a></li><li><span class="num">3</span><a href="#avadhuta">The Avadhūta</a></li><li><span class="num">4</span><a href="#lineages">Dattātreya’s Many Lines</a></li><li><span class="num">5</span><a href="#parashurama">Who Is Paraśurāma</a></li><li><span class="num">6</span><a href="#renuka">Reṇukā, The Goddess</a></li><li><span class="num">7</span><a href="#rama">The Warrior Humbled</a></li><li><span class="num">8</span><a href="#kalpasutra">The Paraśurāma Kalpasūtra</a></li><li><span class="num">9</span><a href="#commentaries">Reading The Kalpasūtra</a></li><li><span class="num">10</span><a href="#tripura">The Tripurā Rahasya</a></li><li><span class="num">11</span><a href="#haritayana">Haritāyana And Nārada</a></li><li><span class="num">12</span><a href="#meaning">What They Teach</a></li><li><span class="num">13</span><a href="#glossary">Glossary</a></li><li><span class="num">14</span><a href="#end">On One Page</a></li><li><span class="num">15</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">Teacher and student</div>
+<table class="ct fact"><tr><td>Dattātreya</td><td>The divine teacher: son of Atri and Anasūyā, the three gods in one</td></tr><tr><td>Paraśurāma</td><td>The warrior sage with the axe, son of Jamadagni and Reṇukā</td></tr><tr><td>Teaching</td><td>Dattātreya is said to have taught Paraśurāma the worship of Tripurā</td></tr><tr><td>Kalpasūtra</td><td>The Paraśurāma Kalpasūtra, a key Śrīvidyā manual, bears the student’s name</td></tr><tr><td>Tripurā Rahasya</td><td>Their dialogue on the Self; four guides follow this one</td></tr><tr><td>Our rule</td><td>We describe the texts; the rites they teach are given by a guru</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A warrior learning from a wandering sage?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The fiercest fighter of the Purāṇas, taught by the gentlest teacher. That’s this pair, Zappy.</p></div></div>
+<div class="panel reading"><p>Dattātreya and Paraśurāma are, for Śrīvidyā, the teacher and student behind two very different kinds of text. One is the Paraśurāma Kalpasūtra, a terse manual of worship. The other is the Tripurā Rahasya, a long, story-filled dialogue on the nature of the Self.</p><p>This guide introduces both figures, explains how the tradition traces its texts back to them, and sets the scene for the four Tripurā Rahasya guides that follow.</p><p>As always in this series, we describe the texts and their history. The rites the Kalpasūtra sets out are taught by a guru, and this guide does not give them.</p></div></section>
+<section class="page" id="datta"><h2 class="page-title">WHO IS DATTĀTREYA</h2><div class="sub">The given one, son of Atri</div>
+<table class="ct fact"><tr><td>Parents</td><td>The sage Atri and his wife Anasūyā, model of faithfulness</td></tr><tr><td>Birth</td><td>Brahmā, Viṣṇu and Śiva “gave” themselves as her sons; hence Datta, “given”</td></tr><tr><td>Name</td><td>Datta + Ātreya, “son of Atri”</td></tr><tr><td>Form</td><td>Later shown with three heads and six arms, with a cow and four dogs</td></tr><tr><td>Brothers</td><td>In some accounts, Soma (the moon) and Durvāsa are his brothers</td></tr><tr><td>Festival</td><td>Datta Jayantī, on the full moon of Mārgaśīrṣa</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Three heads?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In later art, yes: Brahmā, Viṣṇu and Śiva in one. The three-headed image is first described in the Marathi Guru Caritra, around 1550.</p></div></div>
+<div class="panel reading"><p>Dattātreya is born to the sage Atri and his wife Anasūyā, whose faithfulness was so great that the three gods themselves came to her as sons. The name Datta, “given”, refers to that gift; Ātreya means son of Atri.</p><p>He is usually counted as a form of Viṣṇu, but also as the three gods in one. In later art, especially from Maharashtra, he has three heads and six arms, and is followed by a cow and four dogs.</p><p>Datta Jayantī, his birthday, is kept on the full moon of Mārgaśīrṣa, in November–December, especially in Maharashtra, Karnataka and Andhra.</p></div></section>
+<section class="page" id="avadhuta"><h2 class="page-title">THE AVADHŪTA</h2><div class="sub">Free of every rule</div>
+<table class="ct fact"><tr><td>Avadhūta</td><td>One who has “shaken off” all ties and conventions</td></tr><tr><td>Twenty-four gurus</td><td>In the Bhāgavata, he says he learned from earth, air, sky, water, fire, moon, sun and more</td></tr><tr><td>Avadhūta Gītā</td><td>A famous song of the free soul, ascribed to him</td></tr><tr><td>Dogs</td><td>His four dogs are often read as the four Vedas</td></tr><tr><td>Cow</td><td>The wish-granting cow, the earth or dharma</td></tr><tr><td>Places</td><td>Girnār, Gāṇagāpur and Mahur are great Datta centres</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He learned from a python and a bee?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Among others. The python waits for what comes; the bee takes a little from every flower. Every creature taught him something.</p></div></div>
+<div class="panel reading"><p>Dattātreya is the great avadhūta, the one who has shaken off all ties, rules and conventions. Stories show him wandering, sometimes in odd company, testing those who would learn from him.</p><p>In the Bhāgavata Purāṇa he tells King Yadu of his twenty-four teachers in nature, among them the earth for patience, the python for contentment, the bee for taking only a little, and the child for innocence.</p><p>The Avadhūta Gītā, a famous Advaita song of the free soul, is ascribed to him. His four dogs are often read as the four Vedas following him.</p></div></section>
+<section class="page" id="lineages"><h2 class="page-title">DATTĀTREYA’S MANY LINES</h2><div class="sub">Who claims him</div>
+<table class="ct fact"><tr><td>Datta sampradāya</td><td>A Marathi devotional tradition, with Śrīpāda Śrīvallabha and Nṛsiṃha Sarasvatī</td></tr><tr><td>Nāthas</td><td>Revered as Ādi Guru; scholars think he was adopted by them later</td></tr><tr><td>Mahānubhāvas</td><td>Count him among their incarnations of God</td></tr><tr><td>Śrīvidyā</td><td>Honoured as a first teacher of the Kalpasūtra tradition</td></tr><tr><td>Mysuru</td><td>Jayacāmarājendra Wodeyar wrote a book on him (1957)</td></tr><tr><td>One figure</td><td>Yogi, avadhūta, devotee and tantric teacher at once</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He belongs to everyone?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Almost. That’s part of his charm: the guru who refuses to be owned.</p></div></div>
+<div class="panel reading"><p>Many traditions claim Dattātreya. The Datta sampradāya of Maharashtra and Karnataka honours Śrīpāda Śrīvallabha and Nṛsiṃha Sarasvatī as his incarnations, and reads the Marathi Guru Caritra.</p><p>The Nātha yogis revere him as Ādi Guru, the first teacher, though scholars such as James Mallinson think he was adopted into their lineage around the eighteenth century. The Mahānubhāvas count him among their incarnations of God.</p><p>In Śrīvidyā he heads the tradition of the Kalpasūtra. The Mysuru Maharaja Jayacāmarājendra Wodeyar, met in our Dasarā guide, wrote a book on him in 1957.</p></div></section>
+<section class="page" id="parashurama"><h2 class="page-title">WHO IS PARAŚURĀMA</h2><div class="sub">Rāma with the axe</div>
+<table class="ct fact"><tr><td>Parents</td><td>The sage Jamadagni and Reṇukā</td></tr><tr><td>Avatāra</td><td>Counted as the sixth avatāra of Viṣṇu</td></tr><tr><td>Axe</td><td>Given by Śiva, after long worship</td></tr><tr><td>Revenge</td><td>Kārtavīrya’s line killed his father; he destroyed the warrior class again and again</td></tr><tr><td>Teacher</td><td>Of Bhīṣma, Droṇa and Karṇa in the Mahābhārata</td></tr><tr><td>Immortal</td><td>One of the cirañjīvīs, said to live still on Mahendra mountain</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He’s still alive?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> So tradition says. That’s why he can teach in many ages: Bhīṣma, Karṇa, and in the Tripurā Rahasya, Haritāyana.</p></div></div>
+<div class="panel reading"><p>Paraśurāma, “Rāma with the axe”, is the son of the sage Jamadagni and Reṇukā, and is counted as the sixth avatāra of Viṣṇu. He received his axe from Śiva.</p><p>When the warrior Kārtavīrya’s line wronged his family and killed his father, he destroyed the warrior class again and again, twenty-one times in the usual telling. In the Mahābhārata he teaches arms to Bhīṣma, Droṇa and Karṇa.</p><p>He is one of the cirañjīvīs, the long-lived ones, and is said to dwell still on Mahendra mountain. Coastal Kerala and Konkan are said to have been reclaimed from the sea by his axe.</p></div></section>
+<section class="page" id="renuka"><h2 class="page-title">REṆUKĀ, THE GODDESS</h2><div class="sub">A mother honoured as Śakti</div>
+<table class="ct fact"><tr><td>Epic story</td><td>At Jamadagni’s order Paraśurāma beheaded Reṇukā, then asked a boon to bring her back</td></tr><tr><td>Tripurā Rahasya</td><td>After Jamadagni’s death, Dattātreya met Paraśurāma carrying her and worshipped her as Śakti</td></tr><tr><td>Advice</td><td>Dattātreya told the young man to seek him later</td></tr><tr><td>Worship</td><td>Reṇukā is a goddess in her own right in Karnataka and Maharashtra (Yellammā)</td></tr><tr><td>Meaning</td><td>The student first met his teacher through his mother</td></tr><tr><td>Our note</td><td>The two stories come from different texts</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Dattātreya worshipped Paraśurāma’s mother?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> As the Goddess, yes. That’s how the Tripurā Rahasya’s story of teacher and student begins.</p></div></div>
+<div class="panel reading"><p>The epic story of Reṇukā is a hard one: at his father’s order, Paraśurāma beheads her, then uses the boon he is granted to bring her back to life.</p><p>The Tripurā Rahasya tells a different episode. After Jamadagni is killed, Reṇukā resolves to follow him, and Paraśurāma carries both bodies toward the Ganges. On the way, an avadhūta, Dattātreya, honours Reṇukā as Śakti incarnate and tells the young man to come to him later.</p><p>Reṇukā is worshipped as a goddess in her own right in Karnataka and Maharashtra, often as Yellammā. In the Tripurā Rahasya, the student first meets his teacher through her.</p></div></section>
+<section class="page" id="rama"><h2 class="page-title">THE WARRIOR HUMBLED</h2><div class="sub">Meeting Rāma</div>
+<table class="ct fact"><tr><td>Rāmāyaṇa</td><td>After Rāma breaks Śiva’s bow, Paraśurāma challenges him</td></tr><tr><td>Result</td><td>Rāma strings Viṣṇu’s bow; Paraśurāma bows and withdraws</td></tr><tr><td>Tripurā Rahasya</td><td>He returns crestfallen, wondering what life is for</td></tr><tr><td>Saṃvarta</td><td>He meets the avadhūta Saṃvarta, who tells him to go to Dattātreya</td></tr><tr><td>Gandhamādana</td><td>He finds Dattātreya meditating there</td></tr><tr><td>Twelve years</td><td>He worships Tripurā for twelve years, then comes back with questions</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Losing to Rāma made him a seeker?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Exactly. Defeat cracked his pride, and that’s where the teaching could get in.</p></div></div>
+<div class="panel reading"><p>In the Rāmāyaṇa, after Rāma breaks Śiva’s bow at Sītā’s wedding, Paraśurāma confronts him and offers him Viṣṇu’s bow. Rāma strings it easily, and Paraśurāma, humbled, withdraws to the mountains.</p><p>The Tripurā Rahasya takes up the story from there. Paraśurāma returns crestfallen, meets the avadhūta Saṃvarta, and is sent to Dattātreya, whom he finds meditating on Gandhamādana.</p><p>Dattātreya initiates him into the worship of Tripurā, which he practises for twelve years on Mahendra hill. Then he returns with deeper questions, and the Jñāna Khaṇḍa begins.</p></div></section>
+<section class="page" id="kalpasutra"><h2 class="page-title">THE PARAŚURĀMA KALPASŪTRA</h2><div class="sub">A manual of Śrīvidyā worship</div>
+<svg class="pg-fig" width="360" height="150" viewBox="0 0 360 150" role="img" aria-label="How the teaching came down, by tradition"><rect width="360" height="150" fill="#fff8e7"/><rect x="12" y="56" width="62" height="38" rx="6" fill="#f9c9da" stroke="#111"/><rect x="82" y="56" width="62" height="38" rx="6" fill="#fff3b0" stroke="#111"/><rect x="152" y="56" width="62" height="38" rx="6" fill="#ffd60a" stroke="#111"/><rect x="222" y="56" width="62" height="38" rx="6" fill="#fdf0f4" stroke="#111"/><rect x="292" y="56" width="62" height="38" rx="6" fill="#f2a6c0" stroke="#111"/><path d="M74 75 h8" stroke="#111" stroke-width="2"/><path d="M144 75 h8" stroke="#111" stroke-width="2"/><path d="M214 75 h8" stroke="#111" stroke-width="2"/><path d="M284 75 h8" stroke="#111" stroke-width="2"/><text x="43" y="72" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">Śiva</text><text x="43" y="86" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111"></text><text x="113" y="72" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Viṣṇu as</text><text x="113" y="86" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Dattātreya</text><text x="183" y="72" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Paraśurāma</text><text x="253" y="72" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Sumedhā</text><text x="253" y="86" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">(Haritāyana)</text><text x="323" y="72" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">texts</text><text x="323" y="86" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">we read</text><text x="180" y="130" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">Datta Saṃhitā → Kalpasūtra; and the Tripurā Rahasya</text></svg><table class="ct fact"><tr><td>What</td><td>A book of sūtras on the worship of Lalitā and her retinue</td></tr><tr><td>Origin</td><td>From the Datta Saṃhitā, said to be 18,000 verses</td></tr><tr><td>Abridged</td><td>Paraśurāma condensed it to 6,000 sūtras in fifty parts, tradition says</td></tr><tr><td>Survives</td><td>A shorter text in ten sections, compiled by his pupil Sumedhā</td></tr><tr><td>Covers</td><td>Gaṇapati, Bālā, Lalitā, Śyāmalā, Vārāhī, fire rites and general rules</td></tr><tr><td>Our rule</td><td>We name its parts; we do not describe its rites</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why only ten sections?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> What survives is a summary of a summary, the tradition says. It’s terse enough to need a commentary on every line.</p></div></div>
+<div class="panel reading"><p>The Paraśurāma Kalpasūtra is one of the main ritual manuals of Śrīvidyā. Tradition says it began as the Datta Saṃhitā, a vast work by Dattātreya, which Paraśurāma condensed into six thousand sūtras in fifty sections.</p><p>What survives is shorter: ten sections, compiled by Paraśurāma’s pupil Sumedhā. They cover the worship of Gaṇapati, Bālā, Lalitā, Śyāmalā and Vārāhī, fire rites, and general rules.</p><p>The sūtras are extremely terse, almost code, and cannot be understood without commentary and a teacher. We give their outline only.</p></div></section>
+<section class="page" id="commentaries"><h2 class="page-title">READING THE KALPASŪTRA</h2><div class="sub">Nityotsava and Rāmeśvara</div>
+<table class="ct fact"><tr><td>Nityotsava</td><td>By Umānandanātha, a pupil of Bhāskararāya, 18th century</td></tr><tr><td>Purpose</td><td>Sets out the daily and festival worship the sūtras outline</td></tr><tr><td>Rāmeśvara</td><td>A commentary (vṛtti) of 1831 on the sūtras</td></tr><tr><td>Modern</td><td>Edited by A. Mahadeva Sastri (Baroda, 1923) and others</td></tr><tr><td>Sūtra sayings</td><td>The Tantras are not outside the Veda; the student must be pure-minded</td></tr><tr><td>Teacher’s book</td><td>Meant to be read with a guru, not alone</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So I can’t just read it and practise?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> No. It says so itself. The book is a map for teacher and student together.</p></div></div>
+<div class="panel reading"><p>Two later works make the Kalpasūtra usable. The Nityotsava of Umānandanātha, a pupil of Bhāskararāya (our next guide), sets out the daily and festival worship the sūtras outline. Rāmeśvara’s commentary of 1831 explains the sūtras line by line.</p><p>The Kalpasūtra makes some general points that matter for understanding Śrīvidyā’s self-image: that the Tantras are not outside the Veda, and that the student must be pure in mind.</p><p>A. Mahadeva Sastri’s edition of 1923 made the text and the Nityotsava widely available to scholars.</p></div></section>
+<section class="page" id="tripura"><h2 class="page-title">THE TRIPURĀ RAHASYA</h2><div class="sub">Their great dialogue</div>
+<table class="ct fact"><tr><td>Name</td><td>“The secret of Tripurā”; also the Haritāyana Saṃhitā</td></tr><tr><td>Three parts</td><td>Māhātmya (greatness), Jñāna (knowledge) and Caryā (practice, lost)</td></tr><tr><td>Frame</td><td>Haritāyana tells Nārada what Dattātreya taught Paraśurāma</td></tr><tr><td>Jñāna Khaṇḍa</td><td>About 2,160 verses on the Self, in 22 chapters</td></tr><tr><td>Ramaṇa Maharṣi</td><td>Valued it highly and often quoted it</td></tr><tr><td>Next</td><td>Four guides, one per quarter of the Jñāna Khaṇḍa</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What’s the ‘secret’?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That Tripurā, the Goddess, is the pure consciousness behind waking, dream and sleep. The four next guides unpack it.</p></div></div>
+<div class="panel reading"><p>The Tripurā Rahasya, “the secret of Tripurā”, is also called the Haritāyana Saṃhitā after its writer. It is said to have three parts: the Māhātmya Khaṇḍa on the Goddess’s greatness, the Jñāna Khaṇḍa on knowledge, and the Caryā Khaṇḍa on practice, which has not been found.</p><p>The Jñāna Khaṇḍa, about 2,160 verses in 22 chapters, is a dialogue between Dattātreya and Paraśurāma on the Self. It teaches through stories: a prince and his wise wife, a city in a hill, a debate at King Janaka’s court.</p><p>Ramaṇa Maharṣi valued it highly and often quoted it. A pupil of his translated it into English in the 1930s; our four guides follow that translation’s chapters.</p></div></section>
+<section class="page" id="haritayana"><h2 class="page-title">HARITĀYANA AND NĀRADA</h2><div class="sub">Who wrote it down</div>
+<table class="ct fact"><tr><td>Haritāyana</td><td>Sumedhā, son of Hārita; hence the patronymic</td></tr><tr><td>Past life</td><td>A boy who died saying the sacred syllable “Aiṃ”, reborn as Sumedhā, the story says</td></tr><tr><td>Madurai</td><td>He was worshipping Mīnākṣī when Nārada came to ask for the work</td></tr><tr><td>Blessing</td><td>Brahmā blessed him to write four chapters a day</td></tr><tr><td>First reader</td><td>Nārada</td></tr><tr><td>Kalpasūtra</td><td>The same Sumedhā is named as compiler of the Kalpasūtra</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Mīnākṣī again!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Yes. The writer of the Tripurā Rahasya was at Madurai when he was asked to begin.</p></div></div><div class="key">See: <a href="/srividya/temples/madurai-minakshi/">Madurai Mīnākṣī</a></div>
+<div class="panel reading"><p>The Introduction to the Ramanasramam translation tells Haritāyana’s story. A boy named Alarka died saying the sacred syllable “Aiṃ”, and for that merit was reborn as Sumedhā, son of Hārita; Haritāyana is his patronymic.</p><p>Paraśurāma passed the teaching to him. When Nārada came from Brahmā’s world to ask for the work, Haritāyana was worshipping Mīnākṣī at Madurai and said he could not remember it all. Brahmā blessed him to write four chapters a day, and Nārada was its first reader.</p><p>The same name, Sumedhā, is given for the compiler of the Kalpasūtra, so tradition makes one pupil responsible for both the manual and the dialogue.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT THEY TEACH</h2><div class="sub">For the reader</div>
+<table class="ct fact"><tr><td>Teacher</td><td>The guru who belongs to no school</td></tr><tr><td>Student</td><td>Even a great warrior must become a beginner</td></tr><tr><td>Defeat</td><td>Humbling can open the door</td></tr><tr><td>Ritual and knowledge</td><td>The same pair gave us a manual of worship and a book on the Self</td></tr><tr><td>Mother</td><td>The teacher first appears honouring the student’s mother</td></tr><tr><td>Read</td><td>The Tripurā Rahasya guides that follow</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What’s the one thing to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That Paraśurāma, after all his victories, sat down and asked a question. That’s where wisdom starts.</p></div></div>
+<div class="panel reading"><p>Dattātreya is the teacher who belongs to no single school, and so to all of them. Paraśurāma is the student who had to lose before he could learn.</p><p>Together they stand behind both sides of Śrīvidyā: ritual worship, set out in the Kalpasūtra, and knowledge of the Self, set out in the Tripurā Rahasya. The tradition does not see these as rivals.</p><p>The four guides that follow tell the Tripurā Rahasya’s stories in order, from Paraśurāma’s first question to the end.</p></div></section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Datta</td><td>Given</td></tr><tr><td>Ātreya</td><td>Son of Atri</td></tr><tr><td>Avadhūta</td><td>One who has shaken off all ties</td></tr><tr><td>Kalpasūtra</td><td>A manual of ritual in sūtras</td></tr><tr><td>Saṃhitā</td><td>A collection</td></tr><tr><td>Cirañjīvī</td><td>Long-lived, immortal</td></tr><tr><td>Khaṇḍa</td><td>Section</td></tr><tr><td>Vṛtti</td><td>Commentary</td></tr><tr><td>Nityotsava</td><td>“Daily festival”, a worship manual</td></tr><tr><td>Saṃvarta</td><td>An avadhūta sage, brother of Bṛhaspati</td></tr></table>
+<div class="panel reading"><p>Saṃvarta, the avadhūta who sends Paraśurāma to Dattātreya, is a brother of Bṛhaspati, teacher of the gods. Like Dattātreya, he appears in several Purāṇas as an unconventional, wandering sage.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>1.</b> Dattātreya, the three gods in one, is the avadhūta teacher.</div><div><b>2.</b> Paraśurāma, the axe-bearer, learned Tripurā worship from him.</div><div><b>3.</b> The Paraśurāma Kalpasūtra, read with the Nityotsava, is a key Śrīvidyā manual.</div><div><b>4.</b> The Tripurā Rahasya records their dialogue on the Self.</div><div><b>5.</b> Defeat by Rāma, and a mother honoured as Śakti, began the journey.</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What comes next?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Bhāskararāya, the great commentator on the Lalitā Sahasranāma.</p></div></div><div class="key">Next: <a href="/srividya/teachers/bhaskararaya/">Bhāskararāya</a></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> Wikipedia, “Dattatreya”, “Parashurama Kalpasutra” and “Tripura Rahasya”; A. Mahadeva Sastri’s edition of the Paraśurāma Kalpasūtra with the Nityotsava (Baroda, 1923), Introduction; Hindu-blog on the Kalpasūtra and Rāmeśvara’s commentary; Tripurā Rahasya, tr. Munagala S. Venkataramaiah (Sri Ramanasramam), Introduction and Chapters I–II; Antonio Rigopoulos, <i>Dattātreya: The Immortal Guru, Yogin and Avatāra</i> (1998); James Mallinson on Dattātreya and the Nāthas; Bhāgavata Purāṇa, Book 11 (the 24 gurus); Mahābhārata and Rāmāyaṇa for Paraśurāma.</p><p><b>Sources differ / unverified:</b> The Datta Saṃhitā’s size (10,000, 18,000 verses) is given differently. The chain Datta → Paraśurāma → Sumedhā is traditional; scholars date the Kalpasūtra and the Tripurā Rahasya to the medieval period. The Reṇukā episodes differ between the epic and the Tripurā Rahasya. Dattātreya’s place in the Nātha tradition is debated. Dates of the Nityotsava are approximate.</p><p><b>What we leave out:</b> This series explains names, stories, philosophy, the Śrīcakra’s geometry, deities, temples and music. It does not reproduce, assemble or decode any initiatory mantra (Bālā, Pañcadaśī, Ṣoḍaśī or others), nor any nyāsa, dīkṣā or pūjā procedure: those are received from a teacher.</p><p>Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/scriptures/">Scriptures and Stories</a><span class="sep">›</span><a href="/devi/">Devi</a><span class="also">More for Devi: <a href="/devi/#who">who she is</a> · <a href="/devi/#hymns">hymns</a> · <a href="/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<!-- reader-feedback:start -->
+<div class="bhakti-reader-feedback" style="box-sizing:border-box;max-width:820px;margin:26px auto 32px;padding:22px 24px;border:1px solid #dec8aa;border-radius:12px;background:#fff8ed;color:#321f2a;font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif">
+  <strong style="display:block;font:700 25px/1.25 Georgia,serif;margin-bottom:8px">Share your thoughts</strong>
+  <p style="margin:0 0 13px">If an article touched your heart, or you have a suggestion, reflection or correction, I would love to hear from you.</p>
+  <a href="mailto:srini.presents@gmail.com?subject=Bhakti%20reader%20feedback" style="display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:10px 14px;border-radius:6px;background:#973f2c;color:white;text-decoration:none;font-weight:700">Write to me · srini.presents@gmail.com</a>
+</div>
+<!-- reader-feedback:end -->
+</body>
+</html>

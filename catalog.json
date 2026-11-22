@@ -470,6 +470,31 @@
    ],
    "tile": "<li><a href=\"/srividya/lalita-sahasranama/\"><div class=\"tile-art\" style=\"background:#241029\"><img src=\"/srividya/lalita-sahasranama/part-1/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:auto\"></div><div class=\"tile-copy\"><h2>Lalitā Sahasranāma</h2><p>An illustrated reading of the thousand names of Lalitā in ten parts.</p><span class=\"read\">Read</span></div></a></li>\n",
    "shelf": "Lalitā"
+  },
+  {
+   "path": "/srividya/teachers/",
+   "door": "scriptures",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/srividya/teachers/\"><div class=\"tile-art\" style=\"background:#f3dce5\"><img src=\"/srividya/teachers/agastya-lopamudra/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:136px;object-fit:contain\"></div><div class=\"tile-copy\"><h2>Teachers and Texts</h2><p>Teachers of Śrī Vidyā and a four-part reading of Tripurā Rahasya.</p><span class=\"read\">Read</span></div></a></li>\n"
+  },
+  {
+   "path": "/srividya/temples/",
+   "door": "temples",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/srividya/temples/\"><div class=\"tile-art\" style=\"background:#f3dce5\"><img src=\"/srividya/temples/kanchi-kamakshi/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:136px;object-fit:contain\"></div><div class=\"tile-copy\"><h2>Temples</h2><p>Illustrated guides to temples associated with Śrī Vidyā.</p><span class=\"read\">Read</span></div></a></li>\n",
+   "group": "places"
+  },
+  {
+   "path": "/srividya/festivals/",
+   "door": "festivals",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/srividya/festivals/\"><div class=\"tile-art\" style=\"background:#f3dce5\"><img src=\"/srividya/festivals/navaratri-mysuru-dasara/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:136px;object-fit:contain\"></div><div class=\"tile-copy\"><h2>Festivals</h2><p>Navarātri, Mysuru Dasarā, Lalitā Pañcamī and Lalitā Jayantī.</p><span class=\"read\">Read</span></div></a></li>\n"
   }
  ]
 }
