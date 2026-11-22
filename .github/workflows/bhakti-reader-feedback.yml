@@ -1,0 +1,29 @@
+name: Bhakti reader feedback
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/index.html'
+      - 'tools/bhakti_feedback.py'
+      - '.github/workflows/bhakti-reader-feedback.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update-feedback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Update Bhakti article footers
+        run: python3 tools/bhakti_feedback.py
+      - name: Commit updated articles
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "srini.presents"
+            git config user.email "srini.presents@gmail.com"
+            git add .
+            git commit -m "Replace Bhakti social promotions with reader feedback links"
+            git push
+          fi
