@@ -158,6 +158,7 @@ def article_index(entries, pages):
 
 def build(entries, pages):
     by = lambda door, deity=None, group=None: [e for e in entries if e['door'] == door
+                                                and not (door == 'gods' and e['path'] == '/srividya/dasha-mahavidya/')
                                                 and (deity is None or deity in e['deities'])
                                                 and (group is None or e.get('group') == group)]
     tiles = lambda es: [e['tile'] for e in es]
