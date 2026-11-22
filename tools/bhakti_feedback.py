@@ -21,17 +21,19 @@ for p in ROOT.rglob("index.html"):
     if any(part.startswith(".") for part in p.relative_to(ROOT).parts):
         continue
     s = p.read_text(encoding="utf-8")
+    has_promo_nav = '<a href="https://srinipresents.com/">Srini Presents</a>' in s
     has_social = bool(social.search(s))
     has_article = '<section class="page"' in s or "class='page'" in s
     has_trail = "<!-- bhaktitrail:auto -->" in s
-    if not has_social and not (has_article and has_trail):
+    if not has_social and not has_promo_nav and not (has_article and has_trail):
         continue
     count += 1
     new = social.sub("", s)
+    new = re.sub(r'\s*<a href="https://srinipresents\.com/">Srini Presents</a>', "", new)
     new = existing.sub("", new)
-    if has_trail:
+    if has_trail and (has_social or has_article):
         new = new.replace("<!-- bhaktitrail:auto -->", NOTE + "\n<!-- bhaktitrail:auto -->", 1)
-    else:
+    elif has_social:
         new = new.replace("</body>", NOTE + "\n</body>", 1)
     if new != s:
         p.write_text(new, encoding="utf-8")
