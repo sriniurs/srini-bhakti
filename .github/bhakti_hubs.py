@@ -295,4 +295,6 @@ if __name__ == '__main__':
     strict = '--strict' in sys.argv
     build(entries, catalogue_pages(entries, strict))
     trails(entries, strict)
+    from collection_counts import annotate
+    annotate()
     print(f'bhakti hubs: {len(entries)} catalog entries')

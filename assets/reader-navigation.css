@@ -81,3 +81,20 @@ html:has(.sr-reader-slot) { scroll-padding-top: 58px; }
     padding-inline: 6px !important;
   }
 }
+
+.collection-size {
+  color: inherit;
+  font: 650 .79rem/1.3 system-ui, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.collection-size--card {
+  display: block;
+  margin: 5px 0 6px;
+  color: #795238;
+}
+.bhakti-topics .collection-size--card {
+  margin: 0;
+  padding: 0 8px 12px;
+  text-align: center;
+}
