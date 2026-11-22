@@ -30,11 +30,13 @@ def apply(root, main=False):
         clean = BLOCK.sub('', original)
         parts = relative.parts[:-1]
         parent = '/' + '/'.join(parts[:-1]) + '/' if len(parts) > 1 else '/'
+        if parts and parts[0] == 'ganesha':
+            parent = f'/ganesha/#{parts[1]}' if len(parts) > 1 else '/gods/#ganesha'
         if len(parts) == 2 and parts[0] == 'health' and re.match(r'^\d{2}-', parts[1]):
             parent = '/health/general/'
         if main and len(parts) == 1 and parts[0] not in {'about','archive','bhakti','gods','health','ortho','search'}:
             parent = '/archive/'
-        if not (root / parent.strip('/') / 'index.html').is_file():
+        if not (root / parent.split('#', 1)[0].strip('/') / 'index.html').is_file():
             parent = '/'
         block = BAR.replace('__BACK_PATH__', parent).replace('__SEARCH_PATH__', search)
         line_end = '\r\n' if '\r\n' in original else '\n'

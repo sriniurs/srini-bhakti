@@ -27,7 +27,7 @@ DOORS = {
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
             'scriptures': '/scriptures/', 'temples': '/temples-of-india/', 'festivals': '/festivals/'}
 DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she'),
-           'hanuman': ('Hanumān', 'he'), 'subramanya': ('Subramanya', 'he')}
+           'hanuman': ('Hanumān', 'he'), 'subramanya': ('Subramanya', 'he'), 'ganesha': ('Gaṇeśa', 'he')}
 
 
 def plural(n, word):
@@ -36,8 +36,8 @@ def plural(n, word):
 
 GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
-        '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
-CUSTOM_DEITY_LANDING_PAGES = {'subramanya'}
+        '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/', '/ganesha/'}
+CUSTOM_DEITY_LANDING_PAGES = {'subramanya', 'ganesha'}
 HUBS.update(f'/hymns/{deity}/' for deity in DEITIES if deity not in CUSTOM_DEITY_LANDING_PAGES)
 HUBS.update({
     '/srividya/foundations/',

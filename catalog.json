@@ -495,6 +495,14 @@
     "devi"
    ],
    "tile": "<li><a href=\"/srividya/festivals/\"><div class=\"tile-art\" style=\"background:#f3dce5\"><img src=\"/srividya/festivals/navaratri-mysuru-dasara/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><h2>Festivals</h2><p>Navarātri, Mysuru Dasarā, Lalitā Pañcamī and Lalitā Jayantī.</p><span class=\"read\">Read</span></div></a></li>\n"
+  },
+  {
+   "path": "/ganesha/",
+   "door": "gods",
+   "deities": [
+    "ganesha"
+   ],
+   "tile": "<li><a href=\"/ganesha/\"><div class=\"tile-art\" style=\"background:#f1dfbd\"><img src=\"/ganesha/ganesha.jpg\" alt=\"\" width=\"1200\" height=\"800\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Collection</strong><h2>Gaṇeśa</h2><p>Explore Gaṇeśa through his origins, stories, forms, hymns, festivals and temples.</p><span class=\"read\">Open collection ↗</span></div></a></li>"
   }
  ]
 }
