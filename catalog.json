@@ -449,6 +449,27 @@
    ],
    "tile": "<li><a href=\"/temples-of-india/ahobilam/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"22\" fill=\"#e08a2a\"/><circle cx=\"50\" cy=\"48\" r=\"14\" fill=\"#ffb84d\"/><path d=\"M30 92 q-2 -30 20 -34 q22 4 20 34z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Ahobilam</h2><p>The nine Narasiṃhas of the Nallamala hills, Cheñcu Lakṣmī and the Ugra Stambha.</p><span class=\"read\">Read ↗</span></div></a></li>",
    "group": "places"
+  },
+  {
+   "path": "/srividya/saundaryalahari/",
+   "door": "hymns",
+   "deities": [],
+   "tile": "<li><a href=\"/srividya/saundaryalahari/\"><div class=\"tile-art\" style=\"background:#241029\"><img src=\"/srividya/saundaryalahari/part-1/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:auto\"></div><div class=\"tile-copy\"><h2>Saundaryalaharī</h2><p>An illustrated reading of all 100 verses in five parts.</p><span class=\"read\">Read</span></div></a></li>\n"
+  },
+  {
+   "path": "/srividya/khadgamala/",
+   "door": "hymns",
+   "deities": [],
+   "tile": "<li><a href=\"/srividya/khadgamala/\"><div class=\"tile-art\" style=\"background:#241029\"><img src=\"/srividya/khadgamala/part-1/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:auto\"></div><div class=\"tile-copy\"><h2>Devī Khaḍgamālā</h2><p>An illustrated reading of the garland of names through the nine enclosures of the Śrīcakra.</p><span class=\"read\">Read</span></div></a></li>\n"
+  },
+  {
+   "path": "/srividya/lalita-sahasranama/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/srividya/lalita-sahasranama/\"><div class=\"tile-art\" style=\"background:#241029\"><img src=\"/srividya/lalita-sahasranama/part-1/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\" style=\"display:block;width:100%;height:auto\"></div><div class=\"tile-copy\"><h2>Lalitā Sahasranāma</h2><p>An illustrated reading of the thousand names of Lalitā in ten parts.</p><span class=\"read\">Read</span></div></a></li>\n",
+   "shelf": "Lalitā"
   }
  ]
 }
