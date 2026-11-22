@@ -1,5 +1,5 @@
 {
- "_readme": "Single source of truth for the Bhakti section. Every article or series under / needs one entry here. door: gods (who a deity is: form, stories, symbols, Mahāvidyās), hymns (anything you chant: stotra, mantra, sūkta), scriptures (a text or story read in parts), temples (anything you can visit). deities: any of shiva, vishnu, devi. group (temples only): circuits or regional. tile: the hub card HTML. Then run python3 .github/bhakti_hubs.py --strict. Order here is the order on the hubs.",
+ "_readme": "Single source of truth for the Bhakti section. Every article or series under / needs one entry here. door: gods (who a deity is: form, stories, symbols, Mahāvidyās), hymns (anything you chant: stotra, mantra, sūkta), scriptures (a text or story read in parts), temples (anything you can visit). deities: any of shiva, vishnu, devi. group (temples only): circuits or places. tile: the hub card HTML. Then run python3 .github/bhakti_hubs.py --strict. Order here is the order on the hubs.",
  "entries": [
   {
    "path": "/srividya/dasha-mahavidya/",
@@ -350,7 +350,8 @@
    "deities": [
     "shiva"
    ],
-   "tile": "<li><a href=\"/temples-of-india/pancha-kedar/\"><div class=\"tile-art\" style=\"background:#dceefa\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 86 L32 40 L46 60 L62 30 L94 86z\" fill=\"#9fb3c8\"/><path d=\"M54 44 L62 30 L70 44 l-4 4 l-4 -3 l-4 3z\" fill=\"#fff\"/><rect x=\"10\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M10 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"27\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M27 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"44\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M44 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"61\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M61 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"78\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M78 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 5 shrines</strong><h2>Pañca Kedār</h2><p>Śiva’s five Himalayan shrines: Kedārnāth, Tuṅganāth, Rudranāth, Madhyamaheśvar and Kalpeśvar, and the bull legend.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+   "tile": "<li><a href=\"/temples-of-india/pancha-kedar/\"><div class=\"tile-art\" style=\"background:#dceefa\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 86 L32 40 L46 60 L62 30 L94 86z\" fill=\"#9fb3c8\"/><path d=\"M54 44 L62 30 L70 44 l-4 4 l-4 -3 l-4 3z\" fill=\"#fff\"/><rect x=\"10\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M10 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"27\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M27 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"44\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M44 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"61\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M61 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"78\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M78 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 5 shrines</strong><h2>Pañca Kedār</h2><p>Śiva’s five Himalayan shrines: Kedārnāth, Tuṅganāth, Rudranāth, Madhyamaheśvar and Kalpeśvar, and the bull legend.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "circuits"
   },
   {
    "path": "/temples-of-india/pancha-bhuta-sthalas/",
@@ -398,16 +399,7 @@
     "vishnu"
    ],
    "tile": "<li><a href=\"/temples-of-india/triranga/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 70 q40 14 80 0 q-6 10 -40 12 q-34 -2 -40 -12z\" fill=\"#7aa86a\"/><circle cx=\"20\" cy=\"54\" r=\"5\" fill=\"#7aa86a\"/><circle cx=\"14\" cy=\"60\" r=\"5\" fill=\"#7aa86a\"/><circle cx=\"26\" cy=\"60\" r=\"5\" fill=\"#7aa86a\"/><path d=\"M26 66 q30 -14 56 -2\" fill=\"none\" stroke=\"#3b6fd0\" stroke-width=\"10\"/><circle cx=\"28\" cy=\"60\" r=\"8\" fill=\"#3b6fd0\"/><path d=\"M22 52 h12 l-2 -8 h-8z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">4 articles · overview + 3 guides</strong><h2>Triraṅga</h2><p>Three island temples of Raṅganātha on the Kāverī: Ādi Raṅga, Madhya Raṅga and Antya Raṅga (Śrīraṅgam).</p><span class=\"read\">Open series ↗</span></div></a></li>",
-   "group": "regional"
-  },
-  {
-   "path": "/temples-of-india/ahobilam/",
-   "door": "temples",
-   "deities": [
-    "vishnu"
-   ],
-   "tile": "<li><a href=\"/temples-of-india/ahobilam/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"22\" fill=\"#e08a2a\"/><circle cx=\"50\" cy=\"48\" r=\"14\" fill=\"#ffb84d\"/><path d=\"M30 92 q-2 -30 20 -34 q22 4 20 34z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Ahobilam</h2><p>The nine Narasiṃhas of the Nallamala hills, Cheñcu Lakṣmī and the Ugra Stambha.</p><span class=\"read\">Read ↗</span></div></a></li>",
-   "group": "regional"
+   "group": "circuits"
   },
   {
    "path": "/temples-of-india/around-mysuru/",
@@ -418,7 +410,16 @@
     "vishnu"
    ],
    "tile": "<li><a href=\"/temples-of-india/around-mysuru/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 90 h60 l-4 -12 h-52z M26 78 h48 l-4 -12 h-40z M32 66 h36 l-4 -12 h-28z M38 54 h24 l-4 -12 h-16z\" fill=\"#e2cfa8\"/><path d=\"M44 42 l6 -14 l6 14z\" fill=\"#e0a800\"/><rect x=\"44\" y=\"76\" width=\"12\" height=\"14\" fill=\"#5a3a1a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">15 guides + a Tipu special</strong><h2>Temples around Mysuru</h2><p>Reference guides to the great temples of the Kāverī country around Mysuru, Cāmuṇḍeśvarī, the Palace temples, Melukōṭe, Talakāḍu, Nañjanagūḍu and more.</p><span class=\"read\">Open series ↗</span></div></a></li>",
-   "group": "regional"
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/ahobilam/",
+   "door": "temples",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/temples-of-india/ahobilam/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"22\" fill=\"#e08a2a\"/><circle cx=\"50\" cy=\"48\" r=\"14\" fill=\"#ffb84d\"/><path d=\"M30 92 q-2 -30 20 -34 q22 4 20 34z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Ahobilam</h2><p>The nine Narasiṃhas of the Nallamala hills, Cheñcu Lakṣmī and the Ugra Stambha.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
   }
  ]
 }

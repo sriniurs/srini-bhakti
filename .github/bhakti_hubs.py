@@ -34,7 +34,7 @@ def plural(n, word):
     return f'{n} {word}' + ('' if n == 1 else 's')
 
 
-GROUPS = {'circuits': 'Pan-India circuits', 'regional': 'Regional guides'}
+GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/'}
 CUSTOM_DEITY_LANDING_PAGES = {'subramanya'}
@@ -74,6 +74,8 @@ def load():
         seen.add(p)
         if e['door'] not in DOORS:
             sys.exit(f'catalog: unknown door {e["door"]} for {p}')
+        if e['door'] == 'temples' and e.get('group') not in GROUPS:
+            sys.exit(f'catalog: missing or invalid temple group for {p}')
         for d in e['deities']:
             if d not in DEITIES:
                 sys.exit(f'catalog: unknown deity {d} for {p}')
