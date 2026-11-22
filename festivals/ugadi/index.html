@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ugādi · Festivals · srini.presents</title>
+<meta name="description" content="Ugādi (Yugādi), the new year of Karnataka and the Telugu states: Caitra śukla pratipadā (7 April 2027, Plavaṅga saṃvatsara), oil bath, mango toraṇa, bēvu-bella, six-taste pacchaḍi, hōḷige, pañcāṅga śravaṇa, and Guḍi Pāḍavā.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
+<link rel="canonical" href="https://bhakti.srinipresents.com/festivals/ugadi/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ugādi">
+<meta property="og:description" content="Ugādi (Yugādi), the new year of Karnataka and the Telugu states: Caitra śukla pratipadā (7 April 2027, Plavaṅga saṃvatsara), oil bath, mango toraṇa, bēvu-bella, six-taste pacchaḍi, hōḷige, pañcāṅga śravaṇa, and Guḍi Pāḍavā.">
+<meta property="og:url" content="https://bhakti.srinipresents.com/festivals/ugadi/">
+<meta property="og:image" content="https://bhakti.srinipresents.com/assets/editorial/festivals.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
+<div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
+<a class="sr-reader-back" href="/festivals/"><span aria-hidden="true">&larr;</span> Back</a>
+<a href="/"><span aria-hidden="true">&#8962;</span> Home</a>
+<a href="/search/"><span aria-hidden="true"><span class="sr-search-icon"></span></span> Search</a>
+</nav></div>
+<script defer src="/assets/reader-navigation.js"></script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
+  <header class="cover-heading">
+    <p class="byline">Srini presents</p>
+    <p class="cover-chapter">FESTIVALS</p>
+    <h1>UGĀDI</h1>
+    <p class="cover-subtitle">Bitter and sweet: a new year begins</p>
+  </header>
+  <div class="cover-body">
+    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Mango-leaf toraṇa, a pot, neem and jaggery, and a Guḍi pole"><rect width="380" height="268" fill="#2a9d6f" rx="8"/><rect y="226" width="380" height="42" fill="#7a1d12"/><g transform="translate(30 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><g transform="translate(94 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><g transform="translate(158 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><g transform="translate(222 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><g transform="translate(286 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><g transform="translate(350 246) scale(1)" stroke="#111" stroke-width="1.4"><path d="M-14 0 q14 14 28 0 q-4 -4 -14 -4 q-10 0 -14 4z" fill="#c0703a"/><path d="M0 -4 q-6 -10 0 -20 q6 10 0 20z" fill="#ffb000"/><path d="M0 -6 q-3 -6 0 -12 q3 6 0 12z" fill="#fff3b0" stroke="none"/></g><path d="M20 18 H360" stroke="#7a4a1a" stroke-width="3"/><path transform="translate(28 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(52 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(76 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(100 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(124 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(148 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(172 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(196 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(220 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(244 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(268 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(292 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(316 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><path transform="translate(340 18)" d="M0 0 q8 14 0 30 q-8 -16 0 -30z" fill="#2a9d6f" stroke="#111"/><g transform="translate(320 140)" stroke="#111" stroke-width="1.6"><path d="M0 60 V-50" stroke="#7a4a1a" stroke-width="4"/><path d="M-14 -40 q14 36 28 0z" fill="#ffd60a"/><path d="M-10 -52 q10 -12 20 0 v6 h-20z" fill="#c0703a"/><circle cx="-8" cy="-28" r="3" fill="#fff"/><circle cx="0" cy="-28" r="3" fill="#fff"/><circle cx="8" cy="-28" r="3" fill="#fff"/></g><g transform="translate(190 190) scale(1.4)" stroke="#111" stroke-width="1.6"><path d="M-22 0 q-8 30 22 34 q30 -4 22 -34z" fill="#e0a800"/><rect x="-12" y="-6" width="24" height="8" fill="#c97a1a"/><path d="M0 -6 q-12 -14 -19.200000000000003 -4" fill="#2a9d6f"/><path d="M0 -6 q-5 -14 -8.0 -4" fill="#2a9d6f"/><path d="M0 -6 q5 -14 8.0 -4" fill="#2a9d6f"/><path d="M0 -6 q12 -14 19.200000000000003 -4" fill="#2a9d6f"/><circle cy="-16" r="10" fill="#8a5a2a"/></g><g transform="translate(80 180)" stroke="#111" stroke-width="1"><path transform="rotate(-60)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(-40)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(-20)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(0)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(20)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(40)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/><path transform="rotate(60)" d="M0 0 q4 -8 0 -18 q-4 10 0 18z" fill="#3a8a3a"/></g><circle cx="100" cy="190" r="10" fill="#c97a1a" stroke="#111"/></svg></figure>
+    <p class="cover-invocation">FESTIVALS · A REFERENCE GUIDE</p>
+    <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p>On the first day of Caitra, Karnataka and the Telugu lands begin their year: an <b>oil bath</b> before dawn, <b>mango leaves</b> over the door, <b>bēvu-bella</b> or the six-taste <b>pacchaḍi</b>, hōḷige for lunch, and the new year’s almanac read out in the evening.</p><p>This guide explains the date and the year-name, the stories, the customs, and Maharashtra’s <b>Guḍi Pāḍavā</b>.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Ugādi habbada śubhāśayagaḷu,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why eat something bitter on a happy day?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> So the bitter days don’t surprise you, Zappy. You’ve already had a taste.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/festivals/">Festivals<small class="collection-size"> · 14 articles</small></a>. Previous: <a href="/festivals/holi/">Holi and Kāmana Habba</a>. Next: <a href="/festivals/rama-navami/">Rāma Navamī</a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#date">The Date And The Year</a></li><li><span class="num">3</span><a href="#story">The Stories</a></li><li><span class="num">4</span><a href="#morning">The Morning</a></li><li><span class="num">5</span><a href="#bevubella">Bēvu-Bella</a></li><li><span class="num">6</span><a href="#pachadi">Ugādi Pacchaḍi</a></li><li><span class="num">7</span><a href="#food">The Feast</a></li><li><span class="num">8</span><a href="#panchanga">Pañcāṅga Śravaṇa</a></li><li><span class="num">9</span><a href="#moon">The New Moon In The Sky</a></li><li><span class="num">10</span><a href="#padwa">Guḍi Pāḍavā</a></li><li><span class="num">11</span><a href="#india">Elsewhere</a></li><li><span class="num">12</span><a href="#meaning">The Meaning</a></li><li><span class="num">13</span><a href="#glossary">Glossary</a></li><li><span class="num">14</span><a href="#end">On One Page</a></li><li><span class="num">15</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The new year of Karnataka and the Telugu lands</div>
+<svg class="pg-fig" width="360" height="170" viewBox="0 0 360 170" role="img" aria-label="Ugādi pacchaḍi: six tastes of the year"><rect width="360" height="170" fill="#fff8e7"/><rect x="8" y="14" width="108" height="64" rx="8" fill="#ffd60a" stroke="#111"/><text x="62" y="34" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Sweet</text><text x="62" y="50" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">jaggery</text><text x="62" y="64" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= happiness</text><rect x="126" y="14" width="108" height="64" rx="8" fill="#2a9d6f" stroke="#111"/><text x="180" y="34" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Bitter</text><text x="180" y="50" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">neem flower</text><text x="180" y="64" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= sorrow</text><rect x="244" y="14" width="108" height="64" rx="8" fill="#c97a1a" stroke="#111"/><text x="298" y="34" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Sour</text><text x="298" y="50" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">tamarind</text><text x="298" y="64" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= dislikes</text><rect x="8" y="86" width="108" height="64" rx="8" fill="#fff" stroke="#111"/><text x="62" y="106" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Salty</text><text x="62" y="122" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">salt</text><text x="62" y="136" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= interest</text><rect x="126" y="86" width="108" height="64" rx="8" fill="#e0302a" stroke="#111"/><text x="180" y="106" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Hot</text><text x="180" y="122" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">pepper or chilli</text><text x="180" y="136" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= anger</text><rect x="244" y="86" width="108" height="64" rx="8" fill="#7ac07a" stroke="#111"/><text x="298" y="106" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">Astringent</text><text x="298" y="122" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">raw mango</text><text x="298" y="136" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">= surprise</text></svg><table class="ct fact"><tr><td>When</td><td>Caitra śukla pratipadā: the first day of the bright half of Caitra</td></tr><tr><td>2027</td><td>Wednesday 7 April</td></tr><tr><td>New year</td><td>Plavaṅga saṃvatsara (41st); Śaka 1949</td></tr><tr><td>Name</td><td>Yugādi: “beginning of an age”</td></tr><tr><td>Karnataka</td><td>Bēvu-bella (neem and jaggery), oil bath, hōḷige</td></tr><tr><td>Telugu</td><td>Ugādi pacchaḍi of six tastes</td></tr><tr><td>Maharashtra</td><td>Guḍi Pāḍavā: a raised guḍi pole</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why not 1 January?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> For the moon and the season, Zappy. The year begins with spring and a new moon.</p></div></div>
+<div class="panel reading"><p>Ugādi, or Yugādi, “the beginning of an age”, is the new year of Karnataka, Andhra Pradesh and Telangana. It falls on the first day of the bright half of Caitra, in late March or April; in 2027 on Wednesday 7 April, when Plavaṅga saṃvatsara and Śaka 1949 begin.</p><p>Families rise early for an oil bath, hang mango leaves over the door, worship, and eat bēvu-bella, neem with jaggery, in Karnataka, or the six-taste Ugādi pacchaḍi in the Telugu states. Maharashtra keeps the same day as Guḍi Pāḍavā.</p></div></section>
+<section class="page" id="date"><h2 class="page-title">THE DATE AND THE YEAR</h2><div class="sub">Caitra begins</div>
+<table class="ct fact"><tr><td>Tithi</td><td>Pratipadā after the amāvāsyā ending Phālguna</td></tr><tr><td>Season</td><td>Vasanta, spring: late March or April</td></tr><tr><td>Saṃvatsara</td><td>A new year-name from the sixty</td></tr><tr><td>2026–27</td><td>Parābhava, from 19 March 2026</td></tr><tr><td>2027–28</td><td>Plavaṅga, from 7 April 2027</td></tr><tr><td>North</td><td>Same day: Nava Saṃvatsara and Caitra Navarātri begin</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why was 2026 in March and 2027 in April?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The adhika Jyeṣṭha of 2026 added a month. See our pañcāṅga guide.</p></div></div>
+<div class="panel reading"><p>Ugādi is the pratipadā following the new moon that ends Phālguna, so it is the first day of Caitra in the amānta calendar used in Karnataka. It begins a new named year in the sixty-year cycle.</p><p>Parābhava began on 19 March 2026; because 2026 had an extra month, Ugādi 2027 falls later, on 7 April, beginning Plavaṅga. In the north, the same day begins Nava Saṃvatsara (Vikrama 2084) and the nine nights of Caitra Navarātri.</p></div></section>
+<section class="page" id="story"><h2 class="page-title">THE STORIES</h2><div class="sub">Why a new age begins here</div>
+<table class="ct fact"><tr><td>Creation</td><td>Brahmā began creating the world on this day, by tradition</td></tr><tr><td>Yuga</td><td>“Yuga + ādi”: start of an age</td></tr><tr><td>Śālivāhana</td><td>The Śaka era is linked with his victory, in western tradition</td></tr><tr><td>Rāma</td><td>Maharashtra: the guḍi recalls Rāma’s return, by one tradition</td></tr><tr><td>Matsya</td><td>Some link the day with Viṣṇu’s fish avatāra</td></tr><tr><td>Simplest</td><td>Spring: the trees flower, the year starts</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Did Brahmā really start on a Wednesday?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The almanacs say creation began on Caitra śukla pratipadā. The weekday changes; the tithi stays.</p></div></div>
+<div class="panel reading"><p>Tradition holds that Brahmā began the creation of the world on Caitra śukla pratipadā, which makes it a fitting day to begin the year; Yugādi means “beginning of an age”. In western India the Śaka era is linked with the victory of King Śālivāhana, and the guḍi with Rāma’s return to Ayodhyā.</p><p>Underneath the stories is the season: vasanta, spring, when neem and mango flower and the year turns warm.</p></div></section>
+<section class="page" id="morning"><h2 class="page-title">THE MORNING</h2><div class="sub">Oil bath and toraṇa</div>
+<table class="ct fact"><tr><td>Rise early</td><td>Before sunrise</td></tr><tr><td>Abhyaṅga</td><td>Oil bath: oil rubbed in, then washed off</td></tr><tr><td>New clothes</td><td>Worn after the bath</td></tr><tr><td>Toraṇa</td><td>Mango leaves strung over the door</td></tr><tr><td>Rangoli</td><td>At the threshold</td></tr><tr><td>Pūjā</td><td>Family worship; temple visit</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why mango leaves?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Fresh, green and auspicious, Zappy. Spring is mango season.</p></div></div>
+<div class="panel reading"><p>The day starts before sunrise with abhyaṅga, an oil bath: oil is rubbed into the body and washed off. New clothes follow. Mango-leaf toraṇas are hung over doors, rangoli is drawn, and families worship at home and visit temples.</p></div></section>
+<section class="page" id="bevubella"><h2 class="page-title">BĒVU-BELLA</h2><div class="sub">Neem and jaggery in Karnataka</div>
+<table class="ct fact"><tr><td>What</td><td>Tender neem leaves or flowers with jaggery</td></tr><tr><td>Eaten</td><td>First thing after the morning worship</td></tr><tr><td>Meaning</td><td>Accept the bitter and the sweet of the year alike</td></tr><tr><td>Also</td><td>Some add tamarind, raw mango, pepper</td></tr><tr><td>Health</td><td>Neem as a spring tonic, the elders say</td></tr><tr><td>Saying</td><td>Bitter and sweet together: that is life</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Do I have to eat the bitter bit?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That’s the point, Zappy. A year is never only sweet.</p></div></div>
+<div class="panel reading"><p>In Karnataka the day’s first taste is bēvu-bella: tender neem leaves or flowers with jaggery, sometimes with tamarind, raw mango or pepper added. The bitter and the sweet eaten together stand for accepting the year’s sorrows and joys alike.</p><p>Elders also call neem a spring tonic.</p></div></section>
+<section class="page" id="pachadi"><h2 class="page-title">UGĀDI PACCHAḌI</h2><div class="sub">Six tastes for the Telugu year</div>
+<table class="ct fact"><tr><td>Sweet</td><td>Jaggery: happiness</td></tr><tr><td>Bitter</td><td>Neem flowers: sorrow</td></tr><tr><td>Sour</td><td>Tamarind: things we dislike</td></tr><tr><td>Salty</td><td>Salt: interest in life</td></tr><tr><td>Hot</td><td>Pepper or chilli: anger</td></tr><tr><td>Astringent</td><td>Raw mango: surprise</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Six feelings in one spoon?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The whole year in a mouthful. Some families’ meanings differ, but the idea is the same.</p></div></div>
+<div class="panel reading"><p>In the Telugu states, Ugādi pacchaḍi mixes six tastes: jaggery (sweet), neem flowers (bitter), tamarind (sour), salt, pepper or chilli (hot), and raw mango (astringent). Each stands for an experience of the coming year: commonly happiness, sorrow, dislike, interest, anger and surprise.</p><p>Families explain the tastes differently, but the idea is the same: take the year whole.</p></div></section>
+<section class="page" id="food"><h2 class="page-title">THE FEAST</h2><div class="sub">Hōḷige and more</div>
+<table class="ct fact"><tr><td>Karnataka</td><td>Hōḷige or obbaṭṭu: sweet stuffed flatbread</td></tr><tr><td>Also</td><td>Mango chitranna, kōsambari, payasa</td></tr><tr><td>Telugu</td><td>Bobbaṭlu (the same flatbread), pulihōra</td></tr><tr><td>Maharashtra</td><td>Puran poḷī, shrikhand</td></tr><tr><td>Konkani</td><td>Similar sweets in Goa and the coast</td></tr><tr><td>Sharing</td><td>Neighbours exchange plates</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Hōḷige and obbaṭṭu are the same?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Same sweet, two Kannada names. Puran poḷī in Marathi, bobbaṭlu in Telugu.</p></div></div>
+<div class="panel reading"><p>The festival meal in Karnataka centres on hōḷige or obbaṭṭu, a flatbread stuffed with sweet lentil and jaggery, with mango chitranna, kōsambari and payasa. The same sweet is bobbaṭlu in Telugu and puran poḷī in Marathi.</p></div></section>
+<section class="page" id="panchanga"><h2 class="page-title">PAÑCĀṄGA ŚRAVAṆA</h2><div class="sub">Hearing the year read out</div>
+<table class="ct fact"><tr><td>What</td><td>A priest reads the new year’s almanac aloud</td></tr><tr><td>Where</td><td>Temples and community halls, often in the evening</td></tr><tr><td>Contents</td><td>The year’s name, its “king” and “ministers” among the planets</td></tr><tr><td>Forecasts</td><td>Rain, crops, prices, events</td></tr><tr><td>Personal</td><td>Income and expense for each sign</td></tr><tr><td>Our note</td><td>A tradition; forecasts are not facts</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The planets have a cabinet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Each year a planet is ‘king’, others ‘ministers’. For 2027–28 the king is Budha, Mercury. It’s an old way of talking about the year.</p></div></div>
+<div class="panel reading"><p>In the evening, temples and community halls hold pañcāṅga śravaṇa: a priest reads out the new year’s almanac, naming the year, its “king” and “ministers” among the planets (for 2027–28 the king is Budha, Mercury, by Drik Pañcāṅg), and forecasts for rain, crops and each zodiac sign.</p><p>It is a cherished tradition; its forecasts are astrology, not science.</p></div></section>
+<section class="page" id="moon"><h2 class="page-title">THE NEW MOON IN THE SKY</h2><div class="sub">Candra darśana</div>
+<table class="ct fact"><tr><td>Evening</td><td>The first thin crescent</td></tr><tr><td>Custom</td><td>Many look for it after Ugādi</td></tr><tr><td>Karnataka</td><td>Seeing the new moon is auspicious</td></tr><tr><td>Meaning</td><td>The lunar year visibly begins</td></tr><tr><td>Next</td><td>Rāma Navamī in nine days</td></tr><tr><td>Our guide</td><td>The pañcāṅga guide explains tithis</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Can I see it on Ugādi itself?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Sometimes the next evening. It’s very thin on day one.</p></div></div>
+<div class="panel reading"><p>After Ugādi, many look for the new crescent moon in the evening sky, the visible start of the lunar year. Nine days later comes Rāma Navamī.</p></div></section>
+<section class="page" id="padwa"><h2 class="page-title">GUḌI PĀḌAVĀ</h2><div class="sub">The Marathi and Konkani new year</div>
+<table class="ct fact"><tr><td>Guḍi</td><td>A pole with bright cloth, neem, flowers and an upturned pot</td></tr><tr><td>Raised</td><td>At the door or window, facing out</td></tr><tr><td>Meanings</td><td>Victory banner; Rāma’s return; Brahma’s flag</td></tr><tr><td>Shobhā yātrās</td><td>Processions in Mumbai, Pune, Thane</td></tr><tr><td>Neem</td><td>Eaten here too, with jaggery</td></tr><tr><td>Goa</td><td>Saṃvatsar Pāḍvo for Konkanis</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A pot on a pole?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Upturned, shining copper or silver. Visible from far: a flag for the new year.</p></div></div>
+<div class="panel reading"><p>Maharashtra and the Konkani communities keep the same day as Guḍi Pāḍavā. A guḍi, a pole dressed with bright cloth, neem, flowers and a sugar garland, topped with an upturned copper or silver pot, is raised at the door or window. It is read as a victory banner, for Rāma or Śālivāhana, or as Brahmā’s flag.</p><p>Cities hold shobhā yātrās, processions; neem with jaggery is eaten here too.</p></div></section>
+<section class="page" id="india"><h2 class="page-title">ELSEWHERE</h2><div class="sub">The same day across India</div>
+<table class="ct fact"><tr><td>North</td><td>Nava Saṃvatsara; Caitra Navarātri begins</td></tr><tr><td>Sindhi</td><td>Ceṭī Cāṇḍ, Jhulelāl’s day</td></tr><tr><td>Kashmir</td><td>Navreh</td></tr><tr><td>Solar new years</td><td>Viṣu, Puthāṇḍu, Bihu, Poyla Boiśākh come in mid-April</td></tr><tr><td>Manipur</td><td>Sajibu Cheiraoba</td></tr><tr><td>Common</td><td>Fresh starts, family, food</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So India has many new years?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> At least two kinds: lunar, like Ugādi, and solar, in mid-April. And 1 January for the office.</p></div></div>
+<div class="panel reading"><p>In the north the day begins Nava Saṃvatsara and Caitra Navarātri; Sindhis keep Ceṭī Cāṇḍ; Kashmiri Pandits, Navreh. States with solar calendars celebrate their new year in mid-April instead: Viṣu in Kerala, Puthāṇḍu in Tamil Nadu, Bohāg Bihu in Assam, Poyla Boiśākh in Bengal.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">THE MEANING</h2><div class="sub">Begin again</div>
+<table class="ct fact"><tr><td>Fresh start</td><td>Clean house, oil bath, new clothes</td></tr><tr><td>Balance</td><td>Bitter and sweet accepted together</td></tr><tr><td>Season</td><td>Spring: the world renews itself</td></tr><tr><td>Time</td><td>The sixty-year wheel turns one step</td></tr><tr><td>Family</td><td>Elders bless the young</td></tr><tr><td>Resolve</td><td>Begin good habits on a good day</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A good day for resolutions?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The best, Zappy. And eat the neem: practise taking the bitter well.</p></div></div>
+<div class="panel reading"><p>Ugādi is about beginning well: a clean house, a clean body, new clothes, and a deliberate taste of bitter and sweet together. As the sixty-year wheel turns, elders bless the young, and many start new ventures and habits on this day.</p></div></section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Yugādi</td><td>Beginning of an age</td></tr><tr><td>Pratipadā</td><td>First tithi (pāḍyami, pāḍya)</td></tr><tr><td>Bēvu, bella</td><td>Neem, jaggery (Kannada)</td></tr><tr><td>Abhyaṅga</td><td>Oil bath</td></tr><tr><td>Toraṇa</td><td>Door garland</td></tr><tr><td>Hōḷige / obbaṭṭu</td><td>Sweet stuffed flatbread</td></tr><tr><td>Pañcāṅga śravaṇa</td><td>Hearing the almanac read</td></tr><tr><td>Guḍi</td><td>Victory pole (Marathi)</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Pāḍya?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Kannada for pratipadā, the first day. Guḍi Pāḍavā has the same word.</p></div></div>
+<div class="panel reading"><p>Kannada terms are as used around Mysuru.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>1.</b> Ugādi: Caitra śukla pratipadā; 7 April 2027; Plavaṅga saṃvatsara.</div><div><b>2.</b> Oil bath, mango-leaf toraṇa, new clothes, worship.</div><div><b>3.</b> Bēvu-bella in Karnataka; six-taste pacchaḍi in the Telugu states.</div><div><b>4.</b> Hōḷige, pañcāṅga śravaṇa, the new crescent moon.</div><div><b>5.</b> Guḍi Pāḍavā, Nava Saṃvatsara, Ceṭī Cāṇḍ: the same day elsewhere.</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Can I start a new hobby on Ugādi?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The best day for it, Zappy. Eat your neem first.</p></div></div><div class="key">Next: <a href="/festivals/rama-navami/">Rāma Navamī</a></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> drikpanchang.com (Kannada, Telugu and Marathi pages) for the 2027 date, Śaka 1949 and the year’s “king”; hindu-blog.com for Plavaṅga saṃvatsara; officeholidays.com; Outlook India and dharma-renaissance.org on Parābhava 2026–27; bhaktibharat.com on the six tastes and regional names.</p><p><b>Sources differ / unverified:</b> The meanings of the six tastes vary between families. The stories of Brahmā’s creation, Śālivāhana and Rāma are tradition. Forecasts in the pañcāṅga are traditional astrology, not prediction.</p><p><b>What we leave out:</b> This series explains dates, stories, customs, regional practice and meaning. It does not give mantras for initiation, nor step-by-step pūjā or vrata procedure: for those, follow your family custom, your priest or your teacher. Dates are as given by published almanacs (pañcāṅgas) and vary by place.</p><p>Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- reader-feedback:start -->
+<div class="bhakti-reader-feedback" style="box-sizing:border-box;max-width:820px;margin:26px auto 32px;padding:22px 24px;border:1px solid #dec8aa;border-radius:12px;background:#fff8ed;color:#321f2a;font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif">
+  <strong style="display:block;font:700 25px/1.25 Georgia,serif;margin-bottom:8px">Share your thoughts</strong>
+  <p style="margin:0 0 13px">If an article touched your heart, or you have a suggestion, reflection or correction, I would love to hear from you.</p>
+  <a href="mailto:srini.presents@gmail.com?subject=Bhakti%20reader%20feedback" style="display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:10px 14px;border-radius:6px;background:#973f2c;color:white;text-decoration:none;font-weight:700">Write to me · srini.presents@gmail.com</a>
+</div>
+<!-- reader-feedback:end -->
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/festivals/">Festivals</a></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
