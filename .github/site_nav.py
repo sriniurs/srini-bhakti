@@ -30,7 +30,9 @@ def apply(root, main=False):
         clean = BLOCK.sub('', original)
         parts = relative.parts[:-1]
         parent = '/' + '/'.join(parts[:-1]) + '/' if len(parts) > 1 else '/'
-        if parts == ('ganesha',):
+        if parts in {('temples-of-india', 'around-mysuru'), ('temples-of-india', 'muktisthalas')}:
+            parent = '/temples-of-india/karnataka/'
+        elif parts == ('ganesha',):
             parent = '/gods/#ganesha'
         elif len(parts) == 2 and parts[0] == 'ganesha':
             parent = f'/ganesha/#{parts[1]}'

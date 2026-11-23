@@ -35,6 +35,13 @@ def plural(n, word):
     return f'{n} {word}' + ('' if n == 1 else 's')
 
 
+KARNATAKA = '/temples-of-india/karnataka/'
+KARNATAKA_ENTRIES = (
+    '/temples-of-india/muktisthalas/',
+    '/temples-of-india/around-mysuru/',
+    '/temples-of-india/karnataka/gokarna/',
+    '/temples-of-india/karnataka/murudeshwara/',
+)
 GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
         '/temples-of-india/', '/shiva/', '/vishnu/', '/devi/', '/hanuman/', '/ganesha/'}
@@ -167,6 +174,9 @@ def catalogue_pages(entries, strict):
             ]
         order = {url: i for i, url in enumerate(dict.fromkeys(linked_paths))}
         articles.sort(key=lambda article: -1 if article[0] == prefix else order.get(article[0], len(order)))
+    for path in KARNATAKA_ENTRIES:
+        pages[KARNATAKA].extend(pages[path])
+        pages[path] = []
     return pages
 
 
@@ -237,7 +247,14 @@ def build(entries, pages):
                   and not (k == 'gods' and e['path'] == '/srividya/')]
             body += shelf(name, '', tiles(es), d)
         write_hub(DOOR_URL[k], body)
-    write_hub('/temples-of-india/', ''.join(shelf(g, '', tiles(by('temples', group=gk)), gk) for gk, g in GROUPS.items()))
+    write_hub('/temples-of-india/', ''.join(
+        shelf(title, '', tiles(e for e in by('temples', group=group)
+                               if e['path'] not in KARNATAKA_ENTRIES), group)
+        for group, title in GROUPS.items()
+    ))
+    by_path = {entry['path']: entry for entry in entries}
+    write_hub(KARNATAKA, shelf('Collections and temple guides', '',
+                               tiles(by_path[path] for path in KARNATAKA_ENTRIES)))
 
     for d in DEITIES:
         if d in CUSTOM_DEITY_LANDING_PAGES:
