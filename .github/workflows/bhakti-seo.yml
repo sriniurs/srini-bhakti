@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
           persist-credentials: true
       - name: Reconcile homepage collection counts
         run: python3 scripts/sync_collection_counts.py
