@@ -2,6 +2,13 @@
  "_readme": "Single source of truth for the Bhakti section. Every article or series under / needs one entry here. door: gods (who a deity is: form, stories, symbols, Mahāvidyās), hymns (anything you chant: stotra, mantra, sūkta), scriptures (a text or story read in parts), temples (anything you can visit). deities: any of shiva, vishnu, devi. group (temples only): circuits or places. shelf (optional for hymns): the heading within a deity’s hymns. tile: the hub card HTML. Then run python3 .github/bhakti_hubs.py --strict. Order here is the order on the hubs.",
  "entries": [
   {
+   "path": "/temples-of-india/how-to-read-a-hindu-temple/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/how-to-read-a-hindu-temple/\"><div class=\"tile-art\" style=\"background:#e6cca4\"><img src=\"/temples-of-india/how-to-read-a-hindu-temple/banner.svg\" width=\"1200\" height=\"800\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated series</strong><h2>How to Read a Hindu Temple</h2><p>Twelve illustrated reference guides to reading the architecture and living traditions of Hindu temples.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/srividya/dasha-mahavidya/",
    "door": "gods",
    "deities": [
