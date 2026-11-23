@@ -254,8 +254,17 @@ def build(entries, pages):
         for group, title in GROUPS.items()
     ))
     by_path = {entry['path']: entry for entry in entries}
-    write_hub(KARNATAKA, shelf('Collections and temple guides', '',
-                               tiles(by_path[path] for path in KARNATAKA_ENTRIES)))
+    # Gōkarṇa is reached through the Muktisthalas series.
+    karnataka_tiles = tiles(by_path[path] for path in KARNATAKA_ENTRIES
+                           if path != KARNATAKA + 'gokarna/')
+    karnataka_tiles.append(
+        '<li><a href="/tulunadu/temples/"><div class="tile-art" style="background:#f3e3c3">'
+        '<img src="/tulunadu/art/dharmasthala-manjunatha.svg" width="380" height="268" alt="" loading="lazy">'
+        '</div><div class="tile-copy"><h2>Temples of Tulu Nadu</h2>'
+        '<p>Illustrated guides to the temples of coastal Tulu Nadu, including Dharmasthaḷa, Kadri and Kateel.</p>'
+        '<span class="read">Open collection ↗</span></div></a></li>'
+    )
+    write_hub(KARNATAKA, shelf('Collections and temple guides', '', karnataka_tiles))
 
     for d in DEITIES:
         if d in CUSTOM_DEITY_LANDING_PAGES:
