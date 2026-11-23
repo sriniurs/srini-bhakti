@@ -512,6 +512,13 @@
    "group": "circuits"
   },
   {
+   "path": "/temples-of-india/karnataka/horanadu-annapurneshwari/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/horanadu-annapurneshwari/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><img src=\"/temples-of-india/karnataka/horanadu-annapurneshwari/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temple guide</strong><h2>Hōranāḍu Annapūrṇēśvarī</h2><p>Annapūrṇēśvarī’s shrine in the Western Ghats and its tradition of feeding pilgrims.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/temples-of-india/karnataka/murudeshwara/",
    "door": "temples",
    "deities": [],

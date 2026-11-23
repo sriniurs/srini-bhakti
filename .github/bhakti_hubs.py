@@ -41,6 +41,7 @@ KARNATAKA_ENTRIES = (
     '/temples-of-india/around-mysuru/',
     '/temples-of-india/karnataka/gokarna/',
     '/temples-of-india/karnataka/murudeshwara/',
+    '/temples-of-india/karnataka/horanadu-annapurneshwari/',
 )
 GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
