@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import quote
@@ -55,12 +56,30 @@ def html_pages() -> list[tuple[str, Path]]:
     return sorted(result)
 
 
-def expected_sitemap(paths: list[str]) -> str:
-    # Do not add fabricated lastmod dates; Google wants genuine content updates.
+def last_modified_in_git(file: Path) -> str | None:
+    """Use the committed content date, not the date the sitemap was generated."""
+    try:
+        process = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--",
+             file.relative_to(ROOT).as_posix()],
+            cwd=ROOT, capture_output=True, text=True, check=False, timeout=20,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    value = process.stdout.strip()
+    return value if process.returncode == 0 and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value) else None
+
+
+def expected_sitemap(pages: list[tuple[str, Path]]) -> str:
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="' + XMLNS + '">']
-    for path in paths:
-        lines.append("  <url><loc>" + html.escape(BASE_URL + path) + "</loc></url>")
+    for path, file in pages:
+        lastmod = last_modified_in_git(file)
+        lastmod_element = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+        lines.append(
+            "  <url><loc>" + html.escape(BASE_URL + path)
+            + "</loc>" + lastmod_element + "</url>"
+        )
     lines.append("</urlset>")
     return "\n".join(lines) + "\n"
 
@@ -107,7 +126,7 @@ def main() -> int:
     for path, file in pages:
         warnings.extend(inspect_or_fix(path, file, write=not args.check))
     paths = [p for p, _ in pages]
-    content = expected_sitemap(paths)
+    content = expected_sitemap(pages)
     old = SITEMAP.read_text(encoding="utf-8") if SITEMAP.exists() else ""
     changed = old != content
     if changed and not args.check:
