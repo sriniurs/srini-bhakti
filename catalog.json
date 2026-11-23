@@ -9,6 +9,13 @@
    "group": "places"
   },
   {
+   "path": "/temples-of-india/kerala/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/kerala/\"><div class=\"tile-art\" style=\"background:#e1d2ac\"><img src=\"/temples-of-india/kerala/banner.svg\" width=\"1200\" height=\"800\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated collection</strong><h2>Temples of Kerala</h2><p>Ten illustrated reference guides to Kerala’s shrines, temple architecture, pilgrimages and living traditions.</p><span class=\"read\">Open collection ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/srividya/dasha-mahavidya/",
    "door": "gods",
    "deities": [
