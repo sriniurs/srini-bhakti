@@ -1,0 +1,60 @@
+name: Bhakti SEO and sitemap sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/index.html'
+      - 'index.html'
+      - 'scripts/seo_sync.py'
+      - 'sitemap.xml'
+  workflow_dispatch:
+  schedule:
+    - cron: '15 2 * * 1'
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: bhakti-seo-main
+  cancel-in-progress: false
+
+jobs:
+  seo:
+    name: Verify article discoverability and refresh sitemap
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Generate sitemap and add missing canonical tags
+        run: python3 scripts/seo_sync.py
+      - name: Commit discovery fixes if needed
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+            echo "Sitemap and canonical tags already in sync."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- sitemap.xml
+          git add -- ':(glob)**/index.html' index.html
+          git commit -m "chore(seo): keep every public article in sitemap"
+          git push origin HEAD:main
+          echo "updated=true" >> "$GITHUB_OUTPUT"
+      - name: Request Pages rebuild after bot commit
+        if: steps.changes.outputs.updated == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # A GITHUB_TOKEN commit does not itself start a Pages build.
+          # For branch-based Pages, request a build explicitly.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+      - name: Validate generated indexability manifest
+        run: python3 scripts/seo_sync.py --check
