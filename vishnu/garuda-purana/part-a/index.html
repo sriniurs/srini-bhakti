@@ -25,10 +25,15 @@
 .garuda-banner p{max-width:68ch;margin:0;padding:0 24px 22px}
 .garuda-banner img{display:block;width:100%;height:auto}
 .garuda-cards .tile-art img{object-fit:contain}
-.garuda-status{font-weight:700}
+.garuda-a .garuda-banner{background:#113f51;border-color:#113f51}
+.garuda-b .garuda-banner{background:#452d48;border-color:#452d48}
+.garuda-a .garuda-cards .label,.garuda-part-a .label{color:#23645f}
+.garuda-b .garuda-cards .label,.garuda-part-b .label{color:#78425d}
+.garuda-series .garuda-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.garuda-series .garuda-cards{grid-template-columns:1fr}}
 </style>
 </head>
-<body class="bhakti-editorial">
+<body class="bhakti-editorial garuda-a">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
 <div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
 <a class="sr-reader-back" href="/vishnu/garuda-purana/"><span aria-hidden="true">&larr;</span> Back</a>
@@ -56,7 +61,6 @@
     <p>Eight illustrated guides on the Purāṇa, from creation and worship to gems, medicine, ethics and yoga.</p>
     <img src="/vishnu/garuda-purana/art/part-a-banner.svg" width="1148" height="268" alt="">
   </header>
-  <p class="garuda-status">All 8 articles available.</p>
   <ol class="tiles garuda-cards">
     <li><a href="/vishnu/garuda-purana/part-a/1/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/a1.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">A1</strong><h2>The Book and Its Bird</h2><small class="collection-size collection-size--card">1 article</small><span class="read">Read chapter ↗</span></div></a></li>
     <li><a href="/vishnu/garuda-purana/part-a/2/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/a2.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">A2</strong><h2>Creation and Avatāras</h2><small class="collection-size collection-size--card">1 article</small><span class="read">Read chapter ↗</span></div></a></li>

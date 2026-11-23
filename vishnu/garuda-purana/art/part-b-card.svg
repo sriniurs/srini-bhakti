@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A boat crossing a river by moonlight">
+<rect width="380" height="268" fill="#ece0e8"/><circle cx="190" cy="133" r="108" fill="#513852"/>
+<path d="M190 25a108 108 0 0 1 98 154q-32-13-86-1t-111 0A108 108 0 0 1 190 25Z" fill="#654964"/>
+<circle cx="220" cy="86" r="27" fill="#f6d9a4"/><circle cx="231" cy="78" r="24" fill="#654964"/>
+<path d="M94 184q64-11 101-2t92 3m-177 21q33-13 78-4t81 1m-140 21q31-9 71-2t53-2" fill="none" stroke="#e2b7b6" opacity=".8"/>
+<path d="M135 164q54 19 110-4-11 30-56 30-38 0-54-26Z" fill="#d09a6c"/>
+<path d="m177 165 44-43" stroke="#f5d5a8" stroke-width="4" stroke-linecap="round"/><circle cx="132" cy="78" r="2" fill="#e6c59a" opacity=".75"/><circle cx="177" cy="52" r="2" fill="#e6c59a" opacity=".75"/><circle cx="264" cy="120" r="2" fill="#e6c59a" opacity=".75"/><circle cx="113" cy="121" r="2" fill="#e6c59a" opacity=".75"/>
+</svg>

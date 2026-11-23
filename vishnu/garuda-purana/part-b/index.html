@@ -25,10 +25,15 @@
 .garuda-banner p{max-width:68ch;margin:0;padding:0 24px 22px}
 .garuda-banner img{display:block;width:100%;height:auto}
 .garuda-cards .tile-art img{object-fit:contain}
-.garuda-status{font-weight:700}
+.garuda-a .garuda-banner{background:#113f51;border-color:#113f51}
+.garuda-b .garuda-banner{background:#452d48;border-color:#452d48}
+.garuda-a .garuda-cards .label,.garuda-part-a .label{color:#23645f}
+.garuda-b .garuda-cards .label,.garuda-part-b .label{color:#78425d}
+.garuda-series .garuda-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.garuda-series .garuda-cards{grid-template-columns:1fr}}
 </style>
 </head>
-<body class="bhakti-editorial">
+<body class="bhakti-editorial garuda-b">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
 <div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
 <a class="sr-reader-back" href="/vishnu/garuda-purana/"><span aria-hidden="true">&larr;</span> Back</a>
@@ -56,7 +61,6 @@
     <p>The Sārōddhāra in sixteen chapters, on the journey after death, funeral rites and liberation.</p>
     <img src="/vishnu/garuda-purana/art/part-b-banner.svg" width="1148" height="268" alt="">
   </header>
-  <p class="garuda-status">Chapters 1–11 of 16 available. Chapters 12–16 are forthcoming.</p>
   <ol class="tiles garuda-cards">
     <li><a href="/vishnu/garuda-purana/part-b/1/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/b1.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">B1</strong><h2>The Miseries of the Sinful</h2><small class="collection-size collection-size--card">1 article</small><span class="read">Read chapter ↗</span></div></a></li>
     <li><a href="/vishnu/garuda-purana/part-b/2/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/b2.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">B2</strong><h2>The Way of Yama</h2><small class="collection-size collection-size--card">1 article</small><span class="read">Read chapter ↗</span></div></a></li>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Two palm-leaf manuscripts and a gold feather">
+<rect width="380" height="268" fill="#e9dfc8"/><circle cx="190" cy="134" r="102" fill="#263a56"/>
+<g transform="rotate(-10 190 143)" stroke="#805233" stroke-width="2.5">
+<rect x="92" y="131" width="205" height="57" rx="9" fill="#b98455"/><rect x="84" y="117" width="213" height="55" rx="9" fill="#e1ad69"/>
+<path d="M113 130h149m-156 12h165m-154 12h145" stroke="#a36e45" opacity=".7"/><circle cx="105" cy="144" r="4" fill="#7c5340"/><circle cx="278" cy="144" r="4" fill="#7c5340"/></g>
+<path d="M158 152q16-51 91-87-14 61-81 70l-12 23" fill="#f2cb80" stroke="#825a48" stroke-width="2.3"/>
+<path d="m165 139 72-62m-44 43 3-18m14 8 19-4" stroke="#996b47" stroke-width="1.7" fill="none"/>
+</svg>

@@ -25,10 +25,15 @@
 .garuda-banner p{max-width:68ch;margin:0;padding:0 24px 22px}
 .garuda-banner img{display:block;width:100%;height:auto}
 .garuda-cards .tile-art img{object-fit:contain}
-.garuda-status{font-weight:700}
+.garuda-a .garuda-banner{background:#113f51;border-color:#113f51}
+.garuda-b .garuda-banner{background:#452d48;border-color:#452d48}
+.garuda-a .garuda-cards .label,.garuda-part-a .label{color:#23645f}
+.garuda-b .garuda-cards .label,.garuda-part-b .label{color:#78425d}
+.garuda-series .garuda-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.garuda-series .garuda-cards{grid-template-columns:1fr}}
 </style>
 </head>
-<body class="bhakti-editorial">
+<body class="bhakti-editorial garuda-series">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
 <div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
 <a class="sr-reader-back" href="/vishnu/"><span aria-hidden="true">&larr;</span> Back</a>
@@ -58,8 +63,8 @@
   </header>
 
   <ol class="tiles garuda-cards">
-    <li><a href="/vishnu/garuda-purana/part-a/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/a1.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">Part A</strong><h2>Part A · The Garuḍa Purāṇa</h2><small class="collection-size collection-size--card">8 articles</small><p>All 8 articles available.</p><span class="read">Browse chapters ↗</span></div></a></li>
-    <li><a href="/vishnu/garuda-purana/part-b/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/b1.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">Part B</strong><h2>Part B · The Sārōddhāra</h2><small class="collection-size collection-size--card">11 articles</small><p>Chapters 1–11 of 16 available. Chapters 12–16 are forthcoming.</p><span class="read">Browse chapters ↗</span></div></a></li>
+    <li class="garuda-part-a"><a href="/vishnu/garuda-purana/part-a/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/part-a-card.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">Part A</strong><h2>The Garuḍa Purāṇa</h2><small class="collection-size collection-size--card">8 articles</small><p>Creation, worship, sacred places, traditional learning and yoga.</p><span class="read">Browse chapters ↗</span></div></a></li>
+    <li class="garuda-part-b"><a href="/vishnu/garuda-purana/part-b/"><div class="tile-art" style="background:#fff2d9"><img src="/vishnu/garuda-purana/art/part-b-card.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">Part B</strong><h2>The Sārōddhāra</h2><small class="collection-size collection-size--card">11 articles</small><p>The journey after death, funeral rites and liberation.</p><span class="read">Browse chapters ↗</span></div></a></li>
   </ol>
 </main>
 <footer>srini.presents</footer>

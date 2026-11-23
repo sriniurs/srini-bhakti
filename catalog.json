@@ -434,7 +434,7 @@
    "deities": [
     "vishnu"
    ],
-   "tile": "<li><a href=\"/vishnu/garuda-purana/\"><div class=\"tile-art\" style=\"background:#fff2d9\"><img src=\"/vishnu/garuda-purana/art/a1.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated series</strong><h2>Garuḍa Purāṇa</h2><p>The Garuḍa Purāṇa in Part A and the Sārōddhāra in Part B.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+   "tile": "<li><a href=\"/vishnu/garuda-purana/\"><div class=\"tile-art\" style=\"background:#fff2d9\"><img src=\"/vishnu/garuda-purana/art/series-card.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated series</strong><h2>Garuḍa Purāṇa</h2><p>The Garuḍa Purāṇa in Part A and the Sārōddhāra in Part B.</p><span class=\"read\">Open series ↗</span></div></a></li>"
   },
   {
    "path": "/vishnu/bhagavad-gita/",

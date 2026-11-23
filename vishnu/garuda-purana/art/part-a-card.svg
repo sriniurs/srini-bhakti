@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A conch shell and a lotus">
+<rect width="380" height="268" fill="#dcece3"/><circle cx="190" cy="130" r="99" fill="#b8d9cf"/>
+<circle cx="190" cy="130" r="108" fill="none" stroke="#547f79" stroke-dasharray="2 5"/>
+<g stroke="#174952" stroke-width="3" stroke-linejoin="round"><path d="M142 166c-19-36-16-72 9-87 32-21 75-2 78 27 1 14-10 22-20 30l-49 40z" fill="#fff3d0"/>
+<path d="M151 149c-11-24-8-51 12-62 26-15 51 0 51 17 0 12-9 18-20 16-18-3-11-22 1-20" fill="none"/>
+<path d="M160 176q-13 13-29 1l10-13m54-29-40 24m77-61 18 2-22 15" fill="#f4d697"/>
+</g><path d="M182 192q-21-20-58-16 14 31 66 29 52 2 66-29-37-4-58 16l-8-27z" fill="#c66b86" stroke="#883f60" stroke-width="2"/>
+</svg>
