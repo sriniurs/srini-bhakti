@@ -1,0 +1,223 @@
+/* Shared presentation for Bhakti's illustrated reference articles. */
+body[data-bhakti-article] {
+  --article-accent: #7c4e2d;
+  --article-heading: #e8bc78;
+  --article-heading-ink: #211d16;
+  --article-wash: #f5e6cd;
+  --article-paper: #fffaf0;
+  --article-line: #211d16;
+}
+
+body[data-bhakti-article="light-blue"] {
+  --article-accent: #123e67;
+  --article-heading: #bbdaf1;
+  --article-heading-ink: #123e67;
+  --article-wash: #e4eff9;
+}
+
+body[data-bhakti-article="navy"] {
+  --article-accent: #14375a;
+  --article-heading: #14375a;
+  --article-heading-ink: #fff8e8;
+  --article-wash: #e2eaf3;
+}
+
+body[data-bhakti-article="maroon"] {
+  --article-accent: #711b36;
+  --article-heading: #711b36;
+  --article-heading-ink: #fff8ec;
+  --article-wash: #f2e0e5;
+}
+
+body[data-bhakti-article] :is(.book, .bhakti-reference main) .page:not(.cover) {
+  background-color: var(--article-paper);
+  border: 4px solid var(--article-line);
+  box-shadow: 7px 7px 0 var(--article-line);
+}
+
+body[data-bhakti-article] .book .page-title {
+  max-width: 100%;
+  padding: 6px clamp(9px, 2vw, 18px);
+  background-color: var(--article-heading);
+  color: var(--article-heading-ink);
+  border: 3px solid var(--article-line);
+  box-shadow: 4px 4px 0 var(--article-line);
+  overflow-wrap: anywhere;
+}
+
+body[data-bhakti-article] .book :is(.sub, .contlink) {
+  color: var(--article-accent);
+}
+
+body[data-bhakti-article] .book .reading p {
+  line-height: 1.6;
+}
+
+body[data-bhakti-article] .book .say {
+  min-width: 0;
+}
+
+body[data-bhakti-article] .book .say .bubble {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body[data-bhakti-article] .book .toc li {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body[data-bhakti-article] .book table.ct {
+  max-width: 100%;
+}
+
+body[data-bhakti-article] .book table.ct :is(th, td) {
+  overflow-wrap: anywhere;
+}
+
+body[data-bhakti-article] .book table.ct th {
+  background-color: var(--article-wash);
+  color: var(--article-line);
+}
+
+body[data-bhakti-article] .page.cover.bhakti-article-cover {
+  --cover-accent: var(--article-accent);
+  --cover-heading-bg: var(--article-heading);
+  --cover-heading-ink: var(--article-heading-ink);
+  --cover-art: var(--article-wash);
+  --cover-paper: color-mix(in srgb, var(--article-wash) 45%, var(--article-paper));
+}
+
+body[data-bhakti-article] .page.cover.bhakti-article-cover h1 {
+  font-size: clamp(30px, 6.5vw, 67px);
+}
+
+body[data-bhakti-article] .bhakti-article-cover .cover-subtitle {
+  max-width: 48ch;
+}
+
+/* The four older pilgrimage covers use a flat sequence of elements. */
+body[data-bhakti-article] .page.cover:has(.article-legacy-heading) {
+  padding: 0;
+  border: 1px solid var(--article-accent);
+  border-radius: 8px;
+  box-shadow: none;
+  background: var(--article-paper);
+  color: var(--article-accent);
+  text-align: center;
+}
+
+.article-legacy-heading {
+  padding: clamp(20px, 4vw, 36px) clamp(16px, 4vw, 38px);
+  background: var(--article-heading);
+  color: var(--article-heading-ink);
+}
+
+.article-legacy-heading .byline,
+.article-legacy-heading .series {
+  font: 700 .8rem/1.4 system-ui, sans-serif;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.page.cover .article-legacy-heading .byline {
+  margin: 0 0 12px;
+  color: inherit;
+}
+
+.page.cover .article-legacy-heading .series {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--article-paper);
+  color: var(--article-accent);
+  box-shadow: none;
+}
+
+.page.cover .article-legacy-heading h1 {
+  margin: 12px 0 8px;
+  color: inherit;
+  font: 700 clamp(30px, 6.5vw, 67px)/1.02 Georgia, serif;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+.page.cover .article-legacy-heading .tag {
+  margin: 0 auto;
+  max-width: 48ch;
+  color: inherit;
+  font: 400 clamp(17px, 2.7vw, 23px)/1.3 Georgia, serif;
+  text-shadow: none;
+}
+
+.article-legacy-art {
+  width: min(calc(100% - 24px), 580px);
+  margin: 20px auto 10px;
+  padding: 8px;
+  border-radius: 7px;
+  background: var(--article-wash);
+}
+
+.page.cover .article-legacy-art > svg.hero {
+  display: block;
+  width: 100%;
+  max-height: none;
+  height: auto;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.page.cover:has(.article-legacy-heading) :is(.inv, .intro) {
+  margin: 10px auto;
+  max-width: min(92%, 580px);
+  color: var(--article-accent);
+  font: italic 16px/1.35 Georgia, serif;
+  text-shadow: none;
+}
+
+.page.cover:has(.article-legacy-heading) .cast {
+  flex-wrap: wrap;
+  margin: 12px auto 18px;
+}
+
+.page.cover:has(.article-legacy-heading) .cast figure {
+  color: var(--article-accent);
+  text-shadow: none;
+}
+
+.page.cover:has(.article-legacy-heading) .rays {
+  display: none;
+}
+
+body.bhakti-reference[data-bhakti-article] .reference-copy {
+  border: 3px solid var(--article-line);
+  padding: clamp(13px, 3vw, 24px);
+  background-color: var(--article-paper);
+}
+
+@media screen and (max-width: 600px) {
+  body[data-bhakti-article] .book {
+    padding-inline: 12px 14px;
+  }
+
+  body[data-bhakti-article] .book .page:not(.cover) {
+    box-shadow: 4px 4px 0 var(--article-line);
+  }
+
+  body[data-bhakti-article] .book table.ct td.w {
+    white-space: normal;
+  }
+}
+
+@media print {
+  body[data-bhakti-article] .book .page:not(.cover),
+  body[data-bhakti-article] .book .page-title {
+    box-shadow: none;
+  }
+}
