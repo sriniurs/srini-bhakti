@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A decorated bull beneath a trident and discus"><rect width="380" height="268" fill="#f3e7cd"/><path d="M0 194Q105 135 216 187T380 162V268H0Z" fill="#b7c7a1"/>
+<circle cx="186" cy="91" r="58" fill="#f1d491"/>
+<g stroke="#4a2939" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M91 153q-21-2-25-27m46 50-11 43m35-43-1 43m90-42 8 42m22-53 11 53" fill="none"/>
+<path d="M96 147q4-34 46-30l81 8 27-29 27 5 16 27-18 18-26-4-12 35H119q-29-2-23-30Z" fill="#eac498"/>
+<path d="M260 98q-19-9-16-32 10 19 25 23m3 10q17-9 16-27-9 13-18 16" fill="#f8e6bd"/>
+<path d="M141 119q20 31 52 7l18 4q-8 34-50 32l-26-19z" fill="#855064"/>
+<circle cx="275" cy="118" r="2" fill="#4a2939"/></g>
+<path d="M105 92V53m-14 0v12q14 12 28 0V53" fill="none" stroke="#815662" stroke-width="3"/>
+<circle cx="257" cy="48" r="14" fill="none" stroke="#815662" stroke-width="3"/></svg>
