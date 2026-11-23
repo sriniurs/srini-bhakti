@@ -8,6 +8,8 @@ on:
       - 'index.html'
       - 'scripts/seo_sync.py'
       - 'sitemap.xml'
+      - 'robots.txt'
+      - '.github/workflows/bhakti-seo.yml'
   workflow_dispatch:
   schedule:
     - cron: '15 2 * * 1'
