@@ -23,9 +23,10 @@ DOORS = {
     'scriptures': ('Scriptures and Stories', 'What to read'),
     'temples': ('Temples and Tīrthas', 'Where to go'),
     'festivals': ('Festivals', 'Festival guides'),
+    'tulunadu': ('Tulu Nadu', 'Regional traditions'),
 }
 DOOR_URL = {'gods': '/gods/', 'hymns': '/hymns/',
-            'scriptures': '/scriptures/', 'temples': '/temples-of-india/', 'festivals': '/festivals/'}
+            'scriptures': '/scriptures/', 'temples': '/temples-of-india/', 'festivals': '/festivals/', 'tulunadu': '/tulunadu/'}
 DEITIES = {'shiva': ('Śiva', 'he'), 'vishnu': ('Viṣṇu', 'he'), 'devi': ('Devi', 'she'),
            'hanuman': ('Hanumān', 'he'), 'subramanya': ('Subramanya', 'he'), 'ganesha': ('Gaṇeśa', 'he')}
 
@@ -42,7 +43,9 @@ GANESHA_TOPIC_HUBS = {
     f'/ganesha/{topic}/'
     for topic in ('foundations', 'stories', 'forms', 'hymns', 'festivals', 'temples')
 }
+TULU_TOPIC_LABELS = {'temples': 'Temples', 'culture': 'Culture', 'festivals': 'Festivals', 'daiva': 'Daiva Traditions'}
 HUBS.update(GANESHA_TOPIC_HUBS)
+HUBS.update(f'/tulunadu/{topic}/' for topic in TULU_TOPIC_LABELS)
 HUBS.update(f'/hymns/{deity}/' for deity in DEITIES if deity not in CUSTOM_DEITY_LANDING_PAGES)
 HUBS.update({
     '/srividya/foundations/',
@@ -131,7 +134,7 @@ def catalogue_pages(entries, strict):
     missing = []
     for file in ROOT.rglob('index.html'):
         url = page_url(file)
-        if url in HUBS or is_redirect(file):
+        if url in HUBS or url == '/tulunadu/' or is_redirect(file):
             continue
         prefix = next((p for p in prefixes if url.startswith(p)), None)
         if prefix is None:
@@ -183,6 +186,9 @@ def article_index(entries, pages):
             count += len(articles)
             links = '\n'.join(f'<li><a href="{escape(url)}">{escape(title)}</a></li>'
                             for url, title in articles)
+            if door == 'tulunadu':
+                works.append(f'<li><a href="{route}">Browse Tulu Nadu</a></li>\n{links}')
+                continue
             if len(articles) == 1:
                 works.append(links)
                 continue
@@ -255,9 +261,12 @@ def build(entries, pages):
         write_hub(f'/{d}/', body)
 
 
-def trail_for(entry, entries):
+def trail_for(entry, entries, url):
     door = entry['door']
     t = [f'<a href="/">Bhakti</a>', f'<a href="{DOOR_URL[door]}">{DOORS[door][0]}</a>']
+    if door == 'tulunadu' and url.count('/') > 3:
+        topic = url.split('/')[2]
+        t.append(f'<a href="/tulunadu/{topic}/">{TULU_TOPIC_LABELS[topic]}</a>')
     also = ''
     if len(entry['deities']) == 1:
         d = entry['deities'][0]
@@ -279,7 +288,7 @@ def trails(entries, strict):
     missing = []
     for f in sorted(ROOT.rglob('index.html')):
         url = page_url(f)
-        if url in HUBS:
+        if url in HUBS or url == '/tulunadu/':
             continue
         page = f.read_text(encoding='utf-8')
         if is_redirect(f):
@@ -290,7 +299,7 @@ def trails(entries, strict):
             missing.append(url)
             new = clean
         else:
-            block = trail_for(entry, entries)
+            block = trail_for(entry, entries, url)
             m = re.search(r'<script[^>]*data-goatcounter', clean) or re.search(r'</body>', clean, re.I)
             if not m:
                 continue

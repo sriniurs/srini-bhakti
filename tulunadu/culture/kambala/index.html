@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kambaḷa · Bhakti | Srini Presents</title>
+<meta name="description" content="Kambaḷa, the slush-track buffalo race of Tuḷunāḍu, as a rite: the pookare post, the four kinds of kambaḷa, the daivas of the field, the Koraga night before, the twin tracks and four race types, the care of the buffaloes, the runners, the court cases and the race today. An illustrated reference guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #1d4f9a;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#1d4f9a;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#0b2a4a;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
+<link rel="canonical" href="https://bhakti.srinipresents.com/tulunadu/culture/kambala/">
+</head>
+<body>
+<!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
+<div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
+<a class="sr-reader-back" href="/tulunadu/culture/"><span aria-hidden="true">&larr;</span> Back</a>
+<a href="/"><span aria-hidden="true">&#8962;</span> Home</a>
+<a href="/search/"><span aria-hidden="true"><span class="sr-search-icon"></span></span> Search</a>
+</nav></div>
+<script defer src="/assets/reader-navigation.js"></script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
+<div class="book">
+<section class="page cover bhakti-article-cover" data-cover-theme="navy">
+  <header class="cover-heading">
+    <p class="byline">Srini presents</p>
+    <p class="cover-chapter">THE BUFFALO RACE OF TUḶUNĀḌU · A REFERENCE GUIDE</p>
+    <h1 style="font-size:clamp(26px,7.4vw,80px)">KAMBAḶA</h1>
+    <p class="cover-subtitle">A race through the mud that began as a rite of the field</p>
+  </header>
+  <div class="cover-body">
+    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A pair of black buffaloes charging down a flooded paddy track, yoked together, a runner close behind holding a rope, sheets of muddy water spraying up, a decorated post standing in the field and palms behind"><rect width="380" height="268" fill="#0b2a4a" rx="8"/><rect x="0" y="150" width="380" height="118" fill="#7a5a3a"/><rect x="0" y="160" width="380" height="80" fill="#9a7a4a"/><g fill="#1f4d2a"><path d="M20 150 v-60 M60 150 v-70 M340 150 v-66" stroke="#5a3a1a" stroke-width="5"/><circle cx="20" cy="84" r="18"/><circle cx="60" cy="74" r="20"/><circle cx="340" cy="78" r="20"/></g><g transform="translate(300 160)" stroke="#111" stroke-width="2"><path d="M0 0 v-80" stroke="#c9a26a" stroke-width="6"/><path d="M-14 -80 l14 -24 l14 24z" fill="#e0a800"/><circle cy="-60" r="6" fill="#c0392b"/><circle cy="-44" r="6" fill="#fff"/></g><g stroke="#111" stroke-width="2"><g transform="translate(130 200)"><ellipse rx="36" ry="18" fill="#1a1a1a"/><circle cx="34" cy="-8" r="12" fill="#1a1a1a"/><path d="M34 -18 q12 -12 22 -4 M34 -18 q-6 -16 -18 -14" stroke="#ddd" stroke-width="4" fill="none"/><path d="M-20 16 l-6 20 M20 16 l6 20" stroke="#1a1a1a" stroke-width="6"/></g><g transform="translate(170 214)"><ellipse rx="36" ry="18" fill="#2a2a2a"/><circle cx="34" cy="-8" r="12" fill="#2a2a2a"/><path d="M34 -18 q12 -12 22 -4" stroke="#ddd" stroke-width="4" fill="none"/><path d="M-20 16 l-6 18 M20 16 l6 18" stroke="#2a2a2a" stroke-width="6"/></g><path d="M100 196 h100" stroke="#c9a26a" stroke-width="5"/><g transform="translate(60 228)"><circle cy="-56" r="9" fill="#5a3a2a"/><path d="M-10 -46 l10 30 l10 -30z" fill="#c0392b"/><path d="M0 -16 l-14 16 M0 -16 l16 14" stroke="#5a3a2a" stroke-width="5"/><path d="M10 -40 l44 -10" stroke="#e8d9b0" stroke-width="3"/></g></g><g fill="#c9b08a" opacity=".9"><path d="M200 200 q30 -60 60 -20 q-20 -10 -40 20z"/><path d="M190 214 q40 -40 70 0z"/></g></svg></figure>
+    <p class="cover-invocation">TEMPLES OF DAKṢIṆA KANNAḌA</p>
+    <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>Most people know <b>Kambaḷa</b> as a spectacle: two buffaloes thundering down a flooded track, a runner flying behind them, a sheet of mud thrown high into the floodlights.</p>
+    <p>But the race grew out of the paddy field and the shrine. Before it was a sport, it was a way of preparing the land, honouring its guardians and showing loyalty to the great house of the village.</p>
+    <p>This guide follows Kambaḷa from the post planted in the mud and the night before, to the race itself, its runners, its court cases and its new life in the city.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d4f9a">To the field and its guardians,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A rite, with betting and floodlights?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Both live side by side. Some kambaḷas are still temple and house rites; others are big competitive meets. Many carry a bit of each.</p></div></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#name">The Name</a></li><li><span class="num">3</span><a href="#kinds">Four Kinds of Kambaḷa</a></li><li><span class="num">4</span><a href="#pookare">The Pookare</a></li><li><span class="num">5</span><a href="#kori">Kōri: the Field Rite</a></li><li><span class="num">6</span><a href="#daivas">The Daivas of the Race</a></li><li><span class="num">7</span><a href="#koraga">The Night Before</a></li><li><span class="num">8</span><a href="#track">The Track</a></li><li><span class="num">9</span><a href="#races">Four Ways to Race</a></li><li><span class="num">10</span><a href="#day">Race Day</a></li><li><span class="num">11</span><a href="#buffaloes">The Buffaloes</a></li><li><span class="num">12</span><a href="#runners">The Runners</a></li><li><span class="num">13</span><a href="#law">In the Courts</a></li><li><span class="num">14</span><a href="#today">Kambaḷa Today</a></li><li><span class="num">15</span><a href="#glossary">Glossary</a></li><li><span class="num">16</span><a href="#end">On One Page</a></li><li><span class="num">17</span><a href="#sources">Sources</a></li>
+  </ul>
+</section>
+
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The essential facts on one page</div>
+<table class="ct fact"><tr><td>What</td><td>A race of yoked <b>pairs of buffaloes</b> down a flooded, muddy paddy track, with a man running or riding behind</td></tr><tr><td>Where</td><td>Dakṣiṇa Kannaḍa, Uḍupi and Kāsaragōḍ</td></tr><tr><td>Season</td><td>About November to March, from the Tuḷu month Jārde to Suggi</td></tr><tr><td>How many</td><td>Over 45 major meets a year on the coast</td></tr><tr><td>Hosts</td><td>Landholding houses, temples and kambaḷa committees (<b>samitis</b>)</td></tr><tr><td>Track</td><td>The <b>kare</b>, usually about 135–145 m, often paired</td></tr><tr><td>Rule</td><td>Never a single buffalo; always a yoked pair</td></tr><tr><td>Status</td><td>Banned in 2014 with jallikaṭṭu; made lawful again by a Karnataka amendment, 2017–18</td></tr></table>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Buffaloes, not bulls?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He-buffaloes, the coast’s field animals. They are built for wet paddy, and they love the mud the race runs through.</p></div></div>
+</section>
+
+<section class="page" id="name"><h2 class="page-title">THE NAME</h2><div class="sub">Three readings</div>
+<div class="g2">
+<div class="card bg-blue"><h4>🌾 Kampa-kaḷa</h4><p>The commonest reading: <b>kampa</b>, slushy mud, and <b>kaḷa</b>, a field: “the mud field”.</p></div>
+<div class="card bg-yellow"><h4>🪵 Kamba</h4><p>Another links it to <b>kamba</b>, a pole: the post in the field, or the pole the splash must reach.</p></div>
+<div class="card bg-yellow"><h4>🗣️ Spellings</h4><p>Kambaḷa, Kambla, Kambula: all the same word, in Kannaḍa and Tuḷu forms.</p></div>
+<div class="card bg-blue"><h4>🏷️ Many kambaḷas</h4><p>Each kind carries a qualifier: <b>pookare</b>, <b>bāre</b>, <b>kōri</b>, <b>arasu</b>, <b>dēvere</b>, <b>bāle</b>; the name tells you whose and what kind it is.</p></div>
+</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So “kambaḷa” is really the field?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In the oldest sense, yes: a field prepared and honoured. The race is what happens on it.</p></div></div>
+</section>
+
+<section class="page" id="kinds"><h2 class="page-title">FOUR KINDS OF KAMBAḶA</h2><div class="sub">From rite to sport</div>
+<table class="ct"><tr><td class="w">Pookare</td><td>A rite around the decorated post in a field, tied to the worship of nāgas and daivas; no race</td></tr><tr><td class="w">Bāre</td><td>Another ritual form honouring the nāgas and daivas; no race</td></tr><tr><td class="w">Arasu or Dēvara</td><td>The kambaḷa of a king or a god: buffaloes run in the field of a ruling house or temple</td></tr><tr><td class="w">Ādhunika</td><td>The modern competitive race, run by committees with categories and prizes</td></tr></table>
+<div class="panel reading small"><p><b>The old way.</b> Traditional kambaḷa was not a contest. Pairs ran one at a time, each simply completing its run. Racing two pairs side by side for a prize is the modern form.</p><p><b>Loyalty run.</b> At a king’s or god’s kambaḷa, everyone who owed allegiance to the deity or the house brought their animals, and each pair ran one round there before going to work in its own fields, even if only as a token.</p></div>
+</section>
+
+<section class="page" id="pookare"><h2 class="page-title">THE POOKARE</h2><div class="sub">The post that marries the field</div>
+<svg class="pg-fig" width="560" height="200" viewBox="0 0 560 200" role="img" aria-label="Two posts standing in a wet paddy field, one plain and one decorated with flowers and a triangular frame at the top, with a group carrying the decorated post toward the field"><rect width="560" height="200" fill="#e8f5e2"/><rect y="130" width="560" height="70" fill="#9a7a4a"/><g stroke="#111" stroke-width="2"><path d="M220 170 v-120" stroke="#c9a26a" stroke-width="8"/><path d="M300 170 v-130" stroke="#c9a26a" stroke-width="8"/><path d="M284 40 l16 -26 l16 26z" fill="#e0a800"/><g fill="#c0392b"><circle cx="300" cy="64" r="6"/><circle cx="300" cy="92" r="6"/></g><g fill="#fff"><circle cx="300" cy="78" r="6"/><circle cx="300" cy="106" r="6"/></g></g><g transform="translate(450 170)" stroke="#111" stroke-width="2"><g transform="translate(-30 0)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 q10 -40 20 0z" fill="#fff"/></g><g transform="translate(10 0)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 q10 -40 20 0z" fill="#fff"/></g><path d="M-40 -60 l60 -20" stroke="#c9a26a" stroke-width="6"/></g><g font-family="Bangers" font-size="12" fill="#0b2a4a"><text x="160" y="30">PLAIN · MALE</text><text x="330" y="30">DECORATED · FEMALE</text></g></svg><div class="steps">
+<div><b>Felled and carved.</b> An areca palm is felled and laid at the head of the field; craftsmen of the carpenter community, the <b>ācāris</b>, shape the post from it.</div>
+<div><b>Dressed.</b> Washermen, the <b>Maḍivāḷas</b>, dress it with flowers from around the village.</div>
+<div><b>Planted.</b> The head of the <b>guttu</b> leads its carrying, installation and worship. Often two poles stand together, a plain one counted male and a decorated one female.</div>
+<div><b>A marriage.</b> The planting is read as a marriage: the field the bride, the post the groom, so that the land will bear.</div>
+<div><b>Guarded.</b> The night before, the field is watched against spirits, and against rival houses who might try to carry the pookare off.</div>
+</div>
+</section>
+
+<section class="page" id="kori"><h2 class="page-title">KŌRI: THE FIELD RITE</h2><div class="sub">When the village ploughs together</div>
+<div class="panel reading">
+<p><b>What it is.</b> <b>Kōri kambaḷa</b>, or <b>kanda kōri</b>, is a day of collective ploughing and planting, fixed for the main paddy crop. Teams of buffaloes from many households work one field together.</p>
+<p><b>Why it mattered.</b> It turned the race’s energy to the field’s purpose: the trampling and churning prepared the mud for transplanting, and the shared labour bound households to the great house and to each other.</p>
+<p><b>The post first.</b> Before sowing, the <b>pookare kamba</b> is set in the middle of the field. In some houses the season of field worship begins right after Dīpāvaḷi.</p>
+</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So the old kambaḷa actually ploughed the field?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That was part of its value. Running buffaloes up and down a flooded field is not far from preparing it for planting.</p></div></div>
+<div class="panel reading small"><p><b>A Tuḷu world.</b> Field, buffalo, nāga, daiva and house belong together in Tuḷu life. The kambaḷa is the moment they meet in public.</p></div>
+</section>
+
+<section class="page" id="daivas"><h2 class="page-title">THE DAIVAS OF THE RACE</h2><div class="sub">Who watches from the edge of the field</div>
+<div class="g2">
+<div class="card bg-blue"><h4>🐃 Mahiṣandāya</h4><p>A daiva in <b>buffalo</b> form, central to the <b>daivada kambaḷa</b>. His shrine stands at the guttu house, and the day begins with his worship.</p></div>
+<div class="card bg-yellow"><h4>🌾 Bermer</h4><p>Scholars describe the old kambaḷa as a fertility rite dedicated to <b>Bermer</b>, the Tuḷu Brahma of the land, and his attendant daivas.</p></div>
+<div class="card bg-yellow"><h4>🥁 Yēru Baṇṭa</h4><p>An attendant daiva who, by tradition, beat a drum to announce a coming kambaḷa.</p></div>
+<div class="card bg-blue"><h4>🛕 Dēvara kambaḷa</h4><p>At Tiruvailu the deity’s festival image is carried to the field to “watch”; at Tonnase (Hebri) the kambaḷa is linked with <a href="/tulunadu/daiva/jumadi/">Dhūmāvatī</a> and Gōpālakṛṣṇa; at Vandāru farmers race to thank the deity for keeping their animals free of disease.</p></div>
+</div>
+<div class="panel reading small"><p><b>Before running.</b> Pairs are taken to the <b>daivasthāna</b> first, and the owner touches kuṅkuma from the shrine to their foreheads.</p></div>
+</section>
+
+<section class="page" id="koraga"><h2 class="page-title">THE NIGHT BEFORE</h2><div class="sub">The Koragas’ vigil</div>
+<svg class="pg-fig" width="560" height="170" viewBox="0 0 560 170" role="img" aria-label="Men dancing around a campfire in an open field at night, drummers beside them, dew drops in the dark air and a large clay pot on the fire"><rect width="560" height="170" fill="#0b2a4a"/><g fill="#9fd3ff"><circle cx="60" cy="30" r="2"/><circle cx="160" cy="50" r="2"/><circle cx="420" cy="26" r="2"/><circle cx="500" cy="60" r="2"/><circle cx="300" cy="20" r="2"/></g><path d="M260 150 l20 -40 l20 40z" fill="#ff8c1a"/><path d="M268 150 l12 -24 l12 24z" fill="#ffd166"/><ellipse cx="280" cy="104" rx="20" ry="14" fill="#8a5a2a" stroke="#111" stroke-width="2"/><g stroke="#111" stroke-width="2" fill="#e8d9b0"><g transform="translate(180 160)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 l10 -42 l10 42z"/><path d="M-8 -34 l-12 -14 M8 -34 l12 -14" stroke="#5a3a2a" stroke-width="4"/></g><g transform="translate(380 160)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 l10 -42 l10 42z"/><path d="M-8 -34 l-12 -14 M8 -34 l12 -14" stroke="#5a3a2a" stroke-width="4"/></g><g transform="translate(110 160)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 l10 -42 l10 42z"/><ellipse cx="14" cy="-26" rx="10" ry="12" fill="#c9a26a"/></g><g transform="translate(450 160)"><circle cy="-50" r="8" fill="#5a3a2a"/><path d="M-10 0 l10 -42 l10 42z"/><ellipse cx="-14" cy="-26" rx="10" ry="12" fill="#c9a26a"/></g></g><text x="20" y="22" font-family="Bangers" font-size="13" fill="#fff4c2">PĀNI KUḶḶUNU · SITTING UNDER THE DEW</text></svg><div class="steps">
+<div><b>Pāni kuḷḷunu.</b> On the night before the race, the <b>Koraga</b> community keeps a vigil in the open field. The name means “sitting under the dew”.</div>
+<div><b>Dance and drum.</b> Led by their headman, the <b>Mukhāri</b>, the men dance around a fire to their own drums, the <b>ḍōlu</b> and the <b>ḍuḍi</b>; the drumming, the <b>ḍōlu sēve</b>, goes on until the kambaḷa is over.</div>
+<div><b>Their daiva.</b> They sing to their own daiva, <b>Nīca</b>, and offer toddy and a rice pudding cooked in a big clay pot; the pot is broken so the pudding stands as one mass, the <b>kandēl addyē</b>.</div>
+<div><b>Their due.</b> At the end the host family gives them betel leaf and areca, marking the close of their service.</div>
+</div>
+</section>
+
+<section class="page" id="track"><h2 class="page-title">THE TRACK</h2><div class="sub">Twin lanes of slush</div>
+<svg class="pg-fig" width="560" height="210" viewBox="0 0 560 210" role="img" aria-label="Plan of two parallel flooded lanes side by side, a start at the left, a finish line and a mud pit at the right, a tall pole with a white flag beyond the finish, and spectators along both sides"><rect width="560" height="210" fill="#e8f5e2"/><rect x="40" y="50" width="420" height="44" fill="#9a7a4a" stroke="#111" stroke-width="2"/><rect x="40" y="110" width="420" height="44" fill="#9a7a4a" stroke="#111" stroke-width="2"/><g stroke="#c9b08a" stroke-width="2"><path d="M60 72 h380 M60 132 h380" stroke-dasharray="10 8"/></g><path d="M440 46 v112" stroke="#c0392b" stroke-width="4"/><rect x="460" y="50" width="50" height="104" fill="#6a4a2a" stroke="#111" stroke-width="2"/><path d="M530 40 v120" stroke="#5a3a1a" stroke-width="4"/><path d="M530 40 h20 v12 h-20z" fill="#fff" stroke="#111"/><g fill="#999"><circle cx="80" cy="30" r="5"/><circle cx="140" cy="30" r="5"/><circle cx="200" cy="30" r="5"/><circle cx="260" cy="30" r="5"/><circle cx="320" cy="30" r="5"/><circle cx="380" cy="30" r="5"/><circle cx="80" cy="176" r="5"/><circle cx="160" cy="176" r="5"/><circle cx="240" cy="176" r="5"/><circle cx="320" cy="176" r="5"/><circle cx="400" cy="176" r="5"/></g><g font-family="Bangers" font-size="11" fill="#0b2a4a"><text x="44" y="104">START</text><text x="200" y="104">KARE · ABOUT 135–145 M</text><text x="400" y="200">FINISH</text><text x="462" y="170">MAÑJOṬṬI</text><text x="500" y="34">NIŚĀNE</text></g></svg><div class="g2">
+<div class="card bg-blue"><h4>🛤️ The kare</h4><p>A flooded paddy lane kept soft and wet. Many meets build two side by side, a <b>joḍukare</b>, so two pairs race at once; some famous pairs of lanes are named <b>Sūrya</b> and <b>Candra</b>, Sun and Moon.</p></div>
+<div class="card bg-yellow"><h4>🏁 Mañjoṭṭi</h4><p>The mud pit and raised end of the track, where handlers wait to slow, calm and wash the pair after the dash.</p></div>
+<div class="card bg-yellow"><h4>🚩 Niśāne</h4><p>A tall pole with white cloth near the end, the target the mud-spray must reach in the splash race.</p></div>
+<div class="card bg-blue"><h4>⏱️ Speed</h4><p>Top pairs cover the track in about 12–15 seconds.</p></div>
+</div>
+</section>
+
+<section class="page" id="races"><h2 class="page-title">FOUR WAYS TO RACE</h2><div class="sub">The categories of the modern kambaḷa</div>
+<table class="ct"><tr><td class="w">Negilu (nēgil)</td><td>The pair drags a light <b>plough</b>; the runner holds it down without lifting it. Entry level, with junior and senior rounds.</td></tr><tr><td class="w">Hagga (bal)</td><td>A <b>rope</b> joins runner and pair; he runs behind holding its knots. For experienced pairs. First to the finish wins.</td></tr><tr><td class="w">Aḍḍa halage</td><td>The runner stands on a <b>crosswise plank</b> dragged behind the pair, holding ropes and tails. Hard, so not run everywhere.</td></tr><tr><td class="w">Kaṇe halage</td><td>The runner rides a <b>plank with two holes</b>, on one leg; water jets up through the holes. Judged by the <b>height of the splash</b> against the niśāne, not by speed.</td></tr></table>
+<div class="panel reading small"><p><b>Age groups.</b> Pairs are also graded by age, judged from their teeth, so young animals race young animals: in effect a junior and senior ladder inside each category.</p></div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A race you win without being first?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Kaṇe halage is the showpiece. The crowd waits for the moment the spray hits the white cloth.</p></div></div>
+</section>
+
+<section class="page" id="day"><h2 class="page-title">RACE DAY</h2><div class="sub">From the procession to the prize</div>
+<div class="tl"><div><b class="yr">Day before</b> Trials, the <b>kuḍi kambaḷa</b>, test the track and the pairs; the Koragas’ vigil starts at dusk.</div><div><b class="yr">Morning</b> A procession of the pairs, dressed with a forehead rope, the <b>netti baḷḷa</b>, some with silver ornaments and a cloth across the back, the <b>pāvaḍe</b>; a wooden staff, the <b>nōga</b>, lies across the shoulders.</div><div><b class="yr">Heats</b> The announcer clears the track and calls category, owner and runner. At the cry <b>“Āle buḍiyer!”</b> the pairs are released, a <b>kombu</b> horn blaring as they run.</div><div><b class="yr">Night</b> At many meets the races run on under floodlights through the night, with bands and crowds of 15,000–20,000 at large meets.</div><div><b class="yr">Finals</b> By the next afternoon the winners in each class are settled.</div><div><b class="yr">Prizes</b> Once coconuts and bananas; now medals, gold and silver coins and cash. A champion pair may collect hundreds of medals in its life.</div></div>
+</section>
+
+<section class="page" id="buffaloes"><h2 class="page-title">THE BUFFALOES</h2><div class="sub">Athletes of the mud</div>
+<table class="ct fact"><tr><td>6 am</td><td>Hay and water, then ground <b>horse gram</b> mixed with palm jaggery</td></tr><tr><td>7:30 am</td><td>Grazing on wet ground and a long wallow in mud</td></tr><tr><td>10:30 am</td><td>A bath and an oil massage with herbal and coconut oils</td></tr><tr><td>4 pm</td><td>Horse gram again, a warm-water bath, a hay snack</td></tr><tr><td>Summer</td><td>Fans in the sheds, and in some, water dripping over them to keep cool</td></tr><tr><td>Handling</td><td>A nose rope for control; trained caretakers who live with the pair</td></tr></table>
+<div class="panel reading small"><p><b>Status.</b> A great pair is a family’s pride. Some owners have built swimming pools for their animals.</p><p><b>Fewer houses.</b> Supporters estimate that the houses keeping racing pairs today are a small fraction of what they were fifty years ago.</p></div>
+</section>
+
+<section class="page" id="runners"><h2 class="page-title">THE RUNNERS</h2><div class="sub">The men behind the pair</div>
+<div class="steps">
+<div><b>Who they are.</b> Usually young men of farming families, skilled at keeping their feet and their line in knee-deep slush while holding rope or plough.</div>
+<div><b>2020.</b> At Aikaḷa, <b>Srīnivāsa Gauḍa</b> of Mūḍabidri was timed over 142.5 m in 13.62 seconds. Social media worked out a “100 m in 9.55 s”, faster than Usain Bolt’s record.</div>
+<div><b>The caution.</b> The president of the Kambaḷa Academy, Prof. K. Guṇapāla Kaḍamba, declined the comparison: the timing is not done to athletics standards, and the runner is pulled along by the pair. Gauḍa was offered a national trial and chose to stay with kambaḷa.</div>
+<div><b>Records fall.</b> Within weeks, another runner, Niśānt Śeṭṭi, was reported faster still.</div>
+</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So was he faster than Bolt?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Not in any way that can be compared. Different ground, different timing, and a buffalo pair doing a lot of the work. What is real is how hard it is to run that fast in that mud.</p></div></div>
+</section>
+
+<section class="page" id="law"><h2 class="page-title">IN THE COURTS</h2><div class="sub">Ban and return</div>
+<div class="tl"><div><b class="yr">Concern</b> Animal-welfare groups object to whipping and to driving animals hard; organisers say the animals are cared for as family and the race is tradition.</div><div><b class="yr">2014</b> In cases brought by animal-welfare groups, the <b>Supreme Court</b> bans jallikaṭṭu and similar events; kambaḷa stops.</div><div><b class="yr">Jan 2017</b> After protests in Tamil Nadu, jallikaṭṭu is restored; the coast demands the same for kambaḷa.</div><div><b class="yr">Jul 2017</b> The <b>Prevention of Cruelty to Animals (Karnataka Amendment) Ordinance</b> makes kambaḷa lawful, with the President’s assent.</div><div><b class="yr">Feb 2018</b> The amending Act receives presidential assent, settling the legal basis.</div><div><b class="yr">After</b> Welfare groups report continued whipping; officials press for gentler handling.</div></div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is the argument over?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The law is settled for now; the welfare debate isn’t. This guide records both sides as they stand, without taking one.</p></div></div>
+</section>
+
+<section class="page" id="today"><h2 class="page-title">KAMBAḶA TODAY</h2><div class="sub">From village field to the capital</div>
+<div class="g2">
+<div class="card bg-blue"><h4>💡 Floodlit nights</h4><p>Many meets run day and night under floodlights; Jeppinamogaru, in Maṅgaḷūru, is one of the places known for them.</p></div>
+<div class="card bg-yellow"><h4>🏙️ Bengaluru, 2023</h4><p>On 25–26 November 2023 the first kambaḷa outside the coast was held at Bengaluru’s Palace Grounds, on a 155 m track, with well over a hundred pairs brought up from the coast.</p></div>
+<div class="card bg-yellow"><h4>🎬 On screen</h4><p>The 2022 film <b>Kantara</b> features a kambaḷa and drew new interest from outside Tuḷunāḍu.</p></div>
+<div class="card bg-blue"><h4>🌊 Neighbours</h4><p>Kerala has a related race, the <b>māramaḍi</b>.</p></div>
+</div>
+<div class="panel reading small"><p><b>Old kambaḷas.</b> Some of the oldest, such as the king’s and god’s kambaḷa at <b>Kadri</b>, once under Āḷupa patronage and called both Arasu and Dēvere Kambaḷa, remain famous names; sources differ on how they run today.</p></div>
+</section>
+
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used but not explained above</div>
+<table class="ct"><tr><td class="w">Āḷupa</td><td>the early dynasty of Tuḷunāḍu</td></tr><tr><td class="w">Daivasthāna</td><td>the shrine of a daiva</td></tr><tr><td class="w">Dhūmāvatī</td><td>the goddess identified with the daiva Jumādi</td></tr><tr><td class="w">Guttu</td><td>a landholding great house of a village</td></tr><tr><td class="w">Jallikaṭṭu</td><td>the bull-taming sport of Tamil Nadu</td></tr><tr><td class="w">Koraga</td><td>an indigenous community of the coast</td></tr><tr><td class="w">Kuṅkuma</td><td>red powder used in worship</td></tr><tr><td class="w">Nāga</td><td>a serpent deity</td></tr><tr><td class="w">Samiti</td><td>a committee</td></tr><tr><td class="w">Suggi, Jārde</td><td>months of the Tuḷu calendar</td></tr></table>
+</section>
+
+<section class="page" id="end"><h2 class="page-title">KAMBAḶA ON ONE PAGE</h2><div class="sub">Field, guardians, race</div>
+<svg class="pg-fig" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="Five steps along a muddy track: a post planted, a fire at night, a shrine blessing, a buffalo pair running, and a medal"><rect width="560" height="220" fill="#fff"/><rect x="10" y="110" width="540" height="40" rx="8" fill="#9a7a4a"/><g font-size="30" text-anchor="middle"><text x="60" y="96">🪵</text><text x="170" y="96">🔥</text><text x="280" y="96">🛕</text><text x="390" y="96">🐃</text><text x="500" y="96">🏅</text></g><g font-family="Bangers" font-size="12" fill="#0b2a4a" text-anchor="middle"><text x="60" y="176">POOKARE</text><text x="170" y="176">KORAGA VIGIL</text><text x="280" y="176">DAIVA BLESSING</text><text x="390" y="176">THE RUN</text><text x="500" y="176">PRIZE</text></g></svg><div class="key">The field is married, guarded and blessed before the buffaloes run: <b>Kambaḷa is a rite of the land that became a race</b>. 🙏</div>
+</section>
+
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small">
+<p><b>Sources:</b> Wikipedia, “Kambala” (name readings; season; over 45 meets; four race categories; non-competitive old form; Kadri and the Āḷupas; Tonnase, Vandāru; Koraga night, Nīca, kandēl addyē; floodlights at Jeppinamogaru; swimming pools; 2014 ban, 2017 ordinance, 2018 Act; whipping reports; types list; pāvaḍe); Swarajya, “Kambala bulls” (dēvara and arasu kambaḷa; Tiruvailu; pookare makers and guttu head; kuṅkuma at the daivasthāna; netti baḷḷa, nōga; announcer, “Āle buḍiyer”, kombu; Yēru Baṇṭa; track about 135 m; maññoṭṭi; diet and routine; Mahiṣandāya; Jārde to Suggi; decline of racing houses); Dr Lakshmi G. Prasad and Deccan Herald (four kinds of kambaḷa; Tuḷu names of races; teeth and age; horse gram; pookare as marriage); Wikipedia, “Kori Kambla” (collective ploughing; areca post; carpenters); TuLu Research, after Indira Hegde (pair of poles; Bermer; pāni kuḷḷunu; Mukhāri); Udayavani (kuḍi kambaḷa; ḍōlu sēve; Sūrya–Candra joḍukare); BBC, AFP and others, 2020 (Gauḍa’s run; Kaḍamba’s caution; trial); Deccan Herald and The Hindu, 2023 (Bengaluru Kambaḷa, 155 m track); Oneindia (crowd sizes).</p>
+<p><b>Sources differ:</b> the names and counts of the race categories; track length (132–145 m); the time Gauḍa ran (13.42 or 13.62 s) and the place (Aikaḷa or Kadri); the season’s start (November or December); the number of pairs at Bengaluru.</p>
+<p><b>Not verified:</b> the claimed meaning of the twin-pole pookare in every village; Yēru Baṇṭa’s drum as a living practice. Diagrams are simplified. Zappy and Prof. Bolt are fictional.</p>
+</div>
+</section>
+
+</div>
+
+<!-- reader-feedback:start -->
+<div class="bhakti-reader-feedback" style="box-sizing:border-box;max-width:820px;margin:26px auto 32px;padding:22px 24px;border:1px solid #dec8aa;border-radius:12px;background:#fff8ed;color:#321f2a;font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif">
+  <strong style="display:block;font:700 25px/1.25 Georgia,serif;margin-bottom:8px">Share your thoughts</strong>
+  <p style="margin:0 0 13px">If an article touched your heart, or you have a suggestion, reflection or correction, I would love to hear from you.</p>
+  <a href="mailto:srini.presents@gmail.com?subject=Bhakti%20reader%20feedback" style="display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:10px 14px;border-radius:6px;background:#973f2c;color:white;text-decoration:none;font-weight:700">Write to me · srini.presents@gmail.com</a>
+</div>
+<!-- reader-feedback:end -->
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/">Bhakti</a><span class="sep">›</span><a href="/tulunadu/">Tulu Nadu</a><span class="sep">›</span><a href="/tulunadu/culture/">Culture</a></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

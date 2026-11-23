@@ -575,6 +575,12 @@
     "ganesha"
    ],
    "tile": "<li><a href=\"/ganesha/\"><div class=\"tile-art\" style=\"background:#f1dfbd\"><img src=\"/ganesha/ganesha.jpg\" alt=\"\" width=\"1200\" height=\"800\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Collection</strong><h2>Gaṇeśa</h2><p>Explore Gaṇeśa through his origins, stories, forms, hymns, festivals and temples.</p><span class=\"read\">Open collection ↗</span></div></a></li>"
+  },
+  {
+   "path": "/tulunadu/",
+   "door": "tulunadu",
+   "deities": [],
+   "tile": "<li><a href=\"/tulunadu/\"><div class=\"tile-art\"><img src=\"/tulunadu/art/tulunadu-intro.svg\" alt=\"\" width=\"380\" height=\"268\" loading=\"lazy\"></div><div class=\"tile-copy\"><h2>Tulu Nadu</h2><p>Explore the temples, culture, festivals and daiva traditions of the Tuḷu-speaking coast.</p></div></a></li>"
   }
  ]
 }

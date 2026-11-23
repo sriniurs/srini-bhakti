@@ -17,7 +17,8 @@ SIZE = re.compile(r'<small class="collection-size(?: collection-size--card)?">.*
 LABEL = re.compile(r'<strong class="label">([^<]*)</strong>')
 COUNT_WORDS = re.compile(r'\b\d+\s+(?:articles|parts|guides|chapters|forms|avatāras|days)\b', re.I)
 PART = re.compile(r'<h[23][^>]*>\s*PART\s+(\d+)\b',re.I)
-UTILITY_NAV = {'sr-reader-bar', 'bhakti-nav', 'bk-trail', 'bhakti-section-links', 'mysuru-jumps'}
+UTILITY_NAV = {'sr-reader-bar', 'bhakti-nav', 'bk-trail', 'bhakti-section-links', 'mysuru-jumps', 'tulu-nav'}
+TULU_FESTIVALS = '/tulunadu/festivals/'
 
 
 class Cards(HTMLParser):
@@ -25,6 +26,7 @@ class Cards(HTMLParser):
         super().__init__()
         self.lists = []
         self.routes = []
+        self.fragment_links = set()
         self.feed(markup)
 
     def handle_starttag(self, tag, attrs):
@@ -33,8 +35,11 @@ class Cards(HTMLParser):
             self.lists.append(bool(CARD_CLASSES.intersection(attrs.get('class', '').split())))
         if tag == 'a' and any(self.lists):
             url = urlsplit(attrs.get('href', ''))
-            if url.netloc in ('', SITE) and url.path.startswith('/') and not url.fragment:
-                self.routes.append(url.path)
+            if url.netloc in ('', SITE) and url.path.startswith('/'):
+                if url.fragment:
+                    self.fragment_links.add((url.path, url.fragment))
+                else:
+                    self.routes.append(url.path)
 
     def handle_endtag(self, tag):
         if tag in LIST_TAGS and self.lists:
@@ -43,6 +48,7 @@ class Cards(HTMLParser):
 
 def build_counts():
     pages, cards, inline_parts = set(), {}, {}
+    festival_links = 0
     for source in ROOT.rglob('index.html'):
         parts = source.parent.relative_to(ROOT).parts
         if parts and any(part.startswith('.') for part in parts):
@@ -52,14 +58,17 @@ def build_counts():
             continue
         route = '/' + '/'.join(parts) + '/' if parts else '/'
         pages.add(route)
-        cards[route] = Cards(markup).routes
+        card_links = Cards(markup)
+        cards[route] = card_links.routes
+        if route == TULU_FESTIVALS:
+            festival_links = len(card_links.fragment_links)
         parts = set(PART.findall(markup))
         if len(parts) > 1:
             inline_parts[route] = f'{len(parts)} parts in 1 article'
 
     @lru_cache(maxsize=None)
     def articles(route, seen=frozenset()):
-        if route in seen:
+        if route in seen or route == TULU_FESTIVALS:
             return frozenset()
         destinations = [target for target in cards[route] if target in pages and target != route]
         if not destinations:
@@ -94,6 +103,8 @@ def build_counts():
     labels.update(inline_parts)
     route = '/srividya/related-reading/'
     labels[route] = f'{len(set(cards[route]))} reading links'
+    if TULU_FESTIVALS in pages:
+        labels[TULU_FESTIVALS] = f'{festival_links} reading links'
     return labels, pages
 
 
