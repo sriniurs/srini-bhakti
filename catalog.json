@@ -483,6 +483,27 @@
    "group": "circuits"
   },
   {
+   "path": "/temples-of-india/karnataka/gokarna/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/gokarna/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><img src=\"/assets/editorial/temples-card.jpg\" width=\"480\" height=\"480\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temple guide</strong><h2>Gōkarṇa Mahābaḷēśvara</h2><p>Śiva’s ātmaliṅga on the Karnataka coast, the legend of Rāvaṇa and the sacred sites around Gōkarṇa.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/muktisthalas/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/muktisthalas/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><img src=\"/tulunadu/art/udupi-srikrishna.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Overview + 7 guides</strong><h2>The Seven Muktisthalas</h2><p>An illustrated overview of Paraśurāma Kṣetra’s seven sacred sites, with links to each temple guide.</p><span class=\"read\">Open collection ↗</span></div></a></li>",
+   "group": "circuits"
+  },
+  {
+   "path": "/temples-of-india/karnataka/murudeshwara/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/murudeshwara/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><img src=\"/assets/editorial/temples-card.jpg\" width=\"480\" height=\"480\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temple guide</strong><h2>Murḍēśvara</h2><p>The coastal shrine associated with the ātmaliṅga’s cloth and the story of Rāvaṇa.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/temples-of-india/sapta-puri/",
    "door": "temples",
    "deities": [
