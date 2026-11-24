@@ -730,6 +730,62 @@
    "tile": "<li><a href=\"/ganesha/\"><div class=\"tile-art\" style=\"background:#f1dfbd\"><img src=\"/ganesha/ganesha.jpg\" alt=\"\" width=\"1200\" height=\"800\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Collection</strong><h2>Gaṇeśa</h2><p>Explore Gaṇeśa through his origins, stories, forms, hymns, festivals and temples.</p><span class=\"read\">Open collection ↗</span></div></a></li>"
   },
   {
+   "path": "/shiva/who-is-shiva/",
+   "door": "gods",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/shiva/who-is-shiva/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/shiva/who-is-shiva/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Śiva</strong><h2>Who Is Śiva?</h2><p>Rudra in the Veda, his symbols, forms, four great stories, the liṅga, worship and temples.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/who-is-vishnu/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/who-is-vishnu/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/vishnu/who-is-vishnu/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Who Is Viṣṇu?</h2><p>The god of three strides, his emblems, Vaikuṇṭha, forms and avatāras, four stories and his teachers.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/durga-and-parvati/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/durga-and-parvati/\"><div class=\"tile-art\" style=\"background:#f6e3e1\"><img src=\"/devi/durga-and-parvati/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Devī</strong><h2>Pārvatī and Durgā</h2><p>Satī, Pārvatī’s penance, Durgā born of the gods’ light, Mahiṣa, Kālī and the Navadurgā.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/lakshmi/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/lakshmi/\"><div class=\"tile-art\" style=\"background:#f6e3e1\"><img src=\"/devi/lakshmi/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Devī</strong><h2>Lakṣmī</h2><p>Śrī of the Veda, born from the milk ocean, her lotus and elephants, Aṣṭa Lakṣmī and Dīpāvalī.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/sarasvati/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/sarasvati/\"><div class=\"tile-art\" style=\"background:#f6e3e1\"><img src=\"/devi/sarasvati/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Devī</strong><h2>Sarasvatī</h2><p>The river who became the Word: vīṇā, book and swan, the first letter, Śāradā of Śṛṅgeri.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/krishna/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/krishna/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/vishnu/krishna/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Kṛṣṇa</h2><p>Born in a prison, butter thief, Govardhana, Rādhā, Dvārakā, the Gītā, Udupi and Guruvāyūr.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/rama/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/rama/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/vishnu/rama/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Rāma</h2><p>The bow, the exile and Bharata’s sandals, Sītā taken, Hanumān, Laṅkā and Rāma Rājya.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
    "path": "/tulunadu/",
    "door": "tulunadu",
    "deities": [],
