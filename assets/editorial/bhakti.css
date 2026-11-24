@@ -355,3 +355,136 @@ body.bhakti-editorial {
 .bhakti-reference .reference-copy thead { background: var(--paper); }
 .bhakti-reference .reference-copy dt { font-weight: 700; }
 .bhakti-reference .reference-copy dd { margin: 0 0 12px; }
+
+/* Bhakti’s painted editorial palette. */
+body.bhakti-editorial, body.bhakti-search {
+  --ink: #30223c;
+  --paper: #fffaf0;
+  --cream: #f8eedc;
+  --red: #9a342c;
+  --line: #d7bea3;
+  --bhakti-teal: #184940;
+  --bhakti-gold: #ffcd70;
+}
+.bhakti-editorial .bhakti-nav {
+  background: var(--paper);
+  border-color: var(--line);
+}
+.bhakti-editorial .bhakti-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font: 650 .95rem/1.25 system-ui, sans-serif;
+}
+.bhakti-home .bhakti-nav-inner { box-sizing: border-box; }
+.bhakti-home .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+  background: var(--bhakti-teal);
+  color: var(--paper);
+}
+.bhakti-home .hero::before { display: none; }
+.bhakti-home .hero-copy {
+  width: 100%;
+  padding: clamp(24px, 5.5vw, 76px);
+}
+.bhakti-home .hero h1 { color: var(--paper); font-size: clamp(64px, 11vw, 148px); }
+.bhakti-home .hero-copy p { color: var(--paper); font-size: clamp(21px, 3.2vw, 35px); }
+.bhakti-home .hero img {
+  position: static;
+  z-index: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-position: center;
+}
+.bhakti-home .bhakti-index-button {
+  min-height: 44px;
+  background: var(--bhakti-gold);
+  color: var(--ink);
+  font: 700 1rem/1.4 system-ui, sans-serif;
+}
+.bhakti-home .bhakti-index-button:hover { background: #ffe0a2; }
+.bhakti-home .bhakti-index-button:focus-visible { outline-color: var(--bhakti-gold); }
+.bhakti-home .bhakti-topics {
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(14px, 2vw, 24px);
+}
+.bhakti-home .bhakti-topics a {
+  border-color: var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  text-align: start;
+}
+.bhakti-home .bhakti-topics img { aspect-ratio: 1; height: auto; object-fit: cover; }
+.bhakti-home .bhakti-topics span { padding: 16px 18px 6px; }
+.bhakti-home .bhakti-topics .collection-size--card {
+  padding: 0 18px 16px;
+  text-align: start;
+}
+.bhakti-editorial .bhakti-deities {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  font: 700 1rem/1.35 system-ui, sans-serif;
+}
+.bhakti-editorial .bhakti-deities::before,
+.bhakti-editorial .bhakti-deities::after { display: none; }
+.bhakti-editorial .bhakti-deities a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+.bhakti-editorial .article-index summary {
+  align-content: center;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+}
+.bhakti-editorial .article-index details { padding: 0 12px; }
+.bhakti-editorial .article-index ul { overflow-wrap: anywhere; }
+.bhakti-editorial .article-index li > a {
+  display: inline-block;
+  padding-block: 6px;
+}
+.bhakti-home .bhakti-reader-note { margin-block: 40px; }
+.bhakti-home .bhakti-reader-note a { overflow-wrap: anywhere; }
+.bhakti-editorial.bhakti-painted-collection .hero {
+  border-color: var(--bhakti-teal);
+  background: var(--bhakti-teal);
+}
+.bhakti-editorial.bhakti-painted-collection .hero :is(h1, p) { color: var(--paper); }
+.bhakti-editorial.bhakti-painted-collection .hero img {
+  display: block;
+  object-position: center;
+}
+@media (min-width: 721px) {
+  .bhakti-home .hero { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
+  .bhakti-home .hero img { height: 100%; }
+  .bhakti-home .bhakti-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1000px) {
+  .bhakti-home .bhakti-topics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.bhakti-find { max-width: 640px; margin: 0 0 clamp(32px, 5vw, 64px); }
+.bhakti-find label { display: block; margin-bottom: 6px; font-weight: 700; }
+.bhakti-find div { display: flex; flex-wrap: wrap; gap: 8px; }
+.bhakti-find input, .bhakti-find button {
+  min-height: 46px;
+  padding: 9px 13px;
+  border: 1px solid var(--bhakti-teal);
+  border-radius: 7px;
+  font: inherit;
+}
+.bhakti-find input { flex: 1; min-width: 0; background: var(--paper); color: var(--ink); }
+.bhakti-find button { background: var(--bhakti-teal); color: var(--paper); font-weight: 700; cursor: pointer; }
+.bhakti-find button:hover { background: #246257; }
+.bhakti-find :is(input, button):focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }

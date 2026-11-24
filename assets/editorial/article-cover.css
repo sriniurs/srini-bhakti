@@ -132,3 +132,10 @@
   }
   .bhakti-article-cover .cover-extra .bubble { padding: 7px 10px; }
 }
+
+/* Carry the archive’s painted-collection palette into existing illustrated covers. */
+@media screen {
+  .page.cover.bhakti-article-cover { border-radius: 12px; overflow: hidden; }
+  .bhakti-article-cover .cover-heading { border-block-end: 4px solid #d7a552; }
+  .bhakti-article-cover .cover-body { background-color: var(--cover-paper); }
+}
