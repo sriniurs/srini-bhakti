@@ -63,6 +63,21 @@ CARD_PAINTINGS = {
     "/temples-of-india/tamil-nadu/kanchipuram-varadaraja/": "card-kanchipuram-varadaraja",
     "/temples-of-india/sapta-puri/ayodhya/": "card-ayodhya",
 }
+PARENT_STORIES = {
+    "/temples-of-india/around-mysuru/chamundeshwari/": (
+        ("https://srinipresents.com/chamundi-steps/", "Who Counted Chamundi’s 1,000 Steps?"),
+    ),
+    "/festivals/deepavali/": (
+        ("https://srinipresents.com/darkest-night/", "Why the Festival of Lights Falls on the Darkest Night"),
+        ("https://srinipresents.com/diya-makers/", "The Last Diya Makers of Doora"),
+    ),
+    "/temples-of-india/kerala/sabarimala/": (
+        ("https://srinipresents.com/sabarimala-vow/", "The 41-Day Sabarimala Vow, Decoded"),
+    ),
+    "/home-puja/": (
+        ("https://srinipresents.com/mysore-agarbathi/", "Mysore Agarbathi: The Smoke That Made Mysuru Famous"),
+    ),
+}
 START = "<!-- library:header -->"
 END = "<!-- /library:header -->"
 FOOT_START = "<!-- library:footer -->"
@@ -290,6 +305,9 @@ def footer(route, pages, series, memberships, artwork):
         if related:
             sections.append('<section><h2>Related reading</h2><ul>' + "".join(
                 f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in related) + "</ul></section>")
+    if stories := PARENT_STORIES.get(route):
+        items = "".join(f"<li>{link(url, title)}</li>" for url, title in stories)
+        sections.append(f"<section><h2>Related stories from srini.presents</h2><ul>{items}</ul></section>")
     main_group = memberships[route][0] if memberships[route] else None
     if main_group and (collection := COLLECTIONS[main_group]) != route:
         sections.append(link(collection, f"Return to {main_group}"))
