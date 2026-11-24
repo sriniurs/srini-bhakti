@@ -667,6 +667,15 @@
    "group": "places"
   },
   {
+   "path": "/temples-of-india/vaishno-devi/",
+   "door": "temples",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/temples-of-india/vaishno-devi/\"><div class=\"tile-art\" style=\"background:#f6e3e1\"><img src=\"/temples-of-india/vaishno-devi/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Devī</strong><h2>Vaiṣṇo Devī</h2><p>The Mother in the Trikūṭa cave: Śrīdhar’s feast, Bhairon’s chase, Garbh Jūn, the three piṇḍīs and the twelve-kilometre path.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/srividya/saundaryalahari/",
    "door": "hymns",
    "deities": [],
