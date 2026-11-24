@@ -189,18 +189,21 @@
   body:has(.library-reader-head) .sr-reader-slot { display: none !important; }
   html:has(.library-reader-head) { scroll-padding-top: 1rem; }
   body.bhakti-editorial:has(.library-reader-head) .bhakti-nav { display: none; }
-  body.bhakti-editorial:has(.library-reader-head) .hero {
+  body.bhakti-editorial:has(.library-reader-head) .hero,
+  body:has(.library-reader-head) .hero:has(> .library-cover-painting) {
     min-height: 0; border: 1px solid var(--library-cover); border-radius: 1rem;
     background: var(--library-cover); color: var(--library-paper);
   }
-  body.bhakti-editorial:has(.library-reader-head) .hero :is(h1, p) { color: inherit; }
-  body.bhakti-editorial:has(.library-reader-head) .hero h1 { font-family: var(--library-serif); overflow-wrap: anywhere; }
+  body.bhakti-editorial:has(.library-reader-head) .hero :is(h1, p),
+  body:has(.library-reader-head) .hero:has(> .library-cover-painting) :is(h1, p) { color: inherit; }
+  body.bhakti-editorial:has(.library-reader-head) .hero h1,
+  body:has(.library-reader-head) .hero:has(> .library-cover-painting) h1 { font-family: var(--library-serif); overflow-wrap: anywhere; }
   body.bhakti-editorial:has(.library-reader-head) .hero img { width: 100%; height: auto; align-self: center; }
-  body.bhakti-editorial:has(.library-reader-head) .hero img.library-cover-painting {
-    width: 100%; max-height: 31rem; aspect-ratio: 4 / 3; object-fit: cover;
+  body:has(.library-reader-head) .hero > img.library-cover-painting {
+    display: block; width: 100%; height: auto; align-self: stretch;
+    max-height: 31rem; aspect-ratio: 4 / 3; object-fit: cover;
   }
-  body.bhakti-editorial:has(.library-reader-head) .hero .library-cover-painting + img[alt=""] { display: none; }
-  .library-cover-panel .library-cover-painting { display: block; width: min(100%, 30rem); height: auto; margin: 1rem auto; border-radius: .75rem; }
+  body:has(.library-reader-head) .hero > .library-cover-painting + img { display: none; }
   .bhakti-article-cover .cover-body > .library-cover-painting { display: block; width: min(100%, 32rem); height: auto; margin: 0 auto 1rem; border-radius: .7rem; }
   body.bhakti-editorial:has(.library-reader-head) .tiles a { background: var(--library-paper); border-color: var(--library-rule); }
   body.bhakti-editorial:has(.library-reader-head) .tile-art {
