@@ -68,7 +68,7 @@ def cover_asset(route, source, generated):
 
 
 def img(source):
-    painted = source.startswith(PAINTED_PREFIX)
+    painted = source.startswith("/assets/editorial/bhakti-library/")
     return f'<img class="library-card-illustration" src="{source}" width="160" height="120" loading="lazy" decoding="async" alt=""{" data-painted-tile" if painted else ""}>'
 
 

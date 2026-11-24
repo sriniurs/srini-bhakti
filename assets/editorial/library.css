@@ -73,18 +73,25 @@
 .library-collections a { min-height: 154px; background: var(--panel); color: white; }
 .library-collections h3 { font-size: clamp(1.28rem, 2.2vw, 2rem); }
 .library-collections small { display: inline-block; padding: 0; margin-top: .4rem; color: #fff3d8; font-weight: 700; }
-.library-home .bhakti-deities { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
-.library-home .bhakti-deities a { padding: .55rem .7rem; border: 1px solid var(--library-rule); border-radius: 1rem; background: var(--library-paper); }
+.library-deity-nav { margin-top: 1.4rem; }
+.library-deity-nav h3 { margin: 0 0 .6rem; color: var(--library-maroon); font: 700 1.5rem/1.2 var(--library-serif); }
+.library-deity-nav ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem; margin: 0; padding: 0; list-style: none; }
+.library-deity-nav a { display: block; height: 100%; overflow: hidden; border: 1px solid var(--library-rule); border-radius: .7rem; background: var(--library-paper); color: var(--library-ink); text-decoration: none; }
+.library-deity-nav a:hover strong { text-decoration: underline; }
+.library-deity-nav a > img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.library-deity-nav .library-deity-caption { display: grid; gap: .15rem; padding: .55rem .7rem; }
+.library-deity-nav strong { font: 700 1.12rem/1.25 var(--library-serif); }
+@media (min-width: 48rem) { .library-deity-nav ul { grid-template-columns: repeat(5,minmax(0,1fr)); } }
 .library-start { display: grid; gap: 1rem; padding: 1.1rem; border-block: 1px solid var(--library-rule); background: #ffedc3; }
 .library-start header p { margin-top: .3rem; font: italic 1rem/1.35 var(--library-serif); }
 .library-start a, .library-featured a { display: grid; align-content: center; min-height: 56px; padding: .6rem; border-inline-start: 2px solid var(--library-rule); }
 .library-start a span { font-size: .85rem; }
-.library-home a[data-library-card]:has(.library-card-illustration) {
+.library-home :is(.library-start,.library-featured) a[data-library-card]:has(.library-card-illustration) {
   grid-template-columns: 4.5rem minmax(0, 1fr);
   align-items: center;
   column-gap: .65rem;
 }
-.library-home a[data-library-card] img {
+.library-home :is(.library-start,.library-featured) a[data-library-card] img {
   grid-row: span 2;
   width: 4.5rem; height: 3.4rem; object-fit: cover;
   border: 1px solid var(--library-rule); border-radius: .5rem;
