@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="light-blue">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="light-blue">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#1d4f8a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART A · 7 OF 8 · GARUḌA NĪTI</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">LAW AND WISDOM</h1>
-    <p class="cover-subtitle">Yājñavalkya’s law, Parāśara’s code, and Bṛhaspati’s maxims for life and rule</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A king on a throne listening to a sage with a palm-leaf book, a balance scale between them and a bee near a flower"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><rect x="40" y="110" width="90" height="110" rx="8" fill="#c0392b"/><circle cx="85" cy="96" r="18" fill="#c9905a"/><path d="M70 80 l6 -16 l9 10 l9 -10 l6 16z" fill="#f2c200"/><path d="M62 116 h46 v60 h-46z" fill="#3b6fd0"/><circle cx="290" cy="110" r="18" fill="#c9905a"/><path d="M276 92 q14 -14 28 0" fill="#ddd"/><path d="M270 128 h40 v70 h-40z" fill="#f2e6c8"/><rect x="236" y="146" width="40" height="12" fill="#c9a87a"/><path d="M190 90 v100 M160 100 h60" /><path d="M150 100 l-10 30 h40 l-10 -30 M210 100 l-10 30 h40 l-10 -30" fill="#f2c200"/><rect x="176" y="190" width="28" height="8" fill="#7a5a3a"/><circle cx="330" cy="230" r="12" fill="#f5a0b8"/><path d="M330 242 v20" stroke="#2e8b57" stroke-width="3"/><ellipse cx="300" cy="216" rx="8" ry="6" fill="#f2c200"/><path d="M296 212 v8 M300 212 v8" /></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART A · 7 OF 8 · GARUḌA NĪTI</div>
+    <h1 style="font-size:clamp(40px,8.5vw,80px)">LAW AND WISDOM</h1>
+    <p class="tag">Yājñavalkya’s law, Parāśara’s code, and Bṛhaspati’s maxims for life and rule · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A king on a throne listening to a sage with a palm-leaf book, a balance scale between them and a bee near a flower"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><rect x="40" y="110" width="90" height="110" rx="8" fill="#c0392b"/><circle cx="85" cy="96" r="18" fill="#c9905a"/><path d="M70 80 l6 -16 l9 10 l9 -10 l6 16z" fill="#f2c200"/><path d="M62 116 h46 v60 h-46z" fill="#3b6fd0"/><circle cx="290" cy="110" r="18" fill="#c9905a"/><path d="M276 92 q14 -14 28 0" fill="#ddd"/><path d="M270 128 h40 v70 h-40z" fill="#f2e6c8"/><rect x="236" y="146" width="40" height="12" fill="#c9a87a"/><path d="M190 90 v100 M160 100 h60" /><path d="M150 100 l-10 30 h40 l-10 -30 M210 100 l-10 30 h40 l-10 -30" fill="#f2c200"/><rect x="176" y="190" width="28" height="8" fill="#7a5a3a"/><circle cx="330" cy="230" r="12" fill="#f5a0b8"/><path d="M330 242 v20" stroke="#2e8b57" stroke-width="3"/><ellipse cx="300" cy="216" rx="8" ry="6" fill="#f2c200"/><path d="M296 212 v8 M300 212 v8" /></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part A7 of 8 on the Garuḍa Purāṇa: Yājñavalkya's law, Parāśara's code for the Kali age, penances, and the Bṛhaspati Nītisāra, the maxims people call Garuḍa Nīti: company, thrift, friends, the king who taxes like a bee, servants, steady effort and keeping counsel.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#yajnavalkya">Yājñavalkya’s Law</a></li><li><span class="num">3</span><a href="#parashara">Parāśara for the Kali Age</a></li><li><span class="num">4</span><a href="#penance">Penances</a></li><li><span class="num">5</span><a href="#nitisara">The Nītisāra</a></li><li><span class="num">6</span><a href="#company">Choose Your Company</a></li><li><span class="num">7</span><a href="#thrift">Thrift and Prudence</a></li><li><span class="num">8</span><a href="#tests">How People Are Tested</a></li><li><span class="num">9</span><a href="#king">The King</a></li><li><span class="num">10</span><a href="#bee">Tax Like a Bee</a></li><li><span class="num">11</span><a href="#servants">Choosing Officials</a></li><li><span class="num">12</span><a href="#steady">Drop by Drop</a></li><li><span class="num">13</span><a href="#friends">Friends and Enemies</a></li><li><span class="num">14</span><a href="#dated">Of Its Time</a></li><li><span class="num">15</span><a href="#meaning">What It Teaches</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#yajnavalkya">Yājñavalkya’s Law</a></li><li><span class="num">3</span><a href="#parashara">Parāśara for the Kali Age</a></li><li><span class="num">4</span><a href="#penance">Penances</a></li><li><span class="num">5</span><a href="#nitisara">The Nītisāra</a></li><li><span class="num">6</span><a href="#company">Choose Your Company</a></li><li><span class="num">7</span><a href="#thrift">Thrift and Prudence</a></li><li><span class="num">8</span><a href="#tests">How People Are Tested</a></li><li><span class="num">9</span><a href="#king">The King</a></li><li><span class="num">10</span><a href="#bee">Tax Like a Bee</a></li><li><span class="num">11</span><a href="#servants">Choosing Officials</a></li><li><span class="num">12</span><a href="#steady">Drop by Drop</a></li><li><span class="num">13</span><a href="#friends">Friends and Enemies</a></li><li><span class="num">14</span><a href="#dated">Of Its Time</a></li><li><span class="num">15</span><a href="#meaning">What It Teaches</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -494,7 +513,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> M. N. Dutt, <i>The Garuda Purana</i>, 1908, via Wisdom Library: ch. 93 (Yājñavalkya), 107 (Parāśara), 108 (rules of conduct), 109 (thrift), 111 (the king), 112 (servants), 113 (appointments), 114 (friends and enemies); Wikipedia, “Garuda Purana” (borrowing from the Yājñavalkya Smṛti; influence of the nīti chapters); Motilal Banarsidass edition, contents outline (ch. 213–224).</p>
 <p><b>Sources differ:</b> whether the Nītisāra is called Garuḍa Nīti, Bṛhaspati Saṁhitā or Nītisāra; the number of Yājñavalkya verses carried, by version.</p>
-<p><b>Not verified:</b> the contents of chapters 110 and 115 beyond their titles; the details of chapters 94–106. Maxims are paraphrased, not quoted. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the contents of chapters 110 and 115 beyond their titles; the details of chapters 94–106. Maxims are paraphrased, not quoted. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

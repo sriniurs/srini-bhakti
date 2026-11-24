@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="maroon">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#8e1f17">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 10 OF 16</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">THE CREMATION AND THE BONES</h1>
-    <p class="cover-subtitle">From the house to the pyre to the river</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A riverside with a small fire burning on a platform, a leaf-box floating on the river, and a crow flying overhead"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="180" width="380" height="88" fill="#9fd0ee" rx="8"/><g stroke="#111" stroke-width="2"><rect x="60" y="150" width="120" height="30" fill="#8a6a4a"/><path d="M80 150 q20 -60 40 -10 q10 -40 30 0 q10 -30 20 0z" fill="#f28a2a"/><path d="M100 140 q10 -30 20 0z" fill="#f2c200"/><path d="M250 210 h40 v12 h-40z" fill="#5aa05a"/></g><g fill="none" stroke="#aaa" stroke-width="2"><path d="M120 100 q-10 -20 6 -40 q14 -20 0 -40"/></g><text x="300" y="80" font-size="30">🐦‍⬛</text></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 10 OF 16</div>
+    <h1 style="font-size:clamp(26px,5.2vw,48px)">THE CREMATION AND THE BONES</h1>
+    <p class="tag">From the house to the pyre to the river · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A riverside with a small fire burning on a platform, a leaf-box floating on the river, and a crow flying overhead"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="180" width="380" height="88" fill="#9fd0ee" rx="8"/><g stroke="#111" stroke-width="2"><rect x="60" y="150" width="120" height="30" fill="#8a6a4a"/><path d="M80 150 q20 -60 40 -10 q10 -40 30 0 q10 -30 20 0z" fill="#f28a2a"/><path d="M100 140 q10 -30 20 0z" fill="#f2c200"/><path d="M250 210 h40 v12 h-40z" fill="#5aa05a"/></g><g fill="none" stroke="#aaa" stroke-width="2"><path d="M120 100 q-10 -20 6 -40 q14 -20 0 -40"/></g><text x="300" y="80" font-size="30">🐦‍⬛</text></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part B10 of 16: chapter 10 of the Garuḍa Purāṇa Sārōddhāra, verse by verse. The son's preparation, the procession and its halts, the pyre and its piṇḍas, the Pañcaka period, the skull rite, the return home, the lamp and the milk-and-water pot, collecting the bones, the Gaṅgā and the hunter saved by a crow, effigies for the lost, and rules for children and ascetics.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#ask">The Son’s Debt</a></li><li><span class="num">3</span><a href="#prepare">Preparing</a></li><li><span class="num">4</span><a href="#body">The Body</a></li><li><span class="num">5</span><a href="#procession">The Procession</a></li><li><span class="num">6</span><a href="#ground">At the Burning Ground</a></li><li><span class="num">7</span><a href="#pyre">The Pyre</a></li><li><span class="num">8</span><a href="#panchaka">Pañcaka</a></li><li><span class="num">9</span><a href="#gap">A Gap in the Text</a></li><li><span class="num">10</span><a href="#skull">The Skull Rite</a></li><li><span class="num">11</span><a href="#home">The Walk Home</a></li><li><span class="num">12</span><a href="#lamp">The Lamp and the Pot</a></li><li><span class="num">13</span><a href="#bones">Collecting the Bones</a></li><li><span class="num">14</span><a href="#jar">The Jar and the River</a></li><li><span class="num">15</span><a href="#ganga">Why the Gaṅgā</a></li><li><span class="num">16</span><a href="#crow">The Hunter and the Crow</a></li><li><span class="num">17</span><a href="#lost">When No Body Is Found</a></li><li><span class="num">18</span><a href="#children">Children</a></li><li><span class="num">19</span><a href="#ascetics">Ascetics</a></li><li><span class="num">20</span><a href="#meaning">What It Teaches</a></li><li><span class="num">21</span><a href="#glossary">Glossary</a></li><li><span class="num">22</span><a href="#end">On One Page</a></li><li><span class="num">23</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#ask">The Son’s Debt</a></li><li><span class="num">3</span><a href="#prepare">Preparing</a></li><li><span class="num">4</span><a href="#body">The Body</a></li><li><span class="num">5</span><a href="#procession">The Procession</a></li><li><span class="num">6</span><a href="#ground">At the Burning Ground</a></li><li><span class="num">7</span><a href="#pyre">The Pyre</a></li><li><span class="num">8</span><a href="#panchaka">Pañcaka</a></li><li><span class="num">9</span><a href="#gap">A Gap in the Text</a></li><li><span class="num">10</span><a href="#skull">The Skull Rite</a></li><li><span class="num">11</span><a href="#home">The Walk Home</a></li><li><span class="num">12</span><a href="#lamp">The Lamp and the Pot</a></li><li><span class="num">13</span><a href="#bones">Collecting the Bones</a></li><li><span class="num">14</span><a href="#jar">The Jar and the River</a></li><li><span class="num">15</span><a href="#ganga">Why the Gaṅgā</a></li><li><span class="num">16</span><a href="#crow">The Hunter and the Crow</a></li><li><span class="num">17</span><a href="#lost">When No Body Is Found</a></li><li><span class="num">18</span><a href="#children">Children</a></li><li><span class="num">19</span><a href="#ascetics">Ascetics</a></li><li><span class="num">20</span><a href="#meaning">What It Teaches</a></li><li><span class="num">21</span><a href="#glossary">Glossary</a></li><li><span class="num">22</span><a href="#end">On One Page</a></li><li><span class="num">23</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -543,7 +562,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> E. Wood and S. V. Subrahmanyam, <i>The Garuda Purana (Sāroddhāra)</i>, 1911, chapter 10, verses 1–33 and 56–106, via hinduwebsite.com and sacred-texts.com. <a href="https://www.wisdomlib.org/hinduism/book/the-garuda-purana-2/d/doc63651.html">Read the 1911 translation of Chapter 10.</a></p>
 <p><b>Sources differ:</b> the scan used is garbled in places and verses 34–55 are missing; verse numbers 20–33 and 56 onward are partly uncertain.</p>
-<p><b>Not verified:</b> the contents of verses 34–55; the term kapāla-kriyā, present-day Pañcaka practice, asthi visarjan at Haridvār and Prayāga, and the reason for burying monks are general knowledge, not drawn from this text. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the contents of verses 34–55; the term kapāla-kriyā, present-day Pañcaka practice, asthi visarjan at Haridvār and Prayāga, and the reason for burying monks are general knowledge, not drawn from this text. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

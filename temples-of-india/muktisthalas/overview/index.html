@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="navy">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="navy">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#15365a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">SAPTA MUKTISTHALA · PARAŚURĀMA KṢETRA · AN OVERVIEW</p>
-    <h1 style="font-size:clamp(24px,6.6vw,72px)">THE SEVEN MUKTISTHALAS</h1>
-    <p class="cover-subtitle">Seven places of release on Paraśurāma’s coast</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A sage with an axe standing on green hills, the axe flying in an arc over the sea, and below seven small temple roofs strung along the coast between hills and sea"><rect width="380" height="268" fill="#6a9a5a" rx="8"/><path d="M0 0 H120 q-40 134 0 268 H0z" fill="#1d4f9a"/><path d="M380 0 V268 H280 q-40 -134 0 -268z" fill="#2f5a3a"/><g transform="translate(330 90)" stroke="#111" stroke-width="2"><circle cy="-40" r="10" fill="#c9905a"/><path d="M-6 -50 q6 -16 12 0" fill="#3a2a1a"/><path d="M-12 -30 h24 v40 h-24z" fill="#e8a020"/><path d="M-12 -24 l-20 -16" stroke="#c9905a" stroke-width="5"/></g><path d="M300 54 C 240 10, 140 10, 70 80" fill="none" stroke="#fff4c2" stroke-width="2" stroke-dasharray="6 6"/><g transform="translate(70 80) rotate(-30)" stroke="#111" stroke-width="1.5"><path d="M0 0 v-20" stroke="#8a6a3a" stroke-width="3"/><path d="M-8 -20 q8 -10 16 0 q-8 8 -16 0z" fill="#ccc"/></g><g stroke="#111" stroke-width="1.5"><g fill="#c0392b"><path d="M160 46 l10 -10 l10 10z"/><path d="M186 86 l10 -10 l10 10z"/><path d="M220 116 l10 -10 l10 10z"/><path d="M168 140 l10 -10 l10 10z"/><path d="M176 166 l10 -10 l10 10z"/><path d="M170 206 l10 -10 l10 10z"/><path d="M240 236 l10 -10 l10 10z"/></g><g fill="#f2e6c8"><rect x="162" y="46" width="16" height="8"/><rect x="188" y="86" width="16" height="8"/><rect x="222" y="116" width="16" height="8"/><rect x="170" y="140" width="16" height="8"/><rect x="178" y="166" width="16" height="8"/><rect x="172" y="206" width="16" height="8"/><rect x="242" y="236" width="16" height="8"/></g></g><g fill="#fff"><circle cx="40" cy="30" r="1.6"/><circle cx="260" cy="24" r="1.6"/></g></svg></figure>
-    <p class="cover-invocation">TEMPLES OF KARNATAKA</p>
+    <div class="kicker">SAPTA MUKTISTHALA · PARAŚURĀMA KṢETRA · AN OVERVIEW</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">THE SEVEN MUKTISTHALAS</h1>
+    <p class="tag">Seven places of release on Paraśurāma’s coast · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A sage with an axe standing on green hills, the axe flying in an arc over the sea, and below seven small temple roofs strung along the coast between hills and sea"><rect width="380" height="268" fill="#6a9a5a" rx="8"/><path d="M0 0 H120 q-40 134 0 268 H0z" fill="#1d4f9a"/><path d="M380 0 V268 H280 q-40 -134 0 -268z" fill="#2f5a3a"/><g transform="translate(330 90)" stroke="#111" stroke-width="2"><circle cy="-40" r="10" fill="#c9905a"/><path d="M-6 -50 q6 -16 12 0" fill="#3a2a1a"/><path d="M-12 -30 h24 v40 h-24z" fill="#e8a020"/><path d="M-12 -24 l-20 -16" stroke="#c9905a" stroke-width="5"/></g><path d="M300 54 C 240 10, 140 10, 70 80" fill="none" stroke="#fff4c2" stroke-width="2" stroke-dasharray="6 6"/><g transform="translate(70 80) rotate(-30)" stroke="#111" stroke-width="1.5"><path d="M0 0 v-20" stroke="#8a6a3a" stroke-width="3"/><path d="M-8 -20 q8 -10 16 0 q-8 8 -16 0z" fill="#ccc"/></g><g stroke="#111" stroke-width="1.5"><g fill="#c0392b"><path d="M160 46 l10 -10 l10 10z"/><path d="M186 86 l10 -10 l10 10z"/><path d="M220 116 l10 -10 l10 10z"/><path d="M168 140 l10 -10 l10 10z"/><path d="M176 166 l10 -10 l10 10z"/><path d="M170 206 l10 -10 l10 10z"/><path d="M240 236 l10 -10 l10 10z"/></g><g fill="#f2e6c8"><rect x="162" y="46" width="16" height="8"/><rect x="188" y="86" width="16" height="8"/><rect x="222" y="116" width="16" height="8"/><rect x="170" y="140" width="16" height="8"/><rect x="178" y="166" width="16" height="8"/><rect x="172" y="206" width="16" height="8"/><rect x="242" y="236" width="16" height="8"/></g></g><g fill="#fff"><circle cx="40" cy="30" r="1.6"/><circle cx="260" cy="24" r="1.6"/></g></svg>
+    <p class="cvcap">TEMPLES OF KARNATAKA</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> An overview of the seven Muktisthalas of coastal Karnataka: Uḍupi, Kollūr, Kukke Subrahmaṇya, Kumbhāśi, Kōṭēśvara, Śaṅkaranārāyaṇa and Gōkarṇa. Paraśurāma's land from the sea, what mukti means, the Sapta Purī parallel, the seven deities, a map, the festival year and links to each full guide.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#land">Land from the Sea</a></li><li><span class="num">3</span><a href="#mukti">What Is Mukti?</a></li><li><span class="num">4</span><a href="#puri">The Northern Seven</a></li><li><span class="num">5</span><a href="#map">Where They Are</a></li><li><span class="num">6</span><a href="#udupi">Uḍupi</a></li><li><span class="num">7</span><a href="#kollur">Kollūr</a></li><li><span class="num">8</span><a href="#kukke">Kukke Subrahmaṇya</a></li><li><span class="num">9</span><a href="#kumbhashi">Kumbhāśi</a></li><li><span class="num">10</span><a href="#koteshwara">Kōṭēśvara</a></li><li><span class="num">11</span><a href="#shankara">Śaṅkaranārāyaṇa</a></li><li><span class="num">12</span><a href="#gokarna">Gōkarṇa</a></li><li><span class="num">13</span><a href="#family">A Divine Family</a></li><li><span class="num">14</span><a href="#unusual">Seven Unusual Forms</a></li><li><span class="num">15</span><a href="#teachers">The Teachers</a></li><li><span class="num">16</span><a href="#year">The Festival Year</a></li><li><span class="num">17</span><a href="#meaning">What They Teach</a></li><li><span class="num">18</span><a href="#guides">The Seven Guides</a></li><li><span class="num">19</span><a href="#glossary">Glossary</a></li><li><span class="num">20</span><a href="#end">On One Page</a></li><li><span class="num">21</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#land">Land from the Sea</a></li><li><span class="num">3</span><a href="#mukti">What Is Mukti?</a></li><li><span class="num">4</span><a href="#puri">The Northern Seven</a></li><li><span class="num">5</span><a href="#map">Where They Are</a></li><li><span class="num">6</span><a href="#udupi">Uḍupi</a></li><li><span class="num">7</span><a href="#kollur">Kollūr</a></li><li><span class="num">8</span><a href="#kukke">Kukke Subrahmaṇya</a></li><li><span class="num">9</span><a href="#kumbhashi">Kumbhāśi</a></li><li><span class="num">10</span><a href="#koteshwara">Kōṭēśvara</a></li><li><span class="num">11</span><a href="#shankara">Śaṅkaranārāyaṇa</a></li><li><span class="num">12</span><a href="#gokarna">Gōkarṇa</a></li><li><span class="num">13</span><a href="#family">A Divine Family</a></li><li><span class="num">14</span><a href="#unusual">Seven Unusual Forms</a></li><li><span class="num">15</span><a href="#teachers">The Teachers</a></li><li><span class="num">16</span><a href="#year">The Festival Year</a></li><li><span class="num">17</span><a href="#meaning">What They Teach</a></li><li><span class="num">18</span><a href="#guides">The Seven Guides</a></li><li><span class="num">19</span><a href="#glossary">Glossary</a></li><li><span class="num">20</span><a href="#end">On One Page</a></li><li><span class="num">21</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -501,7 +520,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> Templenet, “Seven Mukti Stalas” (the seven names; all called Paraśurāma kṣetras, on land reclaimed by Paraśurāma); Wikipedia, “Shankaranarayana” (one of seven Muktikṣētras; also called seven puṇya kṣetras of Paraśurāma land); Karnataka temple-tour pages and Kukke Devasthānam pages (the seven together make Paraśurāma Kṣetra; compared with the seven holy cities of the north; Paraśurāma said to have established them); Hindu Mirror (no single fixed order); Wikipedia, “Kumbashi” (one of seven Mukti Sthalas). Facts about each temple come from this site’s full guides, listed on the previous pages, and their sources.</p>
 <p><b>Sources differ:</b> the spelling of Kōṭēśvara (Kōḍēśvara); whether the seven are called mukti, puṇya or Paraśurāma kṣetras; whether Paraśurāma founded each temple or only sanctified the land.</p>
-<p><b>Not verified:</b> any early Sanskrit text naming exactly these seven; the comparison with the Sapta Purī is drawn by modern regional writers. The map and the family tree are simplified. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> any early Sanskrit text naming exactly these seven; the comparison with the Sapta Purī is drawn by modern regional writers. The map and the family tree are simplified. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

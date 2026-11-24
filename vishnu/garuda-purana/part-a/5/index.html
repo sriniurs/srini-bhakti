@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="light-blue">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="light-blue">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#1d4f8a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART A · 5 OF 8 · DHANVANTARI SAṀHITĀ</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">THE PURĀṆA OF HEALING</h1>
-    <p class="cover-subtitle">Dhanvantari teaches Suśruta: diagnosis, disease and cure</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Four-armed Dhanvantari rising from the ocean holding a pot of nectar and a bundle of herbs, with a student sage seated before him with a palm-leaf book"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="180" width="380" height="88" fill="#9fd0ee" rx="8"/><path d="M0 186 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3b6fd0" stroke-width="2"/><path d="M240 190 q20 -8 40 -6 h100 v84 h-140z" fill="#9ac56a" stroke="#111" stroke-width="2"/><g stroke="#111" stroke-width="2"><circle cx="150" cy="70" r="20" fill="#3b6fd0"/><path d="M138 52 l12 -20 l12 20z" fill="#f2c200"/><path d="M128 92 h44 v90 h-44z" fill="#f2c200"/><path d="M128 104 l-26 -16 M128 120 l-26 10 M172 104 l26 -16 M172 120 l26 10" stroke="#3b6fd0" stroke-width="8" stroke-linecap="round"/><path d="M84 132 q16 -16 32 0 v16 q-16 10 -32 0z" fill="#e8a020"/><path d="M198 74 l18 -20 M204 78 l20 -12 M200 82 l22 -2" stroke="#2e8b57" stroke-width="4"/><circle cx="290" cy="150" r="14" fill="#c9905a"/><path d="M276 164 h28 v24 h-28z" fill="#f2e6c8"/><path d="M256 170 h28 v8 h-28z" fill="#c9a87a"/></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Bhagavatē Dhanvantarayē</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART A · 5 OF 8 · DHANVANTARI SAṀHITĀ</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">THE PURĀṆA OF HEALING</h1>
+    <p class="tag">Dhanvantari teaches Suśruta: diagnosis, disease and cure · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Four-armed Dhanvantari rising from the ocean holding a pot of nectar and a bundle of herbs, with a student sage seated before him with a palm-leaf book"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="180" width="380" height="88" fill="#9fd0ee" rx="8"/><path d="M0 186 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3b6fd0" stroke-width="2"/><path d="M240 190 q20 -8 40 -6 h100 v84 h-140z" fill="#9ac56a" stroke="#111" stroke-width="2"/><g stroke="#111" stroke-width="2"><circle cx="150" cy="70" r="20" fill="#3b6fd0"/><path d="M138 52 l12 -20 l12 20z" fill="#f2c200"/><path d="M128 92 h44 v90 h-44z" fill="#f2c200"/><path d="M128 104 l-26 -16 M128 120 l-26 10 M172 104 l26 -16 M172 120 l26 10" stroke="#3b6fd0" stroke-width="8" stroke-linecap="round"/><path d="M84 132 q16 -16 32 0 v16 q-16 10 -32 0z" fill="#e8a020"/><path d="M198 74 l18 -20 M204 78 l20 -12 M200 82 l22 -2" stroke="#2e8b57" stroke-width="4"/><circle cx="290" cy="150" r="14" fill="#c9905a"/><path d="M276 164 h28 v24 h-28z" fill="#f2e6c8"/><path d="M256 170 h28 v8 h-28z" fill="#c9a87a"/></g></svg>
+    <p class="cvcap">Ōṁ Namō Bhagavatē Dhanvantarayē</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part A5 of 8 on the Garuḍa Purāṇa: the Dhanvantari Saṁhitā, where the physician of the gods teaches Suśruta. Six steps of diagnosis, the three doṣas, fever born of Rudra's anger, abscess, fistula and ulcers, eighteen kinds of fracture and dislocation, the four pillars of treatment, diet, charms and veterinary medicine.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#lineage">Who Teaches Whom</a></li><li><span class="num">3</span><a href="#steps">Six Steps of Diagnosis</a></li><li><span class="num">4</span><a href="#doshas">The Three Doṣas</a></li><li><span class="num">5</span><a href="#causes">Why People Fall Ill</a></li><li><span class="num">6</span><a href="#fever">Fever, Lord of Diseases</a></li><li><span class="num">7</span><a href="#periodic">Fevers that Come and Go</a></li><li><span class="num">8</span><a href="#nose">One Organ: the Nose</a></li><li><span class="num">9</span><a href="#surgery">Abscess, Fistula, Ulcer</a></li><li><span class="num">10</span><a href="#joints">Six Joint Injuries</a></li><li><span class="num">11</span><a href="#shafts">Twelve Shaft Fractures</a></li><li><span class="num">12</span><a href="#pillars">Four Pillars of Treatment</a></li><li><span class="num">13</span><a href="#diet">Food as Medicine</a></li><li><span class="num">14</span><a href="#recipes">Recipes and Charms</a></li><li><span class="num">15</span><a href="#animals">Plants and Animals</a></li><li><span class="num">16</span><a href="#meaning">What It Teaches</a></li><li><span class="num">17</span><a href="#glossary">Glossary</a></li><li><span class="num">18</span><a href="#end">On One Page</a></li><li><span class="num">19</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#lineage">Who Teaches Whom</a></li><li><span class="num">3</span><a href="#steps">Six Steps of Diagnosis</a></li><li><span class="num">4</span><a href="#doshas">The Three Doṣas</a></li><li><span class="num">5</span><a href="#causes">Why People Fall Ill</a></li><li><span class="num">6</span><a href="#fever">Fever, Lord of Diseases</a></li><li><span class="num">7</span><a href="#periodic">Fevers that Come and Go</a></li><li><span class="num">8</span><a href="#nose">One Organ: the Nose</a></li><li><span class="num">9</span><a href="#surgery">Abscess, Fistula, Ulcer</a></li><li><span class="num">10</span><a href="#joints">Six Joint Injuries</a></li><li><span class="num">11</span><a href="#shafts">Twelve Shaft Fractures</a></li><li><span class="num">12</span><a href="#pillars">Four Pillars of Treatment</a></li><li><span class="num">13</span><a href="#diet">Food as Medicine</a></li><li><span class="num">14</span><a href="#recipes">Recipes and Charms</a></li><li><span class="num">15</span><a href="#animals">Plants and Animals</a></li><li><span class="num">16</span><a href="#meaning">What It Teaches</a></li><li><span class="num">17</span><a href="#glossary">Glossary</a></li><li><span class="num">18</span><a href="#end">On One Page</a></li><li><span class="num">19</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -497,7 +516,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> M. N. Dutt, <i>The Garuda Purana</i>, 1908, via Wisdom Library: ch. 146 (nidāna, doṣas, causes), 147 (fever), 160 (abscess, gulma), 170 (nose), 180 (fistula), 190 (ulcers), 191 (fractures), 192 (principles, four pillars, diet), 201–202 (recipes and charms); Wikipedia, “Garuda Purana” (Rocher on the Aṣṭāṅgahṛdaya; nutrition and the Suśruta Saṁhitā; 450 plants; horse diseases; chapter range 146–218); Motilal Banarsidass edition, contents outline (horse and elephant medicine, Vaiṣṇava kavaca, Garuḍa mantras).</p>
 <p><b>Sources differ:</b> chapter numbers and the span of the medical section between editions; the English names Dutt gives to fever types and fracture names.</p>
-<p><b>Not verified:</b> modern equivalents of the old fever and fracture names are approximate. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> modern equivalents of the old fever and fracture names are approximate. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

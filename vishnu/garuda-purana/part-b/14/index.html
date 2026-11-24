@@ -284,6 +284,22 @@
 .chapter-recap li{margin:7px 0}
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="maroon">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -322,27 +338,30 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#8e1f17">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 14 OF 16</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">YAMA’S CITY</h1>
-    <p class="cover-subtitle">Citragupta, the assembly of justice and four gates</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A jewelled hall with four arched gateways"><rect width="380" height="268" fill="#f3e7cd"/><rect width="380" height="268" fill="#283552"/><circle cx="190" cy="101" r="82" fill="#62566e"/>
+    <div class="kicker">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 14 OF 16</div>
+    <h1 style="font-size:clamp(40px,8.5vw,80px)">YAMA’S CITY</h1>
+    <p class="tag">Citragupta, the assembly of justice and four gates · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A jewelled hall with four arched gateways"><rect width="380" height="268" fill="#f3e7cd"/><rect width="380" height="268" fill="#283552"/><circle cx="190" cy="101" r="82" fill="#62566e"/>
 <path d="M0 211h380v57H0z" fill="#19273d"/>
 <path d="M58 206V118h36V90h39V69h31q26-42 52 0h31v21h39v28h36v88Z" fill="#c28b63" stroke="#f8d795" stroke-width="3"/>
 <path d="M57 138h265m-230-18h196m-155-29h113M38 210h304m-315 14h326m-341 15h356" stroke="#edbd83" stroke-width="3"/>
 <g fill="#392f49" stroke="#f0c489" stroke-width="2">
 <path d="M73 205v-32q21-38 42 0v32Z"/><path d="M137 205v-39q21-39 42 0v39Z"/>
 <path d="M201 205v-39q21-39 42 0v39Z"/><path d="M265 205v-32q21-38 42 0v32Z"/></g>
-<g fill="#f5d49a"><circle cx="66" cy="51" r="3"/><circle cx="302" cy="65" r="3"/><circle cx="327" cy="41" r="2"/><circle cx="97" cy="41" r="2"/></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+<g fill="#f5d49a"><circle cx="66" cy="51" r="3"/><circle cx="302" cy="65" r="3"/><circle cx="327" cy="41" r="2"/><circle cx="97" cy="41" r="2"/></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Citragupta, the assembly of justice and four gates</div>
   </div>
 </section>
 
@@ -454,8 +473,7 @@
 </div>
 </section>
 <nav class="panel reading small" aria-label="Chapter navigation"><a href="/vishnu/garuda-purana/part-b/13/">← B13</a> · <a href="/vishnu/garuda-purana/part-b/">Part B contents<small class="collection-size"> · 16 articles</small></a> · <a href="/vishnu/garuda-purana/part-b/15/">B15 →</a></nav>
-<section class="page" id="sources"><h2 class="page-title">Source &amp; notes</h2>
-<div class="panel reading small"><p>Ernest Wood and S. V. Subrahmanyam, trans., <i>The Garuḍa Purāṇa (Sārōddhāra)</i> (1911), <a href="https://www.wisdomlib.org/hinduism/book/the-garuda-purana-2/d/doc63655.html">Chapter 14</a>, verses 1–86. Verse numbering in the online transcription is occasionally irregular. Zappy and Prof. Bolt are fictional.</p></div>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div><div class="panel reading small"><p>Ernest Wood and S. V. Subrahmanyam, trans., <i>The Garuḍa Purāṇa (Sārōddhāra)</i> (1911), <a href="https://www.wisdomlib.org/hinduism/book/the-garuda-purana-2/d/doc63655.html">Chapter 14</a>, verses 1–86. Verse numbering in the online transcription is occasionally irregular. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
 </section>
 </div>
 

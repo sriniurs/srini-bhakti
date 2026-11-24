@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="navy">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="navy">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#15365a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">ŚRĪ MAHĀBAḶĒŚVARA · RĀVAṆA AND THE ĀTMALIṄGA · A REFERENCE GUIDE</p>
-    <h1 style="font-size:clamp(26px,7.4vw,80px)">GŌKARṆA</h1>
-    <p class="cover-subtitle">The liṅga that even Rāvaṇa could not lift</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A ten-headed giant straining with both arms to pull a small stone linga out of the ground on a beach at dusk, the linga not moving, with a temple and the sea behind"><rect width="380" height="268" fill="#0b2a4a" rx="8"/><rect y="150" width="380" height="40" fill="#1d4f9a"/><rect y="190" width="380" height="78" fill="#d9c08a"/><circle cx="320" cy="60" r="22" fill="#ff8c1a" opacity=".8"/><g transform="translate(320 150)" stroke="#111" stroke-width="2"><rect x="-26" y="-40" width="52" height="40" fill="#f2e6c8"/><path d="M-32 -40 l32 -30 l32 30z" fill="#8a3a2a"/></g><g transform="translate(150 230)" stroke="#111" stroke-width="2"><path d="M-12 0 v-26 q12 -16 24 0 v26z" fill="#5a5a5a"/><ellipse cy="0" rx="24" ry="6" fill="#7a7a6a"/></g><g transform="translate(120 230)" stroke="#111" stroke-width="2"><path d="M-36 0 l10 -88 h40 l10 88z" fill="#5a3a7a"/><g fill="#7a5aa0"><circle cx="-40" cy="-92" r="10"/><circle cx="-26" cy="-98" r="10"/><circle cx="-12" cy="-102" r="10"/><circle cx="2" cy="-104" r="11"/><circle cx="16" cy="-102" r="10"/><circle cx="30" cy="-98" r="10"/><circle cx="44" cy="-92" r="10"/></g><path d="M-10 -114 l4 -14 l8 8 l8 -8 l4 14z" fill="#e0a800"/><path d="M-20 -50 q30 10 40 18 M-16 -40 q26 10 36 22" stroke="#7a5aa0" stroke-width="8" fill="none"/></g><g stroke="#fff" stroke-width="2"><path d="M178 210 l10 -6 M180 220 l12 0"/></g><g fill="#fff"><circle cx="40" cy="30" r="1.6"/><circle cx="160" cy="20" r="1.6"/><circle cx="240" cy="40" r="1.6"/></g></svg></figure>
-    <p class="cover-invocation">TEMPLES OF KARNATAKA</p>
+    <div class="kicker">ŚRĪ MAHĀBAḶĒŚVARA · RĀVAṆA AND THE ĀTMALIṄGA · A REFERENCE GUIDE</div>
+    <h1 style="font-size:clamp(40px,8.5vw,80px)">GŌKARṆA</h1>
+    <p class="tag">The liṅga that even Rāvaṇa could not lift · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A ten-headed giant straining with both arms to pull a small stone linga out of the ground on a beach at dusk, the linga not moving, with a temple and the sea behind"><rect width="380" height="268" fill="#0b2a4a" rx="8"/><rect y="150" width="380" height="40" fill="#1d4f9a"/><rect y="190" width="380" height="78" fill="#d9c08a"/><circle cx="320" cy="60" r="22" fill="#ff8c1a" opacity=".8"/><g transform="translate(320 150)" stroke="#111" stroke-width="2"><rect x="-26" y="-40" width="52" height="40" fill="#f2e6c8"/><path d="M-32 -40 l32 -30 l32 30z" fill="#8a3a2a"/></g><g transform="translate(150 230)" stroke="#111" stroke-width="2"><path d="M-12 0 v-26 q12 -16 24 0 v26z" fill="#5a5a5a"/><ellipse cy="0" rx="24" ry="6" fill="#7a7a6a"/></g><g transform="translate(120 230)" stroke="#111" stroke-width="2"><path d="M-36 0 l10 -88 h40 l10 88z" fill="#5a3a7a"/><g fill="#7a5aa0"><circle cx="-40" cy="-92" r="10"/><circle cx="-26" cy="-98" r="10"/><circle cx="-12" cy="-102" r="10"/><circle cx="2" cy="-104" r="11"/><circle cx="16" cy="-102" r="10"/><circle cx="30" cy="-98" r="10"/><circle cx="44" cy="-92" r="10"/></g><path d="M-10 -114 l4 -14 l8 8 l8 -8 l4 14z" fill="#e0a800"/><path d="M-20 -50 q30 10 40 18 M-16 -40 q26 10 36 22" stroke="#7a5aa0" stroke-width="8" fill="none"/></g><g stroke="#fff" stroke-width="2"><path d="M178 210 l10 -6 M180 220 l12 0"/></g><g fill="#fff"><circle cx="40" cy="30" r="1.6"/><circle cx="160" cy="20" r="1.6"/><circle cx="240" cy="40" r="1.6"/></g></svg>
+    <p class="cvcap">TEMPLES OF KARNATAKA</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Gōkarṇa Mahābaḷēśvara: Rāvaṇa and the ātmaliṅga that would not rise, the five liṅga places of the coast, the liṅga in its pīṭha and the forty-year aṣṭabandha, the Kadamba temple, Tāmragaurī and Kōṭitīrtha, Gōkarṇa in the epics, Kālidāsa and the Tēvāram, Śivarātri and the court-supervised administration.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is</a></li><li><span class="num">3</span><a href="#name">The Cow’s Ear</a></li><li><span class="num">4</span><a href="#story">The Story in Brief</a></li><li><span class="num">5</span><a href="#mahabala">Mahābala</a></li><li><span class="num">6</span><a href="#five">Five Places of One Liṅga</a></li><li><span class="num">7</span><a href="#linga">The Liṅga in Its Pīṭha</a></li><li><span class="num">8</span><a href="#ashta">Once in Forty Years</a></li><li><span class="num">9</span><a href="#temple">The Temple</a></li><li><span class="num">10</span><a href="#town">Shrines of the Town</a></li><li><span class="num">11</span><a href="#mukti">A Place of Release</a></li><li><span class="num">12</span><a href="#texts">Gōkarṇa in the Texts</a></li><li><span class="num">13</span><a href="#shivaratri">Śivarātri</a></li><li><span class="num">14</span><a href="#admin">Who Runs the Temple</a></li><li><span class="num">15</span><a href="#glossary">Glossary</a></li><li><span class="num">16</span><a href="#end">On One Page</a></li><li><span class="num">17</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is</a></li><li><span class="num">3</span><a href="#name">The Cow’s Ear</a></li><li><span class="num">4</span><a href="#story">The Story in Brief</a></li><li><span class="num">5</span><a href="#mahabala">Mahābala</a></li><li><span class="num">6</span><a href="#five">Five Places of One Liṅga</a></li><li><span class="num">7</span><a href="#linga">The Liṅga in Its Pīṭha</a></li><li><span class="num">8</span><a href="#ashta">Once in Forty Years</a></li><li><span class="num">9</span><a href="#temple">The Temple</a></li><li><span class="num">10</span><a href="#town">Shrines of the Town</a></li><li><span class="num">11</span><a href="#mukti">A Place of Release</a></li><li><span class="num">12</span><a href="#texts">Gōkarṇa in the Texts</a></li><li><span class="num">13</span><a href="#shivaratri">Śivarātri</a></li><li><span class="num">14</span><a href="#admin">Who Runs the Temple</a></li><li><span class="num">15</span><a href="#glossary">Glossary</a></li><li><span class="num">16</span><a href="#end">On One Page</a></li><li><span class="num">17</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -463,7 +482,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> Wikipedia, “Mahabaleshwar Temple, Gokarna” (granite Dravidian temple; Vijayanagara complex; Śāligrāma pīṭha with opening; Mayūravarma, 345–365 CE; Raghuvaṁśa; Tēvāram; Fryer 1676; Śivājī 1665; seven mukti kṣētras; death rites; Śivarātri ratha from Car Street; cow’s-ear name; Rāvaṇa’s fainting and the name Mahābaḷēśvara; Bhadrakāḷī; overseeing committee); Wikipedia, “Gokarna, Karnataka” and “Atmalinga” (pieces flung to Sajjēśvara, Guṇavantēśvara, Dhārēśvara, Murḍēśvara); Deccan Herald (pañca kṣētras; distances); Hindu Blog (case, string, lid, cloth); Myoksha (Gaṅgāvaḷi and Aghanāśinī; Bhūkailāsa; Dakṣiṇa Kāśī); Pujasthan and Holidify (aṣṭabandha kumbhābhiṣēka every forty years; sea bath and Gaṇapati first; Tāmragaurī and other shrines); Incredible India (liṅga shown once in forty years); Karnataka Tourism (devotees may touch the liṅga; Keḷadi additions); Wikipedia, “Ramachandrapura Mutt” (Aśōke foundation); The Hitavada and The Hans India, April 2021, OpIndia and ThePrint, 2024 (2008 order, 2018 High Court, 2021 committee, 2024 veto).</p>
 <p><b>Sources differ:</b> the Kadamba founder’s name (Mayūravarma or Mayūraśarma); what each of the four pieces was; the origin of the name Gōkarṇa; the size of the liṅga.</p>
-<p><b>Not verified:</b> the 4th-century date of the first temple; the “earth’s ear” telling; the exact epic passages, which are summarised, not quoted. Maps and sections are simplified. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the 4th-century date of the first temple; the “earth’s ear” telling; the exact epic passages, which are summarised, not quoted. Maps and sections are simplified. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

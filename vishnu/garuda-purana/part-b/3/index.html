@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="maroon">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#8e1f17">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 3 OF 16</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">THE TORMENTS OF YAMA</h1>
-    <p class="cover-subtitle">The witnesses, the judgement, and the twenty-one hells</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A huge dark figure seated on a buffalo holding a rod, with a scribe beside him and a blazing tree behind"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><path d="M300 240 v-120" stroke="#6a3a2a" stroke-width="12"/><path d="M300 150 l-30 -30 M300 140 l30 -36 M300 170 l26 -16" stroke="#6a3a2a" stroke-width="6"/></g><g fill="#f28a2a" opacity=".8"><circle cx="270" cy="114" r="12"/><circle cx="330" cy="100" r="12"/><circle cx="326" cy="150" r="10"/></g><g stroke="#111" stroke-width="2"><ellipse cx="140" cy="200" rx="80" ry="30" fill="#3a3a3a"/><path d="M200 186 q30 -20 40 6" fill="#3a3a3a"/><path d="M226 180 l14 -14 M232 186 l18 -6" stroke-width="4"/><path d="M100 196 v40 M180 196 v40" stroke-width="8"/><circle cx="140" cy="100" r="26" fill="#2a3a5a"/><path d="M120 76 l8 -20 l12 14 l12 -14 l8 20z" fill="#f2c200"/><path d="M110 126 h60 v60 h-60z" fill="#2a3a5a"/><path d="M96 120 v110" stroke="#7a5a3a" stroke-width="7"/><circle cx="140" cy="98" r="4" fill="#f22"/></g><g stroke="#111" stroke-width="2"><circle cx="240" cy="110" r="12" fill="#c9905a"/><path d="M228 122 h24 v30 h-24z" fill="#f2e6c8"/><rect x="214" y="146" width="40" height="22" fill="#fff"/></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 3 OF 16</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">THE TORMENTS OF YAMA</h1>
+    <p class="tag">The witnesses, the judgement, and the twenty-one hells · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A huge dark figure seated on a buffalo holding a rod, with a scribe beside him and a blazing tree behind"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><path d="M300 240 v-120" stroke="#6a3a2a" stroke-width="12"/><path d="M300 150 l-30 -30 M300 140 l30 -36 M300 170 l26 -16" stroke="#6a3a2a" stroke-width="6"/></g><g fill="#f28a2a" opacity=".8"><circle cx="270" cy="114" r="12"/><circle cx="330" cy="100" r="12"/><circle cx="326" cy="150" r="10"/></g><g stroke="#111" stroke-width="2"><ellipse cx="140" cy="200" rx="80" ry="30" fill="#3a3a3a"/><path d="M200 186 q30 -20 40 6" fill="#3a3a3a"/><path d="M226 180 l14 -14 M232 186 l18 -6" stroke-width="4"/><path d="M100 196 v40 M180 196 v40" stroke-width="8"/><circle cx="140" cy="100" r="26" fill="#2a3a5a"/><path d="M120 76 l8 -20 l12 14 l12 -14 l8 20z" fill="#f2c200"/><path d="M110 126 h60 v60 h-60z" fill="#2a3a5a"/><path d="M96 120 v110" stroke="#7a5a3a" stroke-width="7"/><circle cx="140" cy="98" r="4" fill="#f22"/></g><g stroke="#111" stroke-width="2"><circle cx="240" cy="110" r="12" fill="#c9905a"/><path d="M228 122 h24 v30 h-24z" fill="#f2e6c8"/><rect x="214" y="146" width="40" height="22" fill="#fff"/></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part B3 of 16: chapter 3 of the Garuḍa Purāṇa Sārōddhāra, verse by verse. The gatekeeper Dharmadhvaja, the Śravaṇa witnesses, Yama's terrible form, Citragupta's rebuke, the blazing silk-cotton tree, the messengers' charge, the torments, the twenty-one hells with their meanings, and the return purified.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#gate">At the Gate</a></li><li><span class="num">3</span><a href="#shravana">The Śravaṇas</a></li><li><span class="num">4</span><a href="#witness">Fourteen Witnesses</a></li><li><span class="num">5</span><a href="#form">Yama’s Terrible Form</a></li><li><span class="num">6</span><a href="#charge">Citragupta’s Charge</a></li><li><span class="num">7</span><a href="#tree">The Blazing Tree</a></li><li><span class="num">8</span><a href="#rebuke">What You Did Not Do</a></li><li><span class="num">9</span><a href="#forgive">Forgiveness Is Not Ours</a></li><li><span class="num">10</span><a href="#t1">The Torments I</a></li><li><span class="num">11</span><a href="#t2">The Torments II</a></li><li><span class="num">12</span><a href="#debt">The Debt Collectors</a></li><li><span class="num">13</span><a href="#hells">Twenty-One Hells</a></li><li><span class="num">14</span><a href="#who">Who Goes Where</a></li><li><span class="num">15</span><a href="#return">Returned Purified</a></li><li><span class="num">16</span><a href="#today">Reading It Today</a></li><li><span class="num">17</span><a href="#meaning">What It Teaches</a></li><li><span class="num">18</span><a href="#glossary">Glossary</a></li><li><span class="num">19</span><a href="#end">On One Page</a></li><li><span class="num">20</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#gate">At the Gate</a></li><li><span class="num">3</span><a href="#shravana">The Śravaṇas</a></li><li><span class="num">4</span><a href="#witness">Fourteen Witnesses</a></li><li><span class="num">5</span><a href="#form">Yama’s Terrible Form</a></li><li><span class="num">6</span><a href="#charge">Citragupta’s Charge</a></li><li><span class="num">7</span><a href="#tree">The Blazing Tree</a></li><li><span class="num">8</span><a href="#rebuke">What You Did Not Do</a></li><li><span class="num">9</span><a href="#forgive">Forgiveness Is Not Ours</a></li><li><span class="num">10</span><a href="#t1">The Torments I</a></li><li><span class="num">11</span><a href="#t2">The Torments II</a></li><li><span class="num">12</span><a href="#debt">The Debt Collectors</a></li><li><span class="num">13</span><a href="#hells">Twenty-One Hells</a></li><li><span class="num">14</span><a href="#who">Who Goes Where</a></li><li><span class="num">15</span><a href="#return">Returned Purified</a></li><li><span class="num">16</span><a href="#today">Reading It Today</a></li><li><span class="num">17</span><a href="#meaning">What It Teaches</a></li><li><span class="num">18</span><a href="#glossary">Glossary</a></li><li><span class="num">19</span><a href="#end">On One Page</a></li><li><span class="num">20</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -513,7 +532,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> E. Wood and S. V. Subrahmanyam, <i>The Garuda Purana (Sāroddhāra)</i>, 1911, chapter 3, verses 1–71, via hinduwebsite.com and sacred-texts.com. <a href="https://www.wisdomlib.org/hinduism/book/the-garuda-purana-2/d/doc63644.html">Read the 1911 translation of Chapter 3.</a></p>
 <p><b>Sources differ:</b> the source misprints verse 38 as 31; several hell names are glossed differently by the 1911 translators (for example Lōhitōda as “iron weights”, Saṅghāta as “accumulation”); the meanings here follow the Sanskrit words; the hell list repeats Sampratāpana.</p>
-<p><b>Not verified:</b> the Yama Dvitīyā custom and the murals and scrolls are general knowledge, not drawn from this text. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the Yama Dvitīyā custom and the murals and scrolls are general knowledge, not drawn from this text. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

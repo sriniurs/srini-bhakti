@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="maroon">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#8e1f17">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">ĀDIŚAKTYĀTMAKA ŚRĪ ANNAPŪRṆĒŚVARĪ · A REFERENCE GUIDE</p>
-    <h1 style="font-size:clamp(26px,7.4vw,80px)">HŌRANĀḌU</h1>
-    <p class="cover-subtitle">The Mother who feeds everyone who comes</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A golden four-armed goddess standing in a sanctum, holding a conch and discus, with misty green hills of the Western Ghats behind and, in front, a row of banana-leaf plates with rice"><rect width="380" height="268" fill="#3a1414" rx="8"/><g fill="#2f5a3a"><path d="M0 150 q60 -70 130 -10 q60 -60 120 0 q60 -50 130 10 v20 H0z"/></g><g fill="#fff" opacity=".25"><ellipse cx="90" cy="120" rx="60" ry="8"/><ellipse cx="300" cy="110" rx="60" ry="8"/></g><rect x="130" y="40" width="120" height="160" fill="#1e0a0a" stroke="#e0a800" stroke-width="3"/><g transform="translate(190 196)" stroke="#111" stroke-width="2"><rect x="-30" y="-12" width="60" height="12" fill="#8a5a2a"/><path d="M-20 -12 l4 -80 h32 l4 80z" fill="#e0b020"/><path d="M-16 -50 h32" stroke="#c0392b" stroke-width="5"/><circle cy="-104" r="15" fill="#f2c200"/><path d="M-14 -116 l4 -26 l10 12 l10 -12 l4 26z" fill="#e0a800"/><path d="M-6 -106 h4 M2 -106 h4" stroke="#111"/><g stroke="#e0b020" stroke-width="6"><path d="M-14 -84 l-26 -22 M14 -84 l26 -22 M-14 -70 l-22 6 M14 -70 l22 6"/></g><path d="M-48 -112 q8 -8 14 0 q-6 8 -14 0z" fill="#fff"/><circle cx="44" cy="-110" r="7" fill="#fff" stroke="#e0a800" stroke-width="3"/></g><g fill="#3a8a3a" stroke="#111" stroke-width="1"><ellipse cx="60" cy="238" rx="30" ry="10"/><ellipse cx="140" cy="244" rx="30" ry="10"/><ellipse cx="240" cy="244" rx="30" ry="10"/><ellipse cx="320" cy="238" rx="30" ry="10"/></g><g fill="#fff"><ellipse cx="60" cy="236" rx="10" ry="4"/><ellipse cx="140" cy="242" rx="10" ry="4"/><ellipse cx="240" cy="242" rx="10" ry="4"/><ellipse cx="320" cy="236" rx="10" ry="4"/></g></svg></figure>
-    <p class="cover-invocation">TEMPLES OF KARNATAKA</p>
+    <div class="kicker">ĀDIŚAKTYĀTMAKA ŚRĪ ANNAPŪRṆĒŚVARĪ · A REFERENCE GUIDE</div>
+    <h1 style="font-size:clamp(40px,8.5vw,80px)">HŌRANĀḌU</h1>
+    <p class="tag">The Mother who feeds everyone who comes · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A golden four-armed goddess standing in a sanctum, holding a conch and discus, with misty green hills of the Western Ghats behind and, in front, a row of banana-leaf plates with rice"><rect width="380" height="268" fill="#3a1414" rx="8"/><g fill="#2f5a3a"><path d="M0 150 q60 -70 130 -10 q60 -60 120 0 q60 -50 130 10 v20 H0z"/></g><g fill="#fff" opacity=".25"><ellipse cx="90" cy="120" rx="60" ry="8"/><ellipse cx="300" cy="110" rx="60" ry="8"/></g><rect x="130" y="40" width="120" height="160" fill="#1e0a0a" stroke="#e0a800" stroke-width="3"/><g transform="translate(190 196)" stroke="#111" stroke-width="2"><rect x="-30" y="-12" width="60" height="12" fill="#8a5a2a"/><path d="M-20 -12 l4 -80 h32 l4 80z" fill="#e0b020"/><path d="M-16 -50 h32" stroke="#c0392b" stroke-width="5"/><circle cy="-104" r="15" fill="#f2c200"/><path d="M-14 -116 l4 -26 l10 12 l10 -12 l4 26z" fill="#e0a800"/><path d="M-6 -106 h4 M2 -106 h4" stroke="#111"/><g stroke="#e0b020" stroke-width="6"><path d="M-14 -84 l-26 -22 M14 -84 l26 -22 M-14 -70 l-22 6 M14 -70 l22 6"/></g><path d="M-48 -112 q8 -8 14 0 q-6 8 -14 0z" fill="#fff"/><circle cx="44" cy="-110" r="7" fill="#fff" stroke="#e0a800" stroke-width="3"/></g><g fill="#3a8a3a" stroke="#111" stroke-width="1"><ellipse cx="60" cy="238" rx="30" ry="10"/><ellipse cx="140" cy="244" rx="30" ry="10"/><ellipse cx="240" cy="244" rx="30" ry="10"/><ellipse cx="320" cy="238" rx="30" ry="10"/></g><g fill="#fff"><ellipse cx="60" cy="236" rx="10" ry="4"/><ellipse cx="140" cy="242" rx="10" ry="4"/><ellipse cx="240" cy="242" rx="10" ry="4"/><ellipse cx="320" cy="236" rx="10" ry="4"/></g></svg>
+    <p class="cvcap">TEMPLES OF KARNATAKA</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Hōranāḍu Annapūrṇēśvarī on the Bhadrā: the Goddess who feeds, Śiva's skull-bowl filled with grain, Agastya's installation, the golden image of 1973, the hereditary dharmakartās, annadāna for every visitor and the Phālguna chariot festival.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is</a></li><li><span class="num">3</span><a href="#annapurna">Who Is Annapūrṇā?</a></li><li><span class="num">4</span><a href="#kashi">Food Is Not an Illusion</a></li><li><span class="num">5</span><a href="#skull">The Skull That Would Not Fall</a></li><li><span class="num">6</span><a href="#agastya">Agastya on the Bhadrā</a></li><li><span class="num">7</span><a href="#image">The Golden Image</a></li><li><span class="num">8</span><a href="#family">The Dharmakartā Family</a></li><li><span class="num">9</span><a href="#temple">The Temple</a></li><li><span class="num">10</span><a href="#anna">Annadāna</a></li><li><span class="num">11</span><a href="#seva">Offerings and Rites</a></li><li><span class="num">12</span><a href="#ratha">The Chariot Festival</a></li><li><span class="num">13</span><a href="#year">Through the Year</a></li><li><span class="num">14</span><a href="#stotra">Bhikṣāṁ Dehi</a></li><li><span class="num">15</span><a href="#around">Around Hōranāḍu</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is</a></li><li><span class="num">3</span><a href="#annapurna">Who Is Annapūrṇā?</a></li><li><span class="num">4</span><a href="#kashi">Food Is Not an Illusion</a></li><li><span class="num">5</span><a href="#skull">The Skull That Would Not Fall</a></li><li><span class="num">6</span><a href="#agastya">Agastya on the Bhadrā</a></li><li><span class="num">7</span><a href="#image">The Golden Image</a></li><li><span class="num">8</span><a href="#family">The Dharmakartā Family</a></li><li><span class="num">9</span><a href="#temple">The Temple</a></li><li><span class="num">10</span><a href="#anna">Annadāna</a></li><li><span class="num">11</span><a href="#seva">Offerings and Rites</a></li><li><span class="num">12</span><a href="#ratha">The Chariot Festival</a></li><li><span class="num">13</span><a href="#year">Through the Year</a></li><li><span class="num">14</span><a href="#stotra">Bhikṣāṁ Dehi</a></li><li><span class="num">15</span><a href="#around">Around Hōranāḍu</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -478,7 +497,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> Inditales, “Annapoorneshwari Temple, Kudremukh National Park” (Bhadrā setting; Agastya; 400-year family; 1973 restoration by the fifth dharmakartā on Akṣaya Tṛtīyā; Śṛṅgeri’s pontiff; Kāśī and skull legends; gōpura, lions, ceilings, roofs, courtyard; image with Śrīcakra and Gāyatrī; meals; akṣarābhyāsa and naming; Akṣaya Tṛtīyā as birthday; Rathōtsava of four to five days; Kaḷasa; Kudremukh); Bharat Mandir (Śiva’s skull filled at Hōranāḍu; D. B. Veṅkaṭasubbā Jōis; Abhinava Vidyātīrtha; copper plates; meals for all, food on arrival; rituals; special days; festival arts); Karnataka Tourism (10 km from Kaḷasa; 831 m; Malnāḍ; Goddess of food); trawell (1962 renovation; golden image 1973); travelatweb and Astroved (conch, discus, Śrīcakra and Gāyatrī; gold covering; Kāśī legend); Hindupad (Phālguna rathōtsava, five days from śuddha pāḍya; yearly and monthly sēvās); Hindu Blog (devotees fed before the Goddess’s āratī).</p>
 <p><b>Sources differ:</b> who performed the 1973 consecration (one source wrongly names Ādi Śaṅkara; others the Śṛṅgeri pontiff); the lower hands of the image; the family’s name (Jōis or Hegde); whether the chariot festival is in Phālguna or near Akṣaya Tṛtīyā; the age of the original shrine.</p>
-<p><b>Not verified:</b> the meaning of the name Hōranāḍu; the copper plates; the claim of the 8th century. The map is simplified. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the meaning of the name Hōranāḍu; the copper plates; the claim of the 8th century. The map is simplified. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

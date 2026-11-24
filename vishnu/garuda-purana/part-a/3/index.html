@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="light-blue">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="light-blue">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#1d4f8a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART A · 3 OF 8 · WORSHIP, VRATAS, TĪRTHAS</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">HOW TO WORSHIP</h1>
-    <p class="cover-subtitle">The Purāṇa’s handbook of gods, vows and holy places</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A small shrine with a lamp in front; on the left a crescent moon over a calendar, on the right a river with steps leading down"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="222" width="270" height="46" fill="#9ac56a"/><g stroke="#111" stroke-width="2"><path d="M140 200 v-80 l50 -40 l50 40 v80z" fill="#f2e6c8"/><path d="M130 124 l60 -56 l60 56z" fill="#c0392b"/><path d="M172 200 v-46 q18 -18 36 0 v46z" fill="#4a3a5a"/><circle cx="190" cy="178" r="10" fill="#3b6fd0"/><path d="M178 222 q12 -10 24 0z" fill="#e8a020"/><path d="M190 212 q-6 -10 0 -18 q6 8 0 18z" fill="#f2c200"/><rect x="20" y="40" width="90" height="80" fill="#fff"/><path d="M20 58 h90" /><g fill="#cfe0f5"><rect x="28" y="66" width="14" height="12"/><rect x="48" y="66" width="14" height="12"/><rect x="68" y="66" width="14" height="12"/><rect x="88" y="66" width="14" height="12"/><rect x="28" y="84" width="14" height="12"/><rect x="48" y="84" width="14" height="12" fill="#f5d0d0"/><rect x="68" y="84" width="14" height="12"/><rect x="88" y="84" width="14" height="12"/></g><path d="M86 28 a14 14 0 1 0 14 18 a10 10 0 1 1 -14 -18z" fill="#f2c200"/><path d="M380 150 v118 h-110 q20 -60 -10 -118z" fill="#4aa3df"/><path d="M262 150 h20 v12 h12 v12 h12 v12 h12 v12" fill="none" stroke="#7a5a3a" stroke-width="4"/></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART A · 3 OF 8 · WORSHIP, VRATAS, TĪRTHAS</div>
+    <h1 style="font-size:clamp(40px,8.5vw,80px)">HOW TO WORSHIP</h1>
+    <p class="tag">The Purāṇa’s handbook of gods, vows and holy places · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A small shrine with a lamp in front; on the left a crescent moon over a calendar, on the right a river with steps leading down"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="222" width="270" height="46" fill="#9ac56a"/><g stroke="#111" stroke-width="2"><path d="M140 200 v-80 l50 -40 l50 40 v80z" fill="#f2e6c8"/><path d="M130 124 l60 -56 l60 56z" fill="#c0392b"/><path d="M172 200 v-46 q18 -18 36 0 v46z" fill="#4a3a5a"/><circle cx="190" cy="178" r="10" fill="#3b6fd0"/><path d="M178 222 q12 -10 24 0z" fill="#e8a020"/><path d="M190 212 q-6 -10 0 -18 q6 8 0 18z" fill="#f2c200"/><rect x="20" y="40" width="90" height="80" fill="#fff"/><path d="M20 58 h90" /><g fill="#cfe0f5"><rect x="28" y="66" width="14" height="12"/><rect x="48" y="66" width="14" height="12"/><rect x="68" y="66" width="14" height="12"/><rect x="88" y="66" width="14" height="12"/><rect x="28" y="84" width="14" height="12"/><rect x="48" y="84" width="14" height="12" fill="#f5d0d0"/><rect x="68" y="84" width="14" height="12"/><rect x="88" y="84" width="14" height="12"/></g><path d="M86 28 a14 14 0 1 0 14 18 a10 10 0 1 1 -14 -18z" fill="#f2c200"/><path d="M380 150 v118 h-110 q20 -60 -10 -118z" fill="#4aa3df"/><path d="M262 150 h20 v12 h12 v12 h12 v12 h12 v12" fill="none" stroke="#7a5a3a" stroke-width="4"/></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part A3 of 8 on the Garuḍa Purāṇa: the gods it teaches to worship, mantras against poison, temple plans and image installation, the god of each lunar day, Ekādaśī and Śivarātri with the hunter's story, other vratas, the ninety-four holy places, and Gayā.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#gods">The Gods of the Rites</a></li><li><span class="num">3</span><a href="#names">A Thousand Names</a></li><li><span class="num">4</span><a href="#mothers">Mothers and Bhairavas</a></li><li><span class="num">5</span><a href="#poison">Against Poison</a></li><li><span class="num">6</span><a href="#temple">House, Temple, Image</a></li><li><span class="num">7</span><a href="#tithi">A God for Every Day</a></li><li><span class="num">8</span><a href="#ekadashi">Ekādaśī</a></li><li><span class="num">9</span><a href="#shivaratri">Śivarātri</a></li><li><span class="num">10</span><a href="#hunter">The Hunter and the Bilva</a></li><li><span class="num">11</span><a href="#vows">More Vows</a></li><li><span class="num">12</span><a href="#tirtha">Ninety-Four Holy Places</a></li><li><span class="num">13</span><a href="#south">The South in the List</a></li><li><span class="num">14</span><a href="#gaya">Gayāsura</a></li><li><span class="num">15</span><a href="#gaya2">What Gayā Promises</a></li><li><span class="num">16</span><a href="#meaning">What It Teaches</a></li><li><span class="num">17</span><a href="#glossary">Glossary</a></li><li><span class="num">18</span><a href="#end">On One Page</a></li><li><span class="num">19</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#gods">The Gods of the Rites</a></li><li><span class="num">3</span><a href="#names">A Thousand Names</a></li><li><span class="num">4</span><a href="#mothers">Mothers and Bhairavas</a></li><li><span class="num">5</span><a href="#poison">Against Poison</a></li><li><span class="num">6</span><a href="#temple">House, Temple, Image</a></li><li><span class="num">7</span><a href="#tithi">A God for Every Day</a></li><li><span class="num">8</span><a href="#ekadashi">Ekādaśī</a></li><li><span class="num">9</span><a href="#shivaratri">Śivarātri</a></li><li><span class="num">10</span><a href="#hunter">The Hunter and the Bilva</a></li><li><span class="num">11</span><a href="#vows">More Vows</a></li><li><span class="num">12</span><a href="#tirtha">Ninety-Four Holy Places</a></li><li><span class="num">13</span><a href="#south">The South in the List</a></li><li><span class="num">14</span><a href="#gaya">Gayāsura</a></li><li><span class="num">15</span><a href="#gaya2">What Gayā Promises</a></li><li><span class="num">16</span><a href="#meaning">What It Teaches</a></li><li><span class="num">17</span><a href="#glossary">Glossary</a></li><li><span class="num">18</span><a href="#end">On One Page</a></li><li><span class="num">19</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -490,7 +509,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> M. N. Dutt, <i>The Garuda Purana</i>, 1908, via Wisdom Library: ch. 24 (Gaṇapati, Durgā, the Mothers and Bhairavas, Tripurā), 81 (holy places), 82 (Gayā), 116 (vratas by lunar day), 117 (Anaṅga Trayōdaśī), 118 (Akhaṇḍa Dvādaśī), 124 (Śivarātri and Sundarasēna), Ekādaśī chapters (Māndhātā, Bhaimī), Śravaṇa and Madana vows; Motilal Banarsidass edition, contents outline (chapter ranges, Viṣṇu Sahasranāma, Vaiṣṇava kavaca, snakebite mantras); Indianetzone, “Ritual Vrata” (Bhīṣma Pañcaka); Wikipedia, “Garuda Purana” (temple grid and styles; Tantra chapters in dating).</p>
 <p><b>Sources differ:</b> chapter numbers between editions; deities assigned to some lunar days (Agni or Vaiśvānara on the first); which months some vratas fall in.</p>
-<p><b>Not verified:</b> the full text of the Garuḍa’s Viṣṇu Sahasranāma; the word gāruḍika for mantra healers is general usage, not taken from this text. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the full text of the Garuḍa’s Viṣṇu Sahasranāma; the word gāruḍika for mantra healers is general usage, not taken from this text. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="maroon">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="maroon">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#8e1f17">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 2 OF 16</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">THE WAY OF YAMA</h1>
-    <p class="cover-subtitle">Twelve suns, a river of blood, and sixteen cities in a year</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A barren road under many suns leading to a dark red river with a small boat, and city gates beyond"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g fill="#f8c86a" stroke="#c99a00" stroke-width="1.5"><circle cx="40" cy="30" r="12"/><circle cx="90" cy="22" r="12"/><circle cx="140" cy="30" r="12"/><circle cx="190" cy="22" r="12"/><circle cx="240" cy="30" r="12"/><circle cx="290" cy="22" r="12"/><circle cx="340" cy="30" r="12"/></g><path d="M0 150 q190 -30 380 0 v40 q-190 30 -380 0z" fill="#8a2a2a"/><path d="M60 268 C 120 220, 140 200, 170 186" stroke="#c9a87a" stroke-width="22" fill="none"/><g stroke="#111" stroke-width="2"><path d="M200 160 q30 12 60 0 l-6 10 h-48z" fill="#c9a87a"/><path d="M280 120 h20 v-14 l-10 -8 l-10 8z M320 110 h20 v-14 l-10 -8 l-10 8z" fill="#f2e6c8"/></g><g stroke="#5a4a3a" stroke-width="3"><path d="M30 210 l10 -30 M60 230 l-6 -26 M330 220 l8 -24"/></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART B · SĀRŌDDHĀRA · CHAPTER 2 OF 16</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">THE WAY OF YAMA</h1>
+    <p class="tag">Twelve suns, a river of blood, and sixteen cities in a year · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A barren road under many suns leading to a dark red river with a small boat, and city gates beyond"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g fill="#f8c86a" stroke="#c99a00" stroke-width="1.5"><circle cx="40" cy="30" r="12"/><circle cx="90" cy="22" r="12"/><circle cx="140" cy="30" r="12"/><circle cx="190" cy="22" r="12"/><circle cx="240" cy="30" r="12"/><circle cx="290" cy="22" r="12"/><circle cx="340" cy="30" r="12"/></g><path d="M0 150 q190 -30 380 0 v40 q-190 30 -380 0z" fill="#8a2a2a"/><path d="M60 268 C 120 220, 140 200, 170 186" stroke="#c9a87a" stroke-width="22" fill="none"/><g stroke="#111" stroke-width="2"><path d="M200 160 q30 12 60 0 l-6 10 h-48z" fill="#c9a87a"/><path d="M280 120 h20 v-14 l-10 -8 l-10 8z M320 110 h20 v-14 l-10 -8 l-10 8z" fill="#f2e6c8"/></g><g stroke="#5a4a3a" stroke-width="3"><path d="M30 210 l10 -30 M60 230 l-6 -26 M330 220 l8 -24"/></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part B2 of 16: chapter 2 of the Garuḍa Purāṇa Sārōddhāra, verse by verse. The road's twelve suns and sword-leaf forest, the Vaitaraṇī river, the sinner's laments, the rebuke at Saumya, all sixteen cities month by month, the ferrymen and the cow, Śītāḍhya's cold and the last city, Bahubhīti.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#road">The Road</a></li><li><span class="num">3</span><a href="#forest">The Sword-Leaf Forest</a></li><li><span class="num">4</span><a href="#dark">Pits and Darkness</a></li><li><span class="num">5</span><a href="#river">The Vaitaraṇī</a></li><li><span class="num">6</span><a href="#inriver">In the River</a></li><li><span class="num">7</span><a href="#dragged">Dragged Along</a></li><li><span class="num">8</span><a href="#laments">The Laments</a></li><li><span class="num">9</span><a href="#woman">A Woman’s Lament</a></li><li><span class="num">10</span><a href="#saumya">Saumya</a></li><li><span class="num">11</span><a href="#rebuke">No Market on This Road</a></li><li><span class="num">12</span><a href="#c1">Cities 2–7</a></li><li><span class="num">13</span><a href="#ferry">The Ferrymen</a></li><li><span class="num">14</span><a href="#c2">Cities 9–14</a></li><li><span class="num">15</span><a href="#cold">Śītāḍhya and Bahubhīti</a></li><li><span class="num">16</span><a href="#close">The Southern Gate</a></li><li><span class="num">17</span><a href="#calendar">The Road as a Calendar</a></li><li><span class="num">18</span><a href="#meaning">What It Teaches</a></li><li><span class="num">19</span><a href="#glossary">Glossary</a></li><li><span class="num">20</span><a href="#end">On One Page</a></li><li><span class="num">21</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#road">The Road</a></li><li><span class="num">3</span><a href="#forest">The Sword-Leaf Forest</a></li><li><span class="num">4</span><a href="#dark">Pits and Darkness</a></li><li><span class="num">5</span><a href="#river">The Vaitaraṇī</a></li><li><span class="num">6</span><a href="#inriver">In the River</a></li><li><span class="num">7</span><a href="#dragged">Dragged Along</a></li><li><span class="num">8</span><a href="#laments">The Laments</a></li><li><span class="num">9</span><a href="#woman">A Woman’s Lament</a></li><li><span class="num">10</span><a href="#saumya">Saumya</a></li><li><span class="num">11</span><a href="#rebuke">No Market on This Road</a></li><li><span class="num">12</span><a href="#c1">Cities 2–7</a></li><li><span class="num">13</span><a href="#ferry">The Ferrymen</a></li><li><span class="num">14</span><a href="#c2">Cities 9–14</a></li><li><span class="num">15</span><a href="#cold">Śītāḍhya and Bahubhīti</a></li><li><span class="num">16</span><a href="#close">The Southern Gate</a></li><li><span class="num">17</span><a href="#calendar">The Road as a Calendar</a></li><li><span class="num">18</span><a href="#meaning">What It Teaches</a></li><li><span class="num">19</span><a href="#glossary">Glossary</a></li><li><span class="num">20</span><a href="#end">On One Page</a></li><li><span class="num">21</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -519,7 +538,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> E. Wood and S. V. Subrahmanyam, <i>The Garuda Purana (Sāroddhāra)</i>, 1911, chapter 2, verses 1–86, via hinduwebsite.com and sacred-texts.com. <a href="https://www.wisdomlib.org/hinduism/book/the-garuda-purana-2/d/doc63643.html">Read the 1911 translation of Chapter 2.</a></p>
 <p><b>Sources differ:</b> the source misprints some verse numbers (45 as 41, 79 as 70), and assigns some cities overlapping verse ranges; city names are spelled variously.</p>
-<p><b>Not verified:</b> the identification of the sword-leaf forest with the hell Asipatravana in other lists is general knowledge. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the identification of the sword-leaf forest with the hell Asipatravana in other lists is general knowledge. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

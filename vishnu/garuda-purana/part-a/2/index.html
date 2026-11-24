@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="light-blue">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="light-blue">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#1d4f8a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART A · 2 OF 8 · CREATION AND AVATĀRAS</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">THE WORLD BEGINS</h1>
-    <p class="cover-subtitle">How the Garuḍa Purāṇa tells creation, the families of beings, and Viṣṇu’s descents</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Vishnu lying on a coiled serpent on the cosmic ocean, a lotus rising from his navel with four-faced Brahma on it, and a row of small avatar symbols along the bottom"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="170" width="380" height="98" fill="#9fd0ee" rx="8"/><path d="M0 176 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3b6fd0" stroke-width="2"/><g stroke="#111" stroke-width="2"><ellipse cx="190" cy="176" rx="120" ry="16" fill="#6aa06a"/><path d="M296 170 q24 -30 10 -50 q-18 10 -20 40z" fill="#6aa06a"/><path d="M100 168 h170 q10 -14 -4 -22 h-150 q-26 6 -16 22z" fill="#3b6fd0"/><circle cx="268" cy="140" r="14" fill="#3b6fd0"/><path d="M258 128 l10 -16 l10 16z" fill="#f2c200"/><path d="M110 152 h150" stroke="#f2c200" stroke-width="6"/><path d="M190 150 C 180 120, 200 100, 190 74" fill="none" stroke="#2e8b57" stroke-width="4"/><path d="M170 76 q20 -26 40 0 q-20 10 -40 0z" fill="#f5a0b8"/><circle cx="190" cy="56" r="14" fill="#e8a020"/><circle cx="178" cy="58" r="7" fill="#e8a020"/><circle cx="202" cy="58" r="7" fill="#e8a020"/><path d="M180 44 h20 l-4 -10 h-12z" fill="#f2c200"/></g><g font-size="20" text-anchor="middle"><text x="40" y="236">🐟</text><text x="80" y="236">🐢</text><text x="120" y="236">🐗</text><text x="160" y="236">🦁</text><text x="200" y="236">☂️</text><text x="240" y="236">🪓</text><text x="280" y="236">🏹</text><text x="320" y="236">🪈</text><text x="352" y="236">🐎</text></g></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART A · 2 OF 8 · CREATION AND AVATĀRAS</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">THE WORLD BEGINS</h1>
+    <p class="tag">How the Garuḍa Purāṇa tells creation, the families of beings, and Viṣṇu’s descents · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Vishnu lying on a coiled serpent on the cosmic ocean, a lotus rising from his navel with four-faced Brahma on it, and a row of small avatar symbols along the bottom"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><rect y="170" width="380" height="98" fill="#9fd0ee" rx="8"/><path d="M0 176 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3b6fd0" stroke-width="2"/><g stroke="#111" stroke-width="2"><ellipse cx="190" cy="176" rx="120" ry="16" fill="#6aa06a"/><path d="M296 170 q24 -30 10 -50 q-18 10 -20 40z" fill="#6aa06a"/><path d="M100 168 h170 q10 -14 -4 -22 h-150 q-26 6 -16 22z" fill="#3b6fd0"/><circle cx="268" cy="140" r="14" fill="#3b6fd0"/><path d="M258 128 l10 -16 l10 16z" fill="#f2c200"/><path d="M110 152 h150" stroke="#f2c200" stroke-width="6"/><path d="M190 150 C 180 120, 200 100, 190 74" fill="none" stroke="#2e8b57" stroke-width="4"/><path d="M170 76 q20 -26 40 0 q-20 10 -40 0z" fill="#f5a0b8"/><circle cx="190" cy="56" r="14" fill="#e8a020"/><circle cx="178" cy="58" r="7" fill="#e8a020"/><circle cx="202" cy="58" r="7" fill="#e8a020"/><path d="M180 44 h20 l-4 -10 h-12z" fill="#f2c200"/></g><g font-size="20" text-anchor="middle"><text x="40" y="236">🐟</text><text x="80" y="236">🐢</text><text x="120" y="236">🐗</text><text x="160" y="236">🦁</text><text x="200" y="236">☂️</text><text x="240" y="236">🪓</text><text x="280" y="236">🏹</text><text x="320" y="236">🪈</text><text x="352" y="236">🐎</text></g></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part A2 of 8 on the Garuḍa Purāṇa: Garuḍa's boons and Kaśyapa's burnt tree, the nine creations, Dakṣa's sixty daughters, the children of Kaśyapa, the twenty-two avatāras, the wife who stopped the sun, and the Rāmāyaṇa, Harivaṁśa and Mahābhārata in three chapters.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#boons">Garuḍa’s Five Boons</a></li><li><span class="num">3</span><a href="#tree">The Burnt Tree</a></li><li><span class="num">4</span><a href="#chain">The Purāṇa’s Own Lineage</a></li><li><span class="num">5</span><a href="#one">One God, Three Roles</a></li><li><span class="num">6</span><a href="#sargas">Nine Creations</a></li><li><span class="num">7</span><a href="#manu">The First Couple</a></li><li><span class="num">8</span><a href="#daksha">Dakṣa’s Sixty Daughters</a></li><li><span class="num">9</span><a href="#kashyapa">Children of Kaśyapa</a></li><li><span class="num">10</span><a href="#avatara1">Twenty-Two Avatāras: 1–11</a></li><li><span class="num">11</span><a href="#avatara2">Twenty-Two Avatāras: 12–22</a></li><li><span class="num">12</span><a href="#why">Why He Descends</a></li><li><span class="num">13</span><a href="#sun">The Wife Who Stopped the Sun</a></li><li><span class="num">14</span><a href="#ramayana">The Rāmāyaṇa in a Chapter</a></li><li><span class="num">15</span><a href="#krishna">Kṛṣṇa in a Chapter</a></li><li><span class="num">16</span><a href="#bharata">The Mahābhārata in a Chapter</a></li><li><span class="num">17</span><a href="#meaning">What It Teaches</a></li><li><span class="num">18</span><a href="#glossary">Glossary</a></li><li><span class="num">19</span><a href="#end">On One Page</a></li><li><span class="num">20</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#boons">Garuḍa’s Five Boons</a></li><li><span class="num">3</span><a href="#tree">The Burnt Tree</a></li><li><span class="num">4</span><a href="#chain">The Purāṇa’s Own Lineage</a></li><li><span class="num">5</span><a href="#one">One God, Three Roles</a></li><li><span class="num">6</span><a href="#sargas">Nine Creations</a></li><li><span class="num">7</span><a href="#manu">The First Couple</a></li><li><span class="num">8</span><a href="#daksha">Dakṣa’s Sixty Daughters</a></li><li><span class="num">9</span><a href="#kashyapa">Children of Kaśyapa</a></li><li><span class="num">10</span><a href="#avatara1">Twenty-Two Avatāras: 1–11</a></li><li><span class="num">11</span><a href="#avatara2">Twenty-Two Avatāras: 12–22</a></li><li><span class="num">12</span><a href="#why">Why He Descends</a></li><li><span class="num">13</span><a href="#sun">The Wife Who Stopped the Sun</a></li><li><span class="num">14</span><a href="#ramayana">The Rāmāyaṇa in a Chapter</a></li><li><span class="num">15</span><a href="#krishna">Kṛṣṇa in a Chapter</a></li><li><span class="num">16</span><a href="#bharata">The Mahābhārata in a Chapter</a></li><li><span class="num">17</span><a href="#meaning">What It Teaches</a></li><li><span class="num">18</span><a href="#glossary">Glossary</a></li><li><span class="num">19</span><a href="#end">On One Page</a></li><li><span class="num">20</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -486,7 +505,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> M. N. Dutt, <i>The Garuda Purana</i>, 1908, via Wisdom Library: ch. 2 (sources of the Purāṇa, Garuḍa’s boons, the burnt tree), ch. 5–6 (the Prajāpatis, Dakṣa’s daughters, Kaśyapa’s wives), ch. 142–145 (avatāras, Kauśika’s wife, Rāmāyaṇa, Harivaṁśa, Mahābhārata); Wisdom Library, <i>The Garuda Purana (abridged)</i> (ch. 1 list of 22 avatāras; the nine sargas; Kaśyapa’s fourteen wives); Wikipedia, “Garuda Purana” (Lakṣmī and Viṣṇu as nature and spirit); UCLA South Asia, “Avatars of Vishnu” (Garuḍa Purāṇa 1.13 on the purpose of avatāras); Viṣṇu Purāṇa (the nine sargas, Kaśyapa’s children by Irā and others).</p>
 <p><b>Sources differ:</b> how many daughters went to Kaśyapa (13 or 14) and the Moon (27 or 28); the numbering of Rāma, Kṛṣṇa and Balarāma in the avatāra list; whether Garuḍa composed the Purāṇa or heard it; the chain of tellers between Viṣṇu and Vyāsa; chapter numbers across editions.</p>
-<p><b>Not verified:</b> the names of the first six sargas are taken from the standard Purāṇic scheme; the abridged text names only the last three. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the names of the first six sargas are taken from the standard Purāṇic scheme; the abridged text names only the last three. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 

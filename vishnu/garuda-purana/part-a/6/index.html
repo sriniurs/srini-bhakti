@@ -273,6 +273,22 @@
 </style>
 <link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">
 <link rel="stylesheet" href="/assets/editorial/article-layout.css?v=1">
+<style id="cover2-uniform">
+section.page.cover.cover2{background:#f2f2ef!important;background-image:none!important;padding:0!important;border:6px solid #2a1d16;border-radius:14px;overflow:hidden;text-align:center;box-shadow:8px 8px 0 #2a1d16;color:#111}
+section.page.cover.cover2 .mast{background:var(--mastc,#15365a);padding:22px 18px 26px;color:#fff}
+section.page.cover.cover2 .brandtile{display:block;width:150px;max-width:44vw;height:auto;margin:0 auto 10px;background:#ebeae0;border:2px solid #111;border-radius:10px;padding:4px 8px}
+section.page.cover.cover2 .byline{font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 10px;text-shadow:none;background:none;border:0;transform:none;box-shadow:none;padding:0;display:block;position:static}
+section.page.cover.cover2 .kicker{display:inline-block;background:#fbf3df;color:var(--mastc,#15365a);font-family:"Noto Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin:0 0 12px;max-width:100%}
+section.page.cover.cover2 h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fbf3df;-webkit-text-stroke:0;text-shadow:none;line-height:1.02;text-transform:uppercase;margin:4px 0 12px;letter-spacing:.5px;background:none;border:0;transform:none;padding:0;overflow-wrap:anywhere}
+section.page.cover.cover2 .tag{font-family:Georgia,serif;font-size:clamp(16px,2.6vw,20px);color:#fff;text-shadow:none;margin:0 auto;max-width:560px;line-height:1.35;text-transform:none;background:none}
+section.page.cover.cover2 .coverbody{padding:18px 16px 22px}
+section.page.cover.cover2 .coverart{display:block;margin:0 auto;max-width:min(100%,620px);width:100%;height:auto;border-radius:10px;border:0;box-shadow:none}
+section.page.cover.cover2 .cvcap{font-family:Georgia,serif;font-style:italic;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:#333;margin:8px 0 6px;text-shadow:none}
+section.page.cover.cover2 .cast figure{color:#111;text-shadow:none}
+section.page.cover.cover2 .bubble{background:#fff;border:1.5px solid #9aa3ad;border-radius:8px;text-align:left;max-width:600px;margin:12px auto 6px;font-size:14.5px;color:#111;box-shadow:none}
+section.page.cover.cover2 .bubble b.lead{font-family:Bangers,Impact,sans-serif;font-style:italic;letter-spacing:.6px;font-size:17px}
+@media screen and (max-width:720px){section.page.cover.cover2{width:100%;max-width:100%;min-width:0;margin-inline:0;box-shadow:none}section.page.cover.cover2 .mast{padding-inline:10px;min-width:0}section.page.cover.cover2 h1{font-size:clamp(18px,5.5vw,38px)!important;letter-spacing:0!important;line-height:1.12;white-space:normal;max-width:100%}section.page.cover.cover2 .coverbody{padding-inline:10px}}
+</style>
 </head>
 <body data-bhakti-article="light-blue">
 <!-- sitenav:auto --><link rel="stylesheet" href="/assets/reader-navigation.css">
@@ -311,20 +327,23 @@
 
 <style>.cover-chapter{color:var(--cover-accent,#fff9ec);font:700 .8rem/1.4 system-ui,sans-serif;letter-spacing:.09em;overflow-wrap:anywhere;max-width:100%}.cover-subtitle{color:var(--cover-heading-ink,#fff9ec)}.cover-invocation,.cast figure,.cast small{color:var(--cover-accent,#fff9ec)}</style>
 <div class="book">
-<section class="page cover bhakti-article-cover" data-cover-theme="light-blue">
-  <header class="cover-heading">
+<section class="page cover cover2" style="--mastc:#1d4f8a">
+  <div class="mast">
+    <img class="brandtile" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">
     <p class="byline">Srini presents</p>
-    <p class="cover-chapter">GARUḌA PURĀṆA · PART A · 6 OF 8 · STARS, SIGNS, OMENS</p>
-    <h1 style="font-size:clamp(26px,7vw,76px)">READING THE WORLD</h1>
-    <p class="cover-subtitle">Islands and oceans, planets and palms, breath and omens</p>
-  </header>
-  <div class="cover-body">
-    <figure class="cover-art"><svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A night sky with planets around a mountain at the centre of concentric ring-islands, and an open palm with lines in the corner"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><circle cx="160" cy="140" r="110" fill="#9fd0ee"/><circle cx="160" cy="140" r="90" fill="#cde8a8"/><circle cx="160" cy="140" r="72" fill="#8ac6e8"/><circle cx="160" cy="140" r="56" fill="#b8dc90"/><circle cx="160" cy="140" r="40" fill="#6ab0dc"/><circle cx="160" cy="140" r="26" fill="#9ac56a"/><path d="M148 148 l12 -34 l12 34z" fill="#f2c200"/></g><g stroke="#111" stroke-width="1.5"><circle cx="40" cy="30" r="10" fill="#f2c200"/><circle cx="290" cy="34" r="8" fill="#e8e8e8"/><circle cx="320" cy="90" r="6" fill="#d24a2a"/></g><text x="330" y="250" font-size="64" text-anchor="middle">✋</text></svg></figure>
-    <p class="cover-invocation">Ōṁ Namō Nārāyaṇāya</p>
+    <div class="kicker">GARUḌA PURĀṆA · PART A · 6 OF 8 · STARS, SIGNS, OMENS</div>
+    <h1 style="font-size:clamp(32px,6.6vw,62px)">READING THE WORLD</h1>
+    <p class="tag">Islands and oceans, planets and palms, breath and omens · explained and illustrated</p>
+  </div>
+  <div class="coverbody">
+    <svg class="coverart" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A night sky with planets around a mountain at the centre of concentric ring-islands, and an open palm with lines in the corner"><rect width="380" height="268" fill="#fdf3d8" rx="8"/><g stroke="#111" stroke-width="2"><circle cx="160" cy="140" r="110" fill="#9fd0ee"/><circle cx="160" cy="140" r="90" fill="#cde8a8"/><circle cx="160" cy="140" r="72" fill="#8ac6e8"/><circle cx="160" cy="140" r="56" fill="#b8dc90"/><circle cx="160" cy="140" r="40" fill="#6ab0dc"/><circle cx="160" cy="140" r="26" fill="#9ac56a"/><path d="M148 148 l12 -34 l12 34z" fill="#f2c200"/></g><g stroke="#111" stroke-width="1.5"><circle cx="40" cy="30" r="10" fill="#f2c200"/><circle cx="290" cy="34" r="8" fill="#e8e8e8"/><circle cx="320" cy="90" r="6" fill="#d24a2a"/></g><text x="330" y="250" font-size="64" text-anchor="middle">✋</text></svg>
+    <p class="cvcap">Ōṁ Namō Nārāyaṇāya</p>
     <div class="cast">
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
     <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
   </div>
+    
+    <div class="bubble"><b class="lead">HOW THIS WORKS:</b> Part A6 of 8 on the Garuḍa Purāṇa: the seven islands and Mount Meru, Bhārata's peoples and rivers, the planetary periods that add to 108 years, travel and sneeze omens, the eight treasures, body marks and palmistry, śālagrāma stones, the science of breath, and grammar and metre.</div>
   </div>
 </section>
 
@@ -342,7 +361,7 @@
 <section class="page" id="contents">
   <h2 class="page-title">CONTENTS</h2>
   <ul class="toc">
-    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#islands">Seven Islands, Seven Seas</a></li><li><span class="num">3</span><a href="#meru">Meru and the Nine Lands</a></li><li><span class="num">4</span><a href="#bharata">Bhārata</a></li><li><span class="num">5</span><a href="#dasha">Planetary Periods</a></li><li><span class="num">6</span><a href="#planets">What Each Planet Brings</a></li><li><span class="num">7</span><a href="#omens">Journeys and Sneezes</a></li><li><span class="num">8</span><a href="#nidhi">The Eight Treasures</a></li><li><span class="num">9</span><a href="#marks">Marks of the Body</a></li><li><span class="num">10</span><a href="#palm">Palm Lines</a></li><li><span class="num">11</span><a href="#salagrama">Śālagrāma Stones</a></li><li><span class="num">12</span><a href="#breath">Conquest of Breath</a></li><li><span class="num">13</span><a href="#elements">Five Elements in a Breath</a></li><li><span class="num">14</span><a href="#grammar">Grammar and Metre</a></li><li><span class="num">15</span><a href="#meaning">What It Teaches</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources</a></li>
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#islands">Seven Islands, Seven Seas</a></li><li><span class="num">3</span><a href="#meru">Meru and the Nine Lands</a></li><li><span class="num">4</span><a href="#bharata">Bhārata</a></li><li><span class="num">5</span><a href="#dasha">Planetary Periods</a></li><li><span class="num">6</span><a href="#planets">What Each Planet Brings</a></li><li><span class="num">7</span><a href="#omens">Journeys and Sneezes</a></li><li><span class="num">8</span><a href="#nidhi">The Eight Treasures</a></li><li><span class="num">9</span><a href="#marks">Marks of the Body</a></li><li><span class="num">10</span><a href="#palm">Palm Lines</a></li><li><span class="num">11</span><a href="#salagrama">Śālagrāma Stones</a></li><li><span class="num">12</span><a href="#breath">Conquest of Breath</a></li><li><span class="num">13</span><a href="#elements">Five Elements in a Breath</a></li><li><span class="num">14</span><a href="#grammar">Grammar and Metre</a></li><li><span class="num">15</span><a href="#meaning">What It Teaches</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources &amp; Notes</a></li>
   </ul>
 </section>
 
@@ -483,7 +502,7 @@
 <div class="panel reading small">
 <p><b>Sources:</b> M. N. Dutt, <i>The Garuda Purana</i>, 1908, via Wisdom Library: ch. 53 (nidhis), 54 (seven islands, Meru), 55 (the nine lands, Bhārata), 60 (planetary periods, omens, the Sun-figure), 64 (marks of women, palmistry), 66 (śālagrāma, years, protective mantra), 67 (Pavana Vijaya); Motilal Banarsidass edition, contents outline (chapter ranges; grammar and prosody 205–212).</p>
 <p><b>Sources differ:</b> the identification of the 108-year scheme with aṣṭōttarī daśā is the usual astrological reading, not stated in the text; Dutt renders the sneeze as “hiccough”; Hiraṇmaya’s position (south-east here) varies between Purāṇas.</p>
-<p><b>Not verified:</b> the details of chapters 56–59, 61–63, 65 and 205–212 beyond their titles; the Meru grid is simplified. Zappy and Prof. Bolt are fictional.</p>
+<p><b>Not verified:</b> the details of chapters 56–59, 61–63, 65 and 205–212 beyond their titles; the Meru grid is simplified. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p>
 </div>
 </section>
 
