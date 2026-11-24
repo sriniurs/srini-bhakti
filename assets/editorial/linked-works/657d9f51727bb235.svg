@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="fig" width="380" height="250" viewBox="0 0 380 250" role="img" aria-label="The Goddess riding a lion, holding a trident, discus, sword and conch, above the defeated buffalo demon">
+    <circle cx="190" cy="92" r="78" fill="#ffd60a" stroke="#111" stroke-width="3" opacity=".9"/>
+    <!-- buffalo demon -->
+    <g stroke="#111" stroke-width="3">
+      <ellipse cx="78" cy="212" rx="58" ry="24" fill="#3b3b3b"/>
+      <circle cx="30" cy="198" r="17" fill="#3b3b3b"/>
+      <path d="M18 186 C4 172 8 160 20 166 M40 184 C52 168 48 158 38 166" fill="none" stroke-width="5"/>
+      <circle cx="25" cy="196" r="3" fill="#ff3b3b" stroke="none"/>
+    </g>
+    <!-- lion -->
+    <g stroke="#111" stroke-width="3">
+      <ellipse cx="225" cy="196" rx="78" ry="30" fill="#f4a63a"/>
+      <rect x="160" y="210" width="14" height="34" fill="#f4a63a"/><rect x="270" y="210" width="14" height="34" fill="#f4a63a"/>
+      <circle cx="300" cy="170" r="32" fill="#c96a1b"/>
+      <circle cx="306" cy="172" r="19" fill="#f4a63a"/>
+      <circle cx="312" cy="167" r="3" fill="#111"/>
+      <path d="M318 180 q-6 6 -12 2" fill="none"/>
+      <path d="M148 190 q-26 -10 -20 -34" fill="none" stroke-width="4"/>
+    </g>
+    <!-- arms and weapons -->
+    <g stroke="#111" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M190 118 L130 70"/><path d="M190 118 L120 112"/><path d="M190 118 L250 70"/><path d="M190 118 L262 112"/>
+      <path d="M190 120 L150 160"/><path d="M190 120 L232 158"/>
+    </g>
+    <g stroke="#111" stroke-width="3">
+      <path d="M150 162 L95 210" stroke-width="5"/>
+      <path d="M82 222 L95 210 M86 200 L95 210 L106 214" fill="none" stroke-width="4"/>
+      <circle cx="130" cy="64" r="15" fill="#fff"/><circle cx="130" cy="64" r="5" fill="#ffd60a"/>
+      <path d="M250 70 L268 34" stroke-width="5"/><path d="M262 26 l10 -2 l-2 10 z" fill="#ddd"/>
+      <path d="M262 112 q18 -8 22 6 q-10 14 -24 4 z" fill="#fff"/>
+      <path d="M120 112 q-14 -4 -16 8" fill="none"/>
+    </g>
+    <!-- Goddess -->
+    <g stroke="#111" stroke-width="3">
+      <path d="M190 112 L160 186 L222 186 Z" fill="#e63946"/>
+      <rect x="180" y="104" width="20" height="16" fill="#f2c79b"/>
+      <circle cx="190" cy="84" r="22" fill="#f2c79b"/>
+      <path d="M168 72 L176 50 L184 64 L190 44 L196 64 L204 50 L212 72 Z" fill="#ffd60a"/>
+      <circle cx="190" cy="74" r="3" fill="#e63946"/>
+      <circle cx="182" cy="86" r="2.5" fill="#111"/><circle cx="198" cy="86" r="2.5" fill="#111"/>
+      <path d="M183 95 q7 5 14 0" fill="none"/>
+      <path d="M168 96 q-8 30 4 46 M212 96 q8 30 -4 46" fill="none" stroke="#111" stroke-width="5"/>
+    </g>
+    <text x="70" y="246" text-anchor="middle" font-family="Bangers" font-size="15" fill="#111">MAHISHA (EGO)</text>
+    <text x="300" y="246" text-anchor="middle" font-family="Bangers" font-size="15" fill="#111">LION (COURAGE)</text>
+  </svg>

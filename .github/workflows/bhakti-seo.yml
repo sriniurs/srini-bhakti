@@ -8,6 +8,7 @@ on:
       - 'index.html'
       - 'scripts/seo_sync.py'
       - 'scripts/library_registry.py'
+      - 'scripts/library_artwork.py'
       - 'sitemap.xml'
       - 'robots.txt'
       - '.github/workflows/bhakti-seo.yml'
@@ -49,6 +50,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- sitemap.xml
           git add -- assets/library-registry.json
+          git add -- assets/editorial/linked-works
           git add -- ':(glob)**/index.html' index.html
           git commit -m "chore(seo): keep every public article in sitemap"
           git push origin HEAD:main

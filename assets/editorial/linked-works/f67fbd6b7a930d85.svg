@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A jewelled hall with four arched gateways"><rect width="380" height="268" fill="#f3e7cd"/><rect width="380" height="268" fill="#283552"/><circle cx="190" cy="101" r="82" fill="#62566e"/>
+<path d="M0 211h380v57H0z" fill="#19273d"/>
+<path d="M58 206V118h36V90h39V69h31q26-42 52 0h31v21h39v28h36v88Z" fill="#c28b63" stroke="#f8d795" stroke-width="3"/>
+<path d="M57 138h265m-230-18h196m-155-29h113M38 210h304m-315 14h326m-341 15h356" stroke="#edbd83" stroke-width="3"/>
+<g fill="#392f49" stroke="#f0c489" stroke-width="2">
+<path d="M73 205v-32q21-38 42 0v32Z"/><path d="M137 205v-39q21-39 42 0v39Z"/>
+<path d="M201 205v-39q21-39 42 0v39Z"/><path d="M265 205v-32q21-38 42 0v32Z"/></g>
+<g fill="#f5d49a"><circle cx="66" cy="51" r="3"/><circle cx="302" cy="65" r="3"/><circle cx="327" cy="41" r="2"/><circle cx="97" cy="41" r="2"/></g></svg>

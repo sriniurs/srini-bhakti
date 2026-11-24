@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A single lamp illuminating a dark alcove"><rect width="380" height="268" fill="#f3e7cd"/><defs><radialGradient id="b16-glow"><stop stop-color="#efc581"/><stop offset="1" stop-color="#402e4a"/></radialGradient></defs>
+<rect width="380" height="268" fill="#29243b"/>
+<path d="M79 224V122q0-58 111-100 111 42 111 100v102Z" fill="url(#b16-glow)" stroke="#a58073" stroke-width="2"/>
+<path d="M66 226h248m-262 12h276" stroke="#9d7970" stroke-width="3"/>
+<path d="M187 107q4 16 18 33 17 30-14 34-30-3-21-26 6-15 17-41Z" fill="#e79c56"/>
+<path d="M190 136q17 28 0 32-14-2 0-32Z" fill="#ffe4a0"/>
+<path d="M132 172h116q-18 38-58 38t-58-38Z" fill="#b66d60" stroke="#efbb86" stroke-width="2.5"/>
+<path d="M143 184h94m-75 16h56" stroke="#efbb86" stroke-width="2"/></svg>
