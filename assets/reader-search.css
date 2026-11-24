@@ -5,3 +5,13 @@
 .reader-search ul { padding-left: 22px; }
 .reader-search li { margin-block: 10px; }
 .reader-search a { color: inherit; text-underline-offset: 3px; }
+
+body.bhakti-search { margin: 0; background: #f8eedc; }
+.bhakti-search .reader-search { color: #30223c; }
+.bhakti-search h1 { color: #184940; font-weight: 700; }
+.bhakti-search input { background: #fffaf0; color: #30223c; border-color: #184940; }
+.bhakti-search :is(a, input):focus-visible { outline: 3px solid #9a342c; outline-offset: 3px; }
+.bhakti-search #reader-results { padding: 0; list-style: none; }
+.bhakti-search #reader-results li { margin: 0; border-bottom: 1px solid #d7bea3; }
+.bhakti-search #reader-results a { display: block; min-height: 44px; box-sizing: border-box; padding: 10px 4px; }
+.bhakti-search #reader-results a:hover { color: #9a342c; }

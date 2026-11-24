@@ -98,3 +98,8 @@ html:has(.sr-reader-slot) { scroll-padding-top: 58px; }
   padding: 0 8px 12px;
   text-align: center;
 }
+
+/* Shared navigation on the archive’s individual articles and collections. */
+.sr-reader-bar { background: #fffaf0; border-bottom-color: #d7bea3; }
+.sr-reader-bar a:hover { background: #f8eedc; }
+.sr-reader-bar a:focus-visible { outline-color: #9a342c; }
