@@ -2,5 +2,4 @@
 .tulu-nav a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 .bhakti-editorial .tulu-cards .tile-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .bhakti-editorial .tulu-cards .tile-copy p { font-size: 15px; }
-.tulu-landing .hero .library-cover-painting + img { display: none; }
 .tulu-landing .tulu-cards { margin-block: 14px 32px; }

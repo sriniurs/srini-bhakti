@@ -320,7 +320,9 @@ def render_painting(route, page):
     hero = re.search(r'<header class="hero">.*?</header>', page, re.S)
     if hero:
         old_art = re.search(r'<img\b[^>]*>', hero[0])
-        if old_art and (route == "/tulunadu/" or re.search(r'\balt=""', old_art[0])):
+        if route == "/tulunadu/":
+            position = hero.end() - len("</header>")
+        elif old_art and re.search(r'\balt=""', old_art[0]):
             position = hero.start() + old_art.start()
         else:
             position = hero.end()
