@@ -26,6 +26,7 @@ THEMES = dict(zip(GROUPS, ("gods", "hymns", "scriptures", "temples", "srividya",
 ART = "/assets/editorial/bhakti-library/"
 PAINTINGS = {
     **{path: THEMES[group] for group, path in COLLECTIONS.items()},
+    "/festivals/kartika/": "kartika-banner",
     "/srividya/lalita-sahasranama/": "lalita-sahasranama",
     "/srividya/saundaryalahari/": "saundaryalahari",
     "/srividya/khadgamala/": "khadgamala",
@@ -329,27 +330,28 @@ def render_search(registry, source):
     return RESULTS.sub(lambda m: m[1] + "\n" + "\n".join(results) + "\n" + m[2], source, count=1)
 
 
-def render_painting(route, page):
+def render_painting(route, page, artwork):
     name = PAINTINGS.get(route)
-    if not name:
-        return page
-    painting = f'<img class="library-cover-painting" src="{ART}{name}.webp" width="448" height="448" alt="">'
-    picture = "<!-- library:art -->" + painting + "<!-- /library:art -->"
     hero = re.search(r'<header class="hero">.*?</header>', page, re.S)
+    source = f"{ART}{name}.webp" if name else artwork.get(route, "")
     if hero:
+        if not source.startswith(ART):
+            return page
         old_art = re.search(r'<img\b[^>]*>', hero[0])
-        if route == "/tulunadu/":
-            position = hero.end() - len("</header>")
-        elif old_art and re.search(r'\balt=""', old_art[0]):
-            position = hero.start() + old_art.start()
-        else:
-            position = hero.end()
-            picture = '<!-- library:art --><div class="library-cover-panel">' + painting + '</div><!-- /library:art -->'
+        position = hero.start() + old_art.start() if old_art else hero.end() - len("</header>")
+        width, height = (1200, 800) if name == "kartika-banner" else (448, 448 if name else 252)
+        priority = ' fetchpriority="high"'
     else:
+        if not name:
+            return page
         cover = re.search(r'<div class="cover-body">', page)
         if not cover:
             return page
         position = cover.end()
+        width, height = 448, 448
+        priority = ""
+    painting = f'<img class="library-cover-painting" src="{source}" width="{width}" height="{height}" alt=""{priority}>'
+    picture = "<!-- library:art -->" + painting + "<!-- /library:art -->"
     return page[:position] + picture + page[position:]
 
 
@@ -403,7 +405,7 @@ def main():
         end = BODY_END.search(base).start()
         rendered = base[:position] + header(route, page, pages, memberships, counts, articles) + base[position:end]
         rendered += footer(route, pages, series, memberships, artwork) + base[end:]
-        update(page["file"], illustrate_cards(render_painting(route, rendered), artwork), page["source"])
+        update(page["file"], illustrate_cards(render_painting(route, rendered, artwork), artwork), page["source"])
 
     active = {path.removeprefix(PUBLIC_PREFIX) for path in artwork.values() if path.startswith(PUBLIC_PREFIX)}
     if active and not args.check:
