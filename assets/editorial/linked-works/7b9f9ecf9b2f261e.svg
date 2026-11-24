@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Four rice offerings arranged for joining"><rect width="380" height="268" fill="#f3e7cd"/><rect x="40" y="34" width="300" height="200" rx="22" fill="#b47b73"/>
+<rect x="51" y="45" width="278" height="178" rx="18" fill="#654359" stroke="#efc181" stroke-width="2"/>
+<path d="M190 109v20m0 0-92 28m92-28v28m0-28 92 28" fill="none" stroke="#f1c689" stroke-width="2" stroke-dasharray="3 5"/>
+<g fill="#a8bd8d" stroke="#44333e" stroke-width="2">
+<ellipse cx="190" cy="93" rx="53" ry="23"/><ellipse cx="98" cy="177" rx="37" ry="19"/>
+<ellipse cx="190" cy="177" rx="37" ry="19"/><ellipse cx="282" cy="177" rx="37" ry="19"/></g>
+<g fill="#fff0c5" stroke="#916951" stroke-width="2">
+<path d="M168 93q4-26 22-26t22 26q-19 10-44 0Z"/><path d="M81 176q6-21 17-21t17 21q-15 8-34 0Z"/>
+<path d="M173 176q6-21 17-21t17 21q-15 8-34 0Z"/><path d="M265 176q6-21 17-21t17 21q-15 8-34 0Z"/></g></svg>

@@ -12,6 +12,7 @@ from urllib.parse import urlsplit
 
 from seo_sync import BASE_URL, html_pages
 from sync_collection_counts import GROUPS
+from library_artwork import CARD_MARK, DESTINATION, HOME_TILE, PUBLIC_PREFIX, artwork_by_route, illustrate_cards, img
 
 ROOT = Path(__file__).resolve().parents[1]
 HOME = ROOT / "index.html"
@@ -33,6 +34,15 @@ PAINTINGS = {
     "/temples-of-india/12-jyotirlingas/": "jyotirlingas",
     "/temples-of-india/pancha-kedar/": "pancha-kedar",
     "/temples-of-india/sapta-puri/": "sapta-puri",
+}
+CARD_PAINTINGS = {
+    "/vishnu/garuda-purana/": "card-garuda-purana",
+    "/vishnu/garuda-purana/part-a/": "card-garuda-purana-a",
+    "/vishnu/garuda-purana/part-b/": "card-garuda-purana-b",
+    "/temples-of-india/kerala/padmanabhaswamy/": "card-padmanabhaswamy",
+    "/temples-of-india/kerala/mannarasala/": "card-mannarasala",
+    "/temples-of-india/tamil-nadu/kanchipuram-varadaraja/": "card-kanchipuram-varadaraja",
+    "/temples-of-india/sapta-puri/ayodhya/": "card-ayodhya",
 }
 START = "<!-- library:header -->"
 END = "<!-- /library:header -->"
@@ -105,8 +115,11 @@ def display_title(source, route):
     return BRAND_SUFFIX.sub("", " ".join(html.unescape(title[1]).split())).strip()
 
 
-def link(route, title, label=""):
+def link(route, title, label="", artwork=None):
     prefix = f'<span>{html.escape(label)}</span>' if label else ""
+    illustration = img(artwork[route]) if artwork and route in artwork else ""
+    if illustration:
+        return f'<a class="library-art-link" href="{html.escape(route)}">{illustration}<div>{prefix}{html.escape(title)}</div></a>'
     return f'<a href="{html.escape(route)}">{prefix}{html.escape(title)}</a>'
 
 
@@ -121,7 +134,7 @@ def load_pages():
         source = file.read_text(encoding="utf-8")
         if route == "/" or REDIRECT.search(source[:7000]):
             continue
-        body = ART_BLOCK.sub("", FOOTER_BLOCK.sub("", HEADER_BLOCK.sub("", source)))
+        body = CARD_MARK.sub("", ART_BLOCK.sub("", FOOTER_BLOCK.sub("", HEADER_BLOCK.sub("", source))))
         pages[route] = {"file": file, "source": source, "base": body, "title": display_title(body, route)}
     return pages
 
@@ -201,10 +214,10 @@ def header(route, page, pages, memberships, counts):
 """
 
 
-def footer(route, pages, series, memberships):
+def footer(route, pages, series, memberships, artwork):
     sections = []
     if route in series:
-        children = "".join(f'<li>{link(path, pages[path]["title"])}</li>' for path in series[route])
+        children = "".join(f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in series[route])
         sections.append(f'<section><h2>Published chapters</h2><p>{len(series[route])} available</p><ol>{children}</ol></section>')
     else:
         parent = next((p for p in reversed(ancestors(route)) if route in series.get(p, ())), None)
@@ -213,15 +226,15 @@ def footer(route, pages, series, memberships):
             offset = works.index(route)
             before = works[offset - 1:offset] if offset else []
             after = works[offset + 1:offset + 2]
-            previous = [link(p, pages[p]["title"], "Previous chapter") for p in before]
-            following = [link(p, pages[p]["title"], "Next chapter") for p in after]
+            previous = [link(p, pages[p]["title"], "Previous chapter", artwork) for p in before]
+            following = [link(p, pages[p]["title"], "Next chapter", artwork) for p in after]
             sections.append('<nav aria-label="Chapter navigation">' + "".join(previous + following) + "</nav>")
         related = [p for p in Destinations(pages[route]["base"]).paths
                    if p in pages and p != route and p not in COLLECTIONS.values()
                    and p not in ancestors(route) and set(memberships[route]) & set(memberships[p])][:3]
         if related:
             sections.append('<section><h2>Related reading</h2><ul>' + "".join(
-                f'<li>{link(path, pages[path]["title"])}</li>' for path in related) + "</ul></section>")
+                f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in related) + "</ul></section>")
     main_group = memberships[route][0] if memberships[route] else None
     if main_group and (collection := COLLECTIONS[main_group]) != route:
         sections.append(link(collection, f"Return to {main_group}"))
@@ -282,6 +295,8 @@ def main():
     home = HOME.read_text(encoding="utf-8")
     pages = load_pages()
     registry, series, memberships = build_registry(home, pages)
+    painted = {path: ART + name + ".webp" for path, name in (PAINTINGS | CARD_PAINTINGS).items()}
+    artwork, generated = artwork_by_route(pages, painted)
     counts = {
         group: sum(group in record["collections"] and record["kind"] == "article" for record in registry)
         for group in GROUPS
@@ -297,7 +312,7 @@ def main():
                 file.write_text(text, encoding="utf-8", newline="\n")
 
     update(REGISTRY, json.dumps(registry, ensure_ascii=False, separators=(",", ":")) + "\n")
-    update(HOME, render_counts(home, counts), home)
+    update(HOME, illustrate_cards(render_counts(home, counts), artwork, HOME_TILE), home)
     search = SEARCH.read_text(encoding="utf-8")
     update(SEARCH, render_search(registry, search), search)
     for route, page in pages.items():
@@ -311,10 +326,16 @@ def main():
             position = BODY.search(base).end()
         end = BODY_END.search(base).start()
         rendered = base[:position] + header(route, page, pages, memberships, counts) + base[position:end]
-        rendered += footer(route, pages, series, memberships) + base[end:]
-        update(page["file"], render_painting(route, rendered), page["source"])
+        rendered += footer(route, pages, series, memberships, artwork) + base[end:]
+        update(page["file"], illustrate_cards(render_painting(route, rendered), artwork), page["source"])
 
-    print(f"Bhakti registry: {len(registry)} public pages, {len(series)} multi-page series or subcollections.")
+    active = {path.removeprefix(PUBLIC_PREFIX) for path in artwork.values() if path.startswith(PUBLIC_PREFIX)}
+    if active and not args.check:
+        DESTINATION.mkdir(parents=True, exist_ok=True)
+    for key in sorted(active):
+        update(DESTINATION / key, generated[key])
+
+    print(f"Bhakti registry: {len(registry)} public pages, {len(series)} multi-page series or subcollections, {len(artwork)} nearby artwork sources.")
     if args.check and changes:
         raise SystemExit(f"{len(changes)} library files are out of sync.")
 
