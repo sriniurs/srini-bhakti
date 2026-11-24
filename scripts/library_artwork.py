@@ -8,6 +8,7 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[1]
 DESTINATION = ROOT / "assets/editorial/linked-works"
 PUBLIC_PREFIX = "/assets/editorial/linked-works/"
+PAINTED_PREFIX = "/assets/editorial/bhakti-library/painted-tile-"
 CARD_MARK = re.compile(r"<!-- library:card -->.*?<!-- /library:card -->", re.S)
 TILE = re.compile(
     r'<a\b[^>]*\bhref="(/[^"#?]+/)(?:#[^"]*)?"[^>]*>\s*<div\b[^>]*\bclass="tile-art"[^>]*>',
@@ -67,7 +68,7 @@ def cover_asset(route, source, generated):
 
 
 def img(source):
-    painted = source.startswith("/assets/editorial/bhakti-library/painted-tile-")
+    painted = source.startswith(PAINTED_PREFIX)
     return f'<img class="library-card-illustration" src="{source}" width="160" height="120" loading="lazy" decoding="async" alt=""{" data-painted-tile" if painted else ""}>'
 
 
@@ -82,6 +83,11 @@ def artwork_by_route(pages, painted):
     generated = {}
     found = {}
     for route, page in pages.items():
+        key = hashlib.sha256(route.encode("utf-8")).hexdigest()[:16]
+        dedicated_painting = f"{PAINTED_PREFIX}{key}.webp"
+        if local_image(dedicated_painting):
+            found[route] = dedicated_painting
+            continue
         if route in painted:
             found[route] = painted[route]
             continue
