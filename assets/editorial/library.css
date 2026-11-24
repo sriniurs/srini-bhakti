@@ -199,16 +199,31 @@
   body.bhakti-editorial:has(.library-reader-head) .tile-art {
     aspect-ratio: 16 / 9; border-block-end: 1px solid var(--library-rule);
   }
-  body.bhakti-editorial:has(.library-reader-head) .tile-art:has(> .library-card-illustration) { background: #fae8c6 !important; }
-  body.bhakti-editorial:has(.library-reader-head) .tile-art > .library-card-illustration {
-    display: block; box-sizing: border-box; padding: .65rem; object-fit: contain;
+  body:has(.library-reader-head) .tile-art:has(> .library-card-illustration) {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #fae8c6 !important;
   }
-  body.bhakti-editorial:has(.library-reader-head) .tile-art > [data-painted-tile] {
+  body:has(.library-reader-head) .tile-art > .library-card-illustration {
+    position: absolute;
+    inset: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .65rem;
+    object-fit: contain;
+  }
+  body:has(.library-reader-head) .tile-art > .library-card-illustration[data-painted-tile] {
     padding: 0;
     object-fit: cover;
     object-position: center;
   }
-  body.bhakti-editorial:has(.library-reader-head) .tile-art:has(> .library-card-illustration) > :not(.library-card-illustration) {
+  body:has(.library-reader-head) .tile-art:has(> .library-card-illustration) > :not(.library-card-illustration) {
     display: none;
   }
   body:has(.library-reader-head) :is(.book, .bhakti-reference main) { max-width: 58rem; }
