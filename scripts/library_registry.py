@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 
 from seo_sync import BASE_URL, html_pages
 from sync_collection_counts import GROUPS
-from library_artwork import CARD_MARK, DESTINATION, HOME_TILE, PUBLIC_PREFIX, artwork_by_route, illustrate_cards, img
+from library_artwork import CARD_MARK, DESTINATION, HOME_TILE, PUBLIC_PREFIX, artwork_by_route, illustrate_cards, img, local_image
 
 ROOT = Path(__file__).resolve().parents[1]
 HOME = ROOT / "index.html"
@@ -200,7 +200,42 @@ def build_registry(home, pages):
     return registry, series, memberships
 
 
-def header(route, page, pages, memberships, counts):
+def json_ld(value):
+    return json.dumps(value, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+
+
+def article_schema(route, page):
+    scripts = re.findall(r'<script\b[^>]*\btype=["\x27]application/ld\+json["\x27][^>]*>(.*?)</script>', page["base"], re.I | re.S)
+    if any(re.search(r'"@type"\s*:\s*"(?:Article|NewsArticle|BlogPosting)"', script) for script in scripts):
+        return ""
+    metadata = {}
+
+    class Meta(HTMLParser):
+        def handle_starttag(self, tag, attrs):
+            if tag == "meta":
+                values = dict(attrs)
+                key = values.get("name") or values.get("property")
+                if key and values.get("content"):
+                    metadata.setdefault(key.lower(), values["content"].strip())
+
+    head = re.split(r"</head\s*>", page["base"], maxsplit=1, flags=re.I)[0]
+    Meta().feed(head)
+    address = BASE_URL + route
+    value = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": page["title"], "url": address, "mainEntityOfPage": address,
+        "isPartOf": {"@id": BASE_URL + "/#website"},
+        "publisher": {"@type": "Organization", "@id": "https://srinipresents.com/#organization",
+                      "name": "srini.presents", "url": "https://srinipresents.com/"},
+    }
+    if description := metadata.get("description"):
+        value["description"] = description
+    if image := local_image(metadata.get("og:image", "")):
+        value["image"] = BASE_URL + image
+    return f'\n<script type="application/ld+json">{json_ld(value)}</script>'
+
+
+def header(route, page, pages, memberships, counts, articles):
     groups = memberships[route]
     group = next((g for g, path in COLLECTIONS.items() if route.startswith(path)), groups[0] if groups else None)
     parents = [path for path in ancestors(route) if path in pages]
@@ -210,14 +245,15 @@ def header(route, page, pages, memberships, counts):
     crumbs.append(f'<span aria-current="page">{html.escape(page["title"])}</span>')
     trail = "".join(f"<li>{crumb}</li>" for crumb in crumbs)
     destinations = [("/", "Home"), *((path, pages[path]["title"]) for path in crumb_routes), (route, page["title"])]
-    schema = json.dumps({
+    schema = json_ld({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": index, "name": name, "item": BASE_URL + path}
             for index, (path, name) in enumerate(destinations, 1)
         ],
-    }, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+    })
+    article = article_schema(route, page) if route in articles else ""
     total = f'<p class="library-collection-size">{counts[group]} published articles</p>' if group and route == COLLECTIONS[group] else ""
     theme = THEMES.get(group, "gods")
     accent = f'<i class="library-theme-{theme}" aria-hidden="true"></i>'
@@ -228,7 +264,7 @@ def header(route, page, pages, memberships, counts):
   <a href="/#collections">Collections</a><a href="/search/">Search</a>
 </div>
 <nav class="library-crumb" aria-label="Breadcrumb"><ol>{trail}</ol></nav>
-{total}<script type="application/ld+json">{schema}</script>
+{total}<script type="application/ld+json">{schema}</script>{article}
 {END}
 """
 
@@ -284,7 +320,7 @@ def render_painting(route, page):
     hero = re.search(r'<header class="hero">.*?</header>', page, re.S)
     if hero:
         old_art = re.search(r'<img\b[^>]*>', hero[0])
-        if old_art and re.search(r'\balt=""', old_art[0]):
+        if old_art and (route == "/tulunadu/" or re.search(r'\balt=""', old_art[0])):
             position = hero.start() + old_art.start()
         else:
             position = hero.end()
@@ -314,6 +350,7 @@ def main():
     home = HOME.read_text(encoding="utf-8")
     pages = load_pages()
     registry, series, memberships = build_registry(home, pages)
+    articles = {entry["path"] for entry in registry if entry["kind"] == "article"}
     painted = {path: ART + name + ".webp" for path, name in (PAINTINGS | CARD_PAINTINGS).items()}
     artwork, generated = artwork_by_route(pages, painted)
     counts = {
@@ -344,7 +381,7 @@ def main():
         else:
             position = BODY.search(base).end()
         end = BODY_END.search(base).start()
-        rendered = base[:position] + header(route, page, pages, memberships, counts) + base[position:end]
+        rendered = base[:position] + header(route, page, pages, memberships, counts, articles) + base[position:end]
         rendered += footer(route, pages, series, memberships, artwork) + base[end:]
         update(page["file"], illustrate_cards(render_painting(route, rendered), artwork), page["source"])
 
