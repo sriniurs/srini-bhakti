@@ -203,6 +203,11 @@
   body.bhakti-editorial:has(.library-reader-head) .tile-art > .library-card-illustration {
     display: block; box-sizing: border-box; padding: .65rem; object-fit: contain;
   }
+  body.bhakti-editorial:has(.library-reader-head) .tile-art > [data-painted-tile] {
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+  }
   body.bhakti-editorial:has(.library-reader-head) .tile-art:has(> .library-card-illustration) > :not(.library-card-illustration) {
     display: none;
   }
