@@ -7,7 +7,7 @@ on:
       - '**/index.html'
       - 'index.html'
       - 'scripts/seo_sync.py'
-      - 'scripts/sync_collection_counts.py'
+      - 'scripts/library_registry.py'
       - 'sitemap.xml'
       - 'robots.txt'
       - '.github/workflows/bhakti-seo.yml'
@@ -32,8 +32,8 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
-      - name: Reconcile homepage collection counts
-        run: python3 scripts/sync_collection_counts.py
+      - name: Rebuild the library registry, counts, search and navigation
+        run: python3 scripts/library_registry.py
       - name: Generate sitemap and add missing canonical tags
         run: python3 scripts/seo_sync.py
       - name: Commit discovery fixes if needed
@@ -48,6 +48,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- sitemap.xml
+          git add -- assets/library-registry.json
           git add -- ':(glob)**/index.html' index.html
           git commit -m "chore(seo): keep every public article in sitemap"
           git push origin HEAD:main
@@ -63,5 +64,5 @@ jobs:
           gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds"
       - name: Validate generated indexability manifest
         run: |
-          python3 scripts/sync_collection_counts.py --check
+          python3 scripts/library_registry.py --check
           python3 scripts/seo_sync.py --check

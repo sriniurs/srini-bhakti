@@ -30,6 +30,7 @@ CANONICAL_TAG = re.compile(
 )
 HREF = re.compile(r"\bhref\s*=\s*(['\"])(.*?)\1", re.I | re.S)
 NOINDEX_TAG = re.compile(r"<meta\b[^>]*\bname\s*=\s*(['\"])robots\1[^>]*>", re.I)
+REDIRECT_TAG = re.compile(r"<meta\b[^>]*\bhttp-equiv\s*=\s*['\"]?refresh", re.I)
 XMLNS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
 
@@ -52,6 +53,9 @@ def html_pages() -> list[tuple[str, Path]]:
         path = url_for(file)
         if path in SKIP_URLS:
             continue
+        with file.open(encoding="utf-8") as stream:
+            if REDIRECT_TAG.search(stream.read(7000)):
+                continue
         result.append((path, file))
     return sorted(result)
 

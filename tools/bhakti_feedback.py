@@ -16,7 +16,7 @@ NOTE = """<!-- reader-feedback:start -->
 </div>
 <!-- reader-feedback:end -->"""
 social = re.compile(r'<div\s+class=["\']follow["\'][^>]*>.*?</div>', re.I | re.S)
-existing = re.compile(re.escape(START) + r'.*?' + re.escape(END), re.S)
+existing = re.compile(re.escape(START) + r'.*?' + re.escape(END) + r'\n?', re.S)
 changed = count = 0
 for p in ROOT.rglob("index.html"):
     if any(part.startswith(".") for part in p.relative_to(ROOT).parts):

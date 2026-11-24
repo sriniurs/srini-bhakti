@@ -15,3 +15,9 @@ body.bhakti-search { margin: 0; background: #f8eedc; }
 .bhakti-search #reader-results li { margin: 0; border-bottom: 1px solid #d7bea3; }
 .bhakti-search #reader-results a { display: block; min-height: 44px; box-sizing: border-box; padding: 10px 4px; }
 .bhakti-search #reader-results a:hover { color: #9a342c; }
+.bhakti-search .sr-reader-bar { background: #781831; }
+.bhakti-search .sr-reader-bar a { color: #fffaf0 !important; }
+.bhakti-search .sr-reader-bar a:hover { background: #4e1125; }
+.bhakti-search label[for="reader-collection"] { margin-top: .8rem; }
+.bhakti-search select { width: 100%; min-height: 44px; padding: .5rem; border: 1px solid #781831; border-radius: 8px; background: #fffaf0; color: inherit; font: inherit; }
+.bhakti-search select:focus-visible { outline: 3px solid #05675d; outline-offset: 3px; }

@@ -1,0 +1,323 @@
+"""Build Bhakti's static search and shared reading navigation from published pages."""
+from __future__ import annotations
+
+import argparse
+import html
+import json
+import re
+from collections import defaultdict
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urlsplit
+
+from seo_sync import BASE_URL, html_pages
+from sync_collection_counts import GROUPS
+
+ROOT = Path(__file__).resolve().parents[1]
+HOME = ROOT / "index.html"
+SEARCH = ROOT / "search/index.html"
+REGISTRY = ROOT / "assets/library-registry.json"
+COLLECTIONS = dict(zip(GROUPS, (
+    "/gods/", "/hymns/", "/scriptures/", "/temples-of-india/", "/srividya/",
+    "/festivals/", "/tulunadu/",
+)))
+THEMES = dict(zip(GROUPS, ("gods", "hymns", "scriptures", "temples", "srividya", "festivals", "tulu")))
+ART = "/assets/editorial/bhakti-library/"
+PAINTINGS = {
+    **{path: THEMES[group] for group, path in COLLECTIONS.items()},
+    "/srividya/lalita-sahasranama/": "lalita-sahasranama",
+    "/srividya/saundaryalahari/": "saundaryalahari",
+    "/srividya/khadgamala/": "khadgamala",
+    "/devi/devi-mahatmya/": "devi-mahatmya",
+    "/hanuman/chalisa/": "hanuman-chalisa",
+    "/temples-of-india/12-jyotirlingas/": "jyotirlingas",
+    "/temples-of-india/pancha-kedar/": "pancha-kedar",
+    "/temples-of-india/sapta-puri/": "sapta-puri",
+}
+START = "<!-- library:header -->"
+END = "<!-- /library:header -->"
+FOOT_START = "<!-- library:footer -->"
+FOOT_END = "<!-- /library:footer -->"
+HEADER_BLOCK = re.compile(re.escape(START) + r".*?" + re.escape(END) + "\n", re.S)
+FOOTER_BLOCK = re.compile(re.escape(FOOT_START) + r".*?" + re.escape(FOOT_END) + "\n", re.S)
+ART_BLOCK = re.compile(r"<!-- library:art -->.*?<!-- /library:art -->", re.S)
+TITLE = re.compile(r"<title\b[^>]*>(.*?)</title>", re.I | re.S)
+BODY = re.compile(r"<body\b[^>]*>", re.I)
+BODY_END = re.compile(r"</body\s*>", re.I)
+REDIRECT = re.compile(r"<meta\b[^>]*\bhttp-equiv\s*=\s*['\"]?refresh", re.I)
+ARCHIVE = re.compile(r'<section class="article-index"[\s\S]*?</section>')
+RESULTS = re.compile(r'(<ul id="reader-results">).*?(</ul>)', re.S)
+BRAND_SUFFIX = re.compile(r"\s*[·|]\s*(?:Bhakti(?:\s*[|·]\s*)?)?(?:Srini[ .]Presents|Bhakti)\s*$", re.I)
+
+
+class Archive(HTMLParser):
+    def __init__(self, source):
+        super().__init__()
+        self.depth = 0
+        self.summary = None
+        self.group = None
+        self.members = defaultdict(list)
+        self.feed(source)
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "details":
+            self.depth += 1
+        if tag == "summary" and self.depth == 1:
+            self.summary = []
+        if tag == "a" and self.group:
+            url = urlsplit(dict(attrs).get("href", ""))
+            if not url.netloc and url.path.startswith("/") and url.path not in self.members[self.group]:
+                self.members[self.group].append(url.path)
+
+    def handle_endtag(self, tag):
+        if tag == "summary" and self.summary is not None:
+            label = "".join(self.summary).split(" · ")[0].strip()
+            self.group = label if label in COLLECTIONS else None
+            self.summary = None
+        if tag == "details":
+            self.depth -= 1
+            if self.depth == 0:
+                self.group = None
+
+    def handle_data(self, data):
+        if self.summary is not None:
+            self.summary.append(data)
+
+
+class Destinations(HTMLParser):
+    def __init__(self, source):
+        super().__init__()
+        self.paths = []
+        self.feed(source)
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "a":
+            return
+        url = urlsplit(dict(attrs).get("href", ""))
+        if url.netloc in ("", urlsplit(BASE_URL).netloc) and url.path.startswith("/") and url.path not in self.paths:
+            self.paths.append(url.path)
+
+
+def display_title(source, route):
+    title = TITLE.search(source)
+    if not title:
+        return route.strip("/")
+    return BRAND_SUFFIX.sub("", " ".join(html.unescape(title[1]).split())).strip()
+
+
+def link(route, title, label=""):
+    prefix = f'<span>{html.escape(label)}</span>' if label else ""
+    return f'<a href="{html.escape(route)}">{prefix}{html.escape(title)}</a>'
+
+
+def ancestors(path):
+    parts = path.strip("/").split("/")
+    return ["/" + "/".join(parts[:n]) + "/" for n in range(1, len(parts))]
+
+
+def load_pages():
+    pages = {}
+    for route, file in html_pages():
+        source = file.read_text(encoding="utf-8")
+        if route == "/" or REDIRECT.search(source[:7000]):
+            continue
+        body = ART_BLOCK.sub("", FOOTER_BLOCK.sub("", HEADER_BLOCK.sub("", source)))
+        pages[route] = {"file": file, "source": source, "base": body, "title": display_title(body, route)}
+    return pages
+
+
+def build_registry(home, pages):
+    archive = Archive(ARCHIVE.search(home)[0])
+    if set(archive.members) != set(COLLECTIONS):
+        raise ValueError("Homepage archive must contain the seven collection headings")
+    memberships = defaultdict(list)
+    for group in GROUPS:
+        for route in archive.members[group]:
+            if route in pages and route != COLLECTIONS[group]:
+                memberships[route].append(group)
+    for route in pages:
+        for group, anchor in COLLECTIONS.items():
+            if route.startswith(anchor) and group not in memberships[route]:
+                memberships[route].append(group)
+    for route in pages:
+        for parent in reversed(ancestors(route)):
+            if memberships[parent]:
+                for group in memberships[parent]:
+                    if group not in memberships[route]:
+                        memberships[route].append(group)
+                break
+    series = {}
+    for route, page in pages.items():
+        if route in COLLECTIONS.values():
+            continue
+        children = [
+            path for path in Destinations(page["base"]).paths
+            if path in pages and path != route and ancestors(path)[-1:] == [route]
+        ]
+        if len(children) >= 2:
+            series[route] = children
+    registry = []
+    for route, page in sorted(pages.items()):
+        registry.append({
+            "path": route,
+            "title": page["title"],
+            "collections": memberships[route],
+            "kind": "collection" if route in COLLECTIONS.values() else "series" if route in series else "article",
+            **({"chapters": series[route]} if route in series else {}),
+        })
+    return registry, series, memberships
+
+
+def header(route, page, pages, memberships, counts):
+    groups = memberships[route]
+    group = next((g for g, path in COLLECTIONS.items() if route.startswith(path)), groups[0] if groups else None)
+    parents = [path for path in ancestors(route) if path in pages]
+    crumb_routes = [COLLECTIONS[group]] if group and COLLECTIONS[group] != route else []
+    crumb_routes.extend(path for path in parents if path not in crumb_routes)
+    crumbs = [link("/", "Home")] + [link(path, pages[path]["title"]) for path in crumb_routes]
+    crumbs.append(f'<span aria-current="page">{html.escape(page["title"])}</span>')
+    trail = "".join(f"<li>{crumb}</li>" for crumb in crumbs)
+    destinations = [("/", "Home"), *((path, pages[path]["title"]) for path in crumb_routes), (route, page["title"])]
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": index, "name": name, "item": BASE_URL + path}
+            for index, (path, name) in enumerate(destinations, 1)
+        ],
+    }, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+    total = f'<p class="library-collection-size">{counts[group]} published articles</p>' if group and route == COLLECTIONS[group] else ""
+    theme = THEMES.get(group, "gods")
+    accent = f'<i class="library-theme-{theme}" aria-hidden="true"></i>'
+    return f"""{START}
+<link rel="stylesheet" href="/assets/editorial/library.css">
+<div class="library-reader-head">
+  {accent}<a class="library-logo" href="/" aria-label="Bhakti home"><img src="/assets/editorial/lotus.svg" width="38" height="31" alt=""> <span>Bhakti<small>srini.presents</small></span></a>
+  <a href="/#collections">Collections</a><a href="/search/">Search</a>
+</div>
+<nav class="library-crumb" aria-label="Breadcrumb"><ol>{trail}</ol></nav>
+{total}<script type="application/ld+json">{schema}</script>
+{END}
+"""
+
+
+def footer(route, pages, series, memberships):
+    sections = []
+    if route in series:
+        children = "".join(f'<li>{link(path, pages[path]["title"])}</li>' for path in series[route])
+        sections.append(f'<section><h2>Published chapters</h2><p>{len(series[route])} available</p><ol>{children}</ol></section>')
+    else:
+        parent = next((p for p in reversed(ancestors(route)) if route in series.get(p, ())), None)
+        if parent:
+            works = series[parent]
+            offset = works.index(route)
+            before = works[offset - 1:offset] if offset else []
+            after = works[offset + 1:offset + 2]
+            previous = [link(p, pages[p]["title"], "Previous chapter") for p in before]
+            following = [link(p, pages[p]["title"], "Next chapter") for p in after]
+            sections.append('<nav aria-label="Chapter navigation">' + "".join(previous + following) + "</nav>")
+        related = [p for p in Destinations(pages[route]["base"]).paths
+                   if p in pages and p != route and p not in COLLECTIONS.values()
+                   and p not in ancestors(route) and set(memberships[route]) & set(memberships[p])][:3]
+        if related:
+            sections.append('<section><h2>Related reading</h2><ul>' + "".join(
+                f'<li>{link(path, pages[path]["title"])}</li>' for path in related) + "</ul></section>")
+    main_group = memberships[route][0] if memberships[route] else None
+    if main_group and (collection := COLLECTIONS[main_group]) != route:
+        sections.append(link(collection, f"Return to {main_group}"))
+    extra = "\n".join(sections)
+    return f"""{FOOT_START}
+<footer class="library-reader-footer">
+  <div class="library-reader-links">{extra}</div>
+  <div class="library-reader-contact"><strong>Stay Connected</strong> <a href="mailto:srini.presents@gmail.com">srini.presents@gmail.com</a></div>
+</footer>
+{FOOT_END}
+"""
+
+
+def render_search(registry, source):
+    results = []
+    for entry in sorted(registry, key=lambda item: item["title"].casefold()):
+        groups = "|".join(entry["collections"])
+        results.append(f'<li data-collections="{html.escape(groups)}">{link(entry["path"], entry["title"])}</li>')
+    return RESULTS.sub(lambda m: m[1] + "\n" + "\n".join(results) + "\n" + m[2], source, count=1)
+
+
+def render_painting(route, page):
+    name = PAINTINGS.get(route)
+    if not name:
+        return page
+    painting = f'<img class="library-cover-painting" src="{ART}{name}.webp" width="448" height="448" alt="">'
+    picture = "<!-- library:art -->" + painting + "<!-- /library:art -->"
+    hero = re.search(r'<header class="hero">.*?</header>', page, re.S)
+    if hero:
+        old_art = re.search(r'<img\b[^>]*>', hero[0])
+        if old_art and re.search(r'\balt=""', old_art[0]):
+            position = hero.start() + old_art.start()
+        else:
+            position = hero.end()
+            picture = '<!-- library:art --><div class="library-cover-panel">' + painting + '</div><!-- /library:art -->'
+    else:
+        cover = re.search(r'<div class="cover-body">', page)
+        if not cover:
+            return page
+        position = cover.end()
+    return page[:position] + picture + page[position:]
+
+
+def render_counts(home, counts):
+    for group, count in counts.items():
+        label = f"{count} article" + ("s" if count != 1 else "")
+        marker = re.compile(r'(data-library-count="' + re.escape(html.escape(group)) + r'">)\d+ articles?')
+        home, matches = marker.subn(lambda m: m[1] + label, home)
+        if matches != 1:
+            raise ValueError(f"Missing unique count marker for {group}")
+    return home
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    home = HOME.read_text(encoding="utf-8")
+    pages = load_pages()
+    registry, series, memberships = build_registry(home, pages)
+    counts = {
+        group: sum(group in record["collections"] and record["kind"] == "article" for record in registry)
+        for group in GROUPS
+    }
+    changes = []
+
+    def update(file, text, old=None):
+        if old is None:
+            old = file.read_text(encoding="utf-8") if file.exists() else ""
+        if text != old:
+            changes.append(file.relative_to(ROOT))
+            if not args.check:
+                file.write_text(text, encoding="utf-8", newline="\n")
+
+    update(REGISTRY, json.dumps(registry, ensure_ascii=False, separators=(",", ":")) + "\n")
+    update(HOME, render_counts(home, counts), home)
+    search = SEARCH.read_text(encoding="utf-8")
+    update(SEARCH, render_search(registry, search), search)
+    for route, page in pages.items():
+        base = page["base"]
+        position = base.find("<!-- /sitenav:auto -->")
+        if position >= 0:
+            position += len("<!-- /sitenav:auto -->")
+            if base[position:position + 1] == "\n":
+                position += 1
+        else:
+            position = BODY.search(base).end()
+        end = BODY_END.search(base).start()
+        rendered = base[:position] + header(route, page, pages, memberships, counts) + base[position:end]
+        rendered += footer(route, pages, series, memberships) + base[end:]
+        update(page["file"], render_painting(route, rendered), page["source"])
+
+    print(f"Bhakti registry: {len(registry)} public pages, {len(series)} multi-page series or subcollections.")
+    if args.check and changes:
+        raise SystemExit(f"{len(changes)} library files are out of sync.")
+
+
+if __name__ == "__main__":
+    main()
