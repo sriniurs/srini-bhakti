@@ -27,6 +27,8 @@ def apply(root, main=False):
             original = stream.read()
         if REDIRECT.search(original) or not BODY.search(original):
             continue
+        if relative.as_posix() == "index.html" and 'class="library-home"' in original:
+            continue
         clean = BLOCK.sub('', original)
         parts = relative.parts[:-1]
         parent = '/' + '/'.join(parts[:-1]) + '/' if len(parts) > 1 else '/'
