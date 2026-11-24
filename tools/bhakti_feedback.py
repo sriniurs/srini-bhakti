@@ -12,6 +12,7 @@ NOTE = """<!-- reader-feedback:start -->
   <strong style="display:block;font:700 25px/1.25 Georgia,serif;margin-bottom:8px">Share your thoughts</strong>
   <p style="margin:0 0 13px">If an article touched your heart, or you have a suggestion, reflection or correction, I would love to hear from you.</p>
   <a href="mailto:srini.presents@gmail.com?subject=Bhakti%20reader%20feedback" style="display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:10px 14px;border-radius:6px;background:#973f2c;color:white;text-decoration:none;font-weight:700">Write to me · srini.presents@gmail.com</a>
+  <p style="margin:14px 0 0;font-size:14px">New to the dots and lines in our Sanskrit (ā, ṛ, ṣ, ṃ)? See <a href="/how-to-read-iast/" style="color:#973f2c;font-weight:700">How to read IAST</a>.</p>
 </div>
 <!-- reader-feedback:end -->"""
 social = re.compile(r'<div\s+class=["\']follow["\'][^>]*>.*?</div>', re.I | re.S)
