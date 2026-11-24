@@ -339,6 +339,7 @@ def render_painting(route, page, artwork):
             return page
         old_art = re.search(r'<img\b[^>]*>', hero[0])
         position = hero.start() + old_art.start() if old_art else hero.end() - len("</header>")
+        end = hero.start() + old_art.end() if old_art else position
         width, height = (1200, 800) if name == "kartika-banner" else (448, 448 if name else 252)
         priority = ' fetchpriority="high"'
     else:
@@ -348,11 +349,12 @@ def render_painting(route, page, artwork):
         if not cover:
             return page
         position = cover.end()
+        end = position
         width, height = 448, 448
         priority = ""
     painting = f'<img class="library-cover-painting" src="{source}" width="{width}" height="{height}" alt=""{priority}>'
     picture = "<!-- library:art -->" + painting + "<!-- /library:art -->"
-    return page[:position] + picture + page[position:]
+    return page[:position] + picture + page[end:]
 
 
 def render_counts(home, counts):

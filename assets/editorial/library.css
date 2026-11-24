@@ -203,7 +203,6 @@
     display: block; width: 100%; height: auto; align-self: stretch;
     max-height: 31rem; aspect-ratio: 4 / 3; object-fit: cover;
   }
-  body:has(.library-reader-head) .hero > .library-cover-painting + img { display: none; }
   .bhakti-article-cover .cover-body > .library-cover-painting { display: block; width: min(100%, 32rem); height: auto; margin: 0 auto 1rem; border-radius: .7rem; }
   body.bhakti-editorial:has(.library-reader-head) .tiles a { background: var(--library-paper); border-color: var(--library-rule); }
   body.bhakti-editorial:has(.library-reader-head) .tile-art {
