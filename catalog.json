@@ -100,6 +100,14 @@
    "tile": "<li><a href=\"/festivals/ekadashi/\"><div class=\"tile-art\"><img src=\"/festivals/ekadashi/overview/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Series · 15 parts</strong><h2>Ekādaśī</h2><p>What the eleventh day is, how the vow is kept, and all 26 named Ekādaśīs with their stories.</p><span class=\"read\">Read ↗</span></div></a></li>"
   },
   {
+   "path": "/festivals/pradosha/",
+   "door": "festivals",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/festivals/pradosha/\"><div class=\"tile-art\"><img src=\"/festivals/pradosha/overview/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Series · 8 parts</strong><h2>Pradoṣa</h2><p>Śiva’s twilight on Trayodaśī: Nīlakaṇṭha, the vrata kathā, the Pradoṣa hymn, the seven Pradoṣas, temples and Māsa Śivarātri.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
    "path": "/festivals/makara-sankranti/",
    "door": "festivals",
    "deities": [],
