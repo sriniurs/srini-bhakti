@@ -388,15 +388,6 @@
    "shelf": "Vedic and devotional hymns"
   },
   {
-   "path": "/vishnu/tiruppavai/",
-   "door": "hymns",
-   "deities": [
-    "vishnu"
-   ],
-   "tile": "<li><a href=\"/vishnu/tiruppavai/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"34\" r=\"12\" fill=\"#c98b5a\"/><path d=\"M38 26 q12 -16 24 0\" fill=\"#2b1a0e\"/><path d=\"M60 22 q10 -6 12 6\" fill=\"none\" stroke=\"#2b1a0e\" stroke-width=\"6\"/><path d=\"M30 92 q-2 -40 20 -46 q22 6 20 46z\" fill=\"#2e9a5a\"/><path d=\"M34 60 q16 10 32 0\" fill=\"none\" stroke=\"#ffd60a\" stroke-width=\"4\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Dhanurmāsa · Day 1 of 30</strong><h2>Tiruppāvai</h2><p>Āṇḍāḷ’s thirty Tamil songs for the dawns of Mārgaḻi, one illustrated article a day.</p><span class=\"read\">Open series ↗</span></div></a></li>",
-   "shelf": "Vedic and devotional hymns"
-  },
-  {
    "path": "/vishnu/bhaja-govindam/",
    "door": "hymns",
    "deities": [

@@ -97,9 +97,6 @@ def build_counts():
     ):
         count = len(articles(route)) - 1
         labels[route] = f'{count} {unit} + overview'
-    route = '/vishnu/tiruppavai/'
-    count = len(articles(route))
-    labels[route] = f'{count} published part' + ('s' if count != 1 else '')
     labels.update(inline_parts)
     route = '/srividya/related-reading/'
     labels[route] = f'{len(set(cards[route]))} reading links'
