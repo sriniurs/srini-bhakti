@@ -55,7 +55,7 @@ def cover_asset(route, source, generated):
         if (vector := SVG.search(cover[2])) and (asset := vector_asset(route, vector, generated)):
             return asset
     if hero := re.search(r'<header class="hero">.*?</header>', source, re.S):
-        if image := IMAGE.search(hero[0]):
+        if (image := IMAGE.search(hero[0])) and " data-library-hero-only " not in image[0]:
             if local := local_image(image[1]):
                 return local
     if (vector := LEGACY_SVG.search(source)) and (asset := vector_asset(route, vector, generated)):
