@@ -609,6 +609,41 @@
    "group": "places"
   },
   {
+   "path": "/temples-of-india/karnataka/hampi-virupaksha/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/hampi-virupaksha/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/temples-of-india/karnataka/hampi-virupaksha/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temples of Karnataka · Part 1 of 5</strong><h2>Hampi Virūpākṣa</h2><p>Pampā’s husband at Hampi: the legend of Hemakūṭa, the Vijayanagara kings’ temple, its gopuras, painted hall and festivals.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/karnataka/belur-halebidu/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/belur-halebidu/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/temples-of-india/karnataka/belur-halebidu/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temples of Karnataka · Part 2 of 5</strong><h2>Belūr and Haḷebīḍu</h2><p>The Hoysaḷa temples of Cennakeśava and Hoysaḷeśvara: madanikās, friezes, signed sculptors and a dynasty’s story.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/karnataka/savadatti-yellamma/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/savadatti-yellamma/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/temples-of-india/karnataka/savadatti-yellamma/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temples of Karnataka · Part 3 of 5</strong><h2>Savadatti Yellamma</h2><p>Reṇukā Yellamma on her hill over the Malaprabhā: her story, sacred waters, neem vows and great full moons.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/karnataka/ganagapura-dattatreya/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/ganagapura-dattatreya/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/temples-of-india/karnataka/ganagapura-dattatreya/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temples of Karnataka · Part 4 of 5</strong><h2>Gāṇagāpura Dattātreya</h2><p>The Guru’s seat at the Bhīmā–Amarjā saṅgama: Dattātreya, Narasiṃha Sarasvatī, the nirguṇa sandals and madhukarī.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/temples-of-india/karnataka/banashankari/",
+   "door": "temples",
+   "deities": [],
+   "tile": "<li><a href=\"/temples-of-india/karnataka/banashankari/\"><div class=\"tile-art\" style=\"background:#e3eaf3\"><img src=\"/temples-of-india/karnataka/banashankari/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Temples of Karnataka · Part 5 of 5</strong><h2>Banaśaṅkarī</h2><p>Śākambharī of the forest near Bādāmi: the Cāḷukya kuladevī, the Haridrā tank and the great Pauṣa jātre.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
    "path": "/temples-of-india/karnataka/murudeshwara/",
    "door": "temples",
    "deities": [],

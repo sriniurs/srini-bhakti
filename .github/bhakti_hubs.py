@@ -42,6 +42,11 @@ KARNATAKA_ENTRIES = (
     '/temples-of-india/karnataka/gokarna/',
     '/temples-of-india/karnataka/murudeshwara/',
     '/temples-of-india/karnataka/horanadu-annapurneshwari/',
+    '/temples-of-india/karnataka/hampi-virupaksha/',
+    '/temples-of-india/karnataka/belur-halebidu/',
+    '/temples-of-india/karnataka/savadatti-yellamma/',
+    '/temples-of-india/karnataka/ganagapura-dattatreya/',
+    '/temples-of-india/karnataka/banashankari/',
 )
 GROUPS = {'places': 'Temple guides by place', 'circuits': 'Pilgrimage circuits'}
 HUBS = {'/', '/search/', '/srividya/', '/festivals/', '/gods/', '/hymns/', '/scriptures/',
@@ -264,6 +269,19 @@ def build(entries, pages):
         '<p>Illustrated guides to the temples of coastal Tulu Nadu, including Dharmasthaḷa, Kadri and Kateel.</p>'
         '<span class="read">Open collection ↗</span></div></a></li>'
     )
+    for href, art, title, blurb in (
+        ('/srividya/temples/sringeri-sharada/', '/srividya/temples/sringeri-sharada/cover.svg', 'Śṛṅgeri Śāradā', 'The Goddess of learning on the Tuṅgā and Śaṅkara’s first maṭha.'),
+        ('/srividya/temples/kollur-mukambika/', '/srividya/temples/kollur-mukambika/cover.svg', 'Kollūr Mūkāmbikā', 'The Goddess below Kodacādri, worshipped with a liṅga.'),
+        ('/subramanya/kukke/', '/subramanya/kukke/cover.svg', 'Kukke Subrahmaṇya', 'The serpent lord on the Kumāradhārā.'),
+        ('/tulunadu/temples/dharmasthala-manjunatha/', '/tulunadu/art/dharmasthala-manjunatha.svg', 'Dharmasthaḷa Mañjunātha', 'Śiva on the Netrāvatī, kept by a Jain house.'),
+        ('/temples-of-india/around-mysuru/melukote/', '/temples-of-india/around-mysuru/melukote/og-share.jpg', 'Melukōṭe', 'Tirunārāyaṇa and Rāmānuja’s hill town.'),
+    ):
+        karnataka_tiles.append(
+            f'<li><a href="{href}"><div class="tile-art" style="background:#f3e3c3">'
+            f'<img src="{art}" width="380" height="268" alt="" loading="lazy"></div>'
+            f'<div class="tile-copy"><strong class="label">Also in Karnataka</strong><h2>{title}</h2><p>{blurb}</p>'
+            '<span class="read">Read ↗</span></div></a></li>'
+        )
     write_hub(KARNATAKA, shelf('Collections and temple guides', '', karnataka_tiles))
 
     for d in DEITIES:
