@@ -22,7 +22,7 @@ GROUPS = [
     "Temples and Tīrthas",
     "Śrī Vidyā",
     "Festivals",
-    "Tulu Nadu",
+    "Karnataka Cultures",
 ]
 TOKEN = re.compile(
     r"<details\b[^>]*>|</details>|<summary\b[^>]*>.*?</summary>|"
@@ -57,7 +57,7 @@ def catalogue_counts(document: str) -> dict[str, int]:
             label = summary.split(" · ")[0].strip()
         elif tag.lower().startswith("<a") and depth >= 1 and label in GROUPS:
             link = html.unescape(token.group(2)).split("#")[0].split("?")[0]
-            if link.startswith("/") and not (label == "Tulu Nadu" and link == "/tulunadu/"):
+            if link.startswith("/") and not (label == "Karnataka Cultures" and link in ("/karnataka-cultures/", "/tulunadu/", "/kodagu/")):
                 links.add(link)
     if set(counts) != set(GROUPS):
         raise ValueError("Could not read all seven catalogue sections: " + repr(counts))

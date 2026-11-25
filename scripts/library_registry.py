@@ -20,7 +20,7 @@ SEARCH = ROOT / "search/index.html"
 REGISTRY = ROOT / "assets/library-registry.json"
 COLLECTIONS = dict(zip(GROUPS, (
     "/gods/", "/hymns/", "/scriptures/", "/temples-of-india/", "/srividya/",
-    "/festivals/", "/tulunadu/",
+    "/festivals/", "/karnataka-cultures/",
 )))
 THEMES = dict(zip(GROUPS, ("gods", "hymns", "scriptures", "temples", "srividya", "festivals", "tulu")))
 ART = "/assets/editorial/bhakti-library/"
