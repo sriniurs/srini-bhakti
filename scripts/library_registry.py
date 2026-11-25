@@ -19,10 +19,10 @@ HOME = ROOT / "index.html"
 SEARCH = ROOT / "search/index.html"
 REGISTRY = ROOT / "assets/library-registry.json"
 COLLECTIONS = dict(zip(GROUPS, (
-    "/gods/", "/hymns/", "/scriptures/", "/temples-of-india/", "/srividya/",
+    "/why-do-we/", "/gods/", "/hymns/", "/scriptures/", "/temples-of-india/", "/srividya/",
     "/festivals/", "/karnataka-cultures/",
 )))
-THEMES = dict(zip(GROUPS, ("gods", "hymns", "scriptures", "temples", "srividya", "festivals", "tulu")))
+THEMES = dict(zip(GROUPS, ("why", "gods", "hymns", "scriptures", "temples", "srividya", "festivals", "tulu")))
 ART = "/assets/editorial/bhakti-library/"
 PAINTINGS = {
     **{path: THEMES[group] for group, path in COLLECTIONS.items()},
@@ -177,7 +177,7 @@ def load_pages():
 def build_registry(home, pages):
     archive = Archive(ARCHIVE.search(home)[0])
     if set(archive.members) != set(COLLECTIONS):
-        raise ValueError("Homepage archive must contain the seven collection headings")
+        raise ValueError("Homepage archive must contain the eight collection headings")
     memberships = defaultdict(list)
     for group in GROUPS:
         for route in archive.members[group]:

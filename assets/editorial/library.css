@@ -60,6 +60,7 @@
 .library-theme-scriptures { --wash: #f9e7c0; --panel: #68253b; }
 .library-theme-festivals { --wash: #fbe2d3; --panel: #852d20; }
 .library-theme-tulu { --wash: #daead6; --panel: #174b40; }
+.library-theme-why { --wash: #e3eaf3; --panel: #15365a; }
 .library-paths li, .library-collections li { min-width: 0; }
 .library-paths a, .library-collections a { position: relative; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); height: 100%; min-height: 110px; overflow: hidden; border-radius: 1rem; text-decoration: none; }
 .library-paths a { background: var(--wash); border: 1px solid #922d361f; }
@@ -185,6 +186,7 @@
   body:has(.library-reader-head .library-theme-srividya) { --library-cover: #85173a; }
   body:has(.library-reader-head .library-theme-festivals) { --library-cover: #852d20; }
   body:has(.library-reader-head .library-theme-tulu) { --library-cover: #174b40; }
+  body:has(.library-reader-head .library-theme-why) { --library-cover: #15365a; }
   body.bhakti-editorial:has(.library-reader-head), body[data-bhakti-article]:has(.library-reader-head) { background: var(--library-cream); }
   body:has(.library-reader-head) .sr-reader-slot { display: none !important; }
   html:has(.library-reader-head) { scroll-padding-top: 1rem; }
