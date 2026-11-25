@@ -21,6 +21,7 @@ SVG = re.compile(r"<svg\b.*?</svg>", re.S)
 LEGACY_SVG = re.compile(r'<svg\b(?=[^>]*\bclass="(?:[^"]*\s)?(?:coverart|hero)(?:\s[^"]*)?")[^>]*>.*?</svg>', re.S)
 ILLUSTRATION = re.compile(r'<svg\b(?=[^>]*\brole="img")(?=[^>]*\baria-label="[^"]+")[^>]*>.*?</svg>', re.S)
 OG = re.compile(r'<meta\b[^>]*\bproperty="og:image"[^>]*\bcontent="([^"]+)"', re.I)
+CARD_IMAGE = re.compile(r'<meta\b[^>]*\bname="bhakti:card-image"[^>]*\bcontent="([^"]+)"', re.I)
 
 
 def local_image(value):
@@ -47,6 +48,8 @@ def vector_asset(route, vector, generated):
 
 
 def cover_asset(route, source, generated):
+    if (meta := CARD_IMAGE.search(source)) and (asset := local_image(meta[1])):
+        return asset
     cover = COVER.search(source)
     if cover:
         if image := IMAGE.search(cover[2]):
