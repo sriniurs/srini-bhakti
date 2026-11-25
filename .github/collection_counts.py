@@ -100,7 +100,7 @@ def build_counts():
     labels.update(inline_parts)
     route = '/srividya/related-reading/'
     labels[route] = f'{len(set(cards[route]))} reading links'
-    if TULU_FESTIVALS in pages:
+    if TULU_FESTIVALS in pages and not articles(TULU_FESTIVALS):
         labels[TULU_FESTIVALS] = f'{festival_links} reading links'
     return labels, pages
 
