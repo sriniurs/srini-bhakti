@@ -48,7 +48,7 @@ CARD_PAINTINGS = {
     "/vishnu/vishnu-sahasranama/": "painted-tile-vishnu-sahasranama",
     "/shiva/sri-rudram/": "painted-tile-sri-rudram",
     "/hanuman/chalisa/": "painted-tile-hanuman-chalisa",
-    "/home-puja/": "painted-tile-home-puja",
+    "/why-do-we/home-puja/": "painted-tile-home-puja",
     "/temples-of-india/how-to-read-a-hindu-temple/": "painted-tile-temple-architecture",
     "/festivals/deepavali/": "painted-tile-deepavali",
     "/festivals/holi/": "painted-tile-holi",
@@ -75,7 +75,7 @@ PARENT_STORIES = {
     "/temples-of-india/kerala/sabarimala/": (
         ("https://srinipresents.com/sabarimala-vow/", "The 41-Day Sabarimala Vow, Decoded"),
     ),
-    "/home-puja/": (
+    "/why-do-we/home-puja/": (
         ("https://srinipresents.com/mysore-agarbathi/", "Mysore Agarbathi: The Smoke That Made Mysuru Famous"),
     ),
 }
