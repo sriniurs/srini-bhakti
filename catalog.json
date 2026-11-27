@@ -986,6 +986,84 @@
     "vishnu"
    ],
    "tile": "<li><a href=\"/vishnu/vitthala/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Viṭṭhala</h2><p>Viṭhobā of Paṇḍharpur, the Vārī and the singer-saints.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/bhavani-ashtakam/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/bhavani-ashtakam/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Bhavānī Aṣṭakam</h2><p>You alone are my refuge: eight verses of surrender to the Goddess.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "shelf": "Daily prayers and praise"
+  },
+  {
+   "path": "/devi/durga-suktam/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/durga-suktam/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Durgā Sūktam</h2><p>The Vedic prayer for crossing every difficulty.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "shelf": "Daily prayers and praise"
+  },
+  {
+   "path": "/festivals/ananta-chaturdashi/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/ananta-chaturdashi/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Ananta Vrata</h2><p>The fourteen-knotted thread and the vow to Viṣṇu as Ananta.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/bhimana-amavasya/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/bhimana-amavasya/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Bhīmana Vrata</h2><p>Bhīmana Amāvāsye and Vaṭa Sāvitrī: traditions of devotion.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/onam/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/onam/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Onam</h2><p>The good king comes home: Kerala’s harvest festival and Vāmana Jayantī.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/grama-devatas/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/gods/grama-devatas/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Grāma Devatās</h2><p>The village mothers of Karnataka and their living traditions.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/surya/",
+   "door": "gods",
+   "deities": [],
+   "tile": "<li><a href=\"/gods/surya/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Sūrya</h2><p>The eye of the world: the Sun god, his symbols and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/hymns/daily-slokas/",
+   "door": "hymns",
+   "deities": [],
+   "tile": "<li><a href=\"/hymns/daily-slokas/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Daily Ślokas</h2><p>Prayers from waking to sleep, in IAST with meaning.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/hymns/guru-ashtakam/",
+   "door": "hymns",
+   "deities": [],
+   "tile": "<li><a href=\"/hymns/guru-ashtakam/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Guru Aṣṭakam</h2><p>Eight verses to the teacher: devotion and wisdom beyond worldly gains.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/shiva/nataraja/",
+   "door": "gods",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/shiva/nataraja/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Naṭarāja</h2><p>Śiva’s dance, its symbols and Ārudrā Darśanam.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/dhanvantari/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/dhanvantari/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Dhanvantari</h2><p>The divine physician in Hindu tradition: stories, symbols and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
   }
  ]
 }
