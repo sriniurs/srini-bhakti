@@ -249,9 +249,13 @@ def build(entries, pages):
     for k in ('gods', 'scriptures'):
         body = ''
         for d, (name, _) in DEITIES.items():
-            es = [e for e in by(k) if e['deities'][0] == d
+            es = [e for e in by(k) if e['deities'] and e['deities'][0] == d and not e['path'].startswith('/saints/')
                   and not (k == 'gods' and e['path'] == '/srividya/')]
             body += shelf(name, '', tiles(es), d)
+        if k == 'gods':
+            body += shelf('Other deities', '', tiles(e for e in by(k) if not e['deities']), 'other-deities')
+        if k == 'scriptures':
+            body += shelf('Saints and teachers', '', tiles(e for e in by(k) if e['path'].startswith('/saints/')), 'saints')
         write_hub(DOOR_URL[k], body)
     write_hub('/temples-of-india/', ''.join(
         shelf(title, '', tiles(e for e in by('temples', group=group)

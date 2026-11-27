@@ -837,6 +837,88 @@
    "door": "hymns",
    "deities": [],
    "tile": "<li><a href=\"/sixteen-samskaras/\"><div class=\"tile-art\"><img src=\"/sixteen-samskaras/cover.svg\" width=\"380\" height=\"268\" alt=\"\" loading=\"lazy\"></div><div class=\"tile-copy\"><strong class=\"label\">Start here · Life rites</strong><h2>The Sixteen Saṃskāras</h2><p>From naming and first rice to the sacred thread, marriage and the last rites: what each rite is and means.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/ganga/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/ganga/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Gaṅgā</h2><p>The river called Mother: her descent, sacred river traditions and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/datta-jayanti/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/datta-jayanti/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Datta Jayantī</h2><p>The birthday of Dattātreya, the threefold form of the divine.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/gita-jayanti/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/gita-jayanti/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Gītā Jayantī</h2><p>The birthday of the Bhagavad Gītā and the teaching at Kurukṣetra.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/vasant-panchami/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/vasant-panchami/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Vasant Pañcamī</h2><p>Spring, Sarasvatī Pūjā and the first letter.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/ayyappa/",
+   "door": "gods",
+   "deities": [
+    "shiva",
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/gods/ayyappa/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Ayyappa</h2><p>The Lord of the forest hill, his story and the pilgrimage vow.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/brahma/",
+   "door": "gods",
+   "deities": [],
+   "tile": "<li><a href=\"/gods/brahma/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Brahmā</h2><p>The lotus-born creator: his forms, stories and symbols.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/garuda-and-nandi/",
+   "door": "gods",
+   "deities": [
+    "vishnu",
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/gods/garuda-and-nandi/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Garuḍa and Nandi</h2><p>The eagle and the bull who carry Viṣṇu and Śiva.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/kala-bhairava/",
+   "door": "gods",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/gods/kala-bhairava/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Kāla Bhairava</h2><p>The guardian who is time: Śiva’s fierce protective form.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/raghavendra/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/raghavendra/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Rāghavendra Tīrtha</h2><p>The Madhva saint and master of Mantrālaya.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/tyagaraja/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/tyagaraja/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Tyāgarāja</h2><p>Rāma’s singer of the Kāverī and his Carnatic music.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/jagannatha/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/jagannatha/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Jagannātha</h2><p>The Lord of the universe at Purī and his festival traditions.</p><span class=\"read\">Read ↗</span></div></a></li>"
   }
  ]
 }
