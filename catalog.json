@@ -847,6 +847,14 @@
    "tile": "<li><a href=\"/devi/ganga/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Gaṅgā</h2><p>The river called Mother: her descent, sacred river traditions and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
   },
   {
+   "path": "/devi/rivers/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/rivers/\"><div class=\"tile-art\" style=\"background:#f6e3e1\"></div><div class=\"tile-copy\"><strong class=\"label\">Series · Devī</strong><h2>Sacred Rivers of India</h2><p>The river as mother: the Ṛgveda’s river hymn, the bath verse, tīrtha and Puṣkara, then Yamunā, Godāvarī and the rest one by one.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
    "path": "/festivals/datta-jayanti/",
    "door": "festivals",
    "deities": [],
