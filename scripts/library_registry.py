@@ -287,6 +287,8 @@ def header(route, page, pages, memberships, counts, articles):
 
 def footer(route, pages, series, memberships, artwork):
     sections = []
+    text_navigation = "data-library-text-navigation" in pages[route]["base"]
+    chapter_artwork = {} if text_navigation else artwork
     if route in series and "data-library-chapter-list" not in pages[route]["base"]:
         children = "".join(f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in series[route])
         sections.append(f'<section><h2>Published chapters</h2><p>{len(series[route])} available</p><ol>{children}</ol></section>')
@@ -297,13 +299,13 @@ def footer(route, pages, series, memberships, artwork):
             offset = works.index(route)
             before = works[offset - 1:offset] if offset else []
             after = works[offset + 1:offset + 2]
-            previous = [link(p, pages[p]["title"], "Previous chapter", artwork) for p in before]
-            following = [link(p, pages[p]["title"], "Next chapter", artwork) for p in after]
+            previous = [link(p, pages[p]["title"], "Previous chapter", chapter_artwork) for p in before]
+            following = [link(p, pages[p]["title"], "Next chapter", chapter_artwork) for p in after]
             sections.append('<nav aria-label="Chapter navigation">' + "".join(previous + following) + "</nav>")
         related = [p for p in Destinations(pages[route]["base"]).paths
                    if p in pages and p != route and p not in COLLECTIONS.values()
                    and p not in ancestors(route) and set(memberships[route]) & set(memberships[p])][:3]
-        if related:
+        if related and not text_navigation:
             sections.append('<section><h2>Related reading</h2><ul>' + "".join(
                 f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in related) + "</ul></section>")
     if stories := PARENT_STORIES.get(route):
