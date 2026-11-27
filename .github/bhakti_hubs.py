@@ -242,7 +242,7 @@ def build(entries, pages):
                                                 and not (door == 'gods' and e['path'] == '/srividya/dasha-mahavidya/')
                                                 and (deity is None or deity in e['deities'])
                                                 and (group is None or e.get('group') == group)]
-    tiles = lambda es: [e['tile'] for e in es]
+    tiles = lambda es: [e['tile'] for e in es if not e.get('hide_hub_tile')]
     write_hub('/', article_index(entries, pages))
 
     # door pages

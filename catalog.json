@@ -840,6 +840,7 @@
   },
   {
    "path": "/devi/ganga/",
+   "hide_hub_tile": true,
    "door": "gods",
    "deities": [
     "devi"
