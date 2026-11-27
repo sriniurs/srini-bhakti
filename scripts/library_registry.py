@@ -287,10 +287,10 @@ def header(route, page, pages, memberships, counts, articles):
 
 def footer(route, pages, series, memberships, artwork):
     sections = []
-    if route in series:
+    if route in series and "data-library-chapter-list" not in pages[route]["base"]:
         children = "".join(f'<li>{link(path, pages[path]["title"], artwork=artwork)}</li>' for path in series[route])
         sections.append(f'<section><h2>Published chapters</h2><p>{len(series[route])} available</p><ol>{children}</ol></section>')
-    else:
+    elif route not in series:
         parent = next((p for p in reversed(ancestors(route)) if route in series.get(p, ())), None)
         if parent:
             works = series[parent]
