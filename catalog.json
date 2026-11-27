@@ -919,6 +919,73 @@
     "vishnu"
    ],
    "tile": "<li><a href=\"/vishnu/jagannatha/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Jagannātha</h2><p>The Lord of the universe at Purī and his festival traditions.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/sapta-matrikas/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/sapta-matrikas/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Sapta Mātṛkās</h2><p>The seven Mothers, their forms, symbols and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/festivals/nakshatras/",
+   "door": "festivals",
+   "deities": [],
+   "tile": "<li><a href=\"/festivals/nakshatras/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Nakṣatras and Rāśis</h2><p>The moon’s mansions, zodiac and Hindu calendar.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/gods/vedic-gods/",
+   "door": "gods",
+   "deities": [],
+   "tile": "<li><a href=\"/gods/vedic-gods/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>The Vedic Gods</h2><p>Indra, Agni, Vāyu and Varuṇa: the gods of the Ṛgveda.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/basavanna/",
+   "door": "scriptures",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/saints/basavanna/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Basavaṇṇa</h2><p>The vacanas, the Śaraṇas and the tradition of equality and work.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/purandara-dasa/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/purandara-dasa/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Purandara Dāsa</h2><p>The Haridāsas of Karnataka and devotional music.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/scriptures/sampradayas/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/scriptures/sampradayas/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Sampradāyas</h2><p>The great traditions and lineages of Hindu worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/temples-of-india/tamil-nadu/srirangam/",
+   "door": "temples",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/temples-of-india/tamil-nadu/srirangam/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Śrīraṅgam</h2><p>The island temple of Raṅganātha: a full illustrated guide.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "places"
+  },
+  {
+   "path": "/vishnu/narasimha/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/narasimha/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Narasiṃha</h2><p>The man-lion who came for Prahlāda, his forms and temples.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/vitthala/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/vitthala/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Viṭṭhala</h2><p>Viṭhobā of Paṇḍharpur, the Vārī and the singer-saints.</p><span class=\"read\">Read ↗</span></div></a></li>"
   }
  ]
 }
