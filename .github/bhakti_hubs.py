@@ -256,7 +256,8 @@ def build(entries, pages):
             body += shelf('Other deities', '', tiles(e for e in by(k) if not e['deities']), 'other-deities')
         if k == 'scriptures':
             body += shelf('Saints and teachers', '', tiles(e for e in by(k) if e['path'].startswith('/saints/')), 'saints')
-            body += shelf('Traditions and lineages', '', tiles(e for e in by(k) if not e['deities'] and not e['path'].startswith('/saints/')), 'traditions')
+            body += shelf('Traditions and lineages', '', tiles(e for e in by(k) if e['path'] == '/scriptures/sampradayas/'), 'traditions')
+            body += shelf('Philosophy and foundations', '', tiles(e for e in by(k) if not e['deities'] and e['path'].startswith('/scriptures/') and e['path'] != '/scriptures/sampradayas/'), 'philosophy')
         write_hub(DOOR_URL[k], body)
     write_hub('/temples-of-india/', ''.join(
         shelf(title, '', tiles(e for e in by('temples', group=group)

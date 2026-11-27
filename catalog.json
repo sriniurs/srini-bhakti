@@ -1064,6 +1064,76 @@
     "vishnu"
    ],
    "tile": "<li><a href=\"/vishnu/dhanvantari/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Dhanvantari</h2><p>The divine physician in Hindu tradition: stories, symbols and worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/devi/sita/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/devi/sita/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Sītā</h2><p>Daughter of the Earth: her story, strength and place in the Rāmāyaṇa.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/adi-shankara/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/saints/adi-shankara/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Ādi Śaṅkara</h2><p>The teacher of Advaita, his journeys, works and monastic tradition.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/annamacharya/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/annamacharya/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Annamācārya</h2><p>The singer of the seven hills and his devotional compositions.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/madhva/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/madhva/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Madhvācārya</h2><p>The teacher of Udupi, Dvaita and the Kṛṣṇa tradition.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/saints/ramanuja/",
+   "door": "scriptures",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/saints/ramanuja/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Rāmānuja</h2><p>The teacher of surrender, Śrīraṅgam and Viśiṣṭādvaita.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/scriptures/dharma/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/scriptures/dharma/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Dharma</h2><p>Dharma and the four aims of life: duty, livelihood, fulfilment and liberation.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/scriptures/four-yogas/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/scriptures/four-yogas/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Four Yogas</h2><p>Karma, bhakti, jñāna and rāja yoga: four paths to spiritual life.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/scriptures/karma/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/scriptures/karma/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Karma</h2><p>Action and its results, rebirth and mokṣa in Hindu thought.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/scriptures/upanishads/",
+   "door": "scriptures",
+   "deities": [],
+   "tile": "<li><a href=\"/scriptures/upanishads/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Upaniṣads</h2><p>The crown of the Vedas: teachings, principal texts and how to begin.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/vishnu/radha/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/vishnu/radha/\"><div class=\"tile-art\" style=\"background:#e8cda2\"></div><div class=\"tile-copy\"><strong class=\"label\">Illustrated guide</strong><h2>Rādhā</h2><p>The beloved of Kṛṣṇa, devotional traditions and Rādhāṣṭamī.</p><span class=\"read\">Read ↗</span></div></a></li>"
   }
  ]
 }
